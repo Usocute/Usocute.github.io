@@ -1,0 +1,29 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "寻梦启事 • All posts by \"生活记录\" tag",
+    "description": "",
+    "home_page_url": "http://eliauk.cc",
+    "items": [
+        {
+            "id": "http://eliauk.cc/646d.html",
+            "url": "http://eliauk.cc/646d.html",
+            "title": "逝去的的大一生活",
+            "date_published": "2020-07-31T03:42:31.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"\\assets\\css\\APlayer.min.css\"><script src=\"\\assets\\js\\APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><script class=\"meting-secondary-script-marker\" src=\"\\assets\\js\\Meting.min.js\"></script>",
+            "tags": [
+                "生活记录"
+            ]
+        },
+        {
+            "id": "http://eliauk.cc/fae8.html",
+            "url": "http://eliauk.cc/fae8.html",
+            "title": "18岁，成年了呀~",
+            "date_published": "2019-11-09T16:00:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"\\assets\\css\\APlayer.min.css\"><script src=\"\\assets\\js\\APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><script class=\"meting-secondary-script-marker\" src=\"\\assets\\js\\Meting.min.js\"></script><blockquote>\n<p>  我一直知道有人爱我。十八年前的冬天，有人在漫天飞雪的日子里满心欢喜地期待着我。期待于冬日结果。生日的意义不是提醒我又长大一岁，而是温柔的告诉我，要好好的，毕竟有人曾经有人那么温柔的等待着我。</p>\n</blockquote>\n",
+            "tags": [
+                "生活记录",
+                "成长"
+            ]
+        }
+    ]
+}
