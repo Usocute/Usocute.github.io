@@ -2,15 +2,16 @@
 <rss version="2.0">
     <channel>
         <title>寻梦启事</title>
+        <subtitle></subtitle>
+        <icon>http://eliauk.cc/images/favicon.ico</icon>
         <link>http://eliauk.cc</link>
+        <author>
+          <name>寻梦启事</name>
+        </author>
         <description></description>
         <language>zh-CN</language>
         <pubDate>Sat, 19 Sep 2020 23:42:50 +0800</pubDate>
         <lastBuildDate>Sat, 19 Sep 2020 23:42:50 +0800</lastBuildDate>
-        <category>生活记录</category>
-        <category>成长</category>
-        <category>RegExp</category>
-        <category>JS</category>
         <item>
             <guid isPermalink="true">http://eliauk.cc/588.html</guid>
             <title>不想期待 也不想被期待</title>
@@ -28,19 +29,12 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://eliauk.cc/a115.html</guid>
-            <title>没有告别 也是一种告别</title>
-            <link>http://eliauk.cc/a115.html</link>
-            <pubDate>Sat, 19 Sep 2020 23:42:50 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;p&gt;数据丢失 待恢复...&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
             <guid isPermalink="true">http://eliauk.cc/0.html</guid>
             <title></title>
             <link>http://eliauk.cc/0.html</link>
-            <category>RegExp</category>
-            <category>JS</category>
+            <category term="笔记本" scheme="http://eliauk.cc/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/" />
+            <category term="RegExp" scheme="http://eliauk.cc/tags/RegExp/" />
+            <category term="JS" scheme="http://eliauk.cc/tags/JS/" />
             <pubDate>Sat, 19 Sep 2020 23:42:50 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;p&gt;...&lt;/p&gt;
  ]]></description>
@@ -54,6 +48,14 @@
  ]]></description>
         </item>
         <item>
+            <guid isPermalink="true">http://eliauk.cc/8fbb.html</guid>
+            <title>有些人走着走着就散了</title>
+            <link>http://eliauk.cc/8fbb.html</link>
+            <pubDate>Sat, 19 Sep 2020 23:42:50 +0800</pubDate>
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;p&gt;数据丢失 待恢复...&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">http://eliauk.cc/560e.html</guid>
             <title>我好像很忙，又好像在瞎忙</title>
             <link>http://eliauk.cc/560e.html</link>
@@ -62,9 +64,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://eliauk.cc/8fbb.html</guid>
-            <title>有些人走着走着就散了</title>
-            <link>http://eliauk.cc/8fbb.html</link>
+            <guid isPermalink="true">http://eliauk.cc/a115.html</guid>
+            <title>没有告别 也是一种告别</title>
+            <link>http://eliauk.cc/a115.html</link>
             <pubDate>Sat, 19 Sep 2020 23:42:50 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;p&gt;数据丢失 待恢复...&lt;/p&gt;
  ]]></description>
@@ -106,7 +108,8 @@
             <guid isPermalink="true">http://eliauk.cc/646d.html</guid>
             <title>逝去的的大一生活</title>
             <link>http://eliauk.cc/646d.html</link>
-            <category>生活记录</category>
+            <category term="事件簿" scheme="http://eliauk.cc/categories/%E4%BA%8B%E4%BB%B6%E7%B0%BF/" />
+            <category term="生活记录" scheme="http://eliauk.cc/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/" />
             <pubDate>Fri, 31 Jul 2020 11:42:31 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt; ]]></description>
         </item>
@@ -114,8 +117,9 @@
             <guid isPermalink="true">http://eliauk.cc/fae8.html</guid>
             <title>18岁，成年了呀~</title>
             <link>http://eliauk.cc/fae8.html</link>
-            <category>生活记录</category>
-            <category>成长</category>
+            <category term="事件簿" scheme="http://eliauk.cc/categories/%E4%BA%8B%E4%BB%B6%E7%B0%BF/" />
+            <category term="生活记录" scheme="http://eliauk.cc/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/" />
+            <category term="成长" scheme="http://eliauk.cc/tags/%E6%88%90%E9%95%BF/" />
             <pubDate>Sun, 10 Nov 2019 00:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;  我一直知道有人爱我。十八年前的冬天，有人在漫天飞雪的日子里满心欢喜地期待着我。期待于冬日结果。生日的意义不是提醒我又长大一岁，而是温柔的告诉我，要好好的，毕竟有人曾经有人那么温柔的等待着我。&lt;/p&gt;
