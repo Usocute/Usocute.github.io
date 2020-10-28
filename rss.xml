@@ -10,15 +10,30 @@
         </author>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Tue, 13 Oct 2020 17:59:02 +0800</pubDate>
-        <lastBuildDate>Tue, 13 Oct 2020 17:59:02 +0800</lastBuildDate>
+        <pubDate>Mon, 26 Oct 2020 20:58:03 +0800</pubDate>
+        <lastBuildDate>Mon, 26 Oct 2020 20:58:03 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://eliauk.cc/mc-scd/</guid>
+            <title>怀念-Mc</title>
+            <link>http://eliauk.cc/mc-scd/</link>
+            <category term="Games" scheme="http://eliauk.cc/categories/Games/" />
+            <category term="MC" scheme="http://eliauk.cc/tags/MC/" />
+            <category term="Minecrift" scheme="http://eliauk.cc/tags/Minecrift/" />
+            <pubDate>Mon, 26 Oct 2020 20:58:03 +0800</pubDate>
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;p&gt;纪念一下曾经那些无数个孤独生存的日子 ----MC，在矿洞里挖矿，在末地中屠龙，在森林里砍树，哪怕只是空手追着一只小猪打也很欢乐。可如今很少有时间能静下心来好好玩一款游戏了。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://usocute.oss-cn-chengdu.aliyuncs.com/hexo/mc1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;![(&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly91c29jdXRlLm9zcy1jbi1jaGVuZ2R1LmFsaXl1bmNzLmNvbS9oZXhvLzE2MDM4OTI4MTg0NjkuanBn&#34;&gt;https://usocute.oss-cn-chengdu.aliyuncs.com/hexo/1603892818469.jpg&lt;/span&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://usocute.oss-cn-chengdu.aliyuncs.com/hexo/1603892818469.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://usocute.oss-cn-chengdu.aliyuncs.com/hexo/1603892818463.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://eliauk.cc/Roman-numerals/</guid>
             <title>算法入门-罗马数字转整数</title>
             <link>http://eliauk.cc/Roman-numerals/</link>
             <category term="算法库" scheme="http://eliauk.cc/categories/%E7%AE%97%E6%B3%95%E5%BA%93/" />
-            <category term="leetcode" scheme="http://eliauk.cc/tags/leetcode/" />
             <category term="算法" scheme="http://eliauk.cc/tags/%E7%AE%97%E6%B3%95/" />
+            <category term="leetcode" scheme="http://eliauk.cc/tags/leetcode/" />
             <category term="javascript" scheme="http://eliauk.cc/tags/javascript/" />
             <pubDate>Tue, 13 Oct 2020 17:59:02 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;罗马数字转整数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#罗马数字转整数&#34;&gt;#&lt;/a&gt; 罗马数字转整数&lt;/h2&gt;
@@ -137,9 +152,9 @@ M             1000
             <title>算法入门-爬楼梯</title>
             <link>http://eliauk.cc/Climb-stairs/</link>
             <category term="算法库" scheme="http://eliauk.cc/categories/%E7%AE%97%E6%B3%95%E5%BA%93/" />
-            <category term="leetcode" scheme="http://eliauk.cc/tags/leetcode/" />
-            <category term="算法" scheme="http://eliauk.cc/tags/%E7%AE%97%E6%B3%95/" />
             <category term="C" scheme="http://eliauk.cc/tags/C/" />
+            <category term="算法" scheme="http://eliauk.cc/tags/%E7%AE%97%E6%B3%95/" />
+            <category term="leetcode" scheme="http://eliauk.cc/tags/leetcode/" />
             <pubDate>Sun, 27 Sep 2020 19:04:03 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;爬楼梯&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#爬楼梯&#34;&gt;#&lt;/a&gt; 爬楼梯&lt;/h2&gt;
 &lt;p&gt;假设你正在爬楼梯。需要 &lt;code&gt;n&lt;/code&gt;  阶你才能到达楼顶。&lt;br /&gt;
@@ -170,9 +185,9 @@ M             1000
             <title>算法入门-两数之和</title>
             <link>http://eliauk.cc/Sum-of-two-numbers/</link>
             <category term="算法库" scheme="http://eliauk.cc/categories/%E7%AE%97%E6%B3%95%E5%BA%93/" />
-            <category term="leetcode" scheme="http://eliauk.cc/tags/leetcode/" />
-            <category term="算法" scheme="http://eliauk.cc/tags/%E7%AE%97%E6%B3%95/" />
             <category term="C" scheme="http://eliauk.cc/tags/C/" />
+            <category term="算法" scheme="http://eliauk.cc/tags/%E7%AE%97%E6%B3%95/" />
+            <category term="leetcode" scheme="http://eliauk.cc/tags/leetcode/" />
             <pubDate>Sat, 26 Sep 2020 20:58:03 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;两数之和&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#两数之和&#34;&gt;#&lt;/a&gt; 两数之和&lt;/h2&gt;
 &lt;p&gt;给定一个整数数组 &lt;code&gt;nums&lt;/code&gt;  和一个目标值 &lt;code&gt;target&lt;/code&gt;  请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。&lt;br /&gt;
