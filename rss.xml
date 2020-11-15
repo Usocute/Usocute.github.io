@@ -10,8 +10,17 @@
         </author>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Mon, 26 Oct 2020 20:58:03 +0800</pubDate>
-        <lastBuildDate>Mon, 26 Oct 2020 20:58:03 +0800</lastBuildDate>
+        <pubDate>Fri, 13 Nov 2020 15:28:41 +0800</pubDate>
+        <lastBuildDate>Fri, 13 Nov 2020 15:28:41 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://eliauk.cc/xxxx/</guid>
+            <title>测试</title>
+            <link>http://eliauk.cc/xxxx/</link>
+            <category term="测试" scheme="http://eliauk.cc/categories/%E6%B5%8B%E8%AF%95/" />
+            <category term="测试" scheme="http://eliauk.cc/tags/%E6%B5%8B%E8%AF%95/" />
+            <pubDate>Fri, 13 Nov 2020 15:28:41 +0800</pubDate>
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://eliauk.cc/mc-scd/</guid>
             <title>怀念-Mc</title>
