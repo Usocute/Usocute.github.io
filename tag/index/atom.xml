@@ -1,36 +1,36 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://eliauk.cc</id>
-    <title>寻梦启事 • Posts by &#34;index&#34; tag</title>
-    <link href="http://eliauk.cc" />
+    <id>https://eliauk.cc</id>
+    <title>脆弱星球 • Posts by &#34;index&#34; tag</title>
+    <link href="https://eliauk.cc" />
     <updated>2020-09-24T07:50:11.000Z</updated>
     <category term="C" />
     <category term="算法" />
     <category term="leetcode" />
     <category term="生活记录" />
     <category term="成长" />
-    <category term="javascript" />
     <category term="RegExp" />
     <category term="JS" />
+    <category term="javascript" />
     <category term="MySQL" />
-    <category term="学习笔记" />
-    <category term="Trigger" />
-    <category term="MC" />
-    <category term="Minecrift" />
     <category term="数据库" />
     <category term="存储过程" />
     <category term="视图" />
-    <category term="存储引擎" />
-    <category term="数据类型" />
-    <category term="增删改查" />
+    <category term="MC" />
+    <category term="Minecrift" />
     <category term="View" />
     <category term="index" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
     <category term="查询" />
+    <category term="存储引擎" />
+    <category term="数据类型" />
     <category term="测试" />
+    <category term="增删改查" />
     <entry>
-        <id>http://eliauk.cc/mysql-View-and-index/</id>
+        <id>https://eliauk.cc/post/f5a946ac.html</id>
         <title>MySQL 视图与索引</title>
-        <link rel="alternate" href="http://eliauk.cc/mysql-View-and-index/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/f5a946ac.html"/>
         <content type="html">&lt;h2 id=&#34;视图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#视图&#34;&gt;#&lt;/a&gt; 视图&lt;/h2&gt;
 &lt;h3 id=&#34;基本概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基本概念&#34;&gt;#&lt;/a&gt; 基本概念&lt;/h3&gt;
 &lt;p&gt;视图本身是一张虚拟表，不存放任何数据。在使用 SQL 语句访问视图的时候，获取的数据是 MySQL 从其它表中生成的，视图和表在同一个命名空间。视图查询数据相对安全，视图可以隐藏一些数据和结构，只让用户看见权限内的数据，使复杂的查询易于理解和使用。&lt;/p&gt;

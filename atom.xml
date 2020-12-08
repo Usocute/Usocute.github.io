@@ -1,44 +1,44 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://eliauk.cc</id>
-    <title>寻梦启事</title>
-    <link href="http://eliauk.cc" />
+    <id>https://eliauk.cc</id>
+    <title>脆弱星球</title>
+    <link href="https://eliauk.cc" />
     <updated>2020-11-13T07:28:41.424Z</updated>
     <category term="C" />
     <category term="算法" />
     <category term="leetcode" />
     <category term="生活记录" />
     <category term="成长" />
-    <category term="javascript" />
     <category term="RegExp" />
     <category term="JS" />
+    <category term="javascript" />
     <category term="MySQL" />
-    <category term="学习笔记" />
-    <category term="Trigger" />
-    <category term="MC" />
-    <category term="Minecrift" />
     <category term="数据库" />
     <category term="存储过程" />
     <category term="视图" />
-    <category term="存储引擎" />
-    <category term="数据类型" />
-    <category term="增删改查" />
+    <category term="MC" />
+    <category term="Minecrift" />
     <category term="View" />
     <category term="index" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
     <category term="查询" />
+    <category term="存储引擎" />
+    <category term="数据类型" />
     <category term="测试" />
+    <category term="增删改查" />
     <entry>
-        <id>http://eliauk.cc/xxxx/</id>
+        <id>https://eliauk.cc/post/9daba997.html</id>
         <title>测试</title>
-        <link rel="alternate" href="http://eliauk.cc/xxxx/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/9daba997.html"/>
         <content type="html">&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs SQL&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;SELECT&lt;/span&gt; LastName &lt;span class=&#34;hljs-keyword&#34;&gt;FROM&lt;/span&gt; Persons&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
         <category term="测试" />
         <updated>2020-11-13T07:28:41.424Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/mc-scd/</id>
+        <id>https://eliauk.cc/post/2b43fca2.html</id>
         <title>怀念-Mc</title>
-        <link rel="alternate" href="http://eliauk.cc/mc-scd/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/2b43fca2.html"/>
         <content type="html">&lt;p&gt;纪念一下曾经那些无数个孤独生存的日子 ----MC，在矿洞里挖矿，在末地中屠龙，在森林里砍树，哪怕只是空手追着一只小猪打也很欢乐。可如今很少有时间能静下心来好好玩一款游戏了。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://usocute.oss-cn-chengdu.aliyuncs.com/hexo/1603892818463.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://usocute.oss-cn-chengdu.aliyuncs.com/hexo/mc1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -49,9 +49,9 @@
         <updated>2020-10-26T12:58:03.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/Roman-numerals/</id>
+        <id>https://eliauk.cc/post/fba23db0.html</id>
         <title>算法入门-罗马数字转整数</title>
-        <link rel="alternate" href="http://eliauk.cc/Roman-numerals/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/fba23db0.html"/>
         <content type="html">&lt;h2 id=&#34;罗马数字转整数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#罗马数字转整数&#34;&gt;#&lt;/a&gt; 罗马数字转整数&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;罗马数字包含以下七种字符:  &lt;code&gt;I&lt;/code&gt; ，  &lt;code&gt;V&lt;/code&gt; ，  &lt;code&gt;X&lt;/code&gt; ，  &lt;code&gt;L&lt;/code&gt; ， &lt;code&gt;C&lt;/code&gt; ， &lt;code&gt;D&lt;/code&gt;  和  &lt;code&gt;M&lt;/code&gt; 。&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs text&#34;&gt;字符          数值&lt;br&gt;I             1&lt;br&gt;V             5&lt;br&gt;X             10&lt;br&gt;L             50&lt;br&gt;C             100&lt;br&gt;D             500&lt;br&gt;M             1000&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -89,9 +89,19 @@
         <updated>2020-10-13T09:59:02.099Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/hello-world/</id>
+        <id>https://eliauk.cc/post/0.html</id>
+        <title></title>
+        <link rel="alternate" href="https://eliauk.cc/post/0.html"/>
+        <content type="html">&lt;p&gt;…&lt;/p&gt;
+</content>
+        <category term="RegExp" />
+        <category term="JS" />
+        <updated>2020-10-13T09:59:02.052Z</updated>
+    </entry>
+    <entry>
+        <id>https://eliauk.cc/post/4a17b156.html</id>
         <title>Hello World</title>
-        <link rel="alternate" href="http://eliauk.cc/hello-world/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/4a17b156.html"/>
         <content type="html">&lt;p&gt;已经记不清楚这是第几次写 hello world 了，从最早 (2018 年) 的 emlog 博客，到后来的 typecho, 再到后来的 WordPress。基本没有写出什么有意义的东西。写的东西也基本都因为忘记导出数据库，忘记备份而丢失了…&lt;/p&gt;
 &lt;p&gt;在这之前，一直使用 &lt;code&gt;香港免备案主机&lt;/code&gt;  (不想备案), 然而速度并不理想，又买不起昂贵的服务器，而最近阿里云做活动以很便宜的价格购买了服务器。&lt;/p&gt;
 &lt;p&gt;为什么要搭建这个博客&lt;br&gt;
@@ -103,19 +113,9 @@
         <updated>2020-10-13T09:59:02.052Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/js-RegExp/</id>
-        <title></title>
-        <link rel="alternate" href="http://eliauk.cc/js-RegExp/"/>
-        <content type="html">&lt;p&gt;…&lt;/p&gt;
-</content>
-        <category term="RegExp" />
-        <category term="JS" />
-        <updated>2020-10-13T09:59:02.052Z</updated>
-    </entry>
-    <entry>
-        <id>http://eliauk.cc/mysql-Trigger/</id>
+        <id>https://eliauk.cc/post/87f78bf4.html</id>
         <title>MySQL 触发器</title>
-        <link rel="alternate" href="http://eliauk.cc/mysql-Trigger/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/87f78bf4.html"/>
         <content type="html">&lt;h2 id=&#34;mysql-触发器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mysql-触发器&#34;&gt;#&lt;/a&gt; MySQL 触发器&lt;/h2&gt;
 &lt;h4 id=&#34;触发器定义与用法实例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#触发器定义与用法实例&#34;&gt;#&lt;/a&gt; 触发器定义与用法实例&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;语法&lt;/strong&gt;&lt;/p&gt;
@@ -154,9 +154,9 @@
         <updated>2020-09-30T07:01:04.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/Climb-stairs/</id>
+        <id>https://eliauk.cc/post/b0fdf7c6.html</id>
         <title>算法入门-爬楼梯</title>
-        <link rel="alternate" href="http://eliauk.cc/Climb-stairs/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/b0fdf7c6.html"/>
         <content type="html">&lt;h2 id=&#34;爬楼梯&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#爬楼梯&#34;&gt;#&lt;/a&gt; 爬楼梯&lt;/h2&gt;
 &lt;p&gt;假设你正在爬楼梯。需要 &lt;code&gt;n&lt;/code&gt;  阶你才能到达楼顶。&lt;br&gt;
 每次你可以爬 &lt;code&gt;1&lt;/code&gt;  或 &lt;code&gt;2&lt;/code&gt;  个台阶。你有多少种不同的方法可以爬到楼顶呢？&lt;/p&gt;
@@ -175,9 +175,9 @@
         <updated>2020-09-27T11:04:03.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/Sum-of-two-numbers/</id>
+        <id>https://eliauk.cc/post/812420b3.html</id>
         <title>算法入门-两数之和</title>
-        <link rel="alternate" href="http://eliauk.cc/Sum-of-two-numbers/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/812420b3.html"/>
         <content type="html">&lt;h2 id=&#34;两数之和&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#两数之和&#34;&gt;#&lt;/a&gt; 两数之和&lt;/h2&gt;
 &lt;p&gt;给定一个整数数组 &lt;code&gt;nums&lt;/code&gt;  和一个目标值 &lt;code&gt;target&lt;/code&gt;  请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。&lt;br&gt;
 你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。&lt;br&gt;
@@ -194,9 +194,9 @@
         <updated>2020-09-26T12:58:03.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/mysql-View-and-index/</id>
+        <id>https://eliauk.cc/post/f5a946ac.html</id>
         <title>MySQL 视图与索引</title>
-        <link rel="alternate" href="http://eliauk.cc/mysql-View-and-index/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/f5a946ac.html"/>
         <content type="html">&lt;h2 id=&#34;视图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#视图&#34;&gt;#&lt;/a&gt; 视图&lt;/h2&gt;
 &lt;h3 id=&#34;基本概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基本概念&#34;&gt;#&lt;/a&gt; 基本概念&lt;/h3&gt;
 &lt;p&gt;视图本身是一张虚拟表，不存放任何数据。在使用 SQL 语句访问视图的时候，获取的数据是 MySQL 从其它表中生成的，视图和表在同一个命名空间。视图查询数据相对安全，视图可以隐藏一些数据和结构，只让用户看见权限内的数据，使复杂的查询易于理解和使用。&lt;/p&gt;
@@ -251,9 +251,9 @@
         <updated>2020-09-24T07:50:11.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/mysql-Stored-procedure/</id>
+        <id>https://eliauk.cc/post/47c80ad2.html</id>
         <title>MySQL 存储过程事务处理</title>
-        <link rel="alternate" href="http://eliauk.cc/mysql-Stored-procedure/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/47c80ad2.html"/>
         <content type="html">&lt;h2 id=&#34;存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#存储过程&#34;&gt;#&lt;/a&gt; 存储过程&lt;/h2&gt;
 &lt;h3 id=&#34;简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h3&gt;
 &lt;p&gt;存储程序是被存储在服务器中的组合 SQL 语句，经编译创建并保存在数据库中，用户可通过存储过程的名字调用执行。存储过程核心思想就是数据库 SQL 语言层面的封装与重用性。使用存储过程可以较少应用系统的业务复杂性，但是会增加数据库服务器系统的负荷。&lt;/p&gt;
@@ -335,9 +335,9 @@
         <updated>2020-09-19T02:24:11.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/mysql-inquire/</id>
+        <id>https://eliauk.cc/post/89bbd8d4.html</id>
         <title>MySQL 查询</title>
-        <link rel="alternate" href="http://eliauk.cc/mysql-inquire/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/89bbd8d4.html"/>
         <content type="html">&lt;h2 id=&#34;连接查询&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#连接查询&#34;&gt;#&lt;/a&gt; 连接查询&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;在数据库中 join 操作被称为连接，作用是能连接多个表的数据（通过连接条件），从多个表中获取数据合并在一起作为结果集返回给客户端。&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;交叉连接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#交叉连接&#34;&gt;#&lt;/a&gt; 交叉连接&lt;/h3&gt;
@@ -385,9 +385,9 @@
         <updated>2020-09-14T11:04:03.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/mysql-operate/</id>
+        <id>https://eliauk.cc/post/e82256d5.html</id>
         <title>mysql 数据库基本操作</title>
-        <link rel="alternate" href="http://eliauk.cc/mysql-operate/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/e82256d5.html"/>
         <content type="html">&lt;h2 id=&#34;数据库和表操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据库和表操作&#34;&gt;#&lt;/a&gt; 数据库和表操作&lt;/h2&gt;
 &lt;h3 id=&#34;创建数据库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建数据库&#34;&gt;#&lt;/a&gt; 创建数据库&lt;/h3&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs sql&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;create&lt;/span&gt; &lt;span class=&#34;hljs-keyword&#34;&gt;database&lt;/span&gt; 数据库名称;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -446,9 +446,9 @@
         <updated>2020-09-10T10:24:02.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/mysql-data-type/</id>
+        <id>https://eliauk.cc/post/afb0e9ab.html</id>
         <title>MySQL 存储引擎和数据类型</title>
-        <link rel="alternate" href="http://eliauk.cc/mysql-data-type/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/afb0e9ab.html"/>
         <content type="html">&lt;h2 id=&#34;一-mysql的存储引擎&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-mysql的存储引擎&#34;&gt;#&lt;/a&gt; 一、MySQL 的存储引擎&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;在 MySQL 这种关系型数据库来说，数据是以表的方式来存储的，因此，简单点来说，存储引擎就是存储和操作此表的类型。&lt;/li&gt;
@@ -571,9 +571,9 @@
         <updated>2020-09-03T04:07:24.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/Freshman-year-end/</id>
+        <id>https://eliauk.cc/post/25f8a447.html</id>
         <title>逝去的的大一生活</title>
-        <link rel="alternate" href="http://eliauk.cc/Freshman-year-end/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/25f8a447.html"/>
         <content type="html">&lt;p&gt;大学时间真的很短暂，不知不觉大一就已经过去了。&lt;/p&gt;
 &lt;p&gt;大一的生活真的让人难以忘怀，但也让我不得不感叹时间的力量，感觉自己还什么都没做，就以及浑浑噩噩的度过了一个学期。正像大家所说的 “高中忙的理所应当，大学慢的不知所以”。&lt;/p&gt;
 &lt;p&gt;这里引用一句来源网络上的话：“他们是希望回到&lt;span class=&#34;label danger&#34;&gt;💔高三&lt;/span&gt;，那种得心应手的状态，那种解出一道题就能获得满足感的状态，那种盲目地相信 “熬过高三什么都会好的” 状态，那种以为世界真的可以凭借一张卷子创造的状态，那种因为面前只有一条路而走得格外笃定的状态，那种做错了不过擦掉考砸了不过重来的状态，那种大学永远也没有办法给你的状态。&lt;span class=&#34;label danger&#34;&gt;💔大学&lt;/span&gt;的可恶之处或许在于，它看似给你提供了种种可能，各色社团各类选修通识，但事实上又有一套评价体系限制着你的选择。或许更可恶之处在于，我们都变得实际而精明起来，知道结识什么样的人脉可以把未来的天堑变通途，也知道选什么样的课老师给分很水什么样的社团加入后可以有更多的资源，于是我们活得如履薄冰生怕翘掉的哪一节课会给未来抹上污点也生怕得罪的哪一个人会让日子变得寸步难行。”&lt;/p&gt;
@@ -586,9 +586,9 @@
         <updated>2020-07-31T03:42:31.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/eighteen-year-old/</id>
+        <id>https://eliauk.cc/post/fae8.html</id>
         <title>18岁，成年了呀~</title>
-        <link rel="alternate" href="http://eliauk.cc/eighteen-year-old/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/fae8.html"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;  我一直知道有人爱我。十八年前的冬天，有人在漫天飞雪的日子里满心欢喜地期待着我。期待于冬日结果。生日的意义不是提醒我又长大一岁，而是温柔的告诉我，要好好的，毕竟有人曾经有人那么温柔的等待着我。&lt;/p&gt;
 &lt;/blockquote&gt;

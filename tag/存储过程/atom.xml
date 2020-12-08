@@ -1,36 +1,36 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://eliauk.cc</id>
-    <title>寻梦启事 • Posts by &#34;存储过程&#34; tag</title>
-    <link href="http://eliauk.cc" />
+    <id>https://eliauk.cc</id>
+    <title>脆弱星球 • Posts by &#34;存储过程&#34; tag</title>
+    <link href="https://eliauk.cc" />
     <updated>2020-09-19T02:24:11.000Z</updated>
     <category term="C" />
     <category term="算法" />
     <category term="leetcode" />
     <category term="生活记录" />
     <category term="成长" />
-    <category term="javascript" />
     <category term="RegExp" />
     <category term="JS" />
+    <category term="javascript" />
     <category term="MySQL" />
-    <category term="学习笔记" />
-    <category term="Trigger" />
-    <category term="MC" />
-    <category term="Minecrift" />
     <category term="数据库" />
     <category term="存储过程" />
     <category term="视图" />
-    <category term="存储引擎" />
-    <category term="数据类型" />
-    <category term="增删改查" />
+    <category term="MC" />
+    <category term="Minecrift" />
     <category term="View" />
     <category term="index" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
     <category term="查询" />
+    <category term="存储引擎" />
+    <category term="数据类型" />
     <category term="测试" />
+    <category term="增删改查" />
     <entry>
-        <id>http://eliauk.cc/mysql-Stored-procedure/</id>
+        <id>https://eliauk.cc/post/47c80ad2.html</id>
         <title>MySQL 存储过程事务处理</title>
-        <link rel="alternate" href="http://eliauk.cc/mysql-Stored-procedure/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/47c80ad2.html"/>
         <content type="html">&lt;h2 id=&#34;存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#存储过程&#34;&gt;#&lt;/a&gt; 存储过程&lt;/h2&gt;
 &lt;h3 id=&#34;简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h3&gt;
 &lt;p&gt;存储程序是被存储在服务器中的组合 SQL 语句，经编译创建并保存在数据库中，用户可通过存储过程的名字调用执行。存储过程核心思想就是数据库 SQL 语言层面的封装与重用性。使用存储过程可以较少应用系统的业务复杂性，但是会增加数据库服务器系统的负荷。&lt;/p&gt;

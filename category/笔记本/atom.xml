@@ -1,36 +1,36 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://eliauk.cc</id>
-    <title>寻梦启事 • Posts by &#34;笔记本&#34; category</title>
-    <link href="http://eliauk.cc" />
+    <id>https://eliauk.cc</id>
+    <title>脆弱星球 • Posts by &#34;笔记本&#34; category</title>
+    <link href="https://eliauk.cc" />
     <updated>2020-10-13T09:59:02.052Z</updated>
     <category term="C" />
     <category term="算法" />
     <category term="leetcode" />
     <category term="生活记录" />
     <category term="成长" />
-    <category term="javascript" />
     <category term="RegExp" />
     <category term="JS" />
+    <category term="javascript" />
     <category term="MySQL" />
-    <category term="学习笔记" />
-    <category term="Trigger" />
-    <category term="MC" />
-    <category term="Minecrift" />
     <category term="数据库" />
     <category term="存储过程" />
     <category term="视图" />
-    <category term="存储引擎" />
-    <category term="数据类型" />
-    <category term="增删改查" />
+    <category term="MC" />
+    <category term="Minecrift" />
     <category term="View" />
     <category term="index" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
     <category term="查询" />
+    <category term="存储引擎" />
+    <category term="数据类型" />
     <category term="测试" />
+    <category term="增删改查" />
     <entry>
-        <id>http://eliauk.cc/js-RegExp/</id>
+        <id>https://eliauk.cc/post/0.html</id>
         <title></title>
-        <link rel="alternate" href="http://eliauk.cc/js-RegExp/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/0.html"/>
         <content type="html">&lt;p&gt;…&lt;/p&gt;
 </content>
         <category term="RegExp" />
@@ -38,9 +38,9 @@
         <updated>2020-10-13T09:59:02.052Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/mysql-Trigger/</id>
+        <id>https://eliauk.cc/post/87f78bf4.html</id>
         <title>MySQL 触发器</title>
-        <link rel="alternate" href="http://eliauk.cc/mysql-Trigger/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/87f78bf4.html"/>
         <content type="html">&lt;h2 id=&#34;mysql-触发器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mysql-触发器&#34;&gt;#&lt;/a&gt; MySQL 触发器&lt;/h2&gt;
 &lt;h4 id=&#34;触发器定义与用法实例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#触发器定义与用法实例&#34;&gt;#&lt;/a&gt; 触发器定义与用法实例&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;语法&lt;/strong&gt;&lt;/p&gt;
@@ -79,9 +79,9 @@
         <updated>2020-09-30T07:01:04.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/mysql-View-and-index/</id>
+        <id>https://eliauk.cc/post/f5a946ac.html</id>
         <title>MySQL 视图与索引</title>
-        <link rel="alternate" href="http://eliauk.cc/mysql-View-and-index/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/f5a946ac.html"/>
         <content type="html">&lt;h2 id=&#34;视图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#视图&#34;&gt;#&lt;/a&gt; 视图&lt;/h2&gt;
 &lt;h3 id=&#34;基本概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基本概念&#34;&gt;#&lt;/a&gt; 基本概念&lt;/h3&gt;
 &lt;p&gt;视图本身是一张虚拟表，不存放任何数据。在使用 SQL 语句访问视图的时候，获取的数据是 MySQL 从其它表中生成的，视图和表在同一个命名空间。视图查询数据相对安全，视图可以隐藏一些数据和结构，只让用户看见权限内的数据，使复杂的查询易于理解和使用。&lt;/p&gt;
@@ -136,9 +136,9 @@
         <updated>2020-09-24T07:50:11.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/mysql-Stored-procedure/</id>
+        <id>https://eliauk.cc/post/47c80ad2.html</id>
         <title>MySQL 存储过程事务处理</title>
-        <link rel="alternate" href="http://eliauk.cc/mysql-Stored-procedure/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/47c80ad2.html"/>
         <content type="html">&lt;h2 id=&#34;存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#存储过程&#34;&gt;#&lt;/a&gt; 存储过程&lt;/h2&gt;
 &lt;h3 id=&#34;简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h3&gt;
 &lt;p&gt;存储程序是被存储在服务器中的组合 SQL 语句，经编译创建并保存在数据库中，用户可通过存储过程的名字调用执行。存储过程核心思想就是数据库 SQL 语言层面的封装与重用性。使用存储过程可以较少应用系统的业务复杂性，但是会增加数据库服务器系统的负荷。&lt;/p&gt;
@@ -220,9 +220,9 @@
         <updated>2020-09-19T02:24:11.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/mysql-inquire/</id>
+        <id>https://eliauk.cc/post/89bbd8d4.html</id>
         <title>MySQL 查询</title>
-        <link rel="alternate" href="http://eliauk.cc/mysql-inquire/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/89bbd8d4.html"/>
         <content type="html">&lt;h2 id=&#34;连接查询&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#连接查询&#34;&gt;#&lt;/a&gt; 连接查询&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;在数据库中 join 操作被称为连接，作用是能连接多个表的数据（通过连接条件），从多个表中获取数据合并在一起作为结果集返回给客户端。&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;交叉连接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#交叉连接&#34;&gt;#&lt;/a&gt; 交叉连接&lt;/h3&gt;
@@ -270,9 +270,9 @@
         <updated>2020-09-14T11:04:03.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/mysql-operate/</id>
+        <id>https://eliauk.cc/post/e82256d5.html</id>
         <title>mysql 数据库基本操作</title>
-        <link rel="alternate" href="http://eliauk.cc/mysql-operate/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/e82256d5.html"/>
         <content type="html">&lt;h2 id=&#34;数据库和表操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据库和表操作&#34;&gt;#&lt;/a&gt; 数据库和表操作&lt;/h2&gt;
 &lt;h3 id=&#34;创建数据库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建数据库&#34;&gt;#&lt;/a&gt; 创建数据库&lt;/h3&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs sql&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;create&lt;/span&gt; &lt;span class=&#34;hljs-keyword&#34;&gt;database&lt;/span&gt; 数据库名称;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -331,9 +331,9 @@
         <updated>2020-09-10T10:24:02.000Z</updated>
     </entry>
     <entry>
-        <id>http://eliauk.cc/mysql-data-type/</id>
+        <id>https://eliauk.cc/post/afb0e9ab.html</id>
         <title>MySQL 存储引擎和数据类型</title>
-        <link rel="alternate" href="http://eliauk.cc/mysql-data-type/"/>
+        <link rel="alternate" href="https://eliauk.cc/post/afb0e9ab.html"/>
         <content type="html">&lt;h2 id=&#34;一-mysql的存储引擎&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-mysql的存储引擎&#34;&gt;#&lt;/a&gt; 一、MySQL 的存储引擎&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;在 MySQL 这种关系型数据库来说，数据是以表的方式来存储的，因此，简单点来说，存储引擎就是存储和操作此表的类型。&lt;/li&gt;
