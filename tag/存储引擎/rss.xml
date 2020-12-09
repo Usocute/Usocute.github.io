@@ -7,10 +7,10 @@
         <language>zh-CN</language>
         <pubDate>Thu, 03 Sep 2020 12:07:24 +0800</pubDate>
         <lastBuildDate>Thu, 03 Sep 2020 12:07:24 +0800</lastBuildDate>
-        <category>C</category>
-        <category>算法</category>
         <category>leetcode</category>
+        <category>算法</category>
         <category>javascript</category>
+        <category>C</category>
         <category>生活记录</category>
         <category>成长</category>
         <category>MC</category>
@@ -19,17 +19,14 @@
         <category>数据库</category>
         <category>存储过程</category>
         <category>视图</category>
-        <category>RegExp</category>
-        <category>JS</category>
         <category>学习笔记</category>
         <category>Trigger</category>
-        <category>存储引擎</category>
-        <category>数据类型</category>
-        <category>查询</category>
         <category>View</category>
         <category>index</category>
-        <category>测试</category>
+        <category>存储引擎</category>
+        <category>数据类型</category>
         <category>增删改查</category>
+        <category>查询</category>
         <item>
             <guid isPermalink="true">https://eliauk.cc/post/afb0e9ab.html</guid>
             <title>MySQL 存储引擎和数据类型</title>
@@ -38,15 +35,18 @@
             <category>存储引擎</category>
             <category>数据类型</category>
             <pubDate>Thu, 03 Sep 2020 12:07:24 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;一、MySQL的存储引擎&#34;&gt;&lt;a href=&#34;#一、MySQL的存储引擎&#34; class=&#34;headerlink&#34; title=&#34;一、MySQL的存储引擎&#34;&gt;&lt;/a&gt;一、MySQL的存储引擎&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;在MySQL这种关系型数据库来说，数据是以表的方式来存储的，因此，简单点来说，存储引擎就是存储和操作此表的类型。&lt;/li&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;一-mysql的存储引擎&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-mysql的存储引擎&#34;&gt;#&lt;/a&gt; 一、MySQL 的存储引擎&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在 MySQL 这种关系型数据库来说，数据是以表的方式来存储的，因此，简单点来说，存储引擎就是存储和操作此表的类型。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;存储引擎的种类&#34;&gt;&lt;a href=&#34;#存储引擎的种类&#34; class=&#34;headerlink&#34; title=&#34;存储引擎的种类&#34;&gt;&lt;/a&gt;存储引擎的种类&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;InnoDB&lt;/code&gt;存储引擎 &lt;code&gt;事务型&lt;/code&gt;数据库引擎，提供了&lt;code&gt;事务&lt;/code&gt;、&lt;code&gt;回滚&lt;/code&gt;、&lt;code&gt;崩溃修复&lt;/code&gt;能力、&lt;code&gt;多版本并发控制的事务安全&lt;/code&gt;。在&lt;code&gt;MySQL 5.5版本开始&lt;/code&gt;成为默认存储引擎。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;存储引擎 MyISAM存储引擎是MySQL中常见的存储引擎，是&lt;code&gt;MySQL 5.0之前&lt;/code&gt;版本的&lt;code&gt;默认&lt;/code&gt;存储引擎。&lt;code&gt;不支持事务&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;MEMORY&lt;/code&gt;存储引擎 MEMORY存储引擎是MySQL中的一个特殊的存储引擎。所有数据放在&lt;code&gt;内存&lt;/code&gt;中，拥有极高的&lt;code&gt;插入&lt;/code&gt;、&lt;code&gt;更新&lt;/code&gt;、&lt;code&gt;查询效率&lt;/code&gt;。会占用与数据量成正比的内存空间。MySQL&lt;code&gt;重启后数据会丢失&lt;/code&gt;。&lt;/li&gt;
+&lt;h3 id=&#34;存储引擎的种类&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#存储引擎的种类&#34;&gt;#&lt;/a&gt; 存储引擎的种类&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;InnoDB&lt;/code&gt;  存储引擎  &lt;code&gt;事务型&lt;/code&gt; 数据库引擎，提供了 &lt;code&gt;事务&lt;/code&gt; 、 &lt;code&gt;回滚&lt;/code&gt; 、 &lt;code&gt;崩溃修复&lt;/code&gt; 能力、 &lt;code&gt;多版本并发控制的事务安全&lt;/code&gt; 。在 &lt;code&gt;MySQL 5.5版本开始&lt;/code&gt; 成为默认存储引擎。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  存储引擎 MyISAM 存储引擎是 MySQL 中常见的存储引擎，是 &lt;code&gt;MySQL 5.0之前&lt;/code&gt; 版本的 &lt;code&gt;默认&lt;/code&gt; 存储引擎。 &lt;code&gt;不支持事务&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MEMORY&lt;/code&gt;  存储引擎 MEMORY 存储引擎是 MySQL 中的一个特殊的存储引擎。所有数据放在 &lt;code&gt;内存&lt;/code&gt; 中，拥有极高的 &lt;code&gt;插入&lt;/code&gt; 、 &lt;code&gt;更新&lt;/code&gt; 、 &lt;code&gt;查询效率&lt;/code&gt; 。会占用与数据量成正比的内存空间。MySQL &lt;code&gt;重启后数据会丢失&lt;/code&gt; 。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;二、MySQL-数据类型&#34;&gt;&lt;a href=&#34;#二、MySQL-数据类型&#34; class=&#34;headerlink&#34; title=&#34;二、MySQL 数据类型&#34;&gt;&lt;/a&gt;二、MySQL 数据类型&lt;/h2&gt;&lt;table&gt;
+&lt;h2 id=&#34;二-mysql-数据类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-mysql-数据类型&#34;&gt;#&lt;/a&gt; 二、MySQL 数据类型&lt;/h2&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;分类&lt;/th&gt;
@@ -54,7 +54,8 @@
 &lt;th&gt;范例格式&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;整型&lt;/td&gt;
 &lt;td&gt;int&lt;/td&gt;
 &lt;td&gt;100&lt;/td&gt;
@@ -79,15 +80,16 @@
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;‘2019-09-09 10:20:30’&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;详细的数据类型如下：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;MySQL支持所有标准SQL数值数据类型。  &lt;/p&gt;
+&lt;li&gt;MySQL 支持所有标准 SQL 数值数据类型。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://usocute.oss-cn-chengdu.aliyuncs.com/gitbook/mysql-data-abc.png&#34; alt=&#34;mysql-data-abc&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://usocute.oss-cn-chengdu.aliyuncs.com/gitbook/mysql-data-abc2.png&#34; alt=&#34;mysql-data-abc2&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;三、MySQL-数据类型属性&#34;&gt;&lt;a href=&#34;#三、MySQL-数据类型属性&#34; class=&#34;headerlink&#34; title=&#34;三、MySQL 数据类型属性&#34;&gt;&lt;/a&gt;三、MySQL 数据类型属性&lt;/h2&gt;&lt;table&gt;
+&lt;h2 id=&#34;三-mysql-数据类型属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-mysql-数据类型属性&#34;&gt;#&lt;/a&gt; 三、MySQL 数据类型属性&lt;/h2&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;属性名称&lt;/th&gt;
@@ -95,45 +97,46 @@
 &lt;th&gt;使用的数据类型范&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;PRIMARY KEY&lt;/td&gt;
-&lt;td&gt;主键，确保该行的唯一性。（常与 AUTO_INCREMENT合用）&lt;/td&gt;
+&lt;td&gt;主键，确保该行的唯一性。（常与 AUTO_INCREMENT 合用）&lt;/td&gt;
 &lt;td&gt;所有数据类型&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;AUTO_INCREMENT&lt;/td&gt;
 &lt;td&gt;为新插入的行赋上唯一的整数标识符。&lt;/td&gt;
-&lt;td&gt;整数（如ID）&lt;/td&gt;
+&lt;td&gt;整数（如 ID）&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;UNIQUE&lt;/td&gt;
-&lt;td&gt;确保该列所有值都不同。(NULL值可以重复)&lt;/td&gt;
+&lt;td&gt;确保该列所有值都不同。(NULL 值可以重复)&lt;/td&gt;
 &lt;td&gt;所有数据类型&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;NOT NULL&lt;/td&gt;
-&lt;td&gt;不允许该列为NULL。 —&amp;gt;null 表示该列不存在值&lt;/td&gt;
+&lt;td&gt;不允许该列为 NULL。 —&amp;gt;null 表示该列不存在值&lt;/td&gt;
 &lt;td&gt;所有数据类型&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;NULL&lt;/td&gt;
-&lt;td&gt;允许该列为NULL。&lt;/td&gt;
+&lt;td&gt;允许该列为 NULL。&lt;/td&gt;
 &lt;td&gt;所有数据类型&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;ZEROFILL&lt;/td&gt;
-&lt;td&gt;用0填充剩余字段空间，如INT类型的表示为： 0000000008&lt;/td&gt;
+&lt;td&gt;用 0 填充剩余字段空间，如 INT 类型的表示为： 0000000008&lt;/td&gt;
 &lt;td&gt;所有数据类型&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;BINARY&lt;/td&gt;
-&lt;td&gt;对字符串以区分大小写的方式排序。（按照ASCII 表）&lt;/td&gt;
+&lt;td&gt;对字符串以区分大小写的方式排序。（按照 ASCII 表）&lt;/td&gt;
 &lt;td&gt;CHAR, VARCHAR&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;DEFAULT&lt;/td&gt;
 &lt;td&gt;在没有任何值的情况下，赋予某个常量。&lt;/td&gt;
-&lt;td&gt;BLOB和TEXT列*不 可用&lt;/td&gt;
+&lt;td&gt;BLOB 和 TEXT 列 * 不 可用&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;INDEX&lt;/td&gt;
@@ -145,7 +148,8 @@
 &lt;td&gt;确保该列使用默认字符集。&lt;/td&gt;
 &lt;td&gt;CHAR, VARCHAR&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
  ]]></description>
         </item>
     </channel>
