@@ -7,40 +7,39 @@
     <category term="C" />
     <category term="算法" />
     <category term="leetcode" />
+    <category term="javascript" />
     <category term="生活记录" />
     <category term="成长" />
-    <category term="RegExp" />
-    <category term="JS" />
-    <category term="javascript" />
+    <category term="MC" />
+    <category term="Minecrift" />
     <category term="MySQL" />
     <category term="数据库" />
     <category term="存储过程" />
     <category term="视图" />
-    <category term="MC" />
-    <category term="Minecrift" />
-    <category term="View" />
-    <category term="index" />
+    <category term="RegExp" />
+    <category term="JS" />
     <category term="学习笔记" />
     <category term="Trigger" />
-    <category term="查询" />
     <category term="存储引擎" />
     <category term="数据类型" />
+    <category term="查询" />
+    <category term="View" />
+    <category term="index" />
     <category term="测试" />
     <category term="增删改查" />
     <entry>
         <id>https://eliauk.cc/post/b0fdf7c6.html</id>
         <title>算法入门-爬楼梯</title>
         <link rel="alternate" href="https://eliauk.cc/post/b0fdf7c6.html"/>
-        <content type="html">&lt;h2 id=&#34;爬楼梯&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#爬楼梯&#34;&gt;#&lt;/a&gt; 爬楼梯&lt;/h2&gt;
-&lt;p&gt;假设你正在爬楼梯。需要 &lt;code&gt;n&lt;/code&gt;  阶你才能到达楼顶。&lt;br&gt;
-每次你可以爬 &lt;code&gt;1&lt;/code&gt;  或 &lt;code&gt;2&lt;/code&gt;  个台阶。你有多少种不同的方法可以爬到楼顶呢？&lt;/p&gt;
-&lt;p&gt;注意：给定 &lt;code&gt;n&lt;/code&gt;  是一个正整数。&lt;/p&gt;
+        <content type="html">&lt;h2 id=&#34;爬楼梯&#34;&gt;&lt;a href=&#34;#爬楼梯&#34; class=&#34;headerlink&#34; title=&#34;爬楼梯&#34;&gt;&lt;/a&gt;爬楼梯&lt;/h2&gt;&lt;p&gt;假设你正在爬楼梯。需要&lt;code&gt;n&lt;/code&gt;阶你才能到达楼顶。&lt;br&gt;每次你可以爬&lt;code&gt;1&lt;/code&gt;或&lt;code&gt;2&lt;/code&gt;个台阶。你有多少种不同的方法可以爬到楼顶呢？&lt;/p&gt;
+&lt;p&gt;注意：给定&lt;code&gt;n&lt;/code&gt;是一个正整数。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs text&#34;&gt;输入： 2&lt;br&gt;输出： 2&lt;br&gt;解释： 有两种方法可以爬到楼顶。&lt;br&gt;1.  1 阶 + 1 阶&lt;br&gt;2.  2 阶&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
 &lt;p&gt;&lt;strong&gt;示例 2：&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs text&#34;&gt;输入： 3&lt;br&gt;输出： 3&lt;br&gt;解释： 有三种方法可以爬到楼顶。&lt;br&gt;1.  1 阶 + 1 阶 + 1 阶&lt;br&gt;2.  1 阶 + 2 阶&lt;br&gt;3.  2 阶 + 1 阶&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;解题思路&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解题思路&#34;&gt;#&lt;/a&gt; 解题思路&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;斐波那契数列&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;斐波那契数列&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;current_step = step1 + step2&lt;/code&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-function&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title&#34;&gt;climbStairs&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-keyword&#34;&gt;int&lt;/span&gt; n)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;// 第n层，等于第n-1层+第n-2层&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;if&lt;/span&gt; (n &amp;lt;= &lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;) &amp;#123;&lt;br&gt;        &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; n;&lt;br&gt;    &amp;#125;&lt;br&gt;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;int&lt;/span&gt; step1 = &lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;, step2 = &lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;, temp;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;hljs-keyword&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;hljs-number&#34;&gt;3&lt;/span&gt;; i &amp;lt;= n; i++) &amp;#123;&lt;br&gt;        temp = step1;&lt;br&gt;        step1 = step2;&lt;br&gt;        step2 = temp + step1;&lt;br&gt;    &amp;#125;&lt;br&gt;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; step2;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
         <category term="C" />
@@ -52,13 +51,9 @@
         <id>https://eliauk.cc/post/812420b3.html</id>
         <title>算法入门-两数之和</title>
         <link rel="alternate" href="https://eliauk.cc/post/812420b3.html"/>
-        <content type="html">&lt;h2 id=&#34;两数之和&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#两数之和&#34;&gt;#&lt;/a&gt; 两数之和&lt;/h2&gt;
-&lt;p&gt;给定一个整数数组 &lt;code&gt;nums&lt;/code&gt;  和一个目标值 &lt;code&gt;target&lt;/code&gt;  请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。&lt;br&gt;
-你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。&lt;br&gt;
-&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
+        <content type="html">&lt;h2 id=&#34;两数之和&#34;&gt;&lt;a href=&#34;#两数之和&#34; class=&#34;headerlink&#34; title=&#34;两数之和&#34;&gt;&lt;/a&gt;两数之和&lt;/h2&gt;&lt;p&gt;给定一个整数数组&lt;code&gt;nums&lt;/code&gt;和一个目标值&lt;code&gt;target&lt;/code&gt;请你在该数组中找出和为目标值的那两个整数,并返回他们的数组下标。&lt;br&gt;你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。&lt;br&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs text&#34;&gt;给定 nums = [2, 7, 11, 15], target = 9&lt;br&gt;因为 nums[0] + nums[1] = 2 + 7 = 9&lt;br&gt;所以返回 [0, 1]&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;解题思路&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解题思路&#34;&gt;#&lt;/a&gt; 解题思路&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;无序数组的两数之和&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;无序数组的两数之和&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;代码&lt;/p&gt;
 &lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;br&gt;&lt;span class=&#34;hljs-function&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;int&lt;/span&gt;* &lt;span class=&#34;hljs-title&#34;&gt;twoSum&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-keyword&#34;&gt;int&lt;/span&gt;* nums, &lt;span class=&#34;hljs-keyword&#34;&gt;int&lt;/span&gt; numsSize, &lt;span class=&#34;hljs-keyword&#34;&gt;int&lt;/span&gt; target, &lt;span class=&#34;hljs-keyword&#34;&gt;int&lt;/span&gt;* returnSize)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;hljs-keyword&#34;&gt;int&lt;/span&gt; count[&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;] = &amp;#123;&lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;&amp;#125;;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;int&lt;/span&gt; i,j;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;for&lt;/span&gt;(i = &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;;i &amp;lt; numsSize - &lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;;i++)&lt;br&gt;    &amp;#123;&lt;br&gt;        &lt;span class=&#34;hljs-keyword&#34;&gt;for&lt;/span&gt;(j = i + &lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;;j &amp;lt; numsSize;j++)&lt;br&gt;        &amp;#123;&lt;br&gt;            &lt;span class=&#34;hljs-keyword&#34;&gt;if&lt;/span&gt;(nums[i] + nums[j] == target)&lt;br&gt;            &amp;#123;&lt;br&gt;                count[&lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;] = i;&lt;br&gt;                count[&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;] = j;&lt;br&gt;                * returnSize = &lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;;&lt;br&gt;                &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; count;&lt;br&gt;            &amp;#125;&lt;br&gt;        &amp;#125;&lt;br&gt;    &amp;#125;&lt;br&gt;    * returnSize = &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;;&lt;br&gt;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; count;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 </content>

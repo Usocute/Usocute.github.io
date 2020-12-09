@@ -1681,6 +1681,11 @@ blockquote footer cite:before {
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  #aside_content {
+    display: none;
+  }
+}
 #aside_content > .card-widget:first-child {
   margin-top: 0;
 }
