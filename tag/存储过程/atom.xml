@@ -18,12 +18,12 @@
     <category term="学习笔记" />
     <category term="Trigger" />
     <category term="增删改查" />
+    <category term="MC" />
+    <category term="Minecrift" />
     <category term="C" />
     <category term="算法" />
     <category term="leetcode" />
     <category term="javascript" />
-    <category term="MC" />
-    <category term="Minecrift" />
     <entry>
         <id>https://eliauk.cc/post/47c80ad2.html</id>
         <title>MySQL 存储过程事务处理</title>
