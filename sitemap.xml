@@ -172,42 +172,7 @@
   </url>
   
   <url>
-    <loc>https://eliauk.cc/tags/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/</loc>
-    <lastmod>2021-01-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://eliauk.cc/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
-    <lastmod>2021-01-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://eliauk.cc/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2021-01-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://eliauk.cc/tags/%E6%9F%A5%E8%AF%A2/</loc>
-    <lastmod>2021-01-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://eliauk.cc/tags/View/</loc>
-    <lastmod>2021-01-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://eliauk.cc/tags/index/</loc>
     <lastmod>2021-01-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -228,6 +193,41 @@
   </url>
   
   <url>
+    <loc>https://eliauk.cc/tags/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/</loc>
+    <lastmod>2021-01-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://eliauk.cc/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
+    <lastmod>2021-01-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://eliauk.cc/tags/View/</loc>
+    <lastmod>2021-01-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://eliauk.cc/tags/index/</loc>
+    <lastmod>2021-01-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://eliauk.cc/tags/%E6%9F%A5%E8%AF%A2/</loc>
+    <lastmod>2021-01-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://eliauk.cc/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2021-01-04</lastmod>
     <changefreq>daily</changefreq>
@@ -236,20 +236,6 @@
   
   <url>
     <loc>https://eliauk.cc/tags/Trigger/</loc>
-    <lastmod>2021-01-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://eliauk.cc/tags/MC/</loc>
-    <lastmod>2021-01-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://eliauk.cc/tags/Minecrift/</loc>
     <lastmod>2021-01-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -284,6 +270,20 @@
   </url>
   
   <url>
+    <loc>https://eliauk.cc/tags/MC/</loc>
+    <lastmod>2021-01-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://eliauk.cc/tags/Minecrift/</loc>
+    <lastmod>2021-01-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://eliauk.cc/tags/javascript/</loc>
     <lastmod>2021-01-04</lastmod>
     <changefreq>daily</changefreq>
@@ -307,14 +307,14 @@
   </url>
   
   <url>
-    <loc>https://eliauk.cc/categories/Games/</loc>
+    <loc>https://eliauk.cc/categories/%E7%AE%97%E6%B3%95%E5%BA%93/</loc>
     <lastmod>2021-01-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://eliauk.cc/categories/%E7%AE%97%E6%B3%95%E5%BA%93/</loc>
+    <loc>https://eliauk.cc/categories/Games/</loc>
     <lastmod>2021-01-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
