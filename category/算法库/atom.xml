@@ -10,19 +10,19 @@
     <category term="存储引擎" />
     <category term="数据类型" />
     <category term="数据库" />
-    <category term="View" />
-    <category term="index" />
     <category term="存储过程" />
     <category term="视图" />
+    <category term="查询" />
+    <category term="View" />
+    <category term="index" />
+    <category term="增删改查" />
+    <category term="MC" />
+    <category term="Minecrift" />
     <category term="学习笔记" />
     <category term="Trigger" />
     <category term="C" />
     <category term="算法" />
     <category term="leetcode" />
-    <category term="查询" />
-    <category term="增删改查" />
-    <category term="MC" />
-    <category term="Minecrift" />
     <category term="javascript" />
     <entry>
         <id>https://eliauk.cc/post/fba23db0.html</id>
