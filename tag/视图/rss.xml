@@ -10,21 +10,21 @@
         <category>生活记录</category>
         <category>成长</category>
         <category>MySQL</category>
-        <category>存储引擎</category>
-        <category>数据类型</category>
         <category>数据库</category>
         <category>存储过程</category>
         <category>视图</category>
+        <category>存储引擎</category>
+        <category>数据类型</category>
+        <category>学习笔记</category>
+        <category>Trigger</category>
         <category>查询</category>
         <category>View</category>
         <category>index</category>
-        <category>学习笔记</category>
-        <category>Trigger</category>
+        <category>MC</category>
+        <category>Minecrift</category>
         <category>C</category>
         <category>算法</category>
         <category>leetcode</category>
-        <category>MC</category>
-        <category>Minecrift</category>
         <category>增删改查</category>
         <category>javascript</category>
         <item>
@@ -36,72 +36,67 @@
             <category>存储过程</category>
             <category>视图</category>
             <pubDate>Sat, 19 Sep 2020 10:24:11 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#存储过程&#34;&gt;#&lt;/a&gt; 存储过程&lt;/h2&gt;
-&lt;h3 id=&#34;简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h3&gt;
-&lt;p&gt;存储程序是被存储在服务器中的组合 SQL 语句，经编译创建并保存在数据库中，用户可通过存储过程的名字调用执行。存储过程核心思想就是数据库 SQL 语言层面的封装与重用性。使用存储过程可以较少应用系统的业务复杂性，但是会增加数据库服务器系统的负荷。&lt;/p&gt;
-&lt;h3 id=&#34;基本语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基本语法&#34;&gt;#&lt;/a&gt; 基本语法&lt;/h3&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;PROCEDURE&lt;/span&gt; sp_name ([proc_parameter[,...]])&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    [characteristic ...] routine_body&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;案例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#案例&#34;&gt;#&lt;/a&gt; 案例&lt;/h3&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- 查询学生表中性别为男的学生总数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;PROCEDURE&lt;/span&gt; u_pro(&lt;span class=&#34;keyword&#34;&gt;IN&lt;/span&gt; v_sex &lt;span class=&#34;built_in&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;) &lt;span class=&#34;built_in&#34;&gt;CHARACTER&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; utf8 ,&lt;span class=&#34;keyword&#34;&gt;OUT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;num&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;INT&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;BEGIN&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;SELECT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;COUNT&lt;/span&gt;(*) &lt;span class=&#34;keyword&#34;&gt;INTO&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;num&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;FROM&lt;/span&gt; student &lt;span class=&#34;keyword&#34;&gt;WHERE&lt;/span&gt; v_sex=sex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CALL&lt;/span&gt; u_pro(&lt;span class=&#34;string&#34;&gt;&amp;#x27;男&amp;#x27;&lt;/span&gt;,@&lt;span class=&#34;keyword&#34;&gt;num&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;SELECT&lt;/span&gt; @&lt;span class=&#34;keyword&#34;&gt;num&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;存储过程&#34;&gt;&lt;a href=&#34;#存储过程&#34; class=&#34;headerlink&#34; title=&#34;存储过程&#34;&gt;&lt;/a&gt;存储过程&lt;/h2&gt;&lt;h3 id=&#34;简介&#34;&gt;&lt;a href=&#34;#简介&#34; class=&#34;headerlink&#34; title=&#34;简介&#34;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;p&gt;存储程序是被存储在服务器中的组合SQL语句，经编译创建并保存在数据库中，用户可通过存储过程的名字调用执行。存储过程核心思想就是数据库SQL语言层面的封装与重用性。使用存储过程可以较少应用系统的业务复杂性，但是会增加数据库服务器系统的负荷。&lt;/p&gt;
+&lt;h3 id=&#34;基本语法&#34;&gt;&lt;a href=&#34;#基本语法&#34; class=&#34;headerlink&#34; title=&#34;基本语法&#34;&gt;&lt;/a&gt;基本语法&lt;/h3&gt;&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;PROCEDURE&lt;/span&gt; sp_name ([proc_parameter[,...]])&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    [characteristic ...] routine_body&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;案例&#34;&gt;&lt;a href=&#34;#案例&#34; class=&#34;headerlink&#34; title=&#34;案例&#34;&gt;&lt;/a&gt;案例&lt;/h3&gt;&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- 查询学生表中性别为男的学生总数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;PROCEDURE&lt;/span&gt; u_pro(&lt;span class=&#34;keyword&#34;&gt;IN&lt;/span&gt; v_sex &lt;span class=&#34;built_in&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;) &lt;span class=&#34;built_in&#34;&gt;CHARACTER&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; utf8 ,&lt;span class=&#34;keyword&#34;&gt;OUT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;num&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;INT&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;BEGIN&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;SELECT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;COUNT&lt;/span&gt;(*) &lt;span class=&#34;keyword&#34;&gt;INTO&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;num&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;FROM&lt;/span&gt; student &lt;span class=&#34;keyword&#34;&gt;WHERE&lt;/span&gt; v_sex=sex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CALL&lt;/span&gt; u_pro(&lt;span class=&#34;string&#34;&gt;&amp;#x27;男&amp;#x27;&lt;/span&gt;,@&lt;span class=&#34;keyword&#34;&gt;num&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;SELECT&lt;/span&gt; @&lt;span class=&#34;keyword&#34;&gt;num&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- 计算1+到n的值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;PROCEDURE&lt;/span&gt; addresult(&lt;span class=&#34;keyword&#34;&gt;IN&lt;/span&gt; n &lt;span class=&#34;built_in&#34;&gt;INT&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;BEGIN&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;DECLARE&lt;/span&gt; i &lt;span class=&#34;built_in&#34;&gt;INT&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;DECLARE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;sum&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;INT&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;sum&lt;/span&gt; =&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; i =&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  WHILE i&amp;lt;n DO&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;sum&lt;/span&gt;=&lt;span class=&#34;keyword&#34;&gt;sum&lt;/span&gt;+i;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; i=i+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;END&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;WHILE&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;SELECT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;sum&lt;/span&gt; ;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;END&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;call&lt;/span&gt; addresult(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- 计算1+到n的值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;PROCEDURE&lt;/span&gt; addresult2(&lt;span class=&#34;keyword&#34;&gt;in&lt;/span&gt; n &lt;span class=&#34;built_in&#34;&gt;INT&lt;/span&gt;,&lt;span class=&#34;keyword&#34;&gt;out&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;sum&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;INT&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;BEGIN&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;DECLARE&lt;/span&gt; i &lt;span class=&#34;built_in&#34;&gt;INT&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;DECLARE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;sum&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;INT&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;sum&lt;/span&gt; =&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; i =&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  WHILE i&amp;lt;n DO&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;sum&lt;/span&gt;=&lt;span class=&#34;keyword&#34;&gt;sum&lt;/span&gt;+i;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; i=i+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;END&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;WHILE&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;SELECT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;sum&lt;/span&gt; ;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;END&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;call&lt;/span&gt; addresult2(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;,@&lt;span class=&#34;keyword&#34;&gt;sum&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- 判断变量&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;PROCEDURE&lt;/span&gt; user_main_pro3(INOUT v_id &lt;span class=&#34;built_in&#34;&gt;INT&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;BEGIN&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;# 定义变量&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;DECLARE&lt;/span&gt; v_count &lt;span class=&#34;built_in&#34;&gt;INT&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;11&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;# 判断&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  IF v_id &amp;gt; 3 THEN&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; v_count = &lt;span class=&#34;number&#34;&gt;100&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ELSE &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; v_count = &lt;span class=&#34;number&#34;&gt;500&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;END&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;IF&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;# 返回赋值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; v_id = v_count;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;END&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; @v_id=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;call&lt;/span&gt; user_main_pro3(@v_id);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;SELECT&lt;/span&gt; @v_id;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;事务处理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#事务处理&#34;&gt;#&lt;/a&gt; 事务处理&lt;/h2&gt;
-&lt;h3 id=&#34;注意点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#注意点&#34;&gt;#&lt;/a&gt; 注意点&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;MySQL 中 Innodb 支持事务，而 MyISAM 不支持事务&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;事务的特性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#事务的特性&#34;&gt;#&lt;/a&gt; 事务的特性：&lt;/h3&gt;
-&lt;ol&gt;
+
+&lt;h2 id=&#34;事务处理&#34;&gt;&lt;a href=&#34;#事务处理&#34; class=&#34;headerlink&#34; title=&#34;事务处理&#34;&gt;&lt;/a&gt;事务处理&lt;/h2&gt;&lt;h3 id=&#34;注意点&#34;&gt;&lt;a href=&#34;#注意点&#34; class=&#34;headerlink&#34; title=&#34;注意点&#34;&gt;&lt;/a&gt;注意点&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;MySQL中Innodb支持事务，而MyISAM不支持事务&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;事务的特性：&#34;&gt;&lt;a href=&#34;#事务的特性：&#34; class=&#34;headerlink&#34; title=&#34;事务的特性：&#34;&gt;&lt;/a&gt;事务的特性：&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;原子性（Atomicity）：事务开始后的所有操作，要么全部做完，要么全部不做。事务执行过程中出错，会回滚到事务开始前的状态，所有的操作就像没有发生一样。&lt;/li&gt;
-&lt;li&gt;一致性（Consistency）：事务开始前和结束后，数据库的完整性约束没有被破坏 。比如 A 向 B 转账，不可能 A 扣了钱，B 却没收到。&lt;/li&gt;
-&lt;li&gt;隔离性（Isolation）：同一时间，只允许一个事务请求同一数据，不同的事务之间彼此没有任何干扰。比如 A 正在从一张银行卡中取钱，在 A 取钱的过程结束前，B 不能向这张卡转账。&lt;/li&gt;
+&lt;li&gt;一致性（Consistency）：事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。&lt;/li&gt;
+&lt;li&gt;隔离性（Isolation）：同一时间，只允许一个事务请求同一数据，不同的事务之间彼此没有任何干扰。比如A正在从一张银行卡中取钱，在A取钱的过程结束前，B不能向这张卡转账。&lt;/li&gt;
 &lt;li&gt;持久性（Durability）：事务完成后，事务对数据库的所有更新将被保存到数据库，不能回滚。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;并发问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#并发问题&#34;&gt;#&lt;/a&gt; 并发问题&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;脏读：事务 A 读取了事务 B 更新的数据，然后 B 回滚操作，那么 A 读取到的数据是脏数据&lt;/li&gt;
-&lt;li&gt;不可重复读：事务 A 多次读取同一数据，事务 B 在事务 A 多次读取的过程中，对数据作了更新并提交，导致事务 A 多次读取同一数据时，结果 不一致。&lt;/li&gt;
-&lt;li&gt;幻读：系统管理员 A 将数据库中所有学生的成绩从具体分数改为 ABCDE 等级，但是系统管理员 B 就在这个时候插入了一条具体分数的记录，当系统管理员 A 改结束后发现还有一条记录没有改过来，就好像发生了幻觉一样，这时就叫幻读。&lt;/li&gt;
+&lt;h3 id=&#34;并发问题&#34;&gt;&lt;a href=&#34;#并发问题&#34; class=&#34;headerlink&#34; title=&#34;并发问题&#34;&gt;&lt;/a&gt;并发问题&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;脏读：事务A读取了事务B更新的数据，然后B回滚操作，那么A读取到的数据是脏数据&lt;/li&gt;
+&lt;li&gt;不可重复读：事务 A 多次读取同一数据，事务 B 在事务A多次读取的过程中，对数据作了更新并提交，导致事务A多次读取同一数据时，结果 不一致。&lt;/li&gt;
+&lt;li&gt;幻读：系统管理员A将数据库中所有学生的成绩从具体分数改为ABCDE等级，但是系统管理员B就在这个时候插入了一条具体分数的记录，当系统管理员A改结束后发现还有一条记录没有改过来，就好像发生了幻觉一样，这时就叫幻读。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;注：不可重复读的和幻读很容易混淆，不可重复读侧重于修改，幻读侧重于新增或删除。解决不可重复读的问题只需锁住满足条件的行，解决幻读需要锁表&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;事务隔离级别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#事务隔离级别&#34;&gt;#&lt;/a&gt; 事务隔离级别&lt;/h3&gt;
-&lt;table&gt;
+&lt;p&gt;&lt;strong&gt;注:不可重复读的和幻读很容易混淆，不可重复读侧重于修改，幻读侧重于新增或删除。解决不可重复读的问题只需锁住满足条件的行，解决幻读需要锁表&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;事务隔离级别&#34;&gt;&lt;a href=&#34;#事务隔离级别&#34; class=&#34;headerlink&#34; title=&#34;事务隔离级别&#34;&gt;&lt;/a&gt;事务隔离级别&lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;事务隔离级别&lt;/th&gt;
-&lt;th style=&#34;text-align:right&#34;&gt;脏读&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;不可重复读&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;幻读&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;事务隔离级别&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;脏读&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;不可重复读&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;幻读&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;读未提交（read-uncommitted）&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;是&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;是&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;是&lt;/td&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;读未提交（read-uncommitted）&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;是&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;是&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;是&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;不可重复读（read-committed）&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;否&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;是&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;是&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;不可重复读（read-committed）&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;否&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;是&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;是&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;可重复读（repeatable-read）&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;否&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;否&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;是&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;可重复读（repeatable-read）&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;否&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;否&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;是&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;串行化（serializable）&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;否&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;否&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;否&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;串行化（serializable）&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;否&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;否&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;否&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;设置隔离级别：&lt;/strong&gt;&lt;/p&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;设置隔离级别：&lt;/strong&gt; &lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;SET&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;SESSION&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TRANSACTION&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;ISOLATION&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;LEVEL&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;READ&lt;/span&gt; UNCOMMITTED;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
 &lt;p&gt;只有增删改语句才支持事务&lt;/p&gt;
  ]]></description>
         </item>
