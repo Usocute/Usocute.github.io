@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>脆弱星球 • Posts by &#34;trigger&#34; tag</title>
+        <title>草萤非火 • Posts by &#34;trigger&#34; tag</title>
         <link>https://miraitowa.cc</link>
-        <description>立于皓月之边,不弱星光之势</description>
+        <description>一个收藏回忆记录成长的地方...</description>
         <language>zh-CN</language>
         <pubDate>Wed, 30 Sep 2020 15:01:04 +0800</pubDate>
         <lastBuildDate>Wed, 30 Sep 2020 15:01:04 +0800</lastBuildDate>
@@ -13,19 +13,19 @@
         <category>数据库</category>
         <category>存储过程</category>
         <category>视图</category>
+        <category>查询</category>
         <category>存储引擎</category>
         <category>数据类型</category>
-        <category>查询</category>
         <category>View</category>
         <category>index</category>
         <category>增删改查</category>
         <category>学习笔记</category>
         <category>Trigger</category>
-        <category>MC</category>
-        <category>Minecrift</category>
         <category>C</category>
         <category>算法</category>
         <category>leetcode</category>
+        <category>MC</category>
+        <category>Minecrift</category>
         <category>javascript</category>
         <item>
             <guid isPermalink="true">https://miraitowa.cc/post/87f78bf4.html</guid>
