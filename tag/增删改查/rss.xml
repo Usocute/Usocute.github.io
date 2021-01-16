@@ -13,23 +13,25 @@
         <category>存储引擎</category>
         <category>数据类型</category>
         <category>数据库</category>
+        <category>查询</category>
         <category>存储过程</category>
         <category>视图</category>
-        <category>查询</category>
         <category>学习笔记</category>
         <category>Trigger</category>
         <category>View</category>
         <category>index</category>
+        <category>随笔</category>
+        <category>碎碎念</category>
+        <category>增删改查</category>
         <category>MC</category>
         <category>Minecrift</category>
-        <category>增删改查</category>
         <category>C</category>
         <category>算法</category>
         <category>leetcode</category>
         <category>javascript</category>
         <item>
             <guid isPermalink="true">https://miraitowa.cc/post/e82256d5.html</guid>
-            <title>mysql 数据库基本操作</title>
+            <title>MySQL 数据库基本操作</title>
             <link>https://miraitowa.cc/post/e82256d5.html</link>
             <category>MySQL</category>
             <category>增删改查</category>
