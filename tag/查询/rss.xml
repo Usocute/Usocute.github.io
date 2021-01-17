@@ -20,15 +20,15 @@
         <category>Trigger</category>
         <category>View</category>
         <category>index</category>
-        <category>随笔</category>
-        <category>碎碎念</category>
-        <category>增删改查</category>
-        <category>MC</category>
-        <category>Minecrift</category>
         <category>C</category>
         <category>算法</category>
         <category>leetcode</category>
+        <category>增删改查</category>
+        <category>随笔</category>
+        <category>碎碎念</category>
         <category>javascript</category>
+        <category>MC</category>
+        <category>Minecrift</category>
         <item>
             <guid isPermalink="true">https://miraitowa.cc/post/89bbd8d4.html</guid>
             <title>MySQL 查询</title>
