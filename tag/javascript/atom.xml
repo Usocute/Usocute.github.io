@@ -4,17 +4,22 @@
     <title>草萤非火 • Posts by &#34;javascript&#34; tag</title>
     <link href="https://miraitowa.cc" />
     <updated>2020-10-13T09:59:02.099Z</updated>
+    <category term="记录" />
+    <category term="历史" />
     <category term="生活记录" />
     <category term="成长" />
     <category term="MySQL" />
     <category term="存储引擎" />
     <category term="数据类型" />
     <category term="数据库" />
-    <category term="存储过程" />
-    <category term="视图" />
     <category term="查询" />
     <category term="View" />
     <category term="index" />
+    <category term="存储过程" />
+    <category term="视图" />
+    <category term="butterfly" />
+    <category term="hexo" />
+    <category term="魔改" />
     <category term="学习笔记" />
     <category term="Trigger" />
     <category term="增删改查" />
@@ -28,7 +33,7 @@
     <category term="javascript" />
     <entry>
         <id>https://miraitowa.cc/post/fba23db0.html</id>
-        <title>算法入门-罗马数字转整数</title>
+        <title>leetcode-罗马数字转整数</title>
         <link rel="alternate" href="https://miraitowa.cc/post/fba23db0.html"/>
         <content type="html">&lt;h2 id=&#34;罗马数字转整数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#罗马数字转整数&#34;&gt;#&lt;/a&gt; 罗马数字转整数&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;罗马数字包含以下七种字符:  &lt;code&gt;I&lt;/code&gt; ，  &lt;code&gt;V&lt;/code&gt; ，  &lt;code&gt;X&lt;/code&gt; ，  &lt;code&gt;L&lt;/code&gt; ， &lt;code&gt;C&lt;/code&gt; ， &lt;code&gt;D&lt;/code&gt;  和  &lt;code&gt;M&lt;/code&gt; 。&lt;/strong&gt;&lt;/p&gt;

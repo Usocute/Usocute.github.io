@@ -5,11 +5,11 @@
     "home_page_url": "https://miraitowa.cc",
     "items": [
         {
-            "id": "https://miraitowa.cc/post/undefined.html",
-            "url": "https://miraitowa.cc/post/undefined.html",
+            "id": "https://miraitowa.cc/post/28c4837c.html",
+            "url": "https://miraitowa.cc/post/28c4837c.html",
             "title": "好像很久没真正快乐过了…",
             "date_published": "2020-08-17T12:58:03.000Z",
-            "content_html": "\n    <div id=\"aplayer-eEpJNplZ\" class=\"aplayer aplayer-tag-marker meting-tag-marker\"\n         data-id=\"425570055\" data-server=\"netease\" data-type=\"song\" data-mode=\"circulation\" data-autoplay=\"false\" data-mutex=\"true\" data-listmaxheight=\"340px\" data-preload=\"auto\" data-theme=\"#ad7a86\"\n    ></div>\n<p>以前，总认为生活中的一切好，都可以在努力之后得到，后来发现，自己用尽一切努力都得不到的东西，总有人能够很轻松拥有，所以，不那么相信努力的意义了。</p>\n<p>以前总觉得会有真诚的朋友，会用真心换来真心，后来发现，自己所看中的朋友只是那些在集赞，砍价，投票时能够给我随手传发一个链接的人，仅此而已。我好像不那么需要朋友了。</p>\n<p>以前总是很容易被人看穿，听不懂言外之意，也不用去揣摩别人的心思，而现在，要做一个懂得倾听，学会伪装，怒不形于色，不那么轻易被人看穿的人，这样才不会被轻易利用和欺骗，多了钝感力，也多了共情力和同理心，只是不想那么单纯，那么真实了。</p>\n<p>我怀恋的，是那个对朋友毫无保留的我，是那个可以很直接表现自己不满意的我，是那个不用听懂别人言外之意的我，是那个在雪地里用冻僵的手给他回复消息，给他打电话的我，那个快乐的我。</p>\n<p>可是现在，我只想成为一个懂得保护自己，成为一个不那么轻易受伤的人。</p>\n<p>快乐，从来都是奢侈品，不难过已经是难得。</p>\n<p>好像很久没真正快乐过了…</p>\n",
+            "content_html": "\n    <div id=\"aplayer-OjbwymPw\" class=\"aplayer aplayer-tag-marker meting-tag-marker\"\n         data-id=\"425570055\" data-server=\"netease\" data-type=\"song\" data-mode=\"circulation\" data-autoplay=\"false\" data-mutex=\"true\" data-listmaxheight=\"340px\" data-preload=\"auto\" data-theme=\"#ad7a86\"\n    ></div>\n<p>以前，总认为生活中的一切好，都可以在努力之后得到，后来发现，自己用尽一切努力都得不到的东西，总有人能够很轻松拥有，所以，不那么相信努力的意义了。</p>\n<p>以前总觉得会有真诚的朋友，会用真心换来真心，后来发现，自己所看中的朋友只是那些在集赞，砍价，投票时能够给我随手传发一个链接的人，仅此而已。我好像不那么需要朋友了。</p>\n<p>以前总是很容易被人看穿，听不懂言外之意，也不用去揣摩别人的心思，而现在，要做一个懂得倾听，学会伪装，怒不形于色，不那么轻易被人看穿的人，这样才不会被轻易利用和欺骗，多了钝感力，也多了共情力和同理心，只是不想那么单纯，那么真实了。</p>\n<p>我怀恋的，是那个对朋友毫无保留的我，是那个可以很直接表现自己不满意的我，是那个不用听懂别人言外之意的我，是那个在雪地里用冻僵的手给他回复消息，给他打电话的我，那个快乐的我。</p>\n<p>可是现在，我只想成为一个懂得保护自己，成为一个不那么轻易受伤的人。</p>\n<p>快乐，从来都是奢侈品，不难过已经是难得。</p>\n<p>好像很久没真正快乐过了…</p>\n",
             "tags": [
                 "随笔",
                 "碎碎念"
@@ -34,6 +34,17 @@
             "tags": [
                 "生活记录",
                 "成长"
+            ]
+        },
+        {
+            "id": "https://miraitowa.cc/post/4a17b156.html",
+            "url": "https://miraitowa.cc/post/4a17b156.html",
+            "title": "Hello World",
+            "date_published": "2019-11-01T16:00:00.000Z",
+            "content_html": "<p>已经记不清楚这是第几次写 hello world 了，从最早 (2018 年) 的 emlog 博客，到后来的 typecho, 再到后来的 WordPress。基本没有写出什么有意义的东西。写的东西也基本都因为忘记导出数据库，忘记备份而丢失了…</p>\n<p>在这之前，一直使用 <code>香港免备案主机</code>  (不想备案), 然而速度并不理想，又买不起昂贵的服务器，而最近阿里云做活动以很便宜的价格购买了服务器。</p>\n<p>为什么要搭建这个博客<br>\n作为一名中二少年，喜欢互联网技术，所以大学报的软件专业，自从开始学习编程，我仿佛打开了新世界的大门。在编程的世界里，我可以创造许多新奇的东西。<br>\n但编程确实有些枯燥，常常因为一个 bug 抓耳挠腮，百思不得其解。<br>\n可当我解决那个 bug 时，那种无比的成就感，我整个人都飘了<br>\n有时候，有些 bug 以我的能力确实也无法解决，但是现在可是互联网时代了呢建立博客后我们可以一起进步一起成长！</p>\n",
+            "tags": [
+                "记录",
+                "历史"
             ]
         }
     ]

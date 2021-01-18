@@ -7,17 +7,22 @@
         <language>zh-CN</language>
         <pubDate>Tue, 13 Oct 2020 17:59:02 +0800</pubDate>
         <lastBuildDate>Tue, 13 Oct 2020 17:59:02 +0800</lastBuildDate>
+        <category>记录</category>
+        <category>历史</category>
         <category>生活记录</category>
         <category>成长</category>
         <category>MySQL</category>
         <category>存储引擎</category>
         <category>数据类型</category>
         <category>数据库</category>
-        <category>存储过程</category>
-        <category>视图</category>
         <category>查询</category>
         <category>View</category>
         <category>index</category>
+        <category>存储过程</category>
+        <category>视图</category>
+        <category>butterfly</category>
+        <category>hexo</category>
+        <category>魔改</category>
         <category>学习笔记</category>
         <category>Trigger</category>
         <category>增删改查</category>
@@ -31,7 +36,7 @@
         <category>javascript</category>
         <item>
             <guid isPermalink="true">https://miraitowa.cc/post/fba23db0.html</guid>
-            <title>算法入门-罗马数字转整数</title>
+            <title>leetcode-罗马数字转整数</title>
             <link>https://miraitowa.cc/post/fba23db0.html</link>
             <category>算法</category>
             <category>leetcode</category>
@@ -71,7 +76,7 @@
         </item>
         <item>
             <guid isPermalink="true">https://miraitowa.cc/post/b0fdf7c6.html</guid>
-            <title>算法入门-爬楼梯</title>
+            <title>leetcode-爬楼梯</title>
             <link>https://miraitowa.cc/post/b0fdf7c6.html</link>
             <category>C</category>
             <category>算法</category>
@@ -92,7 +97,7 @@
         </item>
         <item>
             <guid isPermalink="true">https://miraitowa.cc/post/812420b3.html</guid>
-            <title>算法入门-两数之和</title>
+            <title>leetcode-两数之和</title>
             <link>https://miraitowa.cc/post/812420b3.html</link>
             <category>C</category>
             <category>算法</category>

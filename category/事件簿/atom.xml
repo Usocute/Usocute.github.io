@@ -4,17 +4,22 @@
     <title>草萤非火 • Posts by &#34;事件簿&#34; category</title>
     <link href="https://miraitowa.cc" />
     <updated>2020-08-17T12:58:03.000Z</updated>
+    <category term="记录" />
+    <category term="历史" />
     <category term="生活记录" />
     <category term="成长" />
     <category term="MySQL" />
     <category term="存储引擎" />
     <category term="数据类型" />
     <category term="数据库" />
-    <category term="存储过程" />
-    <category term="视图" />
     <category term="查询" />
     <category term="View" />
     <category term="index" />
+    <category term="存储过程" />
+    <category term="视图" />
+    <category term="butterfly" />
+    <category term="hexo" />
+    <category term="魔改" />
     <category term="学习笔记" />
     <category term="Trigger" />
     <category term="增删改查" />
@@ -27,11 +32,11 @@
     <category term="leetcode" />
     <category term="javascript" />
     <entry>
-        <id>https://miraitowa.cc/post/undefined.html</id>
+        <id>https://miraitowa.cc/post/28c4837c.html</id>
         <title>好像很久没真正快乐过了…</title>
-        <link rel="alternate" href="https://miraitowa.cc/post/undefined.html"/>
+        <link rel="alternate" href="https://miraitowa.cc/post/28c4837c.html"/>
         <content type="html">
-    &lt;div id=&#34;aplayer-eEpJNplZ&#34; class=&#34;aplayer aplayer-tag-marker meting-tag-marker&#34;
+    &lt;div id=&#34;aplayer-OjbwymPw&#34; class=&#34;aplayer aplayer-tag-marker meting-tag-marker&#34;
          data-id=&#34;425570055&#34; data-server=&#34;netease&#34; data-type=&#34;song&#34; data-mode=&#34;circulation&#34; data-autoplay=&#34;false&#34; data-mutex=&#34;true&#34; data-listmaxheight=&#34;340px&#34; data-preload=&#34;auto&#34; data-theme=&#34;#ad7a86&#34;
     &gt;&lt;/div&gt;
 &lt;p&gt;以前，总认为生活中的一切好，都可以在努力之后得到，后来发现，自己用尽一切努力都得不到的东西，总有人能够很轻松拥有，所以，不那么相信努力的意义了。&lt;/p&gt;
@@ -72,5 +77,21 @@
         <category term="生活记录" />
         <category term="成长" />
         <updated>2019-11-09T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://miraitowa.cc/post/4a17b156.html</id>
+        <title>Hello World</title>
+        <link rel="alternate" href="https://miraitowa.cc/post/4a17b156.html"/>
+        <content type="html">&lt;p&gt;已经记不清楚这是第几次写 hello world 了，从最早 (2018 年) 的 emlog 博客，到后来的 typecho, 再到后来的 WordPress。基本没有写出什么有意义的东西。写的东西也基本都因为忘记导出数据库，忘记备份而丢失了…&lt;/p&gt;
+&lt;p&gt;在这之前，一直使用 &lt;code&gt;香港免备案主机&lt;/code&gt;  (不想备案), 然而速度并不理想，又买不起昂贵的服务器，而最近阿里云做活动以很便宜的价格购买了服务器。&lt;/p&gt;
+&lt;p&gt;为什么要搭建这个博客&lt;br&gt;
+作为一名中二少年，喜欢互联网技术，所以大学报的软件专业，自从开始学习编程，我仿佛打开了新世界的大门。在编程的世界里，我可以创造许多新奇的东西。&lt;br&gt;
+但编程确实有些枯燥，常常因为一个 bug 抓耳挠腮，百思不得其解。&lt;br&gt;
+可当我解决那个 bug 时，那种无比的成就感，我整个人都飘了&lt;br&gt;
+有时候，有些 bug 以我的能力确实也无法解决，但是现在可是互联网时代了呢建立博客后我们可以一起进步一起成长！&lt;/p&gt;
+</content>
+        <category term="记录" />
+        <category term="历史" />
+        <updated>2019-11-01T16:00:00.000Z</updated>
     </entry>
 </feed>
