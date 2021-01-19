@@ -3234,6 +3234,7 @@ _:future,
 #sidebar #sidebar-menus .menus_items .menus_item_child {
   margin: 0;
   list-style: none;
+  display: none;
 }
 * {
   box-sizing: border-box;
