@@ -1,0 +1,92 @@
+/* 鼠標指針樣式 */
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur), default
+}
+
+.read-mode {
+    font-size: 17px
+}
+
+.read-mode #web_bg {
+    background: #fdf6e3
+}
+
+a,img {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur), default
+}
+
+video {
+    width: 100%
+}
+
+.card-info-avatar:hover {
+    background: url(https://ae01.alicdn.com/kf/H3342af90d24b4d62b9bbfec9688ccc25M.gif)
+}
+
+audio {
+    outline: 0
+}
+
+/* 網頁背景顔色漸變 */
+#web_bg {
+    background: linear-gradient(90deg, rgba(247, 149, 51, .1) 0, rgba(243, 112, 85, .1) 15%, rgba(239, 78, 123, .1) 30%, rgba(161, 102, 171, .1) 44%, rgba(80, 115, 184, .1) 58%, rgba(16, 152, 173, .1) 72%, rgba(7, 179, 155, .1) 86%, rgba(109, 186, 130, .1) 100%)
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgba(73, 177, 245, 0.2);
+    border-radius: 2em;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #49b1f5;
+    background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.4) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.4) 75%,
+      transparent 75%,
+      transparent
+    );
+    border-radius: 2em;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+  
+  ::-moz-selection {
+    color: #fff;
+    background-color: #49b1f5;
+  }
+
+  /* 頁脚顔色漸變 */
+#footer {
+    background: rgba(255, 255, 255, .15);
+    color: #000;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px
+}
+
+#footer::before {
+    background: rgba(255, 255, 255, .15)
+}
+
+#footer #footer-wrap {
+    color: #333
+}
+
+#footer #footer-wrap a {
+    color: #333
+}
+
+#footer #footer-wrap .copyright {
+    color: #333
+}
