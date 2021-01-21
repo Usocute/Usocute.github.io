@@ -589,8 +589,8 @@ hr:before,
   --global-font-size: 14px;
   --global-bg: #fff;
   --font-color: #4c4948;
-  --hr-border: #a4d8fa;
-  --hr-before-color: #80c8f8;
+  --hr-border: #d2ebfd;
+  --hr-before-color: #bfe4fb;
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-result-title: #4c4948;
@@ -722,11 +722,11 @@ table td {
   vertical-align: middle;
 }
 *::-moz-selection {
-  background: #00c4b6;
+  background: #fd9db9;
   color: #f7f7f7;
 }
 *::selection {
-  background: #00c4b6;
+  background: #fd9db9;
   color: #f7f7f7;
 }
 button {
@@ -2117,6 +2117,13 @@ blockquote footer cite:before {
   background-position: bottom;
   background-size: cover;
 }
+#footer:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  content: '';
+}
 #footer-wrap {
   position: relative;
   padding: 2rem 1rem;
@@ -2542,7 +2549,7 @@ _:future,
   cursor: pointer;
 }
 #pagination .page-number.current {
-  background: #00c4b6;
+  background: #fd9db9;
   color: var(--white);
   cursor: default;
 }
@@ -2617,7 +2624,7 @@ _:future,
   overflow-wrap: break-word;
 }
 #article-container a {
-  color: #49b1f5;
+  color: #9591ff;
 }
 #article-container a:hover {
   text-decoration: underline;

@@ -4,31 +4,31 @@
     <title>草萤非火 • Posts by &#34;记录&#34; tag</title>
     <link href="https://miraitowa.cc" />
     <updated>2019-11-01T16:00:00.000Z</updated>
-    <category term="生活记录" />
-    <category term="成长" />
     <category term="Git" />
     <category term="Github" />
     <category term="记录" />
     <category term="历史" />
     <category term="MySQL" />
+    <category term="存储引擎" />
+    <category term="数据类型" />
+    <category term="生活记录" />
+    <category term="成长" />
     <category term="数据库" />
     <category term="存储过程" />
     <category term="视图" />
     <category term="查询" />
-    <category term="存储引擎" />
-    <category term="数据类型" />
     <category term="View" />
     <category term="index" />
-    <category term="日常" />
-    <category term="昆明" />
-    <category term="学习笔记" />
-    <category term="Trigger" />
     <category term="butterfly" />
     <category term="hexo" />
     <category term="魔改" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
+    <category term="增删改查" />
+    <category term="日常" />
+    <category term="昆明" />
     <category term="随笔" />
     <category term="碎碎念" />
-    <category term="增删改查" />
     <category term="MC" />
     <category term="Minecrift" />
     <category term="C" />
@@ -39,13 +39,13 @@
         <id>https://miraitowa.cc/post/4a17b156.html</id>
         <title>Hello World</title>
         <link rel="alternate" href="https://miraitowa.cc/post/4a17b156.html"/>
-        <content type="html">&lt;p&gt;已经记不清楚这是第几次写 hello world 了，从最早 (2018 年) 的 emlog 博客，到后来的 typecho, 再到后来的 WordPress。基本没有写出什么有意义的东西。写的东西也基本都因为忘记导出数据库，忘记备份而丢失了…&lt;/p&gt;
-&lt;p&gt;在这之前，一直使用 &lt;code&gt;香港免备案主机&lt;/code&gt;  (不想备案), 然而速度并不理想，又买不起昂贵的服务器，而最近阿里云做活动以很便宜的价格购买了服务器。&lt;/p&gt;
+        <content type="html">&lt;p&gt;已经记不清楚这是第几次写 hello world 了，从最早(2018年)的emlog博客,到后来的typecho,再到后来的WordPress。基本没有写出什么有意义的东西。写的东西也基本都因为忘记导出数据库,忘记备份而丢失了…&lt;/p&gt;
+&lt;p&gt;在这之前,一直使用&lt;code&gt;香港免备案主机&lt;/code&gt;(不想备案),然而速度并不理想,又买不起昂贵的服务器,而最近阿里云做活动以很便宜的价格购买了服务器。&lt;/p&gt;
 &lt;p&gt;为什么要搭建这个博客&lt;br&gt;
 作为一名中二少年，喜欢互联网技术，所以大学报的软件专业，自从开始学习编程，我仿佛打开了新世界的大门。在编程的世界里，我可以创造许多新奇的东西。&lt;br&gt;
-但编程确实有些枯燥，常常因为一个 bug 抓耳挠腮，百思不得其解。&lt;br&gt;
-可当我解决那个 bug 时，那种无比的成就感，我整个人都飘了&lt;br&gt;
-有时候，有些 bug 以我的能力确实也无法解决，但是现在可是互联网时代了呢建立博客后我们可以一起进步一起成长！&lt;/p&gt;
+但编程确实有些枯燥，常常因为一个bug抓耳挠腮，百思不得其解。&lt;br&gt;
+可当我解决那个bug时，那种无比的成就感，我整个人都飘了&lt;br&gt;
+有时候，有些bug以我的能力确实也无法解决，但是现在可是互联网时代了呢建立博客后我们可以一起进步一起成长！&lt;/p&gt;
 </content>
         <category term="记录" />
         <category term="历史" />
