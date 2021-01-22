@@ -1,3 +1,11 @@
+/* Fonts */
+@font-face {
+    font-family: 'google';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/gh/Usocute/cdn/fonts/google.woff2) format('woff2');
+   }
+
 /* 鼠標指針樣式 */
 body {
     cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur), default
