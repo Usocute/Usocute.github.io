@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "草萤非火 • All posts by \"yarn\" tag",
+    "description": "一个收藏回忆记录成长的地方...",
+    "home_page_url": "https://miraitowa.cc",
+    "items": [
+        {
+            "id": "https://miraitowa.cc/post/68889350.html",
+            "url": "https://miraitowa.cc/post/68889350.html",
+            "title": "yarn和npm常用命令对比",
+            "date_published": "2021-01-22T16:00:00.000Z",
+            "content_html": "<table>\n<thead>\n<tr>\n<th>作用</th>\n<th>npm</th>\n<th>yarn</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>安装</td>\n<td>npm install/i</td>\n<td>yarn</td>\n</tr>\n<tr>\n<td>卸载</td>\n<td>npm unintall/un xxx</td>\n<td>yarn remove xxx</td>\n</tr>\n<tr>\n<td>全局安装</td>\n<td>npm install/i xxx --global/-g</td>\n<td>yarn global add xxx</td>\n</tr>\n<tr>\n<td>安装包</td>\n<td>npm install/i xxx --save/-S</td>\n<td>yarn add xxx</td>\n</tr>\n<tr>\n<td>开发模式安装包</td>\n<td>npm install/i xxx --save-dev/-D</td>\n<td>yarn add xxx -dev/-D</td>\n</tr>\n<tr>\n<td>更新</td>\n<td>npm update</td>\n<td>yarn upgrade</td>\n</tr>\n<tr>\n<td>全局更新</td>\n<td>npm update -g</td>\n<td>yarn global upgrade</td>\n</tr>\n<tr>\n<td>清除缓存</td>\n<td>npm cache clean</td>\n<td>yarn cache clean</td>\n</tr>\n<tr>\n<td>重装</td>\n<td>rm -rf node_modules &amp;&amp; npm install</td>\n<td>yarn upgrade</td>\n</tr>\n</tbody>\n</table>\n",
+            "tags": [
+                "npm",
+                "yarn"
+            ]
+        }
+    ]
+}

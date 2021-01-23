@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>草萤非火 • Posts by &#34;yarn&#34; tag</title>
+        <link>https://miraitowa.cc</link>
+        <description>一个收藏回忆记录成长的地方...</description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 23 Jan 2021 00:00:00 +0800</pubDate>
+        <lastBuildDate>Sat, 23 Jan 2021 00:00:00 +0800</lastBuildDate>
+        <category>生活记录</category>
+        <category>成长</category>
+        <category>MySQL</category>
+        <category>数据库</category>
+        <category>存储过程</category>
+        <category>视图</category>
+        <category>Git</category>
+        <category>Github</category>
+        <category>记录</category>
+        <category>历史</category>
+        <category>存储引擎</category>
+        <category>数据类型</category>
+        <category>View</category>
+        <category>index</category>
+        <category>查询</category>
+        <category>增删改查</category>
+        <category>npm</category>
+        <category>yarn</category>
+        <category>butterfly</category>
+        <category>hexo</category>
+        <category>魔改</category>
+        <category>学习笔记</category>
+        <category>Trigger</category>
+        <category>日常</category>
+        <category>昆明</category>
+        <category>随笔</category>
+        <category>碎碎念</category>
+        <category>MC</category>
+        <category>Minecrift</category>
+        <category>C</category>
+        <category>算法</category>
+        <category>leetcode</category>
+        <category>javascript</category>
+        <item>
+            <guid isPermalink="true">https://miraitowa.cc/post/68889350.html</guid>
+            <title>yarn和npm常用命令对比</title>
+            <link>https://miraitowa.cc/post/68889350.html</link>
+            <category>npm</category>
+            <category>yarn</category>
+            <pubDate>Sat, 23 Jan 2021 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;th&gt;npm&lt;/th&gt;
+&lt;th&gt;yarn&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;安装&lt;/td&gt;
+&lt;td&gt;npm install/i&lt;/td&gt;
+&lt;td&gt;yarn&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;卸载&lt;/td&gt;
+&lt;td&gt;npm unintall/un xxx&lt;/td&gt;
+&lt;td&gt;yarn remove xxx&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;全局安装&lt;/td&gt;
+&lt;td&gt;npm install/i xxx --global/-g&lt;/td&gt;
+&lt;td&gt;yarn global add xxx&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;安装包&lt;/td&gt;
+&lt;td&gt;npm install/i xxx --save/-S&lt;/td&gt;
+&lt;td&gt;yarn add xxx&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;开发模式安装包&lt;/td&gt;
+&lt;td&gt;npm install/i xxx --save-dev/-D&lt;/td&gt;
+&lt;td&gt;yarn add xxx -dev/-D&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;更新&lt;/td&gt;
+&lt;td&gt;npm update&lt;/td&gt;
+&lt;td&gt;yarn upgrade&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;全局更新&lt;/td&gt;
+&lt;td&gt;npm update -g&lt;/td&gt;
+&lt;td&gt;yarn global upgrade&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;清除缓存&lt;/td&gt;
+&lt;td&gt;npm cache clean&lt;/td&gt;
+&lt;td&gt;yarn cache clean&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;重装&lt;/td&gt;
+&lt;td&gt;rm -rf node_modules &amp;amp;&amp;amp; npm install&lt;/td&gt;
+&lt;td&gt;yarn upgrade&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
