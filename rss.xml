@@ -7,47 +7,48 @@
         <language>zh-CN</language>
         <pubDate>Sat, 23 Jan 2021 00:00:00 +0800</pubDate>
         <lastBuildDate>Sat, 23 Jan 2021 00:00:00 +0800</lastBuildDate>
-        <category>记录</category>
-        <category>历史</category>
-        <category>生活记录</category>
-        <category>成长</category>
         <category>Git</category>
         <category>Github</category>
+        <category>记录</category>
+        <category>历史</category>
         <category>MySQL</category>
-        <category>存储引擎</category>
-        <category>数据类型</category>
         <category>数据库</category>
-        <category>查询</category>
         <category>存储过程</category>
         <category>视图</category>
-        <category>增删改查</category>
+        <category>生活记录</category>
+        <category>成长</category>
+        <category>查询</category>
+        <category>存储引擎</category>
+        <category>数据类型</category>
         <category>View</category>
         <category>index</category>
-        <category>npm</category>
-        <category>yarn</category>
-        <category>学习笔记</category>
-        <category>Trigger</category>
-        <category>C</category>
-        <category>算法</category>
-        <category>leetcode</category>
-        <category>日常</category>
-        <category>昆明</category>
-        <category>javascript</category>
-        <category>随笔</category>
-        <category>碎碎念</category>
         <category>butterfly</category>
         <category>hexo</category>
         <category>魔改</category>
+        <category>学习笔记</category>
+        <category>Trigger</category>
+        <category>日常</category>
+        <category>昆明</category>
+        <category>npm</category>
+        <category>yarn</category>
+        <category>增删改查</category>
         <category>MC</category>
         <category>Minecrift</category>
+        <category>随笔</category>
+        <category>碎碎念</category>
+        <category>leetcode</category>
+        <category>算法</category>
+        <category>javascript</category>
+        <category>C</category>
         <item>
             <guid isPermalink="true">https://miraitowa.cc/post/68889350.html</guid>
-            <title>yarn和npm常用命令对比</title>
+            <title>yarn和npm常用命令</title>
             <link>https://miraitowa.cc/post/68889350.html</link>
             <category>npm</category>
             <category>yarn</category>
             <pubDate>Sat, 23 Jan 2021 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;table&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;yarn和npm常用命令对比&#34;&gt;yarn和npm常用命令对比&lt;/h2&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;作用&lt;/th&gt;
@@ -100,6 +101,33 @@
 &lt;td&gt;重装&lt;/td&gt;
 &lt;td&gt;rm -rf node_modules &amp;amp;&amp;amp; npm install&lt;/td&gt;
 &lt;td&gt;yarn upgrade&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;npm-install-常用命令&#34;&gt;npm install 常用命令&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;命令&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;npm install moduleName&lt;/td&gt;
+&lt;td&gt;安装模块到项目目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;npm install -g moduleName&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;-g&lt;/code&gt; 意思是将模块安装到全局&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;npm install --save moduleName&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;--save&lt;/code&gt; 的意思是将模块安装到项目目录下，并在package文件的&lt;code&gt;dependencies&lt;/code&gt;节点写入依赖。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;npm install --save-dev moduleName&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;--save-dev&lt;/code&gt; 的意思是将模块安装到项目目录下，并在package文件的&lt;code&gt;devDependencies&lt;/code&gt;节点写入依赖。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -302,8 +330,8 @@
             <guid isPermalink="true">https://miraitowa.cc/post/fba23db0.html</guid>
             <title>leetcode-罗马数字转整数</title>
             <link>https://miraitowa.cc/post/fba23db0.html</link>
-            <category>算法</category>
             <category>leetcode</category>
+            <category>算法</category>
             <category>javascript</category>
             <pubDate>Tue, 13 Oct 2020 17:59:02 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;罗马数字转整数&#34;&gt;罗马数字转整数&lt;/h2&gt;
@@ -384,9 +412,9 @@
             <guid isPermalink="true">https://miraitowa.cc/post/b0fdf7c6.html</guid>
             <title>leetcode-爬楼梯</title>
             <link>https://miraitowa.cc/post/b0fdf7c6.html</link>
-            <category>C</category>
-            <category>算法</category>
             <category>leetcode</category>
+            <category>算法</category>
+            <category>C</category>
             <pubDate>Sun, 27 Sep 2020 19:04:03 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;爬楼梯&#34;&gt;爬楼梯&lt;/h2&gt;
 &lt;p&gt;假设你正在爬楼梯。需要&lt;code&gt;n&lt;/code&gt;阶你才能到达楼顶。&lt;br&gt;
@@ -405,9 +433,9 @@
             <guid isPermalink="true">https://miraitowa.cc/post/812420b3.html</guid>
             <title>leetcode-两数之和</title>
             <link>https://miraitowa.cc/post/812420b3.html</link>
-            <category>C</category>
-            <category>算法</category>
             <category>leetcode</category>
+            <category>算法</category>
+            <category>C</category>
             <pubDate>Sat, 26 Sep 2020 20:58:03 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;两数之和&#34;&gt;两数之和&lt;/h2&gt;
 &lt;p&gt;给定一个整数数组&lt;code&gt;nums&lt;/code&gt;和一个目标值&lt;code&gt;target&lt;/code&gt;请你在该数组中找出和为目标值的那两个整数,并返回他们的数组下标。&lt;br&gt;
@@ -798,7 +826,7 @@
             <category>碎碎念</category>
             <pubDate>Mon, 17 Aug 2020 20:58:03 +0800</pubDate>
             <description><![CDATA[ 
-    &lt;div id=&#34;aplayer-qymCqJWl&#34; class=&#34;aplayer aplayer-tag-marker meting-tag-marker&#34;
+    &lt;div id=&#34;aplayer-IbHxnSxZ&#34; class=&#34;aplayer aplayer-tag-marker meting-tag-marker&#34;
          data-id=&#34;425570055&#34; data-server=&#34;netease&#34; data-type=&#34;song&#34; data-mode=&#34;circulation&#34; data-autoplay=&#34;false&#34; data-mutex=&#34;true&#34; data-listmaxheight=&#34;340px&#34; data-preload=&#34;auto&#34; data-theme=&#34;#ad7a86&#34;
     &gt;&lt;/div&gt;
 &lt;p&gt;以前，总认为生活中的一切好，都可以在努力之后得到，后来发现，自己用尽一切努力都得不到的东西，总有人能够很轻松拥有，所以，不那么相信努力的意义了。&lt;/p&gt;

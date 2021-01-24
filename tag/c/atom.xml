@@ -4,39 +4,39 @@
     <title>草萤非火 • Posts by &#34;c&#34; tag</title>
     <link href="https://miraitowa.cc" />
     <updated>2020-09-27T11:04:03.000Z</updated>
-    <category term="记录" />
-    <category term="历史" />
-    <category term="生活记录" />
-    <category term="成长" />
     <category term="Git" />
     <category term="Github" />
+    <category term="记录" />
+    <category term="历史" />
     <category term="MySQL" />
-    <category term="存储引擎" />
-    <category term="数据类型" />
     <category term="数据库" />
-    <category term="查询" />
     <category term="存储过程" />
     <category term="视图" />
-    <category term="增删改查" />
+    <category term="生活记录" />
+    <category term="成长" />
+    <category term="查询" />
+    <category term="存储引擎" />
+    <category term="数据类型" />
     <category term="View" />
     <category term="index" />
-    <category term="npm" />
-    <category term="yarn" />
-    <category term="学习笔记" />
-    <category term="Trigger" />
-    <category term="C" />
-    <category term="算法" />
-    <category term="leetcode" />
-    <category term="日常" />
-    <category term="昆明" />
-    <category term="javascript" />
-    <category term="随笔" />
-    <category term="碎碎念" />
     <category term="butterfly" />
     <category term="hexo" />
     <category term="魔改" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
+    <category term="日常" />
+    <category term="昆明" />
+    <category term="npm" />
+    <category term="yarn" />
+    <category term="增删改查" />
     <category term="MC" />
     <category term="Minecrift" />
+    <category term="随笔" />
+    <category term="碎碎念" />
+    <category term="leetcode" />
+    <category term="算法" />
+    <category term="javascript" />
+    <category term="C" />
     <entry>
         <id>https://miraitowa.cc/post/b0fdf7c6.html</id>
         <title>leetcode-爬楼梯</title>
@@ -53,9 +53,9 @@
 &lt;p&gt;&lt;strong&gt;斐波那契数列&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;current_step = step1 + step2&lt;/code&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;climbStairs&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; n)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 第n层，等于第n-1层+第n-2层&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (n &amp;lt;= &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; n;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; step1 = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, step2 = &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;, temp;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;; i &amp;lt;= n; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        temp = step1;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        step1 = step2;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        step2 = temp + step1;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; step2;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="C" />
-        <category term="算法" />
         <category term="leetcode" />
+        <category term="算法" />
+        <category term="C" />
         <updated>2020-09-27T11:04:03.000Z</updated>
     </entry>
     <entry>
@@ -72,9 +72,9 @@
 &lt;p&gt;代码&lt;/p&gt;
 &lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;* &lt;span class=&#34;title&#34;&gt;twoSum&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;* nums, &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; numsSize, &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; target, &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;* returnSize)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; count[&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;] = &amp;#123;&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i,j;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;i &amp;lt; numsSize - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(j = i + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;j &amp;lt; numsSize;j++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(nums[i] + nums[j] == target)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                count[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;] = i;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                count[&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;] = j;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                * returnSize = &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; count;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    * returnSize = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; count;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 </content>
-        <category term="C" />
-        <category term="算法" />
         <category term="leetcode" />
+        <category term="算法" />
+        <category term="C" />
         <updated>2020-09-26T12:58:03.000Z</updated>
     </entry>
 </feed>
