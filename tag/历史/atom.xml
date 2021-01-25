@@ -4,50 +4,107 @@
     <title>草萤非火 • Posts by &#34;历史&#34; tag</title>
     <link href="https://miraitowa.cc" />
     <updated>2019-11-01T16:00:00.000Z</updated>
+    <category term="生活记录" />
+    <category term="成长" />
     <category term="Git" />
     <category term="Github" />
-    <category term="记录" />
-    <category term="历史" />
     <category term="MySQL" />
+    <category term="存储引擎" />
+    <category term="数据类型" />
     <category term="数据库" />
     <category term="存储过程" />
     <category term="视图" />
-    <category term="生活记录" />
-    <category term="成长" />
     <category term="查询" />
-    <category term="存储引擎" />
-    <category term="数据类型" />
+    <category term="记录" />
+    <category term="历史" />
     <category term="View" />
     <category term="index" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
     <category term="butterfly" />
     <category term="hexo" />
     <category term="魔改" />
-    <category term="学习笔记" />
-    <category term="Trigger" />
-    <category term="日常" />
-    <category term="昆明" />
     <category term="npm" />
     <category term="yarn" />
     <category term="增删改查" />
-    <category term="MC" />
-    <category term="Minecrift" />
     <category term="随笔" />
     <category term="碎碎念" />
-    <category term="leetcode" />
-    <category term="算法" />
-    <category term="javascript" />
+    <category term="日常" />
+    <category term="昆明" />
     <category term="C" />
+    <category term="算法" />
+    <category term="leetcode" />
+    <category term="MC" />
+    <category term="Minecrift" />
+    <category term="javascript" />
     <entry>
         <id>https://miraitowa.cc/post/4a17b156.html</id>
         <title>Hello World</title>
         <link rel="alternate" href="https://miraitowa.cc/post/4a17b156.html"/>
-        <content type="html">&lt;p&gt;已经记不清楚这是第几次写 hello world 了，从最早(2018年)的emlog博客,到后来的typecho,再到后来的WordPress。基本没有写出什么有意义的东西。写的东西也基本都因为忘记导出数据库,忘记备份而丢失了…&lt;/p&gt;
-&lt;p&gt;在这之前,一直使用&lt;code&gt;香港免备案主机&lt;/code&gt;(不想备案),然而速度并不理想,又买不起昂贵的服务器,而最近阿里云做活动以很便宜的价格购买了服务器。&lt;/p&gt;
-&lt;p&gt;为什么要搭建这个博客&lt;br&gt;
-作为一名中二少年，喜欢互联网技术，所以大学报的软件专业，自从开始学习编程，我仿佛打开了新世界的大门。在编程的世界里，我可以创造许多新奇的东西。&lt;br&gt;
-但编程确实有些枯燥，常常因为一个bug抓耳挠腮，百思不得其解。&lt;br&gt;
-可当我解决那个bug时，那种无比的成就感，我整个人都飘了&lt;br&gt;
-有时候，有些bug以我的能力确实也无法解决，但是现在可是互联网时代了呢建立博客后我们可以一起进步一起成长！&lt;/p&gt;
+        <content type="html">&lt;h2 id=&#34;HELLO-WORLD&#34;&gt;HELLO WORLD&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;已经记不清楚这是第几次写&lt;code&gt;hello world&lt;/code&gt;了，从最早的emlog博客,到后来的typecho,再到后来的WordPress。基本没有写出什么有意义的东西。写的东西也基本都因为忘记导出数据库,忘记备份而丢失了…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在这之前,一直使用&lt;a href=&#34;http://yunloli.com/&#34;&gt;云上萝莉&lt;/a&gt;的&lt;code&gt;香港免备案主机&lt;/code&gt;,然而速度并不理想,又买不起昂贵的服务器,而最近阿里云做活动以很便宜的价格购买了服务器。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;有时候，有些bug以我的能力确实也无法解决，但是现在可是互联网时代了呢建立博客后我们可以一起进步一起成长！&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2019年11月3日，我的个人网站正式开始运行啦！！！&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;哈哈哈还是很开心的呢，毕竟也花费了不少的心血和心思呢…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;站点历史&#34;&gt;站点历史&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2017年某天，有了建一个属于自己的个人网站的想法…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2018年2月，使用白嫖的域名和免费主机+Emlog程序搭建了我的第一个博客…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2018年3月主机商跑路，博客数据丢失…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2018年3月17日，在腾讯云购买域名&lt;code&gt;murmured.xyz&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2018年3月21日，在云上萝莉购买香港免备案主机。使用&lt;code&gt;typecho&lt;/code&gt;程序+&lt;code&gt;Practice01&lt;/code&gt;主题重新搭建博客(嗯…然后,疯狂更换主题)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2018年5月，购买域名&lt;code&gt;minemine.xyz&lt;/code&gt;。使用&lt;code&gt;wordpress&lt;/code&gt;程序+&lt;code&gt;sakura&lt;/code&gt;主题搭建博客镜像站。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2019年3月，续费免备案主机…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2019年5月，域名&lt;code&gt;minemine.xyz&lt;/code&gt;到期，没有续费，购买并更换新域名&lt;code&gt;Eliauk.cc&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2019年10月，网站数据库出问题，无法解决。一怒之下删了数据库…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2019年11月2日决定重建博客，最后选用&lt;code&gt;HEXO&lt;/code&gt;(我才不会说是因为不需要数据库)+&lt;a href=&#34;https://github.com/theme-nexmoe/hexo-theme-nexmoe&#34;&gt;Nexmoe&lt;/a&gt;主题，默认路线部署于Coding，海外路线部署于Github。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2019年11月9日更换主题为&lt;a href=&#34;https://github.com/amehime/hexo-theme-shoka&#34;&gt;Shoka&lt;/a&gt;…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2019年12月更换主题为&lt;a href=&#34;https://github.com/jerryc127/hexo-theme-butterfly&#34;&gt;butterfly&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2020年11月误点升级了&lt;code&gt;Coding pages&lt;/code&gt;,网站变得奇慢无比，转投&lt;a href=&#34;https://vercel.com/&#34;&gt;Vercel&lt;/a&gt;门下。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2021年1月10日月，购买并更换网站域名为&lt;code&gt;miraitowa.cc&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;持续更新中…&#34;&gt;持续更新中…&lt;/h3&gt;
 </content>
         <category term="记录" />
         <category term="历史" />

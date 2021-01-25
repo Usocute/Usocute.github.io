@@ -7,39 +7,39 @@
         <language>zh-CN</language>
         <pubDate>Wed, 20 Jan 2021 12:04:03 +0800</pubDate>
         <lastBuildDate>Wed, 20 Jan 2021 12:04:03 +0800</lastBuildDate>
+        <category>生活记录</category>
+        <category>成长</category>
         <category>Git</category>
         <category>Github</category>
-        <category>记录</category>
-        <category>历史</category>
         <category>MySQL</category>
+        <category>存储引擎</category>
+        <category>数据类型</category>
         <category>数据库</category>
         <category>存储过程</category>
         <category>视图</category>
-        <category>生活记录</category>
-        <category>成长</category>
         <category>查询</category>
-        <category>存储引擎</category>
-        <category>数据类型</category>
+        <category>记录</category>
+        <category>历史</category>
         <category>View</category>
         <category>index</category>
+        <category>学习笔记</category>
+        <category>Trigger</category>
         <category>butterfly</category>
         <category>hexo</category>
         <category>魔改</category>
-        <category>学习笔记</category>
-        <category>Trigger</category>
-        <category>日常</category>
-        <category>昆明</category>
         <category>npm</category>
         <category>yarn</category>
         <category>增删改查</category>
-        <category>MC</category>
-        <category>Minecrift</category>
         <category>随笔</category>
         <category>碎碎念</category>
-        <category>leetcode</category>
-        <category>算法</category>
-        <category>javascript</category>
+        <category>日常</category>
+        <category>昆明</category>
         <category>C</category>
+        <category>算法</category>
+        <category>leetcode</category>
+        <category>MC</category>
+        <category>Minecrift</category>
+        <category>javascript</category>
         <item>
             <guid isPermalink="true">https://miraitowa.cc/post/20d94337.html</guid>
             <title>在昆明，没有一个矮子能笑着走出地铁</title>
@@ -75,12 +75,13 @@
             <category>碎碎念</category>
             <pubDate>Mon, 17 Aug 2020 20:58:03 +0800</pubDate>
             <description><![CDATA[ 
-    &lt;div id=&#34;aplayer-IbHxnSxZ&#34; class=&#34;aplayer aplayer-tag-marker meting-tag-marker&#34;
+    &lt;div id=&#34;aplayer-dealSklN&#34; class=&#34;aplayer aplayer-tag-marker meting-tag-marker&#34;
          data-id=&#34;425570055&#34; data-server=&#34;netease&#34; data-type=&#34;song&#34; data-mode=&#34;circulation&#34; data-autoplay=&#34;false&#34; data-mutex=&#34;true&#34; data-listmaxheight=&#34;340px&#34; data-preload=&#34;auto&#34; data-theme=&#34;#ad7a86&#34;
     &gt;&lt;/div&gt;
+&lt;h2 id=&#34;好像很久没真正快乐过了&#34;&gt;好像很久没真正快乐过了&lt;/h2&gt;
 &lt;p&gt;以前，总认为生活中的一切好，都可以在努力之后得到，后来发现，自己用尽一切努力都得不到的东西，总有人能够很轻松拥有，所以，不那么相信努力的意义了。&lt;/p&gt;
 &lt;p&gt;以前总觉得会有真诚的朋友，会用真心换来真心，后来发现，自己所看中的朋友只是那些在集赞，砍价，投票时能够给我随手传发一个链接的人，仅此而已。我好像不那么需要朋友了。&lt;/p&gt;
-&lt;p&gt;以前总是很容易被人看穿，听不懂言外之意，也不用去揣摩别人的心思，而现在，要做一个懂得倾听，学会伪装，怒不形于色，不那么轻易被人看穿的人，这样才不会被轻易利用和欺骗，多了钝感力，也多了共情力和同理心，只是不想那么单纯，那么真实了。&lt;/p&gt;
+&lt;p&gt;以前总是很容易被人看穿，听不懂言外之意，也不用去揣摩别人的心思，而现在，要做一个懂得倾听，学会伪装，喜怒不形于色，不那么轻易被人看穿的人，这样才不会被轻易利用和欺骗，多了钝感力，也多了共情力和同理心，只是不想那么单纯，那么真实了。&lt;/p&gt;
 &lt;p&gt;我怀恋的，是那个对朋友毫无保留的我，是那个可以很直接表现自己不满意的我，是那个不用听懂别人言外之意的我，是那个在雪地里用冻僵的手给他回复消息，给他打电话的我，那个快乐的我。&lt;/p&gt;
 &lt;p&gt;可是现在，我只想成为一个懂得保护自己，成为一个不那么轻易受伤的人。&lt;/p&gt;
 &lt;p&gt;快乐，从来都是奢侈品，不难过已经是难得。&lt;/p&gt;
@@ -93,13 +94,20 @@
             <link>https://miraitowa.cc/post/25f8a447.html</link>
             <category>生活记录</category>
             <pubDate>Fri, 31 Jul 2020 11:42:31 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;大学时间真的很短暂，不知不觉大一就已经过去了。&lt;/p&gt;
-&lt;p&gt;大一的生活真的让人难以忘怀，但也让我不得不感叹时间的力量，感觉自己还什么都没做，就以及浑浑噩噩的度过了一个学期。正像大家所说的“高中忙的理所应当，大学慢的不知所以”。&lt;/p&gt;
-&lt;p&gt;这里引用一句来源网络上的话：“他们是希望回到[:broken_heart:高三]{.label .danger}，那种得心应手的状态，那种解出一道题就能获得满足感的状态，那种盲目地相信“熬过高三什么都会好的”状态，那种以为世界真的可以凭借一张卷子创造的状态，那种因为面前只有一条路而走得格外笃定的状态，那种做错了不过擦掉考砸了不过重来的状态，那种大学永远也没有办法给你的状态。[:broken_heart:大学]{.label .danger}的可恶之处或许在于，它看似给你提供了种种可能，各色社团各类选修通识，但事实上又有一套评价体系限制着你的选择。或许更可恶之处在于，我们都变得实际而精明起来，知道结识什么样的人脉可以把未来的天堑变通途，也知道选什么样的课老师给分很水什么样的社团加入后可以有更多的资源，于是我们活得如履薄冰生怕翘掉的哪一节课会给未来抹上污点也生怕得罪的哪一个人会让日子变得寸步难行。”&lt;/p&gt;
-&lt;p&gt;现在去回忆已经逝去的大一的点点滴滴，学习什么的似乎也没学到什么，甚至已经忘了上学期的内容。忘了曾经的信誓旦旦，忘了曾说过的要改变自己…&lt;/p&gt;
-&lt;p&gt;去年的四月份，正处于高中的冲刺阶段，感觉提分无望的我背着父母报名了单独招生考试，直到考试前一天才告诉了他们(可能是怕父母对我失望吧)。现在想想这或许是一个明智的决定。与其花费很多的钱去都三本，还不如读个专科努力&lt;code&gt;专升本&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;大一开学的时候，父母坚持要一起送我到新学校。学校离我们很近，只有两个小时的车程。报道-缴费-选宿舍，无非也就这些流程，我到宿舍的时候，舍友都没在。作为一个&lt;code&gt;线下重度社恐患者&lt;/code&gt;，我一直在想我一定要先发制人，先和舍友打招呼，加快融入大家。然而…不说也罢。开学不久就是军训了，不得不说军训真的可以快速拉近同学之间的关系啊。&lt;/p&gt;
-&lt;p&gt;军训总的来说还是挺幸苦的，每天要起很早跑操，天気也很给力，最重要的是，吃饭我抢不过啊。&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;日月忽其不淹兮，春与秋其代序&#34;&gt;日月忽其不淹兮，春与秋其代序&lt;/h2&gt;
+&lt;p&gt;大学时间真的很短暂、很让人难以忘怀啊，不知不觉大一就已经过去了，让我不得不感叹时间的力量，感觉自己还什么都没做，就已经浑浑噩噩的度过了一个学期。正像大家所说的“高中忙的理所应当，大学忙的不知所以”。&lt;/p&gt;
+&lt;p&gt;现在去回忆过去的一年的点点滴滴，学习什么的似乎也没学到什么，甚至已经忘了上学期的内容,忘了曾经的信誓旦旦,忘了曾说过的要改变自己…&lt;/p&gt;
+&lt;h2 id=&#34;怀念那年的夏天还是怀念那年的人&#34;&gt;怀念那年的夏天还是怀念那年的人&lt;/h2&gt;
+&lt;p&gt;一次高考，考散了一拨人，可能这辈子都无法再见到。曾经无时无刻不想要挣脱的被自己在心里骂了一万遍的高中，现在发现却是我们再也回不去的天堂。&lt;/p&gt;
+&lt;p&gt;现在的我是真的很怀念高中生活。虽然高中的时候每天困到不行，六七点就要起床，十一二点才下晚自习，但那时生活却是充实、简单，快乐的。不用为了不挂科焦头烂额，只要努力学习考个好成绩就能开心很久。不像现在的生活，忙忙碌碌，无所事事，没有目标。&lt;/p&gt;
+&lt;h2 id=&#34;日常美好生活碎片&#34;&gt;日常美好生活碎片&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;时常开心，认真记录，发现光芒！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;justified-gallery&#34;&gt;&lt;p&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-d1-img1.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-d1-img2.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-d1-img3.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-d1-img4.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-d1-img5.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-d1-img7.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-d1-img8.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-d1-img9.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-d1-img10.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-d1-img11.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-d1-img12.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-d1-img13.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-d1-img14.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-d1-img15.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+          &lt;/div&gt;
+&lt;h2 id=&#34;岁月匆匆，惟愿总相逢&#34;&gt;岁月匆匆，惟愿总相逢&lt;/h2&gt;
+&lt;p&gt;或许对于以后的我们来说这些东西都是微不足道的小事，但现在对于我们来说都十分重要，因为我们内心一直一直存有温柔，存有善意，存有美好一直小心翼翼的守护着自己最宝贵的东西。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -121,13 +129,70 @@
             <category>记录</category>
             <category>历史</category>
             <pubDate>Sat, 02 Nov 2019 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;已经记不清楚这是第几次写 hello world 了，从最早(2018年)的emlog博客,到后来的typecho,再到后来的WordPress。基本没有写出什么有意义的东西。写的东西也基本都因为忘记导出数据库,忘记备份而丢失了…&lt;/p&gt;
-&lt;p&gt;在这之前,一直使用&lt;code&gt;香港免备案主机&lt;/code&gt;(不想备案),然而速度并不理想,又买不起昂贵的服务器,而最近阿里云做活动以很便宜的价格购买了服务器。&lt;/p&gt;
-&lt;p&gt;为什么要搭建这个博客&lt;br&gt;
-作为一名中二少年，喜欢互联网技术，所以大学报的软件专业，自从开始学习编程，我仿佛打开了新世界的大门。在编程的世界里，我可以创造许多新奇的东西。&lt;br&gt;
-但编程确实有些枯燥，常常因为一个bug抓耳挠腮，百思不得其解。&lt;br&gt;
-可当我解决那个bug时，那种无比的成就感，我整个人都飘了&lt;br&gt;
-有时候，有些bug以我的能力确实也无法解决，但是现在可是互联网时代了呢建立博客后我们可以一起进步一起成长！&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;HELLO-WORLD&#34;&gt;HELLO WORLD&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;已经记不清楚这是第几次写&lt;code&gt;hello world&lt;/code&gt;了，从最早的emlog博客,到后来的typecho,再到后来的WordPress。基本没有写出什么有意义的东西。写的东西也基本都因为忘记导出数据库,忘记备份而丢失了…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在这之前,一直使用&lt;a href=&#34;http://yunloli.com/&#34;&gt;云上萝莉&lt;/a&gt;的&lt;code&gt;香港免备案主机&lt;/code&gt;,然而速度并不理想,又买不起昂贵的服务器,而最近阿里云做活动以很便宜的价格购买了服务器。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;有时候，有些bug以我的能力确实也无法解决，但是现在可是互联网时代了呢建立博客后我们可以一起进步一起成长！&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2019年11月3日，我的个人网站正式开始运行啦！！！&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;哈哈哈还是很开心的呢，毕竟也花费了不少的心血和心思呢…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;站点历史&#34;&gt;站点历史&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2017年某天，有了建一个属于自己的个人网站的想法…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2018年2月，使用白嫖的域名和免费主机+Emlog程序搭建了我的第一个博客…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2018年3月主机商跑路，博客数据丢失…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2018年3月17日，在腾讯云购买域名&lt;code&gt;murmured.xyz&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2018年3月21日，在云上萝莉购买香港免备案主机。使用&lt;code&gt;typecho&lt;/code&gt;程序+&lt;code&gt;Practice01&lt;/code&gt;主题重新搭建博客(嗯…然后,疯狂更换主题)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2018年5月，购买域名&lt;code&gt;minemine.xyz&lt;/code&gt;。使用&lt;code&gt;wordpress&lt;/code&gt;程序+&lt;code&gt;sakura&lt;/code&gt;主题搭建博客镜像站。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2019年3月，续费免备案主机…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2019年5月，域名&lt;code&gt;minemine.xyz&lt;/code&gt;到期，没有续费，购买并更换新域名&lt;code&gt;Eliauk.cc&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2019年10月，网站数据库出问题，无法解决。一怒之下删了数据库…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2019年11月2日决定重建博客，最后选用&lt;code&gt;HEXO&lt;/code&gt;(我才不会说是因为不需要数据库)+&lt;a href=&#34;https://github.com/theme-nexmoe/hexo-theme-nexmoe&#34;&gt;Nexmoe&lt;/a&gt;主题，默认路线部署于Coding，海外路线部署于Github。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2019年11月9日更换主题为&lt;a href=&#34;https://github.com/amehime/hexo-theme-shoka&#34;&gt;Shoka&lt;/a&gt;…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2019年12月更换主题为&lt;a href=&#34;https://github.com/jerryc127/hexo-theme-butterfly&#34;&gt;butterfly&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2020年11月误点升级了&lt;code&gt;Coding pages&lt;/code&gt;,网站变得奇慢无比，转投&lt;a href=&#34;https://vercel.com/&#34;&gt;Vercel&lt;/a&gt;门下。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2021年1月10日月，购买并更换网站域名为&lt;code&gt;miraitowa.cc&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;持续更新中…&#34;&gt;持续更新中…&lt;/h3&gt;
  ]]></description>
         </item>
     </channel>
