@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/usocute/gallery/raw/master/img/miraitowa-mysql-query-cover.jpg">
 <meta property="article:published_time" content="2020-09-14T11:04:03.000Z">
-<meta property="article:modified_time" content="2021-01-18T08:23:28.341Z">
+<meta property="article:modified_time" content="2021-01-26T08:12:50.778Z">
 <meta property="article:author" content="可樂">
 <meta property="article:tag" content="MySQL">
 <meta property="article:tag" content="数据库">
@@ -102,7 +102,7 @@ const getScript = url => new Promise((resolve, reject) => {
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2021-01-18 16:23:28'
+  postUpdate: '2021-01-26 16:12:50'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -177,18 +177,18 @@ if (fontSizeVal !== undefined) {
 <p><strong>交叉连接：将两张表的数据与另外一张表彼此交叉</strong></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> 表<span class="number">1</span> <span class="keyword">cross</span> <span class="keyword">join</span> 表<span class="number">2</span></span><br><span class="line">eg：</span><br><span class="line"><span class="keyword">select</span> class.cname, student.sname <span class="keyword">from</span> student <span class="keyword">cross</span> <span class="keyword">join</span> <span class="keyword">class</span> <span class="keyword">on</span> class.cid =</span><br><span class="line">student.classid;</span><br><span class="line"><span class="comment">--其中的on代表两个表的连接条件</span></span><br></pre></td></tr></table></figure>
 <h3 id="内连接">内连接</h3>
-<p><img src= "/img/loading.gif" data-lazy-src="https://usocute.oss-cn-chengdu.aliyuncs.com/hexo/inner-join.png" alt="inner-join"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://gitee.com/usocute/gallery/raw/master/img/miraitowa-mysql-inner-join.png" alt="inner-join"></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">方式一：</span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> 表<span class="number">1</span>,表<span class="number">2</span> <span class="keyword">where</span> 表<span class="number">1.</span>列=表<span class="number">2.</span>列</span><br><span class="line">方式二：</span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> 表<span class="number">1</span></span><br><span class="line"><span class="keyword">inner</span> <span class="keyword">join</span> 表<span class="number">2</span> <span class="keyword">on</span> 表<span class="number">1.</span>列=表<span class="number">2.</span>列</span><br></pre></td></tr></table></figure>
 <h3 id="外连接">外连接</h3>
 <h4 id="左连接">左连接</h4>
 <p>左连接基础语法是 <code>a left outer join b </code>，其中的 <code>outer</code> 可以省略，与内连接相比就是在与内连接相<br>
 同条件下，在内连接的结果集中添加<code>a</code>表在<code>b</code>表中找不到匹配的记录，换句话说就是，结果集中会包含<code>a</code>表中的所有记录，如果<code>b</code>表中有匹配的记录就出现在结果集，否则使用 <code>NULL</code> 代替，也就是把<code>a</code>表看成根本，不可缺失记录。<br>
-<img src= "/img/loading.gif" data-lazy-src="https://usocute.oss-cn-chengdu.aliyuncs.com/hexo/left-join.png" alt="left-join"></p>
+<img src= "/img/loading.gif" data-lazy-src="https://gitee.com/usocute/gallery/raw/master/img/miraitowa-mysql-left-join.png" alt="left-join"></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> 表<span class="number">1</span></span><br><span class="line"><span class="keyword">left</span> <span class="keyword">join</span> 表<span class="number">2</span> <span class="keyword">on</span> 表<span class="number">1.</span>列=表<span class="number">2.</span>列</span><br></pre></td></tr></table></figure>
 <h4 id="右连接">右连接</h4>
 <p>右外连接基础语法是 <code>a right outer join b </code>，其中的 <code>outer</code> 可以省略，与内连接相比就是在与内连<br>
 接相同条件下，在内连接的结果集中添加b表在a表中找不到匹配的记录，换句话说就是，结果集中会包含b表中的所有记录，如果a表中有匹配的记录就出现在结果集，否则使用 NULL 代替，也就是把b表看成根本，不可缺失记录，作用与左外连接恰好相反。<br>
-<img src= "/img/loading.gif" data-lazy-src="https://usocute.oss-cn-chengdu.aliyuncs.com/hexo/right-join.png" alt="right-join"></p>
+<img src= "/img/loading.gif" data-lazy-src="https://gitee.com/usocute/gallery/raw/master/img/miraitowa-mysql-right-join.png" alt="right-join"></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> 表<span class="number">1</span></span><br><span class="line"><span class="keyword">right</span> <span class="keyword">join</span> 表<span class="number">2</span> <span class="keyword">on</span> 表<span class="number">1.</span>列=表<span class="number">2.</span>列</span><br></pre></td></tr></table></figure>
 <h3 id="自连接">自连接</h3>
 <p>自连接就是表与它自身相关联，进行自连接时通过给表起不同的别名来区分一个表的两个实例。</p>

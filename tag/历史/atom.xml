@@ -11,31 +11,31 @@
     <category term="MySQL" />
     <category term="存储引擎" />
     <category term="数据类型" />
+    <category term="记录" />
+    <category term="历史" />
     <category term="数据库" />
     <category term="存储过程" />
     <category term="视图" />
     <category term="查询" />
-    <category term="记录" />
-    <category term="历史" />
     <category term="View" />
     <category term="index" />
-    <category term="学习笔记" />
-    <category term="Trigger" />
     <category term="butterfly" />
     <category term="hexo" />
     <category term="魔改" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
     <category term="npm" />
     <category term="yarn" />
     <category term="增删改查" />
-    <category term="随笔" />
-    <category term="碎碎念" />
     <category term="日常" />
     <category term="昆明" />
+    <category term="MC" />
+    <category term="Minecrift" />
+    <category term="随笔" />
+    <category term="碎碎念" />
     <category term="C" />
     <category term="算法" />
     <category term="leetcode" />
-    <category term="MC" />
-    <category term="Minecrift" />
     <category term="javascript" />
     <entry>
         <id>https://miraitowa.cc/post/4a17b156.html</id>
@@ -86,7 +86,7 @@
 &lt;p&gt;2019年5月，域名&lt;code&gt;minemine.xyz&lt;/code&gt;到期，没有续费，购买并更换新域名&lt;code&gt;Eliauk.cc&lt;/code&gt;。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;2019年10月，网站数据库出问题，无法解决。一怒之下删了数据库…&lt;/p&gt;
+&lt;p&gt;2019年10月，网站数据库出问题，无法解决。一怒之下删了数据库(看来以后要好好学习数据库了)…&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;2019年11月2日决定重建博客，最后选用&lt;code&gt;HEXO&lt;/code&gt;(我才不会说是因为不需要数据库)+&lt;a href=&#34;https://github.com/theme-nexmoe/hexo-theme-nexmoe&#34;&gt;Nexmoe&lt;/a&gt;主题，默认路线部署于Coding，海外路线部署于Github。&lt;/p&gt;

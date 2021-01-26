@@ -11,31 +11,31 @@
     <category term="MySQL" />
     <category term="存储引擎" />
     <category term="数据类型" />
+    <category term="记录" />
+    <category term="历史" />
     <category term="数据库" />
     <category term="存储过程" />
     <category term="视图" />
     <category term="查询" />
-    <category term="记录" />
-    <category term="历史" />
     <category term="View" />
     <category term="index" />
-    <category term="学习笔记" />
-    <category term="Trigger" />
     <category term="butterfly" />
     <category term="hexo" />
     <category term="魔改" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
     <category term="npm" />
     <category term="yarn" />
     <category term="增删改查" />
-    <category term="随笔" />
-    <category term="碎碎念" />
     <category term="日常" />
     <category term="昆明" />
+    <category term="MC" />
+    <category term="Minecrift" />
+    <category term="随笔" />
+    <category term="碎碎念" />
     <category term="C" />
     <category term="算法" />
     <category term="leetcode" />
-    <category term="MC" />
-    <category term="Minecrift" />
     <category term="javascript" />
     <entry>
         <id>https://miraitowa.cc/post/68889350.html</id>
@@ -590,18 +590,18 @@
 &lt;p&gt;&lt;strong&gt;交叉连接：将两张表的数据与另外一张表彼此交叉&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;select&lt;/span&gt; * &lt;span class=&#34;keyword&#34;&gt;from&lt;/span&gt; 表&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;cross&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;join&lt;/span&gt; 表&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;eg：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;select&lt;/span&gt; class.cname, student.sname &lt;span class=&#34;keyword&#34;&gt;from&lt;/span&gt; student &lt;span class=&#34;keyword&#34;&gt;cross&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;join&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;on&lt;/span&gt; class.cid =&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;student.classid;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;--其中的on代表两个表的连接条件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&#34;内连接&#34;&gt;内连接&lt;/h3&gt;
-&lt;p&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://usocute.oss-cn-chengdu.aliyuncs.com/hexo/inner-join.png&#34; alt=&#34;inner-join&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-mysql-inner-join.png&#34; alt=&#34;inner-join&#34;&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;方式一：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;select&lt;/span&gt; * &lt;span class=&#34;keyword&#34;&gt;from&lt;/span&gt; 表&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;,表&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;where&lt;/span&gt; 表&lt;span class=&#34;number&#34;&gt;1.&lt;/span&gt;列=表&lt;span class=&#34;number&#34;&gt;2.&lt;/span&gt;列&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;方式二：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;select&lt;/span&gt; * &lt;span class=&#34;keyword&#34;&gt;from&lt;/span&gt; 表&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;inner&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;join&lt;/span&gt; 表&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;on&lt;/span&gt; 表&lt;span class=&#34;number&#34;&gt;1.&lt;/span&gt;列=表&lt;span class=&#34;number&#34;&gt;2.&lt;/span&gt;列&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&#34;外连接&#34;&gt;外连接&lt;/h3&gt;
 &lt;h4 id=&#34;左连接&#34;&gt;左连接&lt;/h4&gt;
 &lt;p&gt;左连接基础语法是 &lt;code&gt;a left outer join b &lt;/code&gt;，其中的 &lt;code&gt;outer&lt;/code&gt; 可以省略，与内连接相比就是在与内连接相&lt;br&gt;
 同条件下，在内连接的结果集中添加&lt;code&gt;a&lt;/code&gt;表在&lt;code&gt;b&lt;/code&gt;表中找不到匹配的记录，换句话说就是，结果集中会包含&lt;code&gt;a&lt;/code&gt;表中的所有记录，如果&lt;code&gt;b&lt;/code&gt;表中有匹配的记录就出现在结果集，否则使用 &lt;code&gt;NULL&lt;/code&gt; 代替，也就是把&lt;code&gt;a&lt;/code&gt;表看成根本，不可缺失记录。&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://usocute.oss-cn-chengdu.aliyuncs.com/hexo/left-join.png&#34; alt=&#34;left-join&#34;&gt;&lt;/p&gt;
+&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-mysql-left-join.png&#34; alt=&#34;left-join&#34;&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;select&lt;/span&gt; * &lt;span class=&#34;keyword&#34;&gt;from&lt;/span&gt; 表&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;join&lt;/span&gt; 表&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;on&lt;/span&gt; 表&lt;span class=&#34;number&#34;&gt;1.&lt;/span&gt;列=表&lt;span class=&#34;number&#34;&gt;2.&lt;/span&gt;列&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h4 id=&#34;右连接&#34;&gt;右连接&lt;/h4&gt;
 &lt;p&gt;右外连接基础语法是 &lt;code&gt;a right outer join b &lt;/code&gt;，其中的 &lt;code&gt;outer&lt;/code&gt; 可以省略，与内连接相比就是在与内连&lt;br&gt;
 接相同条件下，在内连接的结果集中添加b表在a表中找不到匹配的记录，换句话说就是，结果集中会包含b表中的所有记录，如果a表中有匹配的记录就出现在结果集，否则使用 NULL 代替，也就是把b表看成根本，不可缺失记录，作用与左外连接恰好相反。&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://usocute.oss-cn-chengdu.aliyuncs.com/hexo/right-join.png&#34; alt=&#34;right-join&#34;&gt;&lt;/p&gt;
+&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-mysql-right-join.png&#34; alt=&#34;right-join&#34;&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;select&lt;/span&gt; * &lt;span class=&#34;keyword&#34;&gt;from&lt;/span&gt; 表&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;right&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;join&lt;/span&gt; 表&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;on&lt;/span&gt; 表&lt;span class=&#34;number&#34;&gt;1.&lt;/span&gt;列=表&lt;span class=&#34;number&#34;&gt;2.&lt;/span&gt;列&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&#34;自连接&#34;&gt;自连接&lt;/h3&gt;
 &lt;p&gt;自连接就是表与它自身相关联，进行自连接时通过给表起不同的别名来区分一个表的两个实例。&lt;/p&gt;
@@ -820,7 +820,7 @@
         <title>好像很久没真正快乐过了…</title>
         <link rel="alternate" href="https://miraitowa.cc/post/28c4837c.html"/>
         <content type="html">
-    &lt;div id=&#34;aplayer-dealSklN&#34; class=&#34;aplayer aplayer-tag-marker meting-tag-marker&#34;
+    &lt;div id=&#34;aplayer-lpEdKUlK&#34; class=&#34;aplayer aplayer-tag-marker meting-tag-marker&#34;
          data-id=&#34;425570055&#34; data-server=&#34;netease&#34; data-type=&#34;song&#34; data-mode=&#34;circulation&#34; data-autoplay=&#34;false&#34; data-mutex=&#34;true&#34; data-listmaxheight=&#34;340px&#34; data-preload=&#34;auto&#34; data-theme=&#34;#ad7a86&#34;
     &gt;&lt;/div&gt;
 &lt;h2 id=&#34;好像很久没真正快乐过了&#34;&gt;好像很久没真正快乐过了&lt;/h2&gt;
@@ -919,7 +919,7 @@
 &lt;p&gt;2019年5月，域名&lt;code&gt;minemine.xyz&lt;/code&gt;到期，没有续费，购买并更换新域名&lt;code&gt;Eliauk.cc&lt;/code&gt;。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;2019年10月，网站数据库出问题，无法解决。一怒之下删了数据库…&lt;/p&gt;
+&lt;p&gt;2019年10月，网站数据库出问题，无法解决。一怒之下删了数据库(看来以后要好好学习数据库了)…&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;2019年11月2日决定重建博客，最后选用&lt;code&gt;HEXO&lt;/code&gt;(我才不会说是因为不需要数据库)+&lt;a href=&#34;https://github.com/theme-nexmoe/hexo-theme-nexmoe&#34;&gt;Nexmoe&lt;/a&gt;主题，默认路线部署于Coding，海外路线部署于Github。&lt;/p&gt;
