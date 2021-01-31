@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://miraitowa.cc</id>
+    <title>尺萤之光 • Posts by &#34;yarn&#34; tag</title>
+    <link href="https://miraitowa.cc" />
+    <updated>2021-01-22T16:00:00.000Z</updated>
+    <category term="生活记录" />
+    <category term="成长" />
+    <category term="Git" />
+    <category term="Github" />
+    <category term="记录" />
+    <category term="历史" />
+    <category term="MySQL" />
+    <category term="存储引擎" />
+    <category term="数据类型" />
+    <category term="数据库" />
+    <category term="存储过程" />
+    <category term="视图" />
+    <category term="View" />
+    <category term="index" />
+    <category term="查询" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
+    <category term="butterfly" />
+    <category term="hexo" />
+    <category term="魔改" />
+    <category term="增删改查" />
+    <category term="npm" />
+    <category term="yarn" />
+    <category term="随笔" />
+    <category term="碎碎念" />
+    <category term="日常" />
+    <category term="昆明" />
+    <category term="MC" />
+    <category term="Minecrift" />
+    <category term="C" />
+    <category term="算法" />
+    <category term="leetcode" />
+    <category term="javascript" />
+    <entry>
+        <id>https://miraitowa.cc/post/68889350.html</id>
+        <title>yarn和npm常用命令</title>
+        <link rel="alternate" href="https://miraitowa.cc/post/68889350.html"/>
+        <content type="html">&lt;h2 id=&#34;yarn和npm常用命令对比&#34;&gt;yarn和npm常用命令对比&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;th&gt;npm&lt;/th&gt;
+&lt;th&gt;yarn&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;安装&lt;/td&gt;
+&lt;td&gt;npm install/i&lt;/td&gt;
+&lt;td&gt;yarn&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;卸载&lt;/td&gt;
+&lt;td&gt;npm unintall/un xxx&lt;/td&gt;
+&lt;td&gt;yarn remove xxx&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;全局安装&lt;/td&gt;
+&lt;td&gt;npm install/i xxx --global/-g&lt;/td&gt;
+&lt;td&gt;yarn global add xxx&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;安装包&lt;/td&gt;
+&lt;td&gt;npm install/i xxx --save/-S&lt;/td&gt;
+&lt;td&gt;yarn add xxx&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;开发模式安装包&lt;/td&gt;
+&lt;td&gt;npm install/i xxx --save-dev/-D&lt;/td&gt;
+&lt;td&gt;yarn add xxx -dev/-D&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;更新&lt;/td&gt;
+&lt;td&gt;npm update&lt;/td&gt;
+&lt;td&gt;yarn upgrade&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;全局更新&lt;/td&gt;
+&lt;td&gt;npm update -g&lt;/td&gt;
+&lt;td&gt;yarn global upgrade&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;清除缓存&lt;/td&gt;
+&lt;td&gt;npm cache clean&lt;/td&gt;
+&lt;td&gt;yarn cache clean&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;重装&lt;/td&gt;
+&lt;td&gt;rm -rf node_modules &amp;amp;&amp;amp; npm install&lt;/td&gt;
+&lt;td&gt;yarn upgrade&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;npm-install-常用命令&#34;&gt;npm install 常用命令&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;命令&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;npm install moduleName&lt;/td&gt;
+&lt;td&gt;安装模块到项目目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;npm install -g moduleName&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;-g&lt;/code&gt; 意思是将模块安装到全局&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;npm install --save moduleName&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;--save&lt;/code&gt; 的意思是将模块安装到项目目录下，并在package文件的&lt;code&gt;dependencies&lt;/code&gt;节点写入依赖。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;npm install --save-dev moduleName&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;--save-dev&lt;/code&gt; 的意思是将模块安装到项目目录下，并在package文件的&lt;code&gt;devDependencies&lt;/code&gt;节点写入依赖。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+        <category term="npm" />
+        <category term="yarn" />
+        <updated>2021-01-22T16:00:00.000Z</updated>
+    </entry>
+</feed>
