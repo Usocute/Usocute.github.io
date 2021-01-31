@@ -101,3 +101,66 @@ audio {
 
 /* 隐藏Aplayer Cover,只留下右侧的箭头栏 */
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}
+
+    a {
+        text-decoration: none;
+    }
+
+    div.usercm {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-color: #fff;
+        font-size: 13px !important;
+        width: 130px;
+        box-shadow: 0px 0px 15px #333;
+        position: absolute;
+        display: none;
+        z-index: 10000;
+        opacity: 0.9;
+        border-radius: 5px;
+    }
+
+    div.usercm ul {
+        list-style-type: none;
+        list-style-position: outside;
+        margin: 0px;
+        padding: 0px;
+        display: block
+    }
+
+    div.usercm ul li {
+        margin: 0px;
+        padding: 0px;
+        line-height: 35px;
+    }
+
+    div.usercm ul li a {
+        color: #666;
+        padding: 0 15px;
+        display: block
+    }
+
+    div.usercm ul li a:hover {
+        color: #fff;
+        background: rgba(9, 145, 113, 0.88);
+        border-radius: 5px
+    }
+
+    div.usercm ul li a i {
+        margin-right: 10px
+    }
+
+    a.disabled {
+        color: #c8c8c8 !important;
+        cursor: not-allowed
+    }
+
+    a.disabled:hover {
+        background-color: rgba(255, 11, 11, 0) !important
+    }
+
+    div.usercm {
+        background: #fff !important;
+    }
+
