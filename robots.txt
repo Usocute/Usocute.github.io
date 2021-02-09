@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /post/
+Allow: /tags/
+Allow: /about/
+Allow: /categories/
+Allow: /link/
+Allow: /Gallery/
+Allow: /bangumis/
+Allow: /books/
+Allow: /movies/
+Disallow: /shuoshuo/
+
+Sitemap: https://miraitowa.cc/sitemap.xml

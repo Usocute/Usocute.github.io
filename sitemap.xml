@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://miraitowa.cc/bb/index.html</loc>
-    
-    <lastmod>2021-02-09</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://miraitowa.cc/post/2b43fca2.html</loc>
     
     <lastmod>2021-01-31</lastmod>
@@ -228,20 +221,6 @@
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/tags/%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2021-02-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://miraitowa.cc/tags/%E5%8E%86%E5%8F%B2/</loc>
-    <lastmod>2021-02-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://miraitowa.cc/tags/Git/</loc>
     <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
@@ -256,7 +235,35 @@
   </url>
   
   <url>
+    <loc>https://miraitowa.cc/tags/%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2021-02-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://miraitowa.cc/tags/%E5%8E%86%E5%8F%B2/</loc>
+    <lastmod>2021-02-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://miraitowa.cc/tags/MySQL/</loc>
+    <lastmod>2021-02-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://miraitowa.cc/tags/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/</loc>
+    <lastmod>2021-02-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://miraitowa.cc/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
     <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -291,14 +298,14 @@
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/tags/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/</loc>
+    <loc>https://miraitowa.cc/tags/View/</loc>
     <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
+    <loc>https://miraitowa.cc/tags/index/</loc>
     <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -347,34 +354,6 @@
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/tags/View/</loc>
-    <lastmod>2021-02-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://miraitowa.cc/tags/index/</loc>
-    <lastmod>2021-02-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://miraitowa.cc/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2021-02-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://miraitowa.cc/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
-    <lastmod>2021-02-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://miraitowa.cc/tags/npm/</loc>
     <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
@@ -411,6 +390,20 @@
   
   <url>
     <loc>https://miraitowa.cc/tags/Minecrift/</loc>
+    <lastmod>2021-02-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://miraitowa.cc/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2021-02-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://miraitowa.cc/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
     <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -454,13 +447,6 @@
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/categories/%E4%BA%8B%E4%BB%B6%E7%B0%BF/</loc>
-    <lastmod>2021-02-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://miraitowa.cc/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
@@ -468,14 +454,7 @@
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/categories/HEXO/</loc>
-    <lastmod>2021-02-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://miraitowa.cc/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git-SVN/</loc>
+    <loc>https://miraitowa.cc/categories/%E4%BA%8B%E4%BB%B6%E7%B0%BF/</loc>
     <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -489,7 +468,14 @@
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/</loc>
+    <loc>https://miraitowa.cc/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git-SVN/</loc>
+    <lastmod>2021-02-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://miraitowa.cc/categories/HEXO/</loc>
     <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -504,6 +490,13 @@
   
   <url>
     <loc>https://miraitowa.cc/categories/%E5%BE%80%E4%BA%8B%E5%A6%82%E7%83%9F/</loc>
+    <lastmod>2021-02-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://miraitowa.cc/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
