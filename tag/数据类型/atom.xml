@@ -6,37 +6,37 @@
     <updated>2020-09-03T04:07:24.000Z</updated>
     <category term="生活记录" />
     <category term="成长" />
-    <category term="Git" />
-    <category term="Github" />
     <category term="记录" />
     <category term="历史" />
+    <category term="Git" />
+    <category term="Github" />
     <category term="MySQL" />
-    <category term="存储引擎" />
-    <category term="数据类型" />
     <category term="数据库" />
     <category term="存储过程" />
     <category term="视图" />
     <category term="查询" />
-    <category term="View" />
-    <category term="index" />
+    <category term="存储引擎" />
+    <category term="数据类型" />
     <category term="学习笔记" />
     <category term="Trigger" />
     <category term="butterfly" />
     <category term="hexo" />
     <category term="魔改" />
-    <category term="增删改查" />
-    <category term="日常" />
-    <category term="昆明" />
+    <category term="View" />
+    <category term="index" />
     <category term="npm" />
     <category term="yarn" />
+    <category term="增删改查" />
     <category term="随笔" />
     <category term="碎碎念" />
-    <category term="MC" />
-    <category term="Minecrift" />
+    <category term="日常" />
+    <category term="昆明" />
     <category term="C" />
     <category term="算法" />
     <category term="leetcode" />
     <category term="javascript" />
+    <category term="MC" />
+    <category term="Minecrift" />
     <entry>
         <id>https://miraitowa.cc/post/afb0e9ab.html</id>
         <title>MySQL 存储引擎和数据类型</title>
