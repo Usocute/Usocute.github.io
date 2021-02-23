@@ -4,10 +4,10 @@
     <title>尺萤之光 • Posts by &#34;github&#34; tag</title>
     <link href="https://miraitowa.cc" />
     <updated>2021-01-21T05:06:41.000Z</updated>
-    <category term="生活记录" />
-    <category term="成长" />
     <category term="Git" />
     <category term="Github" />
+    <category term="生活记录" />
+    <category term="成长" />
     <category term="记录" />
     <category term="历史" />
     <category term="MySQL" />
@@ -17,26 +17,26 @@
     <category term="存储过程" />
     <category term="视图" />
     <category term="查询" />
-    <category term="View" />
-    <category term="index" />
     <category term="学习笔记" />
     <category term="Trigger" />
+    <category term="View" />
+    <category term="index" />
     <category term="butterfly" />
     <category term="hexo" />
     <category term="魔改" />
     <category term="增删改查" />
     <category term="npm" />
     <category term="yarn" />
-    <category term="日常" />
-    <category term="昆明" />
-    <category term="随笔" />
-    <category term="碎碎念" />
     <category term="MC" />
     <category term="Minecrift" />
+    <category term="日常" />
+    <category term="昆明" />
     <category term="C" />
     <category term="算法" />
     <category term="leetcode" />
     <category term="javascript" />
+    <category term="随笔" />
+    <category term="碎碎念" />
     <entry>
         <id>https://miraitowa.cc/post/643e8ed0.html</id>
         <title>常用的Git操作</title>
