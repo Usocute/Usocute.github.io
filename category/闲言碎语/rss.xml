@@ -7,10 +7,10 @@
         <language>zh-CN</language>
         <pubDate>Sun, 10 Nov 2019 00:00:00 +0800</pubDate>
         <lastBuildDate>Sun, 10 Nov 2019 00:00:00 +0800</lastBuildDate>
-        <category>Git</category>
-        <category>Github</category>
         <category>生活记录</category>
         <category>成长</category>
+        <category>Git</category>
+        <category>Github</category>
         <category>记录</category>
         <category>历史</category>
         <category>MySQL</category>
@@ -20,14 +20,16 @@
         <category>存储过程</category>
         <category>视图</category>
         <category>查询</category>
-        <category>学习笔记</category>
-        <category>Trigger</category>
         <category>View</category>
         <category>index</category>
+        <category>学习笔记</category>
+        <category>Trigger</category>
+        <category>增删改查</category>
         <category>butterfly</category>
         <category>hexo</category>
         <category>魔改</category>
-        <category>增删改查</category>
+        <category>随笔</category>
+        <category>碎碎念</category>
         <category>npm</category>
         <category>yarn</category>
         <category>MC</category>
@@ -38,8 +40,6 @@
         <category>算法</category>
         <category>leetcode</category>
         <category>javascript</category>
-        <category>随笔</category>
-        <category>碎碎念</category>
         <item>
             <guid isPermalink="true">https://miraitowa.cc/post/fae8.html</guid>
             <title>18岁，成年了呀~</title>
