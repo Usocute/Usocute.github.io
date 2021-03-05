@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://miraitowa.cc</id>
+    <title>尺萤之光 • Posts by &#34;网店设计&#34; tag</title>
+    <link href="https://miraitowa.cc" />
+    <updated>2021-03-02T04:59:28.000Z</updated>
+    <category term="Git" />
+    <category term="Github" />
+    <category term="生活记录" />
+    <category term="成长" />
+    <category term="记录" />
+    <category term="历史" />
+    <category term="MySQL" />
+    <category term="数据库" />
+    <category term="存储过程" />
+    <category term="视图" />
+    <category term="存储引擎" />
+    <category term="数据类型" />
+    <category term="查询" />
+    <category term="View" />
+    <category term="index" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
+    <category term="增删改查" />
+    <category term="npm" />
+    <category term="yarn" />
+    <category term="butterfly" />
+    <category term="hexo" />
+    <category term="魔改" />
+    <category term="前端设计" />
+    <category term="单页设计与推广" />
+    <category term="SEO优化" />
+    <category term="网店设计" />
+    <category term="随笔" />
+    <category term="碎碎念" />
+    <category term="日常" />
+    <category term="昆明" />
+    <category term="MC" />
+    <category term="Minecrift" />
+    <category term="移动端网站设计" />
+    <category term="C" />
+    <category term="算法" />
+    <category term="leetcode" />
+    <category term="整站交互设计" />
+    <category term="javascript" />
+    <entry>
+        <id>https://miraitowa.cc/post/90f8904c.html</id>
+        <title>互联网网店设计</title>
+        <link rel="alternate" href="https://miraitowa.cc/post/90f8904c.html"/>
+        <content type="html">&lt;h2 id=&#34;店铺装修基础知识&#34;&gt;店铺装修基础知识&lt;/h2&gt;
+&lt;h3 id=&#34;了解店铺装修的重要性&#34;&gt;了解店铺装修的重要性:&lt;/h3&gt;
+&lt;p&gt;网店装修一直是个非常热门的话题，开网店，也要把门面装修得漂亮点才能吸引客人。店铺的第一印象对于人的认知会产生相当的影响，对于网络店铺来说，装修更是店铺兴旺的制胜法宝，任何物品的任何信息我们都只能通过眼球来获得，所以更要在美观上下一些功夫。&lt;/p&gt;
+&lt;h3 id=&#34;做好店铺装修前的准备&#34;&gt;做好店铺装修前的准备:&lt;/h3&gt;
+&lt;p&gt;所谓网店装修，就是将原本平淡无奇的页面通过各种图片、动画、文字等元素进行美化，从而使网店变得更生动、形象。在对店铺进行装修前，首先应该做足准备，这样才可以达到事半功倍的效果。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;主营商品的性质&lt;/li&gt;
+&lt;li&gt;合适的装修风格&lt;/li&gt;
+&lt;li&gt;收集装修素材&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;商品图片的处理与美化&#34;&gt;商品图片的处理与美化&lt;/h2&gt;
+&lt;p&gt;一张好图胜千言，在网络上，买家不能看到商品实物，都是通过图片才能了解商品，因此，如果商品图片制作精良、漂亮，必然会引起买家兴趣。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;调整商品图片的大小&lt;/li&gt;
+&lt;li&gt;商品图片的裁剪&lt;/li&gt;
+&lt;li&gt;图片的亮度、对比度与颜色调整&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;店铺公告模板设计&#34;&gt;店铺公告模板设计&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;网店公告显示在普通店铺右上角，店主可以在此发布一些促销、公告信息。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;店铺公告的设计原则与要求&#34;&gt;店铺公告的设计原则与要求&lt;/h3&gt;
+&lt;p&gt;店铺公告信息是用来显示店铺的动态信息、商品促销、服务信息等内容的，普通店铺公告的位置一般显示在店面的右上角；普通店铺公告的位置、尺寸和播放方式都是固定设置的，只能在有限区域内发挥作用。&lt;/p&gt;
+&lt;h3 id=&#34;定义公告中的文字样式&#34;&gt;定义公告中的文字样式&lt;/h3&gt;
+&lt;p&gt;默认情况下，淘宝店铺公告中的文字是黑色的宋体字，可以通过编辑器的方式来对公告文字的字体、字号、颜色等进行设置。&lt;/p&gt;
+&lt;h3 id=&#34;美观的图片形式公告栏的设计&#34;&gt;美观的图片形式公告栏的设计&lt;/h3&gt;
+&lt;p&gt;除了简单的文字公告形式外，淘宝店铺还支持使用图片形式的公告，就是将公告制作成一张图片。&lt;/p&gt;
+</content>
+        <category term="前端设计" />
+        <category term="网店设计" />
+        <updated>2021-03-02T04:59:28.000Z</updated>
+    </entry>
+</feed>

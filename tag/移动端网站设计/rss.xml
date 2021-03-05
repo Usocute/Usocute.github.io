@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>尺萤之光 • Posts by &#34;移动端网站设计&#34; tag</title>
+        <link>https://miraitowa.cc</link>
+        <description>一个收藏回忆记录成长的地方...</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 04 Mar 2021 12:59:28 +0800</pubDate>
+        <lastBuildDate>Thu, 04 Mar 2021 12:59:28 +0800</lastBuildDate>
+        <category>Git</category>
+        <category>Github</category>
+        <category>生活记录</category>
+        <category>成长</category>
+        <category>记录</category>
+        <category>历史</category>
+        <category>MySQL</category>
+        <category>数据库</category>
+        <category>存储过程</category>
+        <category>视图</category>
+        <category>存储引擎</category>
+        <category>数据类型</category>
+        <category>查询</category>
+        <category>View</category>
+        <category>index</category>
+        <category>学习笔记</category>
+        <category>Trigger</category>
+        <category>增删改查</category>
+        <category>npm</category>
+        <category>yarn</category>
+        <category>butterfly</category>
+        <category>hexo</category>
+        <category>魔改</category>
+        <category>前端设计</category>
+        <category>单页设计与推广</category>
+        <category>SEO优化</category>
+        <category>网店设计</category>
+        <category>随笔</category>
+        <category>碎碎念</category>
+        <category>日常</category>
+        <category>昆明</category>
+        <category>MC</category>
+        <category>Minecrift</category>
+        <category>移动端网站设计</category>
+        <category>C</category>
+        <category>算法</category>
+        <category>leetcode</category>
+        <category>整站交互设计</category>
+        <category>javascript</category>
+        <item>
+            <guid isPermalink="true">https://miraitowa.cc/post/1158b6cc.html</guid>
+            <title>移动设备(手机)网站界面设计</title>
+            <link>https://miraitowa.cc/post/1158b6cc.html</link>
+            <category>前端设计</category>
+            <category>移动端网站设计</category>
+            <pubDate>Thu, 04 Mar 2021 12:59:28 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;手机网站的概念及趋势&#34;&gt;手机网站的概念及趋势&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;定义：手机网站是指特地用于手机阅读的网站。这种网站经过以文字信息和简单的图片信息为主。随着向手机智能化方向开展，装置了操作系统和阅读器的手机的功用和电脑是很类似的，但假如仅仅运用手机阅读器看PC网站的话，那还是很费劲的。运用这种手机能够经过GPRS上网可阅读几乎一切的www网站。由于手机的屏幕尺寸和CPU处置才能有限，特地为方便手机浏览而进行优化的网站更为便于用户阅读。目前使用手机上网的用户超过台式电脑用户，手机成为我国网民的第一大上网终端。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;前端开发中PC端和移动端网站的区别&#34;&gt;前端开发中PC端和移动端网站的区别&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;PC端在开发过程中考虑的是浏览器兼容性，移动端开发中考虑的是手机兼容性问题，做移动端开发，更多考虑的是手机分辨率的自适应和不同手机操作系统的略微差异化；&lt;/li&gt;
+&lt;li&gt;在部分事件的处理上，移动端自然是偏向于触屏的，另外包括移动端弹出的手机键盘该如何处理，这样的问题在PC上肯定不会遇到，但在移动端，如果你没有经验，处理起来是相当麻烦的；&lt;/li&gt;
+&lt;li&gt;布局上，移动端开发是要做到页面布局自适应的，而PC端页面布局的比例会相对固定；&lt;/li&gt;
+&lt;li&gt;在动画效果处理上，PC端要考虑IE的兼容性，通常用JS做动画的通用性会好一些，但相比CSS3却牺牲了较大的性能，而在手机端，如果要做一些动画、特效等，第一选择肯定是CSS3，既简单，效率又高。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;设计手机网站的注意事项：&#34;&gt;设计手机网站的注意事项：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;明确需要展示的主题和内容；&lt;/li&gt;
+&lt;li&gt;尽量符合滑动屏幕的方式；&lt;/li&gt;
+&lt;li&gt;特别注意与PC端网站导航功能的区别；&lt;/li&gt;
+&lt;li&gt;考虑多种手机界面和浏览器的兼容；&lt;/li&gt;
+&lt;li&gt;尽量减少用户文字输入操作；&lt;/li&gt;
+&lt;li&gt;开始设计时就要为以后的推广和宣传做预估；&lt;/li&gt;
+&lt;li&gt;兼顾非触摸屏幕的设计；&lt;/li&gt;
+&lt;li&gt;简化页面内容；&lt;/li&gt;
+&lt;li&gt;注重网页产品和服务的展示；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;手机网站的布局-使用媒体查询-原始方式&#34;&gt;手机网站的布局:(使用媒体查询(原始方式))&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;@media 在设计响应式页面时是非常有用的。可以针对不同的屏幕尺寸设置不同的样式。使用该方式设计的页面，可以根据浏览器的大小实时地进行高度和宽度的渲染。&lt;/li&gt;
+&lt;li&gt;基本格式如下：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;@media&lt;/span&gt;  mediatype  &lt;span class=&#34;keyword&#34;&gt;and&lt;/span&gt;|&lt;span class=&#34;keyword&#34;&gt;not&lt;/span&gt;|&lt;span class=&#34;keyword&#34;&gt;only&lt;/span&gt;  (mediad feature)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// CSS代码&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;碎碎念：这个东西好麻烦的感觉~&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

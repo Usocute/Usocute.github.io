@@ -589,7 +589,7 @@ hr:before,
   }
 }
 :root {
-  --global-font-size: 14px;
+  --global-font-size: 15px;
   --global-bg: #fff;
   --font-color: #4c4948;
   --hr-border: #d2ebfd;
@@ -943,7 +943,7 @@ blockquote footer cite:before {
 }
 #article-container pre,
 #article-container code {
-  font-size: 14px;
+  font-size: 15px;
   font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
 }
 #article-container code {
@@ -974,7 +974,7 @@ blockquote footer cite:before {
 #article-container figure.highlight figcaption,
 #article-container figure.highlight .caption {
   padding: 0.3rem 0 0.1rem 0.7rem;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1em;
 }
 #article-container figure.highlight figcaption a,
@@ -999,7 +999,7 @@ blockquote footer cite:before {
   height: 2.15em;
   background: #1c1c1c;
   color: rgba(238,255,255,0.8);
-  font-size: 14px;
+  font-size: 15px;
 }
 #article-container .highlight-tools.closed + table {
   display: none;
@@ -2581,6 +2581,7 @@ _:future,
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  border-radius: 10px;
   background-color: var(--sidebar-bg);
   box-shadow: 0 5px 20px -4px rgba(0,0,0,0.5);
   -webkit-animation: sub_menus 0.3s 0.1s ease both;
@@ -2611,7 +2612,7 @@ _:future,
   display: inline-block !important;
 }
 #nav.hide-menu #toggle-menu .site-page {
-  font-size: inherit;
+  font-size: 0.7rem;
 }
 #nav.hide-menu .menus_items {
   position: absolute;
@@ -2632,7 +2633,7 @@ _:future,
   position: relative;
   padding-bottom: 0.3rem;
   text-shadow: 0.05rem 0.05rem 0.1rem rgba(0,0,0,0.3);
-  font-size: 0.78em;
+  font-size: 0.8em;
   cursor: pointer;
 }
 #pagination {

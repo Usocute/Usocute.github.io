@@ -3,40 +3,391 @@
     <id>https://miraitowa.cc</id>
     <title>尺萤之光</title>
     <link href="https://miraitowa.cc" />
-    <updated>2021-01-22T16:00:00.000Z</updated>
+    <updated>2021-03-04T04:59:28.000Z</updated>
+    <category term="Git" />
+    <category term="Github" />
     <category term="生活记录" />
     <category term="成长" />
     <category term="记录" />
     <category term="历史" />
     <category term="MySQL" />
+    <category term="数据库" />
+    <category term="存储过程" />
+    <category term="视图" />
     <category term="存储引擎" />
     <category term="数据类型" />
-    <category term="数据库" />
     <category term="查询" />
-    <category term="Git" />
-    <category term="Github" />
+    <category term="View" />
+    <category term="index" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
+    <category term="增删改查" />
+    <category term="npm" />
+    <category term="yarn" />
     <category term="butterfly" />
     <category term="hexo" />
     <category term="魔改" />
-    <category term="学习笔记" />
-    <category term="Trigger" />
-    <category term="存储过程" />
-    <category term="视图" />
-    <category term="View" />
-    <category term="index" />
-    <category term="npm" />
-    <category term="yarn" />
-    <category term="日常" />
-    <category term="昆明" />
-    <category term="增删改查" />
+    <category term="前端设计" />
+    <category term="单页设计与推广" />
+    <category term="SEO优化" />
+    <category term="网店设计" />
     <category term="随笔" />
     <category term="碎碎念" />
+    <category term="日常" />
+    <category term="昆明" />
     <category term="MC" />
     <category term="Minecrift" />
+    <category term="移动端网站设计" />
     <category term="C" />
     <category term="算法" />
     <category term="leetcode" />
+    <category term="整站交互设计" />
     <category term="javascript" />
+    <entry>
+        <id>https://miraitowa.cc/post/1158b6cc.html</id>
+        <title>移动设备(手机)网站界面设计</title>
+        <link rel="alternate" href="https://miraitowa.cc/post/1158b6cc.html"/>
+        <content type="html">&lt;h2 id=&#34;手机网站的概念及趋势&#34;&gt;手机网站的概念及趋势&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;定义：手机网站是指特地用于手机阅读的网站。这种网站经过以文字信息和简单的图片信息为主。随着向手机智能化方向开展，装置了操作系统和阅读器的手机的功用和电脑是很类似的，但假如仅仅运用手机阅读器看PC网站的话，那还是很费劲的。运用这种手机能够经过GPRS上网可阅读几乎一切的www网站。由于手机的屏幕尺寸和CPU处置才能有限，特地为方便手机浏览而进行优化的网站更为便于用户阅读。目前使用手机上网的用户超过台式电脑用户，手机成为我国网民的第一大上网终端。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;前端开发中PC端和移动端网站的区别&#34;&gt;前端开发中PC端和移动端网站的区别&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;PC端在开发过程中考虑的是浏览器兼容性，移动端开发中考虑的是手机兼容性问题，做移动端开发，更多考虑的是手机分辨率的自适应和不同手机操作系统的略微差异化；&lt;/li&gt;
+&lt;li&gt;在部分事件的处理上，移动端自然是偏向于触屏的，另外包括移动端弹出的手机键盘该如何处理，这样的问题在PC上肯定不会遇到，但在移动端，如果你没有经验，处理起来是相当麻烦的；&lt;/li&gt;
+&lt;li&gt;布局上，移动端开发是要做到页面布局自适应的，而PC端页面布局的比例会相对固定；&lt;/li&gt;
+&lt;li&gt;在动画效果处理上，PC端要考虑IE的兼容性，通常用JS做动画的通用性会好一些，但相比CSS3却牺牲了较大的性能，而在手机端，如果要做一些动画、特效等，第一选择肯定是CSS3，既简单，效率又高。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;设计手机网站的注意事项：&#34;&gt;设计手机网站的注意事项：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;明确需要展示的主题和内容；&lt;/li&gt;
+&lt;li&gt;尽量符合滑动屏幕的方式；&lt;/li&gt;
+&lt;li&gt;特别注意与PC端网站导航功能的区别；&lt;/li&gt;
+&lt;li&gt;考虑多种手机界面和浏览器的兼容；&lt;/li&gt;
+&lt;li&gt;尽量减少用户文字输入操作；&lt;/li&gt;
+&lt;li&gt;开始设计时就要为以后的推广和宣传做预估；&lt;/li&gt;
+&lt;li&gt;兼顾非触摸屏幕的设计；&lt;/li&gt;
+&lt;li&gt;简化页面内容；&lt;/li&gt;
+&lt;li&gt;注重网页产品和服务的展示；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;手机网站的布局-使用媒体查询-原始方式&#34;&gt;手机网站的布局:(使用媒体查询(原始方式))&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;@media 在设计响应式页面时是非常有用的。可以针对不同的屏幕尺寸设置不同的样式。使用该方式设计的页面，可以根据浏览器的大小实时地进行高度和宽度的渲染。&lt;/li&gt;
+&lt;li&gt;基本格式如下：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;@media&lt;/span&gt;  mediatype  &lt;span class=&#34;keyword&#34;&gt;and&lt;/span&gt;|&lt;span class=&#34;keyword&#34;&gt;not&lt;/span&gt;|&lt;span class=&#34;keyword&#34;&gt;only&lt;/span&gt;  (mediad feature)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// CSS代码&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;碎碎念：这个东西好麻烦的感觉~&lt;/p&gt;
+</content>
+        <category term="前端设计" />
+        <category term="移动端网站设计" />
+        <updated>2021-03-04T04:59:28.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://miraitowa.cc/post/5ff78d08.html</id>
+        <title>互联网单页设计与推广</title>
+        <link rel="alternate" href="https://miraitowa.cc/post/5ff78d08.html"/>
+        <content type="html">&lt;h2 id=&#34;竞价单页&#34;&gt;竞价单页&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;概念：竞价单页通常都是由一个或几个HTML页面组成，由于HTML对搜索引擎的友好性，通过用来百度、google、搜狗等竞价排名来推广产品，由于大多数的竞价页面都是由一个页面组成，因此取名“竞价单页”。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;竞价产品以其高额的回报率成为近年来“网赚”的新宠，越来越多的“网客”加入竞价的行业，竞价产品的诞生不仅带动了多种行业的发展，更是营销方式的革新，更加促进了电子商务的发展。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;原理功效：主要介绍竞价产品&lt;code&gt;用途&lt;/code&gt;、&lt;code&gt;功效&lt;/code&gt;、&lt;code&gt;产地&lt;/code&gt;，比如减肥的主要说该减肥产品的主要原材料，减肥效果等。&lt;/li&gt;
+&lt;li&gt;媒体报道：竞价产品一般都&lt;code&gt;主要靠媒体推广&lt;/code&gt;等来营销的，引用主要媒体的视频、文章等来达到推广营销的目的，比如央视网、搜狐、新浪、网易、腾讯等主要媒体。&lt;/li&gt;
+&lt;li&gt;用户体验：以&lt;code&gt;图文并茂&lt;/code&gt;的形式列举用户使用后的体验和感受，达到增强产品说服力的效果。&lt;/li&gt;
+&lt;li&gt;在线问答：&lt;code&gt;主要采取一问一答的方式&lt;/code&gt;，网站客服在线回答用户的提问，主要包括产品功效、使用方法、付款方式、使用后的感受、产品运送方式等。&lt;/li&gt;
+&lt;li&gt;在线订单：&lt;code&gt;在线订单系统是竞价网页的核心部分，也是它的“灵魂”&lt;/code&gt; ，主要用来在线收集用户的信息包括收货人名、购买产品类型、联系方式、收货地址、付款方式等。通过收集这些信息后以邮件方式或保存到数据库等方式供网站卖家查看、发货，达到营销的目的。&lt;/li&gt;
+&lt;li&gt;发货记录：发货记录也是竞价单页网站的主要组成部分，通常以循环滚动的方式不间断滚动展示发货信息，达到展示产品销售火爆的景象。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;SEO&#34;&gt;SEO&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;SEO优化英文全称：&lt;code&gt;Search Engine Optimization&lt;/code&gt;，中文翻译为：&lt;code&gt;搜索引擎优化&lt;/code&gt;，缩写为：&lt;code&gt;SEO&lt;/code&gt;。关于SEO优化的简单的定义，就是从自然搜索结果获得网站流量的技术和过程，从而改进网站在搜索引擎中自然排名的一种技术。在搜索引擎里面搜索一个关键词，出现在搜索的结果中排名靠前的，广告除外，其余就是靠着SEO优化进行的。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;SEO优化的范围&#34;&gt;SEO优化的范围&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SEO优化业务做的工作有网站结构优化、关键词竞争研究，如关键词选择、竞争程度判断、关键词拓展、关键词分布等、还有外链建设、页面优化，而目标都是为了提高网站的流量，即网站访问量。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;据调查显示，有88% 的用户会利用搜索引擎服务查找需要的信息，而这之中有大部分的用户都会直接在搜索结果的自然排名的第一页信息中，查找选择所需要的信息，所以，如果网站的排名越靠前，那么被访问的几率也就越高，所能带来的业务也就越多。因此网站需要运用SEO进行网站优化，提高网站的排名。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;内部优化&#34;&gt;内部优化&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;meta标签优化：如：title, keywords, description等优化。&lt;/li&gt;
+&lt;li&gt;内部链接优化：如：相关性链接tag标签，锚文本链接，导航链接，图片链接等。&lt;/li&gt;
+&lt;li&gt;网站内容更新（主要是文字及内容的更新）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;外部优化&#34;&gt;外部优化&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;外部链接类别：友情链接、博客、论坛、新闻，贴吧、知道、百科等。&lt;/li&gt;
+&lt;li&gt;外链运营：每天增加一定数量的外部链接，使关键字排名稳步提升。&lt;/li&gt;
+&lt;li&gt;外链选择：与相关度比较高的网站交换友情链接。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;SEO优化&#34;&gt;SEO优化&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SEO优化的&lt;code&gt;最终目的就是为了获得搜索流量&lt;/code&gt;，因此关键词研究，针对有真实用户在搜索的关键词进行优化、文案写作等十分重要。SEO优化就是针对搜索引擎的搜索规则进行网站的优化。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SEO优化一般包括&lt;code&gt;站内优化&lt;/code&gt;与&lt;code&gt;站外优化&lt;/code&gt;两部分，站内优化是指网站本身的内容：更新的速度与质量、网站结构：标题标签，关键词，锚文本的分布、链接等。站外优化主要指外部链接。同时用户还可以结合一些SEO工具来帮助更好地进行网站的优化工作，例如：排名查询，权重查询，收录查询等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;SEO优化的走向&#34;&gt;SEO优化的走向&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;流量最终的流向是网站，所以SEO最终目标是帮助网站完成流量转化，比如访问用户通过网站直接带来业务，提高公司业务、广告点击或品牌建设，提升知名度。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;互联网站-网页-的权重排名&#34;&gt;互联网站(网页)的权重排名&lt;/h3&gt;
+&lt;h4 id=&#34;网站权重&#34;&gt;网站权重&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;搜索引擎给网站(网页)赋予一定的权威值，对网站(网页)进行权威的评估评价。&lt;/li&gt;
+&lt;li&gt;一个网站的权重值越高，在搜索引擎所占的分量越大，排名就越靠前。提高网站的权重值，不但有利于网站（网页）在搜索引擎的排名更靠前，还能提高整站的流量，增加网站的可信度。权重就是网站在SE0中的重要性和权威性。英文名称：Page Strength。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;需要注意的是：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;权重不等于排名。&lt;/li&gt;
+&lt;li&gt;权重对排名有非常大的影响。&lt;/li&gt;
+&lt;li&gt;整站权重的提高有利于内页的排名。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;权重的影响因素&#34;&gt;权重的影响因素&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;网站架构：（优质的网页通常为扁平式包含：主页、栏目页、内容页等，同时包含tag标签，含留言、评论、文章搜索等功能）&lt;/li&gt;
+&lt;li&gt;域名类型：（gov, edu结尾类型的网站自身权重较高，可信度高。其次是com, net, org结尾的网站。注册域名越久权重越高）&lt;/li&gt;
+&lt;li&gt;导入链接：（关联信较高的友情链接，博客，论坛等）&lt;/li&gt;
+&lt;li&gt;网站内容：（优质的原创内容可以给搜索引擎提供新内容。如果不能原创，也尽量避免原封不动的照搬照抄）&lt;/li&gt;
+&lt;li&gt;收录数量&lt;/li&gt;
+&lt;li&gt;关键词排名&lt;/li&gt;
+&lt;li&gt;更新频率&lt;/li&gt;
+&lt;li&gt;开放式目录：（被大型公共网页目录：如DMOZ, YAHOO等收录）&lt;/li&gt;
+&lt;li&gt;内容页：是否与主页和网站主题有较为紧密的联系。也会参考：专业性和权威性。&lt;/li&gt;
+&lt;li&gt;网站的诚信度&lt;/li&gt;
+&lt;li&gt;网站服务器：（稳定的服务器）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;单页推广技巧概述&#34;&gt;单页推广技巧概述&lt;/h2&gt;
+&lt;h3 id=&#34;head区的组成&#34;&gt;head区的组成&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;标题(title):在搜索引擎中抓取的第一行内容就是title，地址栏上方的网页名称中显示的也是title，title就相当于一个人的名字，其重要性不言而喻。&lt;br&gt;
+title书写的注意事项：简洁精炼（10个字内为佳），包含网页核心关键词，且尽量靠前。如：“二手车行业领导者”和“领导买卖二手车行业”在搜索结果中的效果是不一样的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;meta 属性中的关键词(keywords)&lt;br&gt;
+关键字必须在内容中找到响应的匹配，才有利于排名。&lt;br&gt;
+如：“二手房中介”网站常用的关键词是：“二手房买卖”，“二手房交易”，“二手房过户”，“二手房贷款”等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;描述(description)描述的内容应该与正文的内容相关。浏览者可以在搜索结果中阅读相关的描述。控制长度，字符数（含空格）不宜超过200字。可以对title和keywords的内容进行补充。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;其他meta标签属性:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;none：表示里面的文本内容或链接不可被查询。&lt;/li&gt;
+&lt;li&gt;from：表示页面上的链接可被查询。&lt;/li&gt;
+&lt;li&gt;nofrom：表示页面上的链接不可被查询。&lt;/li&gt;
+&lt;li&gt;author：涉及关于作者版权的搜索。&lt;/li&gt;
+&lt;li&gt;content部分常用命令：index、noindex、follow、nofollow，noarchive命令间以英文的“,”分隔。&lt;/li&gt;
+&lt;li&gt;index：允许查询、抓取本页。&lt;/li&gt;
+&lt;li&gt;follow：允许跟踪链接。&lt;/li&gt;
+&lt;li&gt;noindex：禁止查询、抓取本页。&lt;/li&gt;
+&lt;li&gt;nofollow：禁止跟踪链接。&lt;/li&gt;
+&lt;li&gt;noarchive：防止搜索引擎显示网站快照（网页快照）。&lt;/li&gt;
+&lt;li&gt;网站快照：搜索引擎在收录网页时，对网页进行备份，保存在自己（搜索引擎）的服务器缓存里，当用户在搜索引擎中点击“网页快照”链接时，搜索引擎将Spider系统当时所抓取并保存的网页内容展现出来，称为“网页快照”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;例如:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;meta name=&amp;quot;robots&amp;quot; content=&amp;quot;noindex&amp;quot;&amp;gt;&lt;/code&gt;作用：告诉搜索引擎不要抓取该页，如果该页已经收录，那么删除已经收录页面。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;meta name=&amp;quot;robots&amp;quot; content=&amp;quot;nofollow&amp;quot;&amp;gt;&lt;/code&gt;作用：告诉搜索引擎不要跟踪该页所有链接。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;meta name=&amp;quot;robots&amp;quot; content=&amp;quot;noarchive&amp;quot;&amp;gt;&lt;/code&gt;作用：告诉搜索引擎不要显示网站快照。&lt;br&gt;
+注意：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;meta name=&amp;quot;robots&amp;quot;&lt;/code&gt;指所有的搜索引擎的，也可以指定某一个搜索引擎，例如：&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;meta name=&amp;quot;Googlebot&amp;quot;&lt;/code&gt;(谷歌蜘蛛)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;meta name=&amp;quot;Baiduspider&amp;quot;&lt;/code&gt;(百度蜘蛛)&lt;br&gt;
+另外：&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;a rel=“nofollow” href=“url”&amp;gt;&lt;/code&gt;作用：告诉搜索引擎不要抓取该链接。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;补充：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;dns-prefetch&amp;quot; href=&amp;quot;//&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用原理：在DNS 解析和浏览器加载原理上，解析单个域名同样的地点加上高并发（极端）难免有点堵塞，再加上部分浏览器对相同域名去DNS 解析的时候会异步，导致速度下降，虽然这些速度上咱们可能看不上，但蚊子再小也是肉，优化就讲究极致。DNS Prefetch 是一种DNS 预解析技术，当你浏览网页时，浏览器会在加载网页时对网页中的域名进行解析缓存，这样在你单击当前网页中的连接时就无需进行DNS 的解析，减少用户等待时间，提高用户体验。“//” 是为了适配  https 和 http。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;meta name=&amp;quot;renderer&amp;quot; content=&amp;quot;浏览器内核类型&amp;quot;&amp;gt;&lt;/code&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用于告诉浏览器默认以哪种浏览器内核浏览当前网站，浏览器就会在读取到这个属性后，会立马切换到对应的模式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;content的取值主要有三种浏览器内核，分别是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;webkit：使用的webkit内核，属于极速模式，常用于网站的高速浏览，网站打开速度快，但某些网站在极速模式下可能出现兼容性问题，显示不正常； 如：&lt;code&gt;&amp;lt;meta name=&amp;quot;renderer&amp;quot; content=&amp;quot;webkit&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;ie-comp：使用IE兼容模式，就是用IE6，IE7，IE8的渲染模式，网站打开速度比极速模式略低，但网页兼容性问题较少，常用于网银、交易支付、旧版网站；如：&lt;code&gt;&amp;lt;meta name=&amp;quot;renderer&amp;quot; content=&amp;quot;ie-comp&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;ie-stand：属于IE标准模式，网站会使用IE9及以上版本的渲染方式渲染，支持硬件加速、支持IE9及以上版本全新的脚本渲染引擎；如：&lt;code&gt;&amp;lt;meta name=&amp;quot;renderer&amp;quot; content=&amp;quot;ie-stand&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;width：控制 viewport 的大小，可以指定的一个值，比如 800，或者特殊的值，如 device-width 为设备的宽度（单位为缩放为 100% 时的 CSS 的像素）&lt;/li&gt;
+&lt;li&gt;height：和 width 相对应，指定高度&lt;/li&gt;
+&lt;li&gt;initial-scale：初始缩放比例，也即是当页面第一次 load 的时候缩放比例&lt;/li&gt;
+&lt;li&gt;maximum-scale：允许用户缩放到的最大比例&lt;/li&gt;
+&lt;li&gt;minimum-scale：允许用户缩放到的最小比例&lt;/li&gt;
+&lt;li&gt;user-scalable：用户是否可以手动缩放&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;head区的标签注意事项&#34;&gt;head区的标签注意事项&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;title长度：搜索引擎识别20个汉字或60个英文字母内，超出部分会被丢弃。&lt;/li&gt;
+&lt;li&gt;title的重要性：网页搜索中最重要的判断依据，是最重要的标签。&lt;/li&gt;
+&lt;li&gt;描述和关键词：在搜索结果中展示，其内容关系到能否吸引用户。&lt;/li&gt;
+&lt;li&gt;如何写好描述：真实，不浮夸，实事求是，有显著特点。&lt;/li&gt;
+&lt;li&gt;关键字标记的禁忌：重复堆砌相同的关键词可以让排名适当靠前，但是也容易受到搜索引擎的惩罚。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;body区的组成&#34;&gt;body区的组成&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;h标题标签：h1~h6代表段落标题权重的依次递减。&lt;br&gt;
+&lt;strong&gt;如：h1代表网页的主标题，h2代表分段内容的标题，以此类推。即使h6也有一定的权重比，只是比较弱。&lt;/strong&gt;&lt;br&gt;
+例如：（权重依次递减）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;h1：亚洲旅游&lt;br&gt;
+h2：东亚旅游，东南亚旅游&lt;br&gt;
+h3：中国旅游，日本旅游，马来西亚旅游&lt;br&gt;
+…&lt;br&gt;
+h6：金殿旅游，云南野生动物园旅游&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;标签的理解：每种标签都有对应的功能，如p标签不能做标题。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;网页的命名：拼音或者英文单词的命名方式更容易被搜索引擎认可。如：qiche.html  与  123456.html对比，前者更容易被识别，因为其名称本身就是对网站的描述。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;图片优化：alt=“”,如果图片无法加载，则显示友好提示。title=“”，利于搜索引擎识别。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;header&amp;gt;&amp;lt;footer&amp;gt;&lt;/code&gt;标签的使用，利于搜索引擎自动识别页面内容和布局。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;基本格式如下：&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;区域:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;设置合适的&lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt;：20个汉字以内&lt;/li&gt;
+&lt;li&gt;设置&lt;code&gt;&amp;lt;meta name=&amp;quot;keywords&amp;quot; content=&amp;quot;&amp;quot;/&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;设置&lt;code&gt;&amp;lt;meta name=&amp;quot;description&amp;quot; content=&amp;quot;&amp;quot;/&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;如果网站需要，可以写作者：&lt;code&gt;&amp;lt;meta name=&amp;quot;author&amp;quot; content=&amp;quot;&amp;quot; /&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;版权设置&lt;code&gt;&amp;lt;meta name=&amp;quot;copyright&amp;quot; content=&amp;quot;&amp;quot; /&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;区域：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;页面主体设置&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;标签：主标题&lt;/li&gt;
+&lt;li&gt;设置&lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;标签：副标题&lt;/li&gt;
+&lt;li&gt;图片的优化：&lt;code&gt;alt=&amp;quot;&amp;quot;， title=&amp;quot;&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;header&amp;gt;,&amp;lt;footer&amp;gt;&lt;/code&gt;标签的使用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;网页命名：&lt;br&gt;
+尽量使用拼音或英文，利于搜索引擎识别和网页展示：xxx.html&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="前端设计" />
+        <category term="单页设计与推广" />
+        <category term="SEO优化" />
+        <updated>2021-03-03T04:59:28.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://miraitowa.cc/post/90f8904c.html</id>
+        <title>互联网网店设计</title>
+        <link rel="alternate" href="https://miraitowa.cc/post/90f8904c.html"/>
+        <content type="html">&lt;h2 id=&#34;店铺装修基础知识&#34;&gt;店铺装修基础知识&lt;/h2&gt;
+&lt;h3 id=&#34;了解店铺装修的重要性&#34;&gt;了解店铺装修的重要性:&lt;/h3&gt;
+&lt;p&gt;网店装修一直是个非常热门的话题，开网店，也要把门面装修得漂亮点才能吸引客人。店铺的第一印象对于人的认知会产生相当的影响，对于网络店铺来说，装修更是店铺兴旺的制胜法宝，任何物品的任何信息我们都只能通过眼球来获得，所以更要在美观上下一些功夫。&lt;/p&gt;
+&lt;h3 id=&#34;做好店铺装修前的准备&#34;&gt;做好店铺装修前的准备:&lt;/h3&gt;
+&lt;p&gt;所谓网店装修，就是将原本平淡无奇的页面通过各种图片、动画、文字等元素进行美化，从而使网店变得更生动、形象。在对店铺进行装修前，首先应该做足准备，这样才可以达到事半功倍的效果。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;主营商品的性质&lt;/li&gt;
+&lt;li&gt;合适的装修风格&lt;/li&gt;
+&lt;li&gt;收集装修素材&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;商品图片的处理与美化&#34;&gt;商品图片的处理与美化&lt;/h2&gt;
+&lt;p&gt;一张好图胜千言，在网络上，买家不能看到商品实物，都是通过图片才能了解商品，因此，如果商品图片制作精良、漂亮，必然会引起买家兴趣。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;调整商品图片的大小&lt;/li&gt;
+&lt;li&gt;商品图片的裁剪&lt;/li&gt;
+&lt;li&gt;图片的亮度、对比度与颜色调整&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;店铺公告模板设计&#34;&gt;店铺公告模板设计&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;网店公告显示在普通店铺右上角，店主可以在此发布一些促销、公告信息。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;店铺公告的设计原则与要求&#34;&gt;店铺公告的设计原则与要求&lt;/h3&gt;
+&lt;p&gt;店铺公告信息是用来显示店铺的动态信息、商品促销、服务信息等内容的，普通店铺公告的位置一般显示在店面的右上角；普通店铺公告的位置、尺寸和播放方式都是固定设置的，只能在有限区域内发挥作用。&lt;/p&gt;
+&lt;h3 id=&#34;定义公告中的文字样式&#34;&gt;定义公告中的文字样式&lt;/h3&gt;
+&lt;p&gt;默认情况下，淘宝店铺公告中的文字是黑色的宋体字，可以通过编辑器的方式来对公告文字的字体、字号、颜色等进行设置。&lt;/p&gt;
+&lt;h3 id=&#34;美观的图片形式公告栏的设计&#34;&gt;美观的图片形式公告栏的设计&lt;/h3&gt;
+&lt;p&gt;除了简单的文字公告形式外，淘宝店铺还支持使用图片形式的公告，就是将公告制作成一张图片。&lt;/p&gt;
+</content>
+        <category term="前端设计" />
+        <category term="网店设计" />
+        <updated>2021-03-02T04:59:28.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://miraitowa.cc/post/db7dc918.html</id>
+        <title>网站整站交互设计</title>
+        <link rel="alternate" href="https://miraitowa.cc/post/db7dc918.html"/>
+        <content type="html">&lt;h2 id=&#34;网站设计方法&#34;&gt;网站设计方法&lt;/h2&gt;
+&lt;p&gt;简介: 网站设计要能充分吸引访问者的注意力，让访问者产生视觉上的愉悦感。因此在网页创作的时候就必须将网站的整体设计与网页设计的相关原理紧密结合起来。网站设计是将策划案中的内容、网站的主题模式，以及结合自己的认识通过艺术的手法表现出来；而网页制作通常就是将网页设计师所设计出来的设计稿，按照W3C规范用html（标准通用标记语言下的一个应用）将其制作成网页格式。&lt;/p&gt;
+&lt;h3 id=&#34;设计方法&#34;&gt;设计方法:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;确定网站目标&lt;/li&gt;
+&lt;li&gt;满足用户的设计心理&lt;/li&gt;
+&lt;li&gt;熟悉和识别模式&lt;/li&gt;
+&lt;li&gt;网络上的品牌符号要统一&lt;/li&gt;
+&lt;li&gt;心里激发&lt;/li&gt;
+&lt;li&gt;运用图像强化概念&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;网站的可用性&#34;&gt;网站的可用性&lt;/h2&gt;
+&lt;h3 id=&#34;如何判断网页的可用性？&#34;&gt;如何判断网页的可用性？&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;页面链接的点击率&lt;/code&gt;是判断网站价值的一个指标。因此，可用性测试是否有助于提高网页价值的一个重要判断标准就是：在同等条件下，根据测试结果改进后的网页上的点击率是否也得到相应提升。不可否认，有时网站的商业目的与改善用户体验的测试目的并不完全一致，在项目中我们努力在两者之间寻找平衡点，希望在提升网站用户体验的同时，符合网站给出的判断标准。&lt;/p&gt;
+&lt;h3 id=&#34;如何让提升网站可用性&#34;&gt;如何让提升网站可用性?&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;寻找用户能够理解的方式来表达信息&lt;/li&gt;
+&lt;li&gt;让用户能够按照自己认为正确的方式操作&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;影响网站可用性的关键因素&#34;&gt;影响网站可用性的关键因素:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;是否直观。衡量新用户是否能不费力的了解该网站的主旨、内容、使用流程;&lt;/li&gt;
+&lt;li&gt;是否高效。衡量老用户（明确知道如何使用）使用该网站达成目标的过程是否高效;&lt;/li&gt;
+&lt;li&gt;是否容易记忆。衡量老用户（之前仅使用过一次）是否需要在第二次使用时重复探索、学习网站使用流程;&lt;/li&gt;
+&lt;li&gt;用户误操作的频率和严重性。衡量用户使用过程中是否经常误操作、这些误操作影响是否严重、用户如何自行纠正这些错误;&lt;/li&gt;
+&lt;li&gt;是否满意。用户的主观感受如何，是否对使用该网站达成目标的过程感到满意;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;常见网站的错误设计&#34;&gt;常见网站的错误设计&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;搜索引擎不友好&lt;/li&gt;
+&lt;li&gt;使用PDF文件做为在线阅读&lt;/li&gt;
+&lt;li&gt;未改变已访问链接的颜色&lt;/li&gt;
+&lt;li&gt;文字未排版&lt;/li&gt;
+&lt;li&gt;固定字体大小&lt;/li&gt;
+&lt;li&gt;网页标题搜索引擎不友好&lt;/li&gt;
+&lt;li&gt;所有的东西看起来都像广告&lt;/li&gt;
+&lt;li&gt;违反设计惯例&lt;/li&gt;
+&lt;li&gt;打开新的浏览器窗口&lt;/li&gt;
+&lt;li&gt;不回答用户的提问&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="前端设计" />
+        <category term="整站交互设计" />
+        <updated>2021-03-01T04:59:28.000Z</updated>
+    </entry>
     <entry>
         <id>https://miraitowa.cc/post/68889350.html</id>
         <title>yarn和npm常用命令</title>
@@ -820,7 +1171,7 @@
         <title>好像很久没真正快乐过了…</title>
         <link rel="alternate" href="https://miraitowa.cc/post/28c4837c.html"/>
         <content type="html">
-    &lt;div id=&#34;aplayer-ORdFdMBq&#34; class=&#34;aplayer aplayer-tag-marker meting-tag-marker&#34;
+    &lt;div id=&#34;aplayer-hXQOvMSM&#34; class=&#34;aplayer aplayer-tag-marker meting-tag-marker&#34;
          data-id=&#34;425570055&#34; data-server=&#34;netease&#34; data-type=&#34;song&#34; data-mode=&#34;circulation&#34; data-autoplay=&#34;false&#34; data-mutex=&#34;true&#34; data-listmaxheight=&#34;340px&#34; data-preload=&#34;auto&#34; data-theme=&#34;#ad7a86&#34;
     &gt;&lt;/div&gt;
 &lt;h2 id=&#34;好像很久没真正快乐过了&#34;&gt;好像很久没真正快乐过了&lt;/h2&gt;
@@ -857,90 +1208,5 @@
 </content>
         <category term="生活记录" />
         <updated>2020-07-31T03:42:31.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://miraitowa.cc/post/fae8.html</id>
-        <title>18岁，成年了呀~</title>
-        <link rel="alternate" href="https://miraitowa.cc/post/fae8.html"/>
-        <content type="html">&lt;blockquote&gt;
-&lt;p&gt;  我一直知道有人爱我。十八年前的冬天，有人在漫天飞雪的日子里满心欢喜地期待着我。期待于冬日结果。生日的意义不是提醒我又长大一岁，而是温柔的告诉我，要好好的，毕竟有人曾经有人那么温柔的等待着我。&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-        <category term="生活记录" />
-        <category term="成长" />
-        <updated>2019-11-09T16:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://miraitowa.cc/post/4a17b156.html</id>
-        <title>Hello World</title>
-        <link rel="alternate" href="https://miraitowa.cc/post/4a17b156.html"/>
-        <content type="html">&lt;h2 id=&#34;HELLO-WORLD&#34;&gt;HELLO WORLD&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;已经记不清楚这是第几次写&lt;code&gt;hello world&lt;/code&gt;了，从最早的emlog博客,到后来的typecho,再到后来的WordPress。基本没有写出什么有意义的东西。写的东西也基本都因为忘记导出数据库,忘记备份而丢失了…&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在这之前,一直使用&lt;a href=&#34;http://yunloli.com/&#34;&gt;云上萝莉&lt;/a&gt;的&lt;code&gt;香港免备案主机&lt;/code&gt;,然而速度并不理想,又买不起昂贵的服务器,而最近阿里云做活动以很便宜的价格购买了服务器。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;有时候，有些bug以我的能力确实也无法解决，但是现在可是互联网时代了呢建立博客后我们可以一起进步一起成长！&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2019年11月3日，我的个人网站正式开始运行啦！！！&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;哈哈哈还是很开心的呢，毕竟也花费了不少的心血和心思呢…&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;站点历史&#34;&gt;站点历史&lt;/h2&gt;
-&lt;div class=&#34;timeline&#34;&gt;
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;2017年某天&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;有了建一个属于自己的个人网站的想法…&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;2018年2月&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;使用白嫖的域名和免费主机+Emlog程序搭建了我的第一个博客…&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;2018年3月&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;主机商跑路，博客数据丢失…&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;2018年3月17日&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;在腾讯云购买域名&lt;code&gt;murmured.xyz&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;2018年3月21日&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;在云上萝莉购买香港免备案主机。使用&lt;code&gt;typecho&lt;/code&gt;程序+&lt;code&gt;Practice01&lt;/code&gt;主题重新搭建博客(嗯…然后,疯狂更换主题)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;2018年5月&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;购买域名&lt;code&gt;minemine.xyz&lt;/code&gt;。使用&lt;code&gt;wordpress&lt;/code&gt;程序+&lt;code&gt;sakura&lt;/code&gt;主题搭建博客镜像站&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;2019年3月&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;续费免备案主机…&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;2019年5月&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;域名&lt;code&gt;minemine.xyz&lt;/code&gt;到期，没有续费，购买并更换新域名&lt;code&gt;Eliauk.cc&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;2019年10月&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;网站数据库出问题，无法解决。一怒之下删了数据库(看来以后要好好学习数据库了)…&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;2019年11月2日&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;决定重建博客，最后选用&lt;code&gt;HEXO&lt;/code&gt;(我才不会说是因为不需要数据库)+&lt;a href=&#34;https://github.com/theme-nexmoe/hexo-theme-nexmoe&#34;&gt;Nexmoe&lt;/a&gt;主题，默认路线部署于Coding，海外路线部署于Github&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;2019年11月9日&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;更换主题为&lt;a href=&#34;https://github.com/amehime/hexo-theme-shoka&#34;&gt;Shoka&lt;/a&gt;…&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;2019年12月&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;更换主题为&lt;a href=&#34;https://github.com/jerryc127/hexo-theme-butterfly&#34;&gt;butterfly&lt;/a&gt;…&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;2020年11月&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;误点升级了&lt;code&gt;Coding pages&lt;/code&gt;,网站变得奇慢无比，转投&lt;a href=&#34;https://vercel.com/&#34;&gt;Vercel&lt;/a&gt;门下。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;2021年1月10日&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;购买并更换网站域名为&lt;code&gt;miraitowa.cc&lt;/code&gt;…&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;timenode&#34;&gt;&lt;div class=&#34;meta&#34;&gt;&lt;p&gt;&lt;p&gt;持续更新中&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;持续更新中…&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;</content>
-        <category term="记录" />
-        <category term="历史" />
-        <updated>2019-11-01T16:00:00.000Z</updated>
     </entry>
 </feed>
