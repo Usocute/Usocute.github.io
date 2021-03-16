@@ -8,74 +8,73 @@
 
 /* 鼠標指針樣式 */
 body {
-    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur), default
+  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur), default
 }
 
 .read-mode {
-    font-size: 17px
+  font-size: 17px
 }
 
 .read-mode #web_bg {
-    background: #fdf6e3
+  background: #fdf6e3
 }
 
-a,img {
-    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur), default
+a,
+img {
+  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur), default
 }
 
 video {
-    width: 100%
+  width: 100%
 }
 
 .card-info-avatar:hover {
-    background: url(https://ae01.alicdn.com/kf/H3342af90d24b4d62b9bbfec9688ccc25M.gif)
+  background: url(https://ae01.alicdn.com/kf/H3342af90d24b4d62b9bbfec9688ccc25M.gif)
 }
 
 audio {
-    outline: 0
+  outline: 0
 }
 
 /* 網頁背景顔色漸變 */
 #web_bg {
-    background: linear-gradient(90deg, rgba(247, 149, 51, .1) 0, rgba(243, 112, 85, .1) 15%, rgba(239, 78, 123, .1) 30%, rgba(161, 102, 171, .1) 44%, rgba(80, 115, 184, .1) 58%, rgba(16, 152, 173, .1) 72%, rgba(7, 179, 155, .1) 86%, rgba(109, 186, 130, .1) 100%)
+  background: linear-gradient(90deg, rgba(247, 149, 51, .1) 0, rgba(243, 112, 85, .1) 15%, rgba(239, 78, 123, .1) 30%, rgba(161, 102, 171, .1) 44%, rgba(80, 115, 184, .1) 58%, rgba(16, 152, 173, .1) 72%, rgba(7, 179, 155, .1) 86%, rgba(109, 186, 130, .1) 100%)
 }
 
 /* 滚动条 */
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: rgba(73, 177, 245, 0.2);
-    border-radius: 2em;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #49b1f5;
-    background-image: -webkit-linear-gradient(
-      45deg,
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(73, 177, 245, 0.2);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #49b1f5;
+  background-image: -webkit-linear-gradient(45deg,
       rgba(255, 255, 255, 0.4) 25%,
       transparent 25%,
       transparent 50%,
       rgba(255, 255, 255, 0.4) 50%,
       rgba(255, 255, 255, 0.4) 75%,
       transparent 75%,
-      transparent
-    );
-    border-radius: 2em;
-  }
-  
-  ::-webkit-scrollbar-corner {
-    background-color: transparent;
-  }
-  
-  ::-moz-selection {
-    color: #fff;
-    background-color: #49b1f5;
-  }
+      transparent);
+  border-radius: 2em;
+}
 
-  /* 頁脚顔色漸變
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #49b1f5;
+}
+
+/* 頁脚顔色漸變
 #footer {
     background: rgba(255, 255, 255, .15);
     color: #000;
@@ -100,167 +99,174 @@ audio {
 } */
 
 /* 隐藏Aplayer Cover,只留下右侧的箭头栏 */
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important
+}
 
-    a {
-        text-decoration: none;
-    }
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0 !important
+}
 
-    div.usercm {
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        background-color: #fff;
-        font-size: 13px !important;
-        width: 130px;
-        box-shadow: 0px 0px 15px #333;
-        position: absolute;
-        display: none;
-        z-index: 10000;
-        opacity: 0.9;
-        border-radius: 5px;
-    }
+a {
+  text-decoration: none;
+}
 
-    div.usercm ul {
-        list-style-type: none;
-        list-style-position: outside;
-        margin: 0px;
-        padding: 0px;
-        display: block
-    }
+div.usercm {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #fff;
+  font-size: 13px !important;
+  width: 130px;
+  box-shadow: 0px 0px 15px #333;
+  position: absolute;
+  display: none;
+  z-index: 10000;
+  opacity: 0.9;
+  border-radius: 5px;
+}
 
-    div.usercm ul li {
-        margin: 0px;
-        padding: 0px;
-        line-height: 35px;
-    }
+div.usercm ul {
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 0px;
+  padding: 0px;
+  display: block
+}
 
-    div.usercm ul li a {
-        color: #666;
-        padding: 0 15px;
-        display: block
-    }
+div.usercm ul li {
+  margin: 0px;
+  padding: 0px;
+  line-height: 35px;
+}
 
-    div.usercm ul li a:hover {
-        color: #fff;
-        background: rgba(9, 145, 113, 0.88);
-        border-radius: 5px
-    }
+div.usercm ul li a {
+  color: #666;
+  padding: 0 15px;
+  display: block
+}
 
-    div.usercm ul li a i {
-        margin-right: 10px
-    }
+div.usercm ul li a:hover {
+  color: #fff;
+  background: rgba(9, 145, 113, 0.88);
+  border-radius: 5px
+}
 
-    a.disabled {
-        color: #c8c8c8 !important;
-        cursor: not-allowed
-    }
+div.usercm ul li a i {
+  margin-right: 10px
+}
 
-    a.disabled:hover {
-        background-color: rgba(255, 11, 11, 0) !important
-    }
+a.disabled {
+  color: #c8c8c8 !important;
+  cursor: not-allowed
+}
 
-    div.usercm {
-        background: #fff !important;
-    }
+a.disabled:hover {
+  background-color: rgba(255, 11, 11, 0) !important
+}
 
-    /* bb哔哔 */
+div.usercm {
+  background: #fff !important;
+}
+
+/* bb哔哔 */
 /* bb样式 */
 
-.timeline ul li{
-    position: relative;
-    padding-left: 0.5rem;
-    list-style: none;
-  }
-  
-  /* 标题 */
-  .bb-info{
-    display: inline;
-    float: right;
-    line-height: 3.7rem;
-    color: var(--secondtext);
-  }
-  
-  /* 每条动态 */
-  #bber > section > ul > div > li > div{
-    display: flex;
-    flex-direction: initial;
-    flex-wrap: wrap;
-    background: var(--blockquote-bg);
-    box-shadow: var(--lightblack);
-    border-radius: 12px;
-    padding: 8px 16px;
-    margin-top: 12px;
-  }
-  
-  #bber p{
-    margin: 0;
-  }
-  
-  #bber .datafrom i{
-    margin-right: 4px;
-  }
-  
-  /* 时间 */
-  #bber > section > ul > div > li > div .datatime{
-    order: 1;
-    color: var(--secondtext);
-    font-size: 0.6rem;
-  }
-  
-  /* 内容 */
-  #bber > section > ul > div > li > div .datacont{
-    order: 0;
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--lighttext);
-    width: 100%;
-    line-height: 1.38;
-    margin: 8px 0;
-  }
-  
-  /* 设备 */
-  #bber > section > ul > div > li > div .datafrom{
-    order: 2;
-    color: var(--secondtext);
-    font-size: 0.6rem!important;
-    margin-left: 8px;
-  }
-  #bber > section > ul > div > li > div .datafrom small{
-    font-size: 100%;
-  }
-  
-  /* 时间线 */
-  .timeline ul li::before {
-    position: absolute;
-    top: 0.5rem;
-    left: -2rem;
-    z-index: 1;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 8px;
-    background: var(--card-bg);
-    content: "";
-    background-image: url(https://miraitowa.cc/img/avatar.jpg);
-    background-size: 2rem;
-  }
-  
-  /* 加载更多 */
-  .load-btn.button-load{
-    background: var(--card-btn-bg);
-    color: var(--fontcolor);
-    padding: 12px 12px;
-    margin: 8px 0;
-    width: 100%;
-    text-align: center;
-    border-radius: 12px;
-    transition: 0.3s;
-    font-weight: bold;
-  }
-  
-  .load-btn.button-load:hover{
-    background: var(--main);
-    color: var(--white);
-    transition: 0.3s;
-    box-shadow: var(--shadow-blue);
-  }
+.timeline ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+/* 标题 */
+.bb-info {
+  display: inline;
+  float: right;
+  line-height: 3.7rem;
+  color: var(--heo-secondtext);
+}
+
+/* 每条动态 */
+#bber>section>ul>div>li>div {
+  display: flex;
+  flex-direction: initial;
+  flex-wrap: wrap;
+  background: var(--blockquote-bg);
+  box-shadow: var(--lightblack);
+  border-radius: 12px;
+  padding: 8px 16px;
+  margin-top: 12px;
+}
+
+#bber p {
+  margin: 0;
+}
+
+#bber .datafrom i {
+  margin-right: 4px;
+}
+
+/* 时间 */
+#bber>section>ul>div>li>div .datatime {
+  order: 1;
+  color: var(--secondtext);
+  font-size: 0.6rem;
+}
+
+/* 内容 */
+#bber>section>ul>div>li>div .datacont {
+  order: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--lighttext);
+  width: 100%;
+  line-height: 1.38;
+  margin: 8px 0;
+}
+
+/* 设备 */
+#bber>section>ul>div>li>div .datafrom {
+  order: 2;
+  color: var(--secondtext);
+  font-size: 0.6rem !important;
+  margin-left: 8px;
+}
+
+#bber>section>ul>div>li>div .datafrom small {
+  font-size: 100%;
+}
+
+/* 时间线 */
+.timeline ul li::before {
+  position: absolute;
+  top: 0.5rem;
+  left: -2rem;
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 8px;
+  background: var(--card-btn-bg);
+  content: "";
+  background-image: url(https://miraitowa.cc/img/avatar.jpg);
+  background-size: 2rem;
+}
+
+/* 加载更多 */
+.load-btn.button-load {
+  background: var(--card-btn-bg);
+  color: var(--fontcolor);
+  padding: 12px 12px;
+  margin: 8px 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.load-btn.button-load:hover {
+  background: var(--main);
+  color: deepskyblue;
+  transition: 0.3s;
+  box-shadow: var(--shadow-blue);
+}
