@@ -4,19 +4,22 @@
     <title>尺萤之光 • Posts by &#34;hexo&#34; category</title>
     <link href="https://miraitowa.cc" />
     <updated>2021-01-18T05:06:41.000Z</updated>
-    <category term="生活记录" />
-    <category term="成长" />
     <category term="Git" />
     <category term="Github" />
+    <category term="生活记录" />
+    <category term="成长" />
     <category term="记录" />
     <category term="历史" />
+    <category term="js" />
+    <category term="js基础" />
+    <category term="js高级" />
     <category term="MySQL" />
     <category term="存储引擎" />
     <category term="数据类型" />
     <category term="数据库" />
+    <category term="查询" />
     <category term="存储过程" />
     <category term="视图" />
-    <category term="查询" />
     <category term="View" />
     <category term="index" />
     <category term="butterfly" />
@@ -24,25 +27,26 @@
     <category term="魔改" />
     <category term="学习笔记" />
     <category term="Trigger" />
-    <category term="增删改查" />
+    <category term="JavaScript基础" />
     <category term="npm" />
     <category term="yarn" />
+    <category term="增删改查" />
     <category term="前端设计" />
+    <category term="网店设计" />
     <category term="单页设计与推广" />
     <category term="SEO优化" />
-    <category term="网店设计" />
     <category term="日常" />
     <category term="昆明" />
-    <category term="MC" />
-    <category term="Minecrift" />
     <category term="随笔" />
     <category term="碎碎念" />
-    <category term="移动端网站设计" />
+    <category term="MC" />
+    <category term="Minecrift" />
     <category term="C" />
     <category term="算法" />
     <category term="leetcode" />
-    <category term="整站交互设计" />
+    <category term="移动端网站设计" />
     <category term="javascript" />
+    <category term="整站交互设计" />
     <entry>
         <id>https://miraitowa.cc/post/68a0812f.html</id>
         <title>butterfly主题魔改记录</title>

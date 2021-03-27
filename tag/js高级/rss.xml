@@ -1,0 +1,596 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>尺萤之光 • Posts by &#34;js高级&#34; tag</title>
+        <link>https://miraitowa.cc</link>
+        <description>一个收藏回忆记录成长的地方...</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 25 Mar 2021 18:00:00 +0800</pubDate>
+        <lastBuildDate>Thu, 25 Mar 2021 18:00:00 +0800</lastBuildDate>
+        <category>Git</category>
+        <category>Github</category>
+        <category>生活记录</category>
+        <category>成长</category>
+        <category>记录</category>
+        <category>历史</category>
+        <category>js</category>
+        <category>js基础</category>
+        <category>js高级</category>
+        <category>MySQL</category>
+        <category>存储引擎</category>
+        <category>数据类型</category>
+        <category>数据库</category>
+        <category>查询</category>
+        <category>存储过程</category>
+        <category>视图</category>
+        <category>View</category>
+        <category>index</category>
+        <category>butterfly</category>
+        <category>hexo</category>
+        <category>魔改</category>
+        <category>学习笔记</category>
+        <category>Trigger</category>
+        <category>JavaScript基础</category>
+        <category>npm</category>
+        <category>yarn</category>
+        <category>增删改查</category>
+        <category>前端设计</category>
+        <category>网店设计</category>
+        <category>单页设计与推广</category>
+        <category>SEO优化</category>
+        <category>日常</category>
+        <category>昆明</category>
+        <category>随笔</category>
+        <category>碎碎念</category>
+        <category>MC</category>
+        <category>Minecrift</category>
+        <category>C</category>
+        <category>算法</category>
+        <category>leetcode</category>
+        <category>移动端网站设计</category>
+        <category>javascript</category>
+        <category>整站交互设计</category>
+        <item>
+            <guid isPermalink="true">https://miraitowa.cc/post/a1736a1e.html</guid>
+            <title>JavaScript高级⑤-高级函数</title>
+            <link>https://miraitowa.cc/post/a1736a1e.html</link>
+            <category>js</category>
+            <category>js高级</category>
+            <pubDate>Thu, 25 Mar 2021 18:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;安全的类型检测&#34;&gt;安全的类型检测&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;在JS中，内置的类型检测机制有typeof和instanceof&lt;/code&gt;，但是这两个关键字&lt;code&gt;并非完全可靠&lt;/code&gt;。所以我们可以使用&lt;code&gt;Object的toString()方法&lt;/code&gt;以保证返回一个&lt;code&gt;[object XXX]&lt;/code&gt;格式的字符串。这样就可以创建一个函数来判断对象的类型。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;作用域安全的构造函数&#34;&gt;作用域安全的构造函数&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;创建一个作用域安全的构造函数，就是让this对象指向正确的实例对象。&lt;/li&gt;
+&lt;li&gt;首先使用&lt;code&gt;instanceof&lt;/code&gt;方法判断this对象是否为正确类型的实例，如果不是，就创建一个新的实例并返回。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;惰性载入函数&#34;&gt;惰性载入函数&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;惰性载入函数表示函数执行的分支仅会发生一次，实现惰性载入函数的方式有两种。&lt;/strong&gt;&lt;br&gt;
+1. 第一种，在函数被调用时再处理。在第一次调用时，该函数会覆盖为另一个按合适方式执行的函数，这样任何对函数的调用都不会再经过执行的分支了。&lt;br&gt;
+2. 第二种，在声明函数时就制定适当的函数。这样在第一次调用函数时就不会损失性能，而在代码首次加载时会损失一点儿性能。&lt;/p&gt;
+&lt;h2 id=&#34;函数绑定&#34;&gt;函数绑定&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;JS与DOM交互中经常需要使用函数绑定，定义一个函数然后将其绑定到特定DOM元素或集合的某个事件触发程序上，也经常与事件处理程序一起使用，以便把函数作为变量传递的同时保留代码执行环境。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;重复的定时器&#34;&gt;重复的定时器&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;我们通常使用&lt;code&gt;setInterval&lt;/code&gt;方式来实现时间间隔会出现两个问题：&lt;/strong&gt;&lt;br&gt;
+1. 某些间隔会被跳过。&lt;br&gt;
+2. 多个定时器的代码执行时，间隔可能会有误差。&lt;br&gt;
+&lt;strong&gt;所以我们可以使用&lt;code&gt;setTimeout&lt;/code&gt;方式来完善该功能。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;函数节流&#34;&gt;函数节流&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;定时器不仅可以用来定时，还可以用来缓解浏览器的压力。浏览器在执行DOM操作的时候，就会使用更多的内存和CPU。连续使用过多的DOM操作会导致浏览器崩溃。&lt;/li&gt;
+&lt;li&gt;函数节流的基本思想就是，某些代码不可以在没有间断的情况下连续重复使用。也就是说，第一次调用函数就创建一个定时器，在指定的时间间隔之后才能再次运行。当第二次调用该函数时，就会清除前一次的定时器并设置一个。目的就是为了保证每次执行函数时有一段时间的间隔。&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://miraitowa.cc/post/faefd80d.html</guid>
+            <title>JavaScript高级④-AJAX与JSON</title>
+            <link>https://miraitowa.cc/post/faefd80d.html</link>
+            <category>js</category>
+            <category>js高级</category>
+            <pubDate>Mon, 22 Mar 2021 18:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;AJAX介绍和创建XHR对象&#34;&gt;AJAX介绍和创建XHR对象&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;AJAX:异步 JavaScript 和 XML。简短地说，在不重载整个网页的情况下，AJAX通过后台加载数据，并在网页上进行显示。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;AJAX包括以下几个步骤：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;创建AJAX对象；&lt;/li&gt;
+&lt;li&gt;发出HTTP请求；&lt;/li&gt;
+&lt;li&gt;接收服务器传回的数据；&lt;/li&gt;
+&lt;li&gt;更新页面数据；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ajax的工作原理如图所示：&lt;/strong&gt;&lt;br&gt;
+&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://gitee.com/usocute/gallery/raw/master/img/miraitowa-javascript-AJAX-JSON-img1.png&#34; alt=&#34;AJAX&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;总结：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;AJAX通过原生的XMLHttpRequest对象发出HTTP请求，得到服务器返回的数据后再进行处理。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AJAX技术的核心就是XMLHttpRequest对象&lt;/code&gt;（简称：XHR），这是微软首次引入的一个特性，其他浏览器厂商后来都提供了相同的实现。&lt;/li&gt;
+&lt;li&gt;IE5中的XHR对象是通过ActiveX对象实现的，而IE7+及其他标准浏览器都支持原生的XHR对象。&lt;/li&gt;
+&lt;li&gt;创建一个XHR对象，也叫做实例化一个XHR对象，因为XMLHttpRequest()是一个构造函数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;XHR的用法介绍&#34;&gt;XHR的用法介绍&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;open()&lt;/code&gt;方法：设置:  HTTP方法和要获取资源的URL;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;send()&lt;/code&gt;方法：发送请求：&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;onload&lt;/code&gt;属性：设置:  成功获取数据后将要运行的函数;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;onerror&lt;/code&gt;属性：设置:  出现错误后将要运行的函数;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;responseText&lt;/code&gt;属性：设置:  存储异步请求响应的文本;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;HTTP头部信息&#34;&gt;HTTP头部信息&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;请求头用于说明是谁或什么在发送请求、请求源于何处，或者客户端的喜好及能力。服务器可以根据请求头部给出的客户端信息，试着为客户端提供更好的响应。XHR对象也提供了操作这两种头部信息（请求头和响应头）的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Accep&lt;/code&gt;t：告诉WEB服务器自己接受什么介质类型，&lt;em&gt;/&lt;/em&gt; 表示任何类型，type/* 表示该类型下的所有子类型，type/sub-type。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Accept-Charset&lt;/code&gt;：浏览器告诉服务器自己能接收的字符集。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Accept-Encoding&lt;/code&gt;：浏览器申明自己接收的编码方法，通常指定压缩方法，是否支持压缩，支持什么压缩方法（gzip，deflate）。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Accept-Language&lt;/code&gt;：浏览器申明自己接收的语言。语言跟字符集的区别：中文是语言，中文有多种字符集，比如big5，gb2312，gbk等等。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Cache-Control&lt;/code&gt;：指定请求和响应遵循的缓存机制。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Connection&lt;/code&gt;：表示是否需要持久连接。如果Servlet看到这里的值为“Keep-Alive”，或者看到请求使用的是HTTP 1.1，它就表示持久连接。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Cookie&lt;/code&gt;：当前域名下的Cookie。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Referer&lt;/code&gt;： 浏览器向WEB 服务器表明自己是从哪个网页URL获得点击当前请求中的网址/URL。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;User-Agent&lt;/code&gt;：浏览器表明自己的身份（是哪种浏览器）。例如：User-Agent：Mozilla/5.0&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;GET与POST请求&#34;&gt;GET与POST请求&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;由于&lt;code&gt;GET方式&lt;/code&gt;在发送数据时是将参数拼接在URL上，&lt;code&gt;传输数据会受到URL长度的限制&lt;/code&gt;，不同浏览器的长度限制不一样，所以&lt;code&gt;GET方式会受到参数大小的限制&lt;/code&gt;，但是&lt;code&gt;POST方式没有参数大小的限制&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;因为GET方式会将请求参数显示在地址栏上，而POST方式不会，所以&lt;code&gt;POST方式相对来讲更安全&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GET方式有缓存，而POST方式没有缓存&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;JavaScript中的跨域请求&#34;&gt;JavaScript中的跨域请求&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;受JS同源策略的影响，当在某一域名下请求其他域名，或在同一域名下请求不同端口的URL时，就会变成不被允许的跨域请求。127.0.0.1:8020&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;了解XDomainRequest对象&#34;&gt;了解XDomainRequest对象&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;XDomainRequest表示JavaScript和Ajax的跨域请求，在IE8+可以使用&lt;/code&gt;。&lt;br&gt;
+XDomainRequest包含以下几个部分：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;事件
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;onload&lt;/code&gt;事件：请求成功并返回对象时，被触发。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;onerror&lt;/code&gt;事件：当跨域请求发生错误时，被触发。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;onprogress&lt;/code&gt;事件：浏览器开始从服务器端接收数据时，被触发。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ontimeout&lt;/code&gt;事件：出现超时情况，被触发。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;方法
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;abort&lt;/code&gt;方法：终止等待send&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;open(XDomainRequest)&lt;/code&gt;方法：建立与服务器的链接&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;send(XDomainRequest)&lt;/code&gt;方法：传输一个字符串数据给服务器处理&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;属性
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;constructor&lt;/code&gt;属性：返回一个对象的构造函数的引用&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;contentType&lt;/code&gt;属性：返回html请求或返回头部的content-type属性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;responseText&lt;/code&gt;属性：以字符串形式返回请求的body内容&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timeout&lt;/code&gt;属性：超时后返回的值。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;JSON数据&#34;&gt;JSON数据&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;JSON(JavaScript Object Notation&lt;/code&gt;, JS 对象简谱) 是一种轻量级的数据交换格式。它基于 &lt;code&gt;ECMAScript&lt;/code&gt; (欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Json的语法可以表示成三种类型的值：&lt;/strong&gt;&lt;br&gt;
+1. 简单值：可以在Json中表示字符串、数值、布尔值和null，但是&lt;code&gt;不支持undefined&lt;/code&gt;;&lt;br&gt;
+2. 对象：作为一种复杂数据结构，表示一种无序的键值对，每个键值对中的值既可以是简单值，也可以是复杂数据类型的值。&lt;br&gt;
+3. 数组：作为一种复杂数据结构，表示一种有序值的列表，可以通过数组索引访问其中的值。数组中的元素可以是任何类型：简单值、对象、数组均可。&lt;br&gt;
+&lt;strong&gt;如：&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; obj = &amp;#123;&lt;span class=&#34;attr&#34;&gt;a&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;#x27;Hello&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;b&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;#x27;World&amp;#x27;&lt;/span&gt;&amp;#125;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//这是一个对象，注意键名也是可以使用引号包裹的&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; json = &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#123;&amp;quot;a&amp;quot;: &amp;quot;Hello&amp;quot;, &amp;quot;b&amp;quot;: &amp;quot;World&amp;quot;&amp;#125;&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;//这是一个 JSON 字符串，本质是一个字符串&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;在Ajax中使用JSON数据&#34;&gt;在Ajax中使用JSON数据&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;JSON.parse()&lt;/code&gt;：把Json格式的字符串转换为Json对象。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;JSON.stringify()&lt;/code&gt;:把Json对象转换为Json格式的字符串。&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://miraitowa.cc/post/bd399257.html</guid>
+            <title>JavaScript高级③-匿名函数及函数操作</title>
+            <link>https://miraitowa.cc/post/bd399257.html</link>
+            <category>js</category>
+            <category>js高级</category>
+            <pubDate>Sat, 20 Mar 2021 18:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;匿名函数&#34;&gt;匿名函数&lt;/h2&gt;
+&lt;h3 id=&#34;工厂模式&#34;&gt;工厂模式&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;假如我们把猫看成是一类，都有名字和颜色的属性，那么，每一只猫就是这个类的实例，我们可以使用字面量方式定义对象：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; cat1 = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  name:&lt;span class=&#34;string&#34;&gt;&amp;quot;大黄&amp;quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  color:&lt;span class=&#34;string&#34;&gt;&amp;quot;黄色&amp;quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  say:&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    alert(&lt;span class=&#34;string&#34;&gt;&amp;quot;miao&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; cat2 = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  name:&lt;span class=&#34;string&#34;&gt;&amp;quot;小黑&amp;quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  color:&lt;span class=&#34;string&#34;&gt;&amp;quot;黑色&amp;quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  say:&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    alert(&lt;span class=&#34;string&#34;&gt;&amp;quot;miao&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;这样创建对象，一是创建对象比较麻烦，二是实例与原型（猫类）之间，没有任何联系。&lt;/li&gt;
+&lt;li&gt;为了简化代码书写，我们可以写一个函数批量创建对象，也就是使用&lt;code&gt;“工厂模式”&lt;/code&gt;：&lt;br&gt;
+&lt;strong&gt;（工厂模式中的函数，首字母大写）：&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Cat&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;n,c&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        name:n,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        color:c,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        say:&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          alert(&lt;span class=&#34;string&#34;&gt;&amp;quot;miao&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;生成实例对象，就等于是在调用函数&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; cat1 = Cat(&lt;span class=&#34;string&#34;&gt;&amp;quot;大黄&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;黄色&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; cat2 = Cat(&lt;span class=&#34;string&#34;&gt;&amp;quot;小黑&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;黑色&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这样代码虽然简单了，但是实例之间还是没有什么联系。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;构造函数&#34;&gt;构造函数&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;为了解决从原型对象生成实例的问题，Javascript提供了一个构造函数（Constructor）模式。&lt;/li&gt;
+&lt;li&gt;所谓&amp;quot;构造函数&amp;quot;，其实就是一个普通函数，但是内部使用了this变量。对构造函数使用new运算符，就能生成实例，并且this变量会绑定在实例对象上。&lt;/li&gt;
+&lt;li&gt;构造函数首字母大写，没有return语句，没有显式地创建对象。&lt;/li&gt;
+&lt;li&gt;构造函数中的this，指向的是实例化的对象&lt;br&gt;
+&lt;strong&gt;例如：&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Cat&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;n,c&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;.name=n;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;.color=c;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;生成实例对象&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; cat1 = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; Cat(&lt;span class=&#34;string&#34;&gt;&amp;quot;大黄&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;黄色&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; cat2 = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; Cat(&lt;span class=&#34;string&#34;&gt;&amp;quot;小黑&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;黑色&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;这时cat1和cat2会自动含有一个constructor属性，指向它们的构造函数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;alert(cat1.constructor == Cat); &lt;span class=&#34;comment&#34;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(cat2.constructor == Cat); &lt;span class=&#34;comment&#34;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Javascript还提供了一个instanceof运算符，验证原型对象与实例对象之间的关系。&lt;/li&gt;
+&lt;li&gt;instanceof不认为基本类型值的变量是对象。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; txt=&lt;span class=&#34;string&#34;&gt;&amp;#x27;adsdf&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(txt &lt;span class=&#34;keyword&#34;&gt;instanceof&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;String&lt;/span&gt;);&lt;span class=&#34;comment&#34;&gt;//false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; age=&lt;span class=&#34;number&#34;&gt;123123&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(age &lt;span class=&#34;keyword&#34;&gt;instanceof&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;Number&lt;/span&gt;);&lt;span class=&#34;comment&#34;&gt;//false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; re=&lt;span class=&#34;regexp&#34;&gt;/\d/&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(re &lt;span class=&#34;keyword&#34;&gt;instanceof&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;RegExp&lt;/span&gt;);&lt;span class=&#34;comment&#34;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr=[];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(arr &lt;span class=&#34;keyword&#34;&gt;instanceof&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;Array&lt;/span&gt;)&lt;span class=&#34;comment&#34;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;原型模式和原型链&#34;&gt;原型模式和原型链&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;每类对象的实例对象，都有可能会有一些相同的属性，或者相同的功能，如果都写在构造函数上，会造成重复的内容，占用更多的内存。&lt;/li&gt;
+&lt;li&gt;为了解决这种代码的重复&lt;/li&gt;
+&lt;li&gt;构造函数都有一个prototype属性，指向另一个对象。这个对象的所有属性和方法，都会被构造函数的实例继承。&lt;/li&gt;
+&lt;li&gt;我们可以把那些不变的属性和方法，直接定义在prototype对象上。让实例对象共享其属性和方法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Cat.protoType.say = &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  alert(&lt;span class=&#34;string&#34;&gt;&amp;quot;miao&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat1.say()&lt;span class=&#34;comment&#34;&gt;//miao&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat2.say()&lt;span class=&#34;comment&#34;&gt;//miao&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;所有的函数都是 Function 的实例。在构造函数上都有一个原型属性—prototype，prototype也是一个对象；这个对象上有一个 constructor 属性，该属性指向的就是构造函数。&lt;/li&gt;
+&lt;li&gt;而实例对象上有一个_proto_属性，该属性也指向原型对象，该属性不是标准属性，不可以用在编程中，该属性用于浏览器内部使用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;组合使用构造函数模式和原型模式&#34;&gt;组合使用构造函数模式和原型模式&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;构造函数与原型模式组合的模式是目前使用最广泛、认同度最高的一种创建定义类型的方法。构造函数模式用于定义实例属性，原型模式用于定义方法和共享的属性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;每个实例都会有自己的一份实例属性的副本，同时共享着对方法的引用，最大限度节省内存。同时，这种组合模式还支持向构造函数传递参数，集合了两种模式的优点。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;动态原型模式&#34;&gt;动态原型模式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;动态原型模式就是把所有信息都封装在构造函数中，通过检查某个应该存在的方法是否有效，来决定是否需要初始化原型。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;寄生构造函数模式&#34;&gt;寄生构造函数模式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;寄生构造函数模式的基本思想，是创建一个用于封装创建对象的函数。主要用于创建一个自定义类型的函数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;稳妥构造函数模式&#34;&gt;稳妥构造函数模式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;稳妥对象，指的是没有公共属性，而且其方法也不引用this的对象。适合在一些安全的环境中（禁用this和new的环境），或者防止数据被其他应用程序调用时使用。&lt;/li&gt;
+&lt;li&gt;稳妥构造函数遵循与寄生构造函数类似的模式，只是有两点不同：
+&lt;ol&gt;
+&lt;li&gt;新创建对象的实例方法不引用this；&lt;/li&gt;
+&lt;li&gt;不使用new调用构造函数。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;原型链&#34;&gt;原型链&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;原型链可以简单理解为原型组成的链，对象的_proto_就是其原型，而原型也是一个对象，也有_proto_属性。原型的_proto_又是原型的原型，这样可以一直向上找，直到找到Object的原型，就是这条原型链的顶端。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;借用构造函数，也称伪造对象或经典继承&#34;&gt;借用构造函数，也称伪造对象或经典继承&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;借用构造函数实现继承的基本思想是：在子类的构造函数中调用超类的构造函数。该函数可以通过apply()方法和call()方法在新创建的对象中执行构造函数。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;优点：相对于原型链而言，借用构造函数可以在子类构造函数中向超类构造函数传递数据。&lt;/li&gt;
+&lt;li&gt;缺点：构造函数的方法都在构造函数中定义，因此无法实现函数复用。另外，子类无法看见在超类中定义的方法，导致所有类型只能使用构造函数模式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;组合继承&#34;&gt;组合继承&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;组合继承，又称为伪经典继承。指：将原型链和借用构造函数的技术组合在一起，从而发挥两者长处的一种继承模式。
+&lt;blockquote&gt;
+&lt;p&gt;其思想是：使用原型链实现对原型属性和方法的继承，通过借用构造函数来实现对实例属性的继承。这样，我们就可以实现通过在原型上定义方法进而实现函数复用，又能保证每个实例都有自己的属性，解决原型链中存在的引用类型属性共享问题。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;原型式继承&#34;&gt;原型式继承&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;原型式继承，即：一个构造方法，通过原型链的方式继承另一个构造函数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;寄生式继承&#34;&gt;寄生式继承&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;寄生式继承，即：创建一个仅用于封装继承过程的函数，该函数在内部以某种方式来增强对象，最后返回该对象。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;寄生组合式继承&#34;&gt;寄生组合式继承&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;寄生组合式继承是JS最常用的继承模式，其最大的问题就是无论在什么情况下，都会调用两次构造函数：一次是在创建子类原型时，另一次是在子类构造函数内部。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;函数操作&#34;&gt;函数操作&lt;/h2&gt;
+&lt;h3 id=&#34;函数表达式&#34;&gt;函数表达式&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用函数表达式创建的函数，必须先赋值再调用。（即：只有函数声明式才有函数提升，函数表达式没有函数提升。）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;fn2(); &lt;span class=&#34;comment&#34;&gt;// 不能在函数之前调用。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; fn2 = &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(&lt;span class=&#34;string&#34;&gt;&amp;quot;2.演示函数表达式&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fn2(); &lt;span class=&#34;comment&#34;&gt;// 只能在函数之前调用。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;虽然函数表达式没有函数提升，但是它也有自己的一些优点。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;递归函数&#34;&gt;递归函数&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;递归函数，就是在函数体内调用本函数。最简单的例子就是计算阶乘： 1&lt;em&gt;2&lt;/em&gt;3…。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;递归的缺点：如果递归函数的终止条件不明确甚至缺失，会导致该函数长时间运行，使用户界面处于假死状态。另外，当递归使用太多甚至超过最大调用栈内存容量时，浏览器会报错。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;闭包&#34;&gt;闭包&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;闭包，是指有权访问另外一个函数作用域中的变量的函数。创建闭包的常见方式就是在一个函数内部创建另一个函数。&lt;/li&gt;
+&lt;li&gt;JS中，一般为了给某个函数声明一些只有该函数才能使用的局部变量时就会使用闭包，这样可以减少全局作用域中的变量，净化全局作用域。但是闭包会占用更多的内存。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;模仿块级作用域&#34;&gt;模仿块级作用域&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;JS中没有块级作用域，我们可以进行模仿块级作用域。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用方式：&lt;br&gt;
+简单来讲，就是定义并立即调用一个匿名函数。&lt;br&gt;
+具体步骤，就是将匿名函数声明（函数表达式）在一对圆括号中，而紧随其后的一对圆括号会立即调用该函数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;私有变量&#34;&gt;私有变量&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;严格来讲，JS中没有私有成员的概念，所有对象属性都是公开的。&lt;/li&gt;
+&lt;li&gt;但是，任何在函数中定义的变量都可以认为是私有变量，因为不能在函数外部访问。&lt;/li&gt;
+&lt;li&gt;私有变量包括函数参数，局部变量以及在函数内部定义的其他函数。&lt;/li&gt;
+&lt;li&gt;闭包函数可以持有这些私有变量，并在外部访问。&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://miraitowa.cc/post/fec01c07.html</guid>
+            <title>JavaScript高级②-面向对象的程序设计</title>
+            <link>https://miraitowa.cc/post/fec01c07.html</link>
+            <category>js</category>
+            <category>js高级</category>
+            <pubDate>Fri, 19 Mar 2021 18:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;strong&gt;&lt;code&gt;JavaScript是基于对象编程的&lt;/code&gt;，&lt;code&gt;面向对象是一种编程思想&lt;/code&gt;。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;类和对象&#34;&gt;类和对象&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;类：我们善于将事物进行分类，类是一个抽象的概念。&lt;/li&gt;
+&lt;li&gt;对象：具体的事物。
+&lt;ul&gt;
+&lt;li&gt;猫是一类&lt;/li&gt;
+&lt;li&gt;楼下的大黄  —&amp;gt;  对象&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;类是对象的抽象，对象是类的具体事例。&lt;/li&gt;
+&lt;li&gt;类不占用内存，对象占用内存空间。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;Object类型&#34;&gt;Object类型&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Object对象，是所有JavaScript对象的超类（基类）。&lt;/li&gt;
+&lt;li&gt;Object.prototype（Object的原型）定义了JS对象的基本方法和属性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;声明对象-Object变量定义-两种方法&#34;&gt;声明对象(Object变量定义) 两种方法&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;字面量声明 var obj = {};&lt;/li&gt;
+&lt;li&gt;new运算符 var obj = new Object();&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;对象类型的判断&#34;&gt;对象类型的判断&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;console.log(typeof  obj);&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;添加对象属性的方法&#34;&gt;添加对象属性的方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;语法 ：&lt;a href=&#34;http://obj.id&#34;&gt;obj.id&lt;/a&gt; = “abc”;&lt;/li&gt;
+&lt;li&gt;[ ]方括号语法：  obj[“id”]= “abc”;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;删除对象属性的方法&#34;&gt;删除对象属性的方法&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;delete &lt;a href=&#34;http://obj.id&#34;&gt;obj.id&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;delete obj[“id”];&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;遍历对象&#34;&gt;遍历对象&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;for in 循环&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; obj = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  name:&lt;span class=&#34;string&#34;&gt;&amp;quot;zhangsan&amp;quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  age:&lt;span class=&#34;number&#34;&gt;20&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; key &lt;span class=&#34;keyword&#34;&gt;in&lt;/span&gt; obj)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(key,obj[key])&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//name zhangsan&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//age 20&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;检测对象有没有某个属性&#34;&gt;检测对象有没有某个属性&lt;/h3&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (&lt;span class=&#34;string&#34;&gt;&amp;quot;name&amp;quot;&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;in&lt;/span&gt; obj)         （判断有）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (obj.name === &lt;span class=&#34;literal&#34;&gt;undefined&lt;/span&gt;)（判断没有）&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;Function类型&#34;&gt;Function类型&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Function类型是JS中的引用类型之一，每个函数实际上都是Function类型的实例对象，具有自己的属性和方法。正因为函数式对象，所以函数名实际上也是一个指向函数对象的指针。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;函数的定义方式&#34;&gt;函数的定义方式&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;使用function关键字定义函数：（函数声明式）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;sum&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;a, b&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; a + b;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;通过变量声明（表达式）定义函数：（函数表达式）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; sum = &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;params&#34;&gt;a, b&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; a + b;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;函数的调用&#34;&gt;函数的调用&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;通过函数名调用： &lt;code&gt;sum()&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;事件绑定调用：   &lt;code&gt;obj.onclick = sum&lt;/code&gt;;&lt;br&gt;
+&lt;strong&gt;注意：函数名仅仅保存指向函数对象的指针，隐藏函数名与包含对象指针的其他变量一样。也就是说，一个函数对象可以有多个名字。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;如：&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;sum&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;a, b&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; a + b;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log( sum(&lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;) );   &lt;span class=&#34;comment&#34;&gt;// 15&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 变量sum2也指向了同一个函数对象   &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; sum2 = sum;&lt;span class=&#34;comment&#34;&gt;// sum后面不加括号，不传参数。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log( sum2(&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;) );   &lt;span class=&#34;comment&#34;&gt;// 8&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sum = &lt;span class=&#34;literal&#34;&gt;null&lt;/span&gt;;&lt;span class=&#34;comment&#34;&gt;// sum对象不再保存函数对象的指针了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log( sum2(&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;) );   &lt;span class=&#34;comment&#34;&gt;// sum2这个变量仍能继续使用&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;函数的重载&#34;&gt;函数的重载&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所谓重载，就是一组相同的函数名，有不同个数的参数，在使用时调用一个函数名，传入不同参数，根据你的参数个数，来决定使用不同的函数！但是JS中是没有重载的，因为后定义的函数会覆盖前面的同名函数。&lt;br&gt;
+&lt;strong&gt;在JS中，我们实现重载的常用方式有：&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;根据传入参数的不同类型进行重载；&lt;/li&gt;
+&lt;li&gt;利用参数中特殊的参数值进行重载；&lt;/li&gt;
+&lt;li&gt;根据参数的个数进行重载（最简单的方式：switch case 用法）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;函数声明式，函数表达式与函数提升&#34;&gt;函数声明式，函数表达式与函数提升&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;JS中的声明函数的方法有两种：函数声明式和函数表达式。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;两者区别如下：&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;函数声明式必须要有函数名&lt;/code&gt;，而函数表达式的&lt;code&gt;函数名&lt;/code&gt;是&lt;code&gt;可选&lt;/code&gt;的。&lt;/li&gt;
+&lt;li&gt;以&lt;code&gt;函数声明式&lt;/code&gt;定义的函数&lt;code&gt;可以在其声明之前被调用&lt;/code&gt;，而以&lt;code&gt;函数表达式&lt;/code&gt;声明的函数&lt;code&gt;只能在其后被调用&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;以&lt;code&gt;函数声明式&lt;/code&gt;定义的函数&lt;code&gt;仅仅可以出现在全局中，或者嵌套在其他函数中&lt;/code&gt;，&lt;code&gt;不能出现在循环语句&lt;/code&gt;，条件语句和try/catch/finally中；而&lt;code&gt;函数表达式可以在任何地方声明&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数提升&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;函数提升，即：自动把函数的作用范围提升到全局中。而&lt;code&gt;只有函数声明式才存在函数提升&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;函数内部属性：arguments-this&#34;&gt;函数内部属性：arguments, this&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;arguments&lt;/code&gt;：用来存放传输参数的数组，可以被调用多次，每次数组都不一样。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;this&lt;/code&gt;：&lt;code&gt;谁调用函数，谁就是this&lt;/code&gt;。进行方法调用的时候函数前面是有window的，只是通常会省略掉。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;函数的属性和方法&#34;&gt;函数的属性和方法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;length&lt;/code&gt;属性&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;arguments对象的length属性表示实参个数，函数的length属性则表示形参个数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;name&lt;/code&gt;属性：访问到给定函数指定的名字，即：跟在function关键字后的标识符。&lt;code&gt;匿名函数的name属性为空&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;prototype&lt;/code&gt;属性：是每个函数都有的属性，该属性指向一个对象的引用，这个对象称作&lt;code&gt;原型对象（prototype object）&lt;/code&gt;。每一个函数都包含不同的原型对象。将函数用做构造函数时，新创建的对象会从原型对象中继承属性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;apply()&lt;/code&gt;方法和&lt;code&gt;call()&lt;/code&gt;方法：是每个函数都有的方法，等同于函数体内this对象的值。（后面讲解）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;基本包装类型&#34;&gt;基本包装类型&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为了便于操作基本类型的值，ECMAScript提供了3种特殊的引用类型：&lt;code&gt;Boolean&lt;/code&gt;, &lt;code&gt;Number&lt;/code&gt;, &lt;code&gt;String&lt;/code&gt;。他们与其他引用类型的使用方法相似，同时也具有各自的基本类型的属性。实际上，每当读取一个基本类型的值，后台就会创建一个对应的基本包装类型的对象，从而可以调用对应的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Boolean&lt;/code&gt;类型：没有特定的属性和方法。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Number&lt;/code&gt;类型：有静态属性，可以直接调用里面的属性和方法，&lt;code&gt;无需new出来&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;String&lt;/code&gt;类型：包含String对象属性，字符串方法，字符串操作方法，字符串位置方法等。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;JS内置对象介绍&#34;&gt;JS内置对象介绍&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;String对象：字符串对象&lt;/li&gt;
+&lt;li&gt;Array对象：数组对象&lt;/li&gt;
+&lt;li&gt;Date对象：日期时间对象&lt;/li&gt;
+&lt;li&gt;Boolean对象：布尔对象&lt;/li&gt;
+&lt;li&gt;Number对象：数值对象&lt;/li&gt;
+&lt;li&gt;Math对象：数学对象&lt;/li&gt;
+&lt;li&gt;RegExp对象：正则对象&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://miraitowa.cc/post/4f09663b.html</guid>
+            <title>JavaScript高级①-变量、作用域和内存</title>
+            <link>https://miraitowa.cc/post/4f09663b.html</link>
+            <category>js</category>
+            <category>js高级</category>
+            <pubDate>Tue, 16 Mar 2021 18:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;掌握基本类型和引用类型的值&#34;&gt;掌握基本类型和引用类型的值&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;ECMAScript的数据类型包括两种：基本数据类型和引用数据类型。&lt;/li&gt;
+&lt;li&gt;基本数据类型指的是简单的数据段，常见的基本数据类型有： number, string, boolean, null, undefined。&lt;/li&gt;
+&lt;li&gt;引用数据类型指的是由多个值构成的对象，常见的引用数据类型（即：对象类型Object type）有： Object, Array, Function, Date等。&lt;/li&gt;
+&lt;li&gt;当我们对变量赋值时，解析器首先要确认的就是这个值是基本类型值，还是引用类型值。&lt;/li&gt;
+&lt;li&gt;两种数据类型的区别点如下：
+&lt;ul&gt;
+&lt;li&gt;声明变量时不同的内存分配。基本类型的值保存在栈内存中，引用类型的值同时保存在栈内存和堆内存中。&lt;/li&gt;
+&lt;li&gt;不同的内存分配机制也带来了不同的访问机制。&lt;/li&gt;
+&lt;li&gt;赋值变量时的不同。不能给基本类型的值添加属性。&lt;/li&gt;
+&lt;li&gt;参数传递的不同（把实参赋值给形参的过程）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;值的比较：
+&lt;ul&gt;
+&lt;li&gt;基本类型的比较是值的比较；&lt;/li&gt;
+&lt;li&gt;引用类型的比较是引用的比较；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;执行环境及作用域&#34;&gt;执行环境及作用域&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;执行环境介绍&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;执行环境是JavaScript中最重要的一个概念。执行函数定义了变量或函数有权访问的其他数据，决定了他们各自的行为。每个执行环境都有一个与之关联的变量对象(variable object)和一个作用域链(scope chain)，环境中定义的所有变量和函数都保存在其变量对象中。&lt;code&gt;执行环境分为两种，即：全局执行环境和函数执行环境&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;全局执行环境&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;全局执行环境是最外围的一个执行环境，其变量对象就是全局活动对象(window activation object)，全局执行环境直到应用程序退出（例如：关闭网页或浏览器）时才会被销毁。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数执行环境&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每个函数都有自己的执行环境。当执行流进入一个函数时，函数环境就会被推入一个环境栈中。当函数执行完之后，栈将该执行环境弹出，把控制权返回给之前的执行环境。函数执行环境的变量对象是该函数的活动对象(activation object)。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;作用域链&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于每一个执行环境，都会创建一个与之关联的作用域链。每个执行环境的作用域链的前端，始终都是该执行环境的变量对象，对于全局执行环境就相当于window对象，对于函数执行环境就相当于该函数的活动对象；对于全局执行环境，已经是根部，没有后续；对于函数执行环境，其作用域链的后续就是该函数对象的[scope]属性里的作用域链。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;垃圾收集&#34;&gt;垃圾收集&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;JavaScript具有自动垃圾收集机制，也就是说，执行环境会负责管理代码执行过程中使用的内存。&lt;br&gt;
+这种垃圾收集机制的原理其实很简单：找出那些不再继续使用的变量，然后释放其占用的内存。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;标记清除：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;JavaScript中最常用的垃圾收集方式是标记清除&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;垃圾收集器会在运行的时候给存储在内存中的所有变量都加上标记，然后去掉环境中的变量以及被环境中的变量引用的变量的标记。&lt;/li&gt;
+&lt;li&gt;在此之后再被加上标记的变量将被视为准备删除的变量，原因是环境中的变量已经无法访问到这些变量了。&lt;/li&gt;
+&lt;li&gt;最后垃圾收集器完成内存清除的工作，销毁那些带标记的值并回收它们所占用的空间。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;引用计数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;引用计数是不太常见的垃圾收集策略。&lt;/li&gt;
+&lt;li&gt;引用计数的含义是跟踪记录每个值被引用的次数。&lt;/li&gt;
+&lt;li&gt;当声明了一个变量并将一个引用类型值赋给该变量时，则这个值的引用次数就是1，如果该值同时赋给另一个变量，则该值引用次数加1。相反，如果包含对这个值引用的变量又取了另一个值，则该值引用次数减1。&lt;/li&gt;
+&lt;li&gt;当这个值引用次数变成0时就说明没有办法再访问该值了，可将其占用的内存空间回收。&lt;/li&gt;
+&lt;li&gt;当垃圾收集器下次运行时，就会释放那些引用次数为0的值所占用的内存。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;另外，垃圾收集处理方式除了以上两种策略，还可以进行&lt;code&gt;垃圾周期处理&lt;/code&gt;和&lt;code&gt;解除引用&lt;/code&gt;。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;垃圾周期处理：找出那些不再继续使用的变量，然后释放其占用的内存，垃圾收集器会按照固定的时间间隔周期性地执行这一操作。&lt;/li&gt;
+&lt;li&gt;解除引用：对于全局变量，当不再使用时，使用null赋值是一个良好的习惯。&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,910 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://miraitowa.cc</id>
+    <title>尺萤之光 • Posts by &#34;javascript基础&#34; category</title>
+    <link href="https://miraitowa.cc" />
+    <updated>2021-03-15T11:00:00.000Z</updated>
+    <category term="Git" />
+    <category term="Github" />
+    <category term="生活记录" />
+    <category term="成长" />
+    <category term="记录" />
+    <category term="历史" />
+    <category term="js" />
+    <category term="js基础" />
+    <category term="js高级" />
+    <category term="MySQL" />
+    <category term="存储引擎" />
+    <category term="数据类型" />
+    <category term="数据库" />
+    <category term="查询" />
+    <category term="存储过程" />
+    <category term="视图" />
+    <category term="View" />
+    <category term="index" />
+    <category term="butterfly" />
+    <category term="hexo" />
+    <category term="魔改" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
+    <category term="JavaScript基础" />
+    <category term="npm" />
+    <category term="yarn" />
+    <category term="增删改查" />
+    <category term="前端设计" />
+    <category term="网店设计" />
+    <category term="单页设计与推广" />
+    <category term="SEO优化" />
+    <category term="日常" />
+    <category term="昆明" />
+    <category term="随笔" />
+    <category term="碎碎念" />
+    <category term="MC" />
+    <category term="Minecrift" />
+    <category term="C" />
+    <category term="算法" />
+    <category term="leetcode" />
+    <category term="移动端网站设计" />
+    <category term="javascript" />
+    <category term="整站交互设计" />
+    <entry>
+        <id>https://miraitowa.cc/post/5aafef3c.html</id>
+        <title>JavaScript基础④-文档对象模型(BOM)</title>
+        <link rel="alternate" href="https://miraitowa.cc/post/5aafef3c.html"/>
+        <content type="html">&lt;h2 id=&#34;DOM介绍&#34;&gt;DOM介绍&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DOM（document object model ）文档对象模型，定义了表示和修改文档所需的对象、行为和属性，以及这些对象之间的关系。它是一个能让程序和脚本动态访问和更新内容，结构和样式的语言平台。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;DOM中的常用属性&#34;&gt;DOM中的常用属性&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;title:设置或返回当前页面的标题。&lt;/li&gt;
+&lt;li&gt;body:提供对body元素的直接访问。&lt;/li&gt;
+&lt;li&gt;cookie:设置或返回与当前文档有关的的所有cookie。&lt;/li&gt;
+&lt;li&gt;domain:返回当前文档的域名。&lt;/li&gt;
+&lt;li&gt;referrer:返回载入当前文档的URL。&lt;/li&gt;
+&lt;li&gt;URL:返回当前文档的URL。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;DOM中的常用方法&#34;&gt;DOM中的常用方法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;scrollLeft: 页面在水平方向上的滚动距离&lt;/li&gt;
+&lt;li&gt;scrollTop: 页面在垂直方向上的滚动距离&lt;/li&gt;
+&lt;li&gt;clientWidth: 页面可见区域的宽度&lt;/li&gt;
+&lt;li&gt;clientHeight: 页面可见区域的高度&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;DOM中的innerText、innerHTML、style属性&#34;&gt;DOM中的innerText、innerHTML、style属性&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;innerText: 获取或设置指定的页面元素内容&lt;/li&gt;
+&lt;li&gt;innerHTML: 获取或设置指定的页面元素内容（含有html标签）&lt;/li&gt;
+&lt;li&gt;style: 获取或设置样式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;DOM中表单对象的常用方法&#34;&gt;DOM中表单对象的常用方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;reset():重置&lt;/li&gt;
+&lt;li&gt;submit():提交表单&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;DOM中表单对象的常用属性&#34;&gt;DOM中表单对象的常用属性&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;action:设置或返回表单的action属性(即：提交的路径)&lt;/li&gt;
+&lt;li&gt;enctype:设置或返回表单数据在发送到服务器之前的编码方式&lt;/li&gt;
+&lt;li&gt;id:设置或返回表单id&lt;/li&gt;
+&lt;li&gt;length:返回表单中的元素个数&lt;/li&gt;
+&lt;li&gt;method:设置或返回将数据发送到服务器的http方法&lt;/li&gt;
+&lt;li&gt;name:设置或返回表单name名称&lt;/li&gt;
+&lt;li&gt;target:设置或返回表单提交结果的frame或window名&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;DOM中表单对象集合-elements&#34;&gt;DOM中表单对象集合: elements[]&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;elements[]:即一个数组，包含所有的表单元素&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="js" />
+        <category term="js基础" />
+        <updated>2021-03-15T11:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://miraitowa.cc/post/648a3caa.html</id>
+        <title>JavaScript基础③-浏览器对象模型(DOM)</title>
+        <link rel="alternate" href="https://miraitowa.cc/post/648a3caa.html"/>
+        <content type="html">&lt;h2 id=&#34;BOM概述&#34;&gt;BOM概述&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;BOM（browser object model）浏览器对象模型**&lt;/li&gt;
+&lt;li&gt;BOM提供了独立于内容而与浏览器窗口进行交互的对象、载入页面的相关信息，其核心对象是window对象。&lt;/li&gt;
+&lt;li&gt;BOM 没有相关标准，每个浏览器都定义了自己的属性，并且，都有其自己对BOM的实现方式。&lt;/li&gt;
+&lt;li&gt;W3C虽然没有为BOM统一制定标准,但是其中的窗口对象、导航对象等,因功能趋同,实际上已经成为默认的标准。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;BOM对象&#34;&gt;BOM对象&lt;/h2&gt;
+&lt;h3 id=&#34;window对象&#34;&gt;window对象&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;window对象（宿主对象）表示一个浏览器窗口（或一个框架），所有浏览器的属性和方法，都被定义在window这个对象之上。 js通过window对象，就可以对浏览器进行操作（读取/修改浏览器属性、操作标签元素、响应用户事件等）。 window对象是全局对象，并且是唯一的，因此在使用中可以省略不写，例如：可以只写 document，而不必写 window.document。同样，可以把window对象的方法当作函数来使用，如只写 alert()，而不必写window.alert()。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;window方法&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;window的方法&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;strong&gt;说明&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;alert()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;提示框&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;confirm()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;带有确认 取消 按钮的提示框(返回true或false)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;prompt()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;带有可输入内容的文本域 的提示框&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;setInterval()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;间隔定时器，可按照指定的周期（以毫秒计）来调用函数或计算表达式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;clearInterval()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;清除间隔定时器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;setTimeout()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;超时定时器，在指定的毫秒数后调用函数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;clearTimeout()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;清除超时定时器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;open()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;打开一个新的浏览器窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;close()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;关闭窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;history-历史记录&#34;&gt;history 历史记录&lt;/h2&gt;
+&lt;h3 id=&#34;history的属性&#34;&gt;history的属性&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;length:返回浏览器历史列表中URL的数量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;histroy的方法&#34;&gt;histroy的方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;window.history.go() 刷新&lt;/li&gt;
+&lt;li&gt;window.history.go(1) 前进（跳转）&lt;/li&gt;
+&lt;li&gt;window.history.go(-1) 后退（跳转）&lt;/li&gt;
+&lt;li&gt;window.history.forward() 前进&lt;/li&gt;
+&lt;li&gt;window.history.back() 后退&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;location-定位&#34;&gt;location 定位&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;location的属性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;protocol: 当前的URL协议&lt;/li&gt;
+&lt;li&gt;hostname: 当前URL的主机名&lt;/li&gt;
+&lt;li&gt;port: 当前URL的端口号&lt;/li&gt;
+&lt;li&gt;host: 当前的URL主机名和端口号&lt;/li&gt;
+&lt;li&gt;pathname: 当前的URL的路径&lt;/li&gt;
+&lt;li&gt;hash:  以#开始的URL的锚（想要达到页面中的固定位置时使用）&lt;/li&gt;
+&lt;li&gt;search: 以？开始的URL拼接部分&lt;/li&gt;
+&lt;li&gt;href:  当前URL的完整路径&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;location的方法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;assign()  加载新的文档（原始页面可以返回，仍然存在）&lt;/li&gt;
+&lt;li&gt;reload() 页面重载&lt;/li&gt;
+&lt;li&gt;replace()  用新文档替换当前文档（原始页面不可以返回，不存在)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;navigator-导航&#34;&gt;navigator 导航&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;window.navigator.userAgent 浏览器类型、版本、操作系统类型、浏览器引擎类型等信息&lt;br&gt;
+//返回浏览器的名称&lt;/li&gt;
+&lt;li&gt;navigator.appName&lt;br&gt;
+//返回浏览器的平台和版本信息&lt;/li&gt;
+&lt;li&gt;navigator.appVersion&lt;br&gt;
+//返回指明浏览器中是否启用 cookie 的布尔值&lt;/li&gt;
+&lt;li&gt;navigator.cookieEnabled&lt;br&gt;
+//返回运行浏览器的操作系统平台&lt;/li&gt;
+&lt;li&gt;navigator.platform&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="js" />
+        <category term="js基础" />
+        <updated>2021-03-15T10:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://miraitowa.cc/post/49eef7dc.html</id>
+        <title>javascript基础②-本地对象</title>
+        <link rel="alternate" href="https://miraitowa.cc/post/49eef7dc.html"/>
+        <content type="html">&lt;h2 id=&#34;Date对象的创建&#34;&gt;Date对象的创建&lt;/h2&gt;
+&lt;h3 id=&#34;获取当前日期及时间&#34;&gt;获取当前日期及时间&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; 变量名 = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt;  &lt;span class=&#34;built_in&#34;&gt;Date&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;设置指定时间&#34;&gt;设置指定时间&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; 变量名 = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt;  &lt;span class=&#34;built_in&#34;&gt;Date&lt;/span&gt;(年，月，日);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; 变量名 = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt;  &lt;span class=&#34;built_in&#34;&gt;Date&lt;/span&gt;(年，月，日，时，分，秒，毫秒);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;Date对象中的常用方法&#34;&gt;Date对象中的常用方法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;to方法组:(&lt;code&gt;转换&lt;/code&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;toString()&lt;/code&gt;把日期转换成字符串&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;toLocaleString()&lt;/code&gt;把日期转换成本地时间(年月日时分秒)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;toLocaleDateString()&lt;/code&gt;把日期转换成本地时间(年月日)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;toLocaleTimeString()&lt;/code&gt;把日期转换成本地时间(时分秒)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;get方法组:(&lt;code&gt;获取&lt;/code&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;getDate()&lt;/code&gt;获取一个月的某一天日期(1-31)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;getDay()&lt;/code&gt;获取一周中的某一天(0-6)—(星期天是0)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;getMonth()&lt;/code&gt;获取月份(0-11)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;getFullYear()&lt;/code&gt;获取四位数字的年份&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;getHours()&lt;/code&gt;获取小时数(0-23)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;getMinutes()&lt;/code&gt;获取分钟数(0-59)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;getSeconds()&lt;/code&gt;获取秒数(0-59)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;set方法组:(&lt;code&gt;设置&lt;/code&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;setDate()&lt;/code&gt;设置一个月的某一天日期(1-31)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;setMonth()&lt;/code&gt;设置月份(0-11)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;setFullYear()&lt;/code&gt;设置四位数字的年份&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;setHours()&lt;/code&gt;设置小时数(0-23)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;setDay&lt;/code&gt;(这个真&lt;code&gt;没有!!!!&lt;/code&gt;,&lt;code&gt;星期是通过设定日期自动计算的&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;setFullYear(year，month，day)&lt;/code&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;year&lt;/code&gt;:&lt;code&gt;必需&lt;/code&gt;表示年份的四位整数。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;month&lt;/code&gt;:&lt;code&gt;可选&lt;/code&gt;,介于 &lt;code&gt;0 ~ 11&lt;/code&gt; 之间。如果不填，取系统当月-1为去年的最后一个月,12为明年的第一个月,13为明年的第二个月。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;day&lt;/code&gt;:&lt;code&gt;可选&lt;/code&gt;，表示月中某一天的数值。如果不填，取系统当日本地时间表示。介于 1 ~ 31 之间,0 为上个月最后一天,-1 为上个月最后一天之前的天数,如果当月有31天: 32 为下个月的第一天,如果当月有30天: 32 为下一个月的第二天。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;setHours&lt;/code&gt;(&lt;code&gt;hour&lt;/code&gt;,&lt;code&gt;min&lt;/code&gt;,&lt;code&gt;sec&lt;/code&gt;,&lt;code&gt;millisec&lt;/code&gt;)
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;可以有4个参数&lt;/li&gt;
+&lt;li&gt;hour:小时&lt;/li&gt;
+&lt;li&gt;min:分钟&lt;/li&gt;
+&lt;li&gt;sec:秒&lt;/li&gt;
+&lt;li&gt;millisec:毫秒&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;字符串的常用方法&#34;&gt;字符串的常用方法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;length&lt;/code&gt;: 获取字符串的长度&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; str = &lt;span class=&#34;string&#34;&gt;&amp;quot;中华人民共和国&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert( str.length);	&lt;span class=&#34;comment&#34;&gt;// 7&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;slice(start[,end])&lt;/code&gt;截取字符串，&lt;code&gt;start&lt;/code&gt;–开始索引 &lt;code&gt;end&lt;/code&gt;–结束索引&lt;br&gt;
+&lt;strong&gt;返回:包含开始位置，不包含结束位置(含头不含尾)&lt;/strong&gt;&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; str = &lt;span class=&#34;string&#34;&gt;&amp;quot;中华人民共和国&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; str1 = str.slice(&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;);&lt;span class=&#34;comment&#34;&gt;//人民&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;substring(start [,end])&lt;/code&gt;截取字符串，&lt;code&gt;start&lt;/code&gt;:开始的索引位置,&lt;code&gt;end&lt;/code&gt;: 结束的索引位置(不写到末尾)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;返回:包含开始位置，不包含结束位置(含头不含尾)&lt;/strong&gt;&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; str = &lt;span class=&#34;string&#34;&gt;&amp;quot;中华人民共和国&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; str1 = str.substr(&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;);	&lt;span class=&#34;comment&#34;&gt;//人民&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;substr(start[,length])&lt;/code&gt;，&lt;code&gt;start&lt;/code&gt;:开始的索引位置,取&lt;code&gt;length&lt;/code&gt;个字符(不写到末尾)&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; str = &lt;span class=&#34;string&#34;&gt;&amp;quot;中华人民共和国&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; str1 = str.substr(&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;);	&lt;span class=&#34;comment&#34;&gt;//人民共和国&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;split()&lt;/code&gt;，按条件分割字符串，返回一个字符串数组&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; str = &lt;span class=&#34;string&#34;&gt;&amp;quot;中华人民共和国&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = str.split(&lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;);	 &lt;span class=&#34;comment&#34;&gt;//[&amp;quot;中&amp;quot;, &amp;quot;华&amp;quot;, &amp;quot;人&amp;quot;, &amp;quot;民&amp;quot;, &amp;quot;共&amp;quot;, &amp;quot;和&amp;quot;,&amp;quot;国&amp;quot;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; str1 = &lt;span class=&#34;string&#34;&gt;&amp;quot;杏|石|口|路|81|号&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr1 = str1.split(&lt;span class=&#34;string&#34;&gt;&amp;quot;|&amp;quot;&lt;/span&gt;);	 &lt;span class=&#34;comment&#34;&gt;//[&amp;quot;杏&amp;quot;, &amp;quot;石&amp;quot;, &amp;quot;口&amp;quot;, &amp;quot;路&amp;quot;, &amp;quot;81&amp;quot;, &amp;quot;号&amp;quot;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;indexOf()&lt;/code&gt;:在父串中首次出现的位置索引，从0开始！没有就返回-1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;lastIndexOf()&lt;/code&gt;:倒序查找&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;charAt(index)&lt;/code&gt;:获取指定索引的字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;toLowerCase()&lt;/code&gt;:转小写&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;toUpperCase()&lt;/code&gt;:转大写&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;数组&#34;&gt;数组&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Array (数组)对象用于在单个的变量中存储多个值。数组可存放任意数据类型，并通过索引来访问每个元素。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;数组的声明&#34;&gt;数组的声明&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;先声明再赋值:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;声明方式1:var arr = new Array();  // 可根据需要在( )中指定长度&lt;/li&gt;
+&lt;li&gt;声明方式2:var arr = [];&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;赋值:数组名[索引] = 值;   // arr[0] = 10;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;直接声明并赋值&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;Array&lt;/span&gt;(“值&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;”,,,,,,“值N”);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;数组的长度-数组名-length&#34;&gt;数组的长度:&lt;code&gt;数组名.length&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;数组的遍历方式&#34;&gt;数组的遍历方式&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;循环遍历&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; arr.length; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;.write(arr[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;直接输出数组名&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;.write(arr);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;数组的常用方法&#34;&gt;数组的常用方法:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;join()&lt;/code&gt;: 用指定的元素对数组进行分割。&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;20&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;30&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;.write(arr.join(“*”));  &lt;span class=&#34;comment&#34;&gt;// 10*20*30&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;indexOf&lt;/code&gt;:搜索一个指定的元素的位置，如未找到返回 -1；&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;20&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;30&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;abc&amp;quot;&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr.indexOf(&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;)); &lt;span class=&#34;comment&#34;&gt;//元素10的索引为0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr.indexOf(&lt;span class=&#34;number&#34;&gt;30&lt;/span&gt;)); &lt;span class=&#34;comment&#34;&gt;//元素30未找到，返回-1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//注意:数字30和字符串&amp;quot;30&amp;quot;是不同元素&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;concat()&lt;/code&gt;:把当前的数组 和 另一个数组连接起来，并返回一个新的 数组；&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr1 = [&lt;span class=&#34;string&#34;&gt;&amp;quot;a&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;b&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;c&amp;quot;&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr2 = [&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; newArr = arr1.concat(arr2,&lt;span class=&#34;string&#34;&gt;&amp;quot;再次添加&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(newArr); &lt;span class=&#34;comment&#34;&gt;//[&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;,&amp;quot;c&amp;quot;,1,2,3,&amp;quot;再次添加&amp;quot;];&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr1); &lt;span class=&#34;comment&#34;&gt;//[&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;,&amp;quot;c&amp;quot;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;push()&lt;/code&gt;:向数组的末尾添加若干元素&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;pop(): 把数组的最后一个元素删除掉&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.push(&lt;span class=&#34;string&#34;&gt;&amp;quot;a&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;b&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr);&lt;span class=&#34;comment&#34;&gt;//[1,2,&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.pop(); &lt;span class=&#34;comment&#34;&gt;//返回“b”;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr); &lt;span class=&#34;comment&#34;&gt;//[1,2,&amp;quot;a&amp;quot;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.pop();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.pop();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.pop();  &lt;span class=&#34;comment&#34;&gt;//连续3次pop，空数组继续pop不会报错&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr); &lt;span class=&#34;comment&#34;&gt;//打印[]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;unshift()&lt;/code&gt;: 向数组前面添加若干元素&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;shift()&lt;/code&gt;: 则把数组的第一个元素删除掉&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.unshift(&lt;span class=&#34;string&#34;&gt;&amp;quot;a&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;b&amp;quot;&lt;/span&gt;); &lt;span class=&#34;comment&#34;&gt;//返回新长度 4&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr);&lt;span class=&#34;comment&#34;&gt;//打印[&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;,1,2]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.shift();&lt;span class=&#34;comment&#34;&gt;//返回&amp;quot;a&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr); &lt;span class=&#34;comment&#34;&gt;//打印[&amp;quot;b&amp;quot;,1,2]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.shift();arr.shift();arr.shift(); &lt;span class=&#34;comment&#34;&gt;//连续3次&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr); &lt;span class=&#34;comment&#34;&gt;//打印[]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.shift(); &lt;span class=&#34;comment&#34;&gt;//空数组继续删除不报错，返回undefined&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr); &lt;span class=&#34;comment&#34;&gt;//打印[]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;slice()&lt;/code&gt;: 截取数组的部分元素，然后返回一个新的数组&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;string&#34;&gt;&amp;quot;a&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;b&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;c&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;d&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;e&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;f&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;g&amp;quot;&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr.slice(&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;)); &lt;span class=&#34;comment&#34;&gt;//从索引0开始，到索引3结束，但不包括3:[&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;,&amp;quot;c&amp;quot;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr.slice(&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;));  &lt;span class=&#34;comment&#34;&gt;//从索引3开始到结束:&amp;quot;d&amp;quot;,&amp;quot;e&amp;quot;,&amp;quot;f&amp;quot;,&amp;quot;g&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;如果不给slice()传递任何参数，他就会从头到尾截取所有元素。利用这一点，可以很容易的复制一份新的数组&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; aCopy = arr.slice();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(aCopy); &lt;span class=&#34;comment&#34;&gt;//[1,2,3]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;sort()&lt;/code&gt;: 可以对当前数组排序&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;string&#34;&gt;&amp;quot;b&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;c&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;a&amp;quot;&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.sort();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr);&lt;span class=&#34;comment&#34;&gt;//[&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;,&amp;quot;c&amp;quot;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;reverse()&lt;/code&gt;: 把整个数组的元素给掉个个，也就是反转&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;string&#34;&gt;&amp;quot;one&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;two&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;three&amp;quot;&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.reverse();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr); &lt;span class=&#34;comment&#34;&gt;//[&amp;quot;three&amp;quot;,&amp;quot;two&amp;quot;,&amp;quot;one&amp;quot;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;join()&lt;/code&gt;: 把数组的每个元素用指定的字符串连接起来，然后新的字符串&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;string&#34;&gt;&amp;quot;a&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;b&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;c&amp;quot;&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.join(&lt;span class=&#34;string&#34;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;); &lt;span class=&#34;comment&#34;&gt;//&amp;quot;a-b-c-1-2-3&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;splice()&lt;/code&gt;: 是修改数组的“万能方法”，他可以从指定的索引开始删除若干元素，然后再从该位置添加若干元素;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//splice(索引值，删除数量，&amp;quot;值1&amp;quot;，&amp;quot;值2&amp;quot;);&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;string&#34;&gt;&amp;quot;苹果&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;橘子&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;香蕉&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;芋头&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;桂圆&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;山楂&amp;quot;&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//从索引2开始删除3个元素，然后再添加两个元素&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.splice(&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;白梨&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;西瓜&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr); &lt;span class=&#34;comment&#34;&gt;// &amp;quot;苹果&amp;quot;,&amp;quot;橘子&amp;quot;,&amp;quot;白梨&amp;quot;,&amp;quot;西瓜&amp;quot;,&amp;quot;山楂&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//只删除，不添加&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.splice(&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;);  &lt;span class=&#34;comment&#34;&gt;//&amp;quot;白梨&amp;quot;,&amp;quot;西瓜&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr); &lt;span class=&#34;comment&#34;&gt;//&amp;quot;苹果&amp;quot;,&amp;quot;橘子&amp;quot;,&amp;quot;山楂&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//只添加，不删除&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arr.splice(&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;白梨&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;西瓜&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr);&lt;span class=&#34;comment&#34;&gt;// &amp;quot;苹果&amp;quot;,&amp;quot;橘子&amp;quot;,&amp;quot;白梨&amp;quot;,&amp;quot;西瓜&amp;quot;,&amp;quot;山楂&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;Math的常用方法&#34;&gt;Math的常用方法&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;方法&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;abs()&lt;/td&gt;
+&lt;td&gt;绝对值 （去除正负）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;random()&lt;/td&gt;
+&lt;td&gt;随机数，0-1之间的随机数，1不会出现&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;round()&lt;/td&gt;
+&lt;td&gt;四舍五入&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;floor(x)&lt;/td&gt;
+&lt;td&gt;下舍入(向下取整)–地板&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ceil(x)&lt;/td&gt;
+&lt;td&gt;上舍入(向上取整)–天花板&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;max(x,y)&lt;/td&gt;
+&lt;td&gt;x 和 y 中的最大值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;min(x,y)&lt;/td&gt;
+&lt;td&gt;x 和 y 中的最小值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;cos(x)&lt;/td&gt;
+&lt;td&gt;的余弦&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sin(x)&lt;/td&gt;
+&lt;td&gt;x的正弦&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sqrt(x)&lt;/td&gt;
+&lt;td&gt;返回x的平方根&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pow(3,4)&lt;/td&gt;
+&lt;td&gt;返回3的4次方&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Math函数的属性：&lt;code&gt;PI&lt;/code&gt;  圆周率。使用方法：&lt;code&gt;Math.PI&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;全局对象中的常用方法（强制转换）&#34;&gt;全局对象中的常用方法（强制转换）&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;isNaN()&lt;/code&gt;:判断是否是数字，不是数字返回true，是数字返回false;(&lt;code&gt;isNaN:is not a number&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eval()&lt;/code&gt;把字符串里面的数字进行计算&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parseFloat()&lt;/code&gt;把字符串转换为小数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parseInt()&lt;/code&gt;把字符串转换为整数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;函数的定义、调用&#34;&gt;函数的定义、调用&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;函数的概念&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;函数是ECMAScript的核心，包含一些代码，只有被调用以后才会执行。函数是对象数据类型的一种。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;定义函数的语法：&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; 函数名(&lt;span class=&#34;params&#34;&gt;参数&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;函数体(也称为：方法体);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数的调用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;函数名(参数值);&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;正则表达式&#34;&gt;正则表达式&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;正则表达式的概念&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;RegExp&lt;/code&gt;（正则表达式）是一个对象，就是用一个“字符串”来描述一个特征，然后去校验另一个“字符串”是否符合该特征。主要实现对&lt;code&gt;字符串的匹配&lt;/code&gt;、&lt;code&gt;分割&lt;/code&gt;、&lt;code&gt;查找&lt;/code&gt;、&lt;code&gt;替换&lt;/code&gt;、&lt;code&gt;校验&lt;/code&gt;等操作。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;元字符&lt;br&gt;
+&lt;strong&gt;正则模式当中的元字符，通常都具有特殊的含义&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;元字符&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;a-z&lt;/td&gt;
+&lt;td&gt;英文小写字母&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;A-Z&lt;/td&gt;
+&lt;td&gt;英文大写字母&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0-9&lt;/td&gt;
+&lt;td&gt;数字&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\r  \n \t&lt;/td&gt;
+&lt;td&gt;非打印字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\d&lt;/td&gt;
+&lt;td&gt;数字，相当于0-9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\D&lt;/td&gt;
+&lt;td&gt;\d  取反&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\w&lt;/td&gt;
+&lt;td&gt;字母 数字 下划线&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\W&lt;/td&gt;
+&lt;td&gt;\w  取反&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\s&lt;/td&gt;
+&lt;td&gt;空白字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\S&lt;/td&gt;
+&lt;td&gt;非空白字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[  ]&lt;/td&gt;
+&lt;td&gt;任意匹配[ ]中单个字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;.&lt;/td&gt;
+&lt;td&gt;匹配任意字符（换行符除外）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;{n}&lt;/td&gt;
+&lt;td&gt;匹配n次&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;{n,}&lt;/td&gt;
+&lt;td&gt;匹配至少n次&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;{n,m}&lt;/td&gt;
+&lt;td&gt;至少n次，最多m次&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;*&lt;/td&gt;
+&lt;td&gt;匹配0个或多个，相当于{0,}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;+&lt;/td&gt;
+&lt;td&gt;匹配1个或多个，相当于{1,}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;td&gt;匹配0个或1个，相当于{0,1}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;^&lt;/td&gt;
+&lt;td&gt;1、匹配正则开头  2、放在[^]，内容取反&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$&lt;/td&gt;
+&lt;td&gt;匹配正则结尾&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;|&lt;/td&gt;
+&lt;td&gt;匹配 | 两侧任选其一&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;(  )&lt;/td&gt;
+&lt;td&gt;1.  分组 2.子存储&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;**注意：**正则需要转义字符： ( ) { } ? * + . [ ] \ / ^ $ |&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;正则的定义：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;方式1：var re = /正则内容/;&lt;/li&gt;
+&lt;li&gt;方式2：var re = new RegExp(正则内容);&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;test方法：检索字符串中指定的值。返回 true 或 false。&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt;  txt=&lt;span class=&#34;string&#34;&gt;&amp;quot;this a cat, that a dog&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt;  re=&lt;span class=&#34;regexp&#34;&gt;/cat/&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(re.test(txt));   &lt;span class=&#34;comment&#34;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="js" />
+        <category term="JavaScript基础" />
+        <updated>2021-03-14T10:24:02.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://miraitowa.cc/post/1caa3095.html</id>
+        <title>JavaScript基础①-概述及语法基础</title>
+        <link rel="alternate" href="https://miraitowa.cc/post/1caa3095.html"/>
+        <content type="html">&lt;h2 id=&#34;JavaScript的组成&#34;&gt;JavaScript的组成:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;核心(ECMAScript):由Ecma国际(前身为欧洲计算机制造商协会，European Computer Manufacturers Association)通过ECMA-262标准化的脚本程序设计语言。&lt;/li&gt;
+&lt;li&gt;文档对象模型(Document Object Model，简称DOM):是W3C组织推荐的处理可扩展置标语言的标准编程接口。描述了访问网页元素的方法和接口。&lt;/li&gt;
+&lt;li&gt;浏览器对象模型(Browser Object Model，简称BOM):描述了与浏览器进行交互的方法和接口。
+&lt;ul&gt;
+&lt;li&gt;基本语法:
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;注意行尾加分号;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;换行书写;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;单行注释:// 或者 多行注释/**/&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;补充:页面输出语句;&lt;br&gt;
+&lt;code&gt;alert(&amp;quot;Hello Word&amp;quot;); //系统弹窗&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;console.log(); //输出在控制台&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;document.write(); //打印在页面&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;JavaScript的常用运算符&#34;&gt;JavaScript的常用运算符:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;算术运算符:&lt;code&gt;+&lt;/code&gt;  &lt;code&gt;-&lt;/code&gt;  &lt;code&gt;*&lt;/code&gt;  &lt;code&gt;/&lt;/code&gt;  &lt;code&gt;%&lt;/code&gt;  &lt;code&gt;++&lt;/code&gt;  &lt;code&gt;--&lt;/code&gt;&lt;br&gt;
+&lt;strong&gt;🐔  i++ 与 ++i 的区别:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如果单独在一行，都自增1；&lt;/li&gt;
+&lt;li&gt;当与其他运算符或者输出语句一起使用时:
+&lt;ul&gt;
+&lt;li&gt;i++:先赋值使用，再运算；(&lt;code&gt;++在后，先用后加&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;++i:先运算，再赋值使用；(&lt;code&gt;++在前，先加后用&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;比较运算符:&lt;code&gt;&amp;gt;&lt;/code&gt;  &lt;code&gt;&amp;gt;=&lt;/code&gt;  &lt;code&gt;&amp;lt;&lt;/code&gt;  &lt;code&gt;&amp;lt;=&lt;/code&gt;  &lt;code&gt;==&lt;/code&gt;  &lt;code&gt;!=&lt;/code&gt; ,返回结果:&lt;code&gt;真或假(true/false)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;逻辑运算符:&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;  &lt;code&gt;||&lt;/code&gt;  &lt;code&gt;!&lt;/code&gt; (&lt;code&gt;与&lt;/code&gt;、&lt;code&gt;或&lt;/code&gt;、&lt;code&gt;非&lt;/code&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;amp;&amp;amp;:&lt;code&gt;两边为真，才为真&lt;/code&gt;。&lt;code&gt;其中一个为假，即为假&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;||:&lt;code&gt;其中一个为真，即为真&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;！:&lt;code&gt;真假互换&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;条件运算符:(表达式1  ?  表达式2  : 表达式3)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;判断“表达式1”的结果是否为真，&lt;/li&gt;
+&lt;li&gt;如果为真则执行“表达式2”，否则执行“表达式3”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;条件分支语句-if，switch&#34;&gt;条件分支语句:if，switch&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;if语句:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;语法:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(条件表达式)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;if…else语句:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;语法:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(条件表达式)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;多分支if语句(if…else if 语句):&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;语法:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(条件表达式&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(条件表达式&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;......&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块N;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;switch语句:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;switch&lt;/span&gt;(表达式)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;case&lt;/span&gt; 值&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;......&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;case&lt;/span&gt; 值N:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块N;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;default&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;循环语句&#34;&gt;循环语句:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;while&lt;/li&gt;
+&lt;li&gt;do…while&lt;/li&gt;
+&lt;li&gt;for&lt;/li&gt;
+&lt;li&gt;for in&lt;/li&gt;
+&lt;li&gt;break和continue的使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;while循环:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt;(条件表达式)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;循环语句;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;执行流程:判断条件表达式是否为真，如果为真，就执行后面的循环语句。然后再次判断，直到条件为假时，跳出while循环。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;do…while循环:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;do&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;循环语句;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt;(条件表达式);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;执行流程:先执行语句，再判断条件，如果为真就继续执行循环语句。否则跳出循环。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;while与do-while的区别:&lt;br&gt;
+while先判断再执行，&lt;br&gt;
+do-while先执行后判断(至少执行一次)。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;for循环:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(初始表达式&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; 条件表达式&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;; 迭代表达式&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt; )&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;循环语句&lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;for in (对象篇详解)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;break:跳出循环&lt;br&gt;
+continue: 跳过该次循环，执行后面的循环			(例:test07)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;关键词与变量命名&#34;&gt;关键词与变量命名&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ECMAScript 关键字的完整列表:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;break&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;else&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;new&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;var&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;case&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;finally&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;return&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;void&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;catch&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;for&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;switch&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;while&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;continue&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;function&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;this&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;with&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;default&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;if&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;throw&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;let&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;delete&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;in&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;try&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;do&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;instanceof&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;typeof&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;定义变量&lt;br&gt;
+变量variable(临时存储的容器)&lt;br&gt;
+//变量:临时存储信息的容器，可以复用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;var name; //变量的声明，并起名叫 name&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;name = “tt”; //为变量赋值,&lt;code&gt;=&lt;/code&gt; 等号:是把右侧的值，&lt;code&gt;赋值&lt;/code&gt;给左侧的变量名；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;变量名大小写敏感&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;var Name=“小花”;&lt;/li&gt;
+&lt;li&gt;var name=“小毛”;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;命名规范:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;必须以字母、数字、下划线或$组成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;开头不能是数字。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不能是JavaScript的关键字。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意:由于JavaScript是弱类型语言，所以在定义变量时，可以省略var，但是不建议使用。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;JavaScript中的两种数据类型&#34;&gt;JavaScript中的两种数据类型&lt;/h2&gt;
+&lt;h3 id=&#34;原始类型-查看数据类型，使用-typeof&#34;&gt;原始类型:(查看数据类型，使用:  typeof )&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;boolean&lt;/li&gt;
+&lt;li&gt;number&lt;/li&gt;
+&lt;li&gt;string&lt;/li&gt;
+&lt;li&gt;undefined:变量只定义不赋值，就是undefined&lt;/li&gt;
+&lt;li&gt;null:表示一个空对象，“什么都没有”的意思，用来表示无值，就像一个占位符&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;对象类型-object&#34;&gt;对象类型(object)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;对象的定义为:“无序属性的集合，其属性可以包含基本值、对象、或者函数”。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;js中内置了如下的对象:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;对象&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Object&lt;/td&gt;
+&lt;td&gt;是所有JS对象的超类(基类)，JS中的所有对象都是继承自Object对象&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Array&lt;/td&gt;
+&lt;td&gt;数组对象–定义数组属性和方法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Number&lt;/td&gt;
+&lt;td&gt;数字对象&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;布尔对象–布尔值相关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Error&lt;/td&gt;
+&lt;td&gt;错误对象–处理程序错误&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Function&lt;/td&gt;
+&lt;td&gt;函数对象–定义函数属性和方法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Math&lt;/td&gt;
+&lt;td&gt;数学对象&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Date&lt;/td&gt;
+&lt;td&gt;日期对象&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;RegExp&lt;/td&gt;
+&lt;td&gt;对象正则表达式对象–定义文本匹配与筛选规则&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;字符串对象–定义字符串属性和方法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="js" />
+        <category term="js基础" />
+        <updated>2021-03-13T10:00:00.000Z</updated>
+    </entry>
+</feed>

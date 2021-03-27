@@ -1,0 +1,521 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>尺萤之光 • Posts by &#34;js基础&#34; tag</title>
+        <link>https://miraitowa.cc</link>
+        <description>一个收藏回忆记录成长的地方...</description>
+        <language>zh-CN</language>
+        <pubDate>Mon, 15 Mar 2021 19:00:00 +0800</pubDate>
+        <lastBuildDate>Mon, 15 Mar 2021 19:00:00 +0800</lastBuildDate>
+        <category>Git</category>
+        <category>Github</category>
+        <category>生活记录</category>
+        <category>成长</category>
+        <category>记录</category>
+        <category>历史</category>
+        <category>js</category>
+        <category>js基础</category>
+        <category>js高级</category>
+        <category>MySQL</category>
+        <category>存储引擎</category>
+        <category>数据类型</category>
+        <category>数据库</category>
+        <category>查询</category>
+        <category>存储过程</category>
+        <category>视图</category>
+        <category>View</category>
+        <category>index</category>
+        <category>butterfly</category>
+        <category>hexo</category>
+        <category>魔改</category>
+        <category>学习笔记</category>
+        <category>Trigger</category>
+        <category>JavaScript基础</category>
+        <category>npm</category>
+        <category>yarn</category>
+        <category>增删改查</category>
+        <category>前端设计</category>
+        <category>网店设计</category>
+        <category>单页设计与推广</category>
+        <category>SEO优化</category>
+        <category>日常</category>
+        <category>昆明</category>
+        <category>随笔</category>
+        <category>碎碎念</category>
+        <category>MC</category>
+        <category>Minecrift</category>
+        <category>C</category>
+        <category>算法</category>
+        <category>leetcode</category>
+        <category>移动端网站设计</category>
+        <category>javascript</category>
+        <category>整站交互设计</category>
+        <item>
+            <guid isPermalink="true">https://miraitowa.cc/post/5aafef3c.html</guid>
+            <title>JavaScript基础④-文档对象模型(BOM)</title>
+            <link>https://miraitowa.cc/post/5aafef3c.html</link>
+            <category>js</category>
+            <category>js基础</category>
+            <pubDate>Mon, 15 Mar 2021 19:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;DOM介绍&#34;&gt;DOM介绍&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DOM（document object model ）文档对象模型，定义了表示和修改文档所需的对象、行为和属性，以及这些对象之间的关系。它是一个能让程序和脚本动态访问和更新内容，结构和样式的语言平台。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;DOM中的常用属性&#34;&gt;DOM中的常用属性&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;title:设置或返回当前页面的标题。&lt;/li&gt;
+&lt;li&gt;body:提供对body元素的直接访问。&lt;/li&gt;
+&lt;li&gt;cookie:设置或返回与当前文档有关的的所有cookie。&lt;/li&gt;
+&lt;li&gt;domain:返回当前文档的域名。&lt;/li&gt;
+&lt;li&gt;referrer:返回载入当前文档的URL。&lt;/li&gt;
+&lt;li&gt;URL:返回当前文档的URL。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;DOM中的常用方法&#34;&gt;DOM中的常用方法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;scrollLeft: 页面在水平方向上的滚动距离&lt;/li&gt;
+&lt;li&gt;scrollTop: 页面在垂直方向上的滚动距离&lt;/li&gt;
+&lt;li&gt;clientWidth: 页面可见区域的宽度&lt;/li&gt;
+&lt;li&gt;clientHeight: 页面可见区域的高度&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;DOM中的innerText、innerHTML、style属性&#34;&gt;DOM中的innerText、innerHTML、style属性&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;innerText: 获取或设置指定的页面元素内容&lt;/li&gt;
+&lt;li&gt;innerHTML: 获取或设置指定的页面元素内容（含有html标签）&lt;/li&gt;
+&lt;li&gt;style: 获取或设置样式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;DOM中表单对象的常用方法&#34;&gt;DOM中表单对象的常用方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;reset():重置&lt;/li&gt;
+&lt;li&gt;submit():提交表单&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;DOM中表单对象的常用属性&#34;&gt;DOM中表单对象的常用属性&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;action:设置或返回表单的action属性(即：提交的路径)&lt;/li&gt;
+&lt;li&gt;enctype:设置或返回表单数据在发送到服务器之前的编码方式&lt;/li&gt;
+&lt;li&gt;id:设置或返回表单id&lt;/li&gt;
+&lt;li&gt;length:返回表单中的元素个数&lt;/li&gt;
+&lt;li&gt;method:设置或返回将数据发送到服务器的http方法&lt;/li&gt;
+&lt;li&gt;name:设置或返回表单name名称&lt;/li&gt;
+&lt;li&gt;target:设置或返回表单提交结果的frame或window名&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;DOM中表单对象集合-elements&#34;&gt;DOM中表单对象集合: elements[]&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;elements[]:即一个数组，包含所有的表单元素&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://miraitowa.cc/post/648a3caa.html</guid>
+            <title>JavaScript基础③-浏览器对象模型(DOM)</title>
+            <link>https://miraitowa.cc/post/648a3caa.html</link>
+            <category>js</category>
+            <category>js基础</category>
+            <pubDate>Mon, 15 Mar 2021 18:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;BOM概述&#34;&gt;BOM概述&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;BOM（browser object model）浏览器对象模型**&lt;/li&gt;
+&lt;li&gt;BOM提供了独立于内容而与浏览器窗口进行交互的对象、载入页面的相关信息，其核心对象是window对象。&lt;/li&gt;
+&lt;li&gt;BOM 没有相关标准，每个浏览器都定义了自己的属性，并且，都有其自己对BOM的实现方式。&lt;/li&gt;
+&lt;li&gt;W3C虽然没有为BOM统一制定标准,但是其中的窗口对象、导航对象等,因功能趋同,实际上已经成为默认的标准。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;BOM对象&#34;&gt;BOM对象&lt;/h2&gt;
+&lt;h3 id=&#34;window对象&#34;&gt;window对象&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;window对象（宿主对象）表示一个浏览器窗口（或一个框架），所有浏览器的属性和方法，都被定义在window这个对象之上。 js通过window对象，就可以对浏览器进行操作（读取/修改浏览器属性、操作标签元素、响应用户事件等）。 window对象是全局对象，并且是唯一的，因此在使用中可以省略不写，例如：可以只写 document，而不必写 window.document。同样，可以把window对象的方法当作函数来使用，如只写 alert()，而不必写window.alert()。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;window方法&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;window的方法&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;strong&gt;说明&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;alert()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;提示框&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;confirm()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;带有确认 取消 按钮的提示框(返回true或false)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;prompt()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;带有可输入内容的文本域 的提示框&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;setInterval()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;间隔定时器，可按照指定的周期（以毫秒计）来调用函数或计算表达式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;clearInterval()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;清除间隔定时器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;setTimeout()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;超时定时器，在指定的毫秒数后调用函数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;clearTimeout()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;清除超时定时器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;open()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;打开一个新的浏览器窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;close()&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;关闭窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;history-历史记录&#34;&gt;history 历史记录&lt;/h2&gt;
+&lt;h3 id=&#34;history的属性&#34;&gt;history的属性&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;length:返回浏览器历史列表中URL的数量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;histroy的方法&#34;&gt;histroy的方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;window.history.go() 刷新&lt;/li&gt;
+&lt;li&gt;window.history.go(1) 前进（跳转）&lt;/li&gt;
+&lt;li&gt;window.history.go(-1) 后退（跳转）&lt;/li&gt;
+&lt;li&gt;window.history.forward() 前进&lt;/li&gt;
+&lt;li&gt;window.history.back() 后退&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;location-定位&#34;&gt;location 定位&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;location的属性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;protocol: 当前的URL协议&lt;/li&gt;
+&lt;li&gt;hostname: 当前URL的主机名&lt;/li&gt;
+&lt;li&gt;port: 当前URL的端口号&lt;/li&gt;
+&lt;li&gt;host: 当前的URL主机名和端口号&lt;/li&gt;
+&lt;li&gt;pathname: 当前的URL的路径&lt;/li&gt;
+&lt;li&gt;hash:  以#开始的URL的锚（想要达到页面中的固定位置时使用）&lt;/li&gt;
+&lt;li&gt;search: 以？开始的URL拼接部分&lt;/li&gt;
+&lt;li&gt;href:  当前URL的完整路径&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;location的方法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;assign()  加载新的文档（原始页面可以返回，仍然存在）&lt;/li&gt;
+&lt;li&gt;reload() 页面重载&lt;/li&gt;
+&lt;li&gt;replace()  用新文档替换当前文档（原始页面不可以返回，不存在)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;navigator-导航&#34;&gt;navigator 导航&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;window.navigator.userAgent 浏览器类型、版本、操作系统类型、浏览器引擎类型等信息&lt;br&gt;
+//返回浏览器的名称&lt;/li&gt;
+&lt;li&gt;navigator.appName&lt;br&gt;
+//返回浏览器的平台和版本信息&lt;/li&gt;
+&lt;li&gt;navigator.appVersion&lt;br&gt;
+//返回指明浏览器中是否启用 cookie 的布尔值&lt;/li&gt;
+&lt;li&gt;navigator.cookieEnabled&lt;br&gt;
+//返回运行浏览器的操作系统平台&lt;/li&gt;
+&lt;li&gt;navigator.platform&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://miraitowa.cc/post/1caa3095.html</guid>
+            <title>JavaScript基础①-概述及语法基础</title>
+            <link>https://miraitowa.cc/post/1caa3095.html</link>
+            <category>js</category>
+            <category>js基础</category>
+            <pubDate>Sat, 13 Mar 2021 18:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;JavaScript的组成&#34;&gt;JavaScript的组成:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;核心(ECMAScript):由Ecma国际(前身为欧洲计算机制造商协会，European Computer Manufacturers Association)通过ECMA-262标准化的脚本程序设计语言。&lt;/li&gt;
+&lt;li&gt;文档对象模型(Document Object Model，简称DOM):是W3C组织推荐的处理可扩展置标语言的标准编程接口。描述了访问网页元素的方法和接口。&lt;/li&gt;
+&lt;li&gt;浏览器对象模型(Browser Object Model，简称BOM):描述了与浏览器进行交互的方法和接口。
+&lt;ul&gt;
+&lt;li&gt;基本语法:
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;注意行尾加分号;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;换行书写;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;单行注释:// 或者 多行注释/**/&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;补充:页面输出语句;&lt;br&gt;
+&lt;code&gt;alert(&amp;quot;Hello Word&amp;quot;); //系统弹窗&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;console.log(); //输出在控制台&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;document.write(); //打印在页面&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;JavaScript的常用运算符&#34;&gt;JavaScript的常用运算符:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;算术运算符:&lt;code&gt;+&lt;/code&gt;  &lt;code&gt;-&lt;/code&gt;  &lt;code&gt;*&lt;/code&gt;  &lt;code&gt;/&lt;/code&gt;  &lt;code&gt;%&lt;/code&gt;  &lt;code&gt;++&lt;/code&gt;  &lt;code&gt;--&lt;/code&gt;&lt;br&gt;
+&lt;strong&gt;🐔  i++ 与 ++i 的区别:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如果单独在一行，都自增1；&lt;/li&gt;
+&lt;li&gt;当与其他运算符或者输出语句一起使用时:
+&lt;ul&gt;
+&lt;li&gt;i++:先赋值使用，再运算；(&lt;code&gt;++在后，先用后加&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;++i:先运算，再赋值使用；(&lt;code&gt;++在前，先加后用&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;比较运算符:&lt;code&gt;&amp;gt;&lt;/code&gt;  &lt;code&gt;&amp;gt;=&lt;/code&gt;  &lt;code&gt;&amp;lt;&lt;/code&gt;  &lt;code&gt;&amp;lt;=&lt;/code&gt;  &lt;code&gt;==&lt;/code&gt;  &lt;code&gt;!=&lt;/code&gt; ,返回结果:&lt;code&gt;真或假(true/false)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;逻辑运算符:&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;  &lt;code&gt;||&lt;/code&gt;  &lt;code&gt;!&lt;/code&gt; (&lt;code&gt;与&lt;/code&gt;、&lt;code&gt;或&lt;/code&gt;、&lt;code&gt;非&lt;/code&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;amp;&amp;amp;:&lt;code&gt;两边为真，才为真&lt;/code&gt;。&lt;code&gt;其中一个为假，即为假&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;||:&lt;code&gt;其中一个为真，即为真&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;！:&lt;code&gt;真假互换&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;条件运算符:(表达式1  ?  表达式2  : 表达式3)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;判断“表达式1”的结果是否为真，&lt;/li&gt;
+&lt;li&gt;如果为真则执行“表达式2”，否则执行“表达式3”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;条件分支语句-if，switch&#34;&gt;条件分支语句:if，switch&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;if语句:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;语法:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(条件表达式)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;if…else语句:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;语法:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(条件表达式)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;多分支if语句(if…else if 语句):&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;语法:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(条件表达式&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(条件表达式&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;......&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块N;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;switch语句:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;switch&lt;/span&gt;(表达式)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;case&lt;/span&gt; 值&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;......&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;case&lt;/span&gt; 值N:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块N;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;default&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;语句块;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;循环语句&#34;&gt;循环语句:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;while&lt;/li&gt;
+&lt;li&gt;do…while&lt;/li&gt;
+&lt;li&gt;for&lt;/li&gt;
+&lt;li&gt;for in&lt;/li&gt;
+&lt;li&gt;break和continue的使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;while循环:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt;(条件表达式)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;循环语句;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;执行流程:判断条件表达式是否为真，如果为真，就执行后面的循环语句。然后再次判断，直到条件为假时，跳出while循环。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;do…while循环:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;do&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;循环语句;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt;(条件表达式);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;执行流程:先执行语句，再判断条件，如果为真就继续执行循环语句。否则跳出循环。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;while与do-while的区别:&lt;br&gt;
+while先判断再执行，&lt;br&gt;
+do-while先执行后判断(至少执行一次)。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;for循环:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(初始表达式&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; 条件表达式&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;; 迭代表达式&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt; )&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;循环语句&lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;for in (对象篇详解)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;break:跳出循环&lt;br&gt;
+continue: 跳过该次循环，执行后面的循环			(例:test07)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;关键词与变量命名&#34;&gt;关键词与变量命名&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ECMAScript 关键字的完整列表:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;break&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;else&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;new&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;var&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;case&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;finally&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;return&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;void&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;catch&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;for&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;switch&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;while&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;continue&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;function&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;this&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;with&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;default&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;if&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;throw&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;let&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;delete&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;in&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;try&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;do&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;instanceof&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;typeof&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;定义变量&lt;br&gt;
+变量variable(临时存储的容器)&lt;br&gt;
+//变量:临时存储信息的容器，可以复用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;var name; //变量的声明，并起名叫 name&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;name = “tt”; //为变量赋值,&lt;code&gt;=&lt;/code&gt; 等号:是把右侧的值，&lt;code&gt;赋值&lt;/code&gt;给左侧的变量名；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;变量名大小写敏感&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;var Name=“小花”;&lt;/li&gt;
+&lt;li&gt;var name=“小毛”;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;命名规范:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;必须以字母、数字、下划线或$组成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;开头不能是数字。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不能是JavaScript的关键字。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意:由于JavaScript是弱类型语言，所以在定义变量时，可以省略var，但是不建议使用。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;JavaScript中的两种数据类型&#34;&gt;JavaScript中的两种数据类型&lt;/h2&gt;
+&lt;h3 id=&#34;原始类型-查看数据类型，使用-typeof&#34;&gt;原始类型:(查看数据类型，使用:  typeof )&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;boolean&lt;/li&gt;
+&lt;li&gt;number&lt;/li&gt;
+&lt;li&gt;string&lt;/li&gt;
+&lt;li&gt;undefined:变量只定义不赋值，就是undefined&lt;/li&gt;
+&lt;li&gt;null:表示一个空对象，“什么都没有”的意思，用来表示无值，就像一个占位符&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;对象类型-object&#34;&gt;对象类型(object)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;对象的定义为:“无序属性的集合，其属性可以包含基本值、对象、或者函数”。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;js中内置了如下的对象:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;对象&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Object&lt;/td&gt;
+&lt;td&gt;是所有JS对象的超类(基类)，JS中的所有对象都是继承自Object对象&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Array&lt;/td&gt;
+&lt;td&gt;数组对象–定义数组属性和方法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Number&lt;/td&gt;
+&lt;td&gt;数字对象&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;布尔对象–布尔值相关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Error&lt;/td&gt;
+&lt;td&gt;错误对象–处理程序错误&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Function&lt;/td&gt;
+&lt;td&gt;函数对象–定义函数属性和方法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Math&lt;/td&gt;
+&lt;td&gt;数学对象&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Date&lt;/td&gt;
+&lt;td&gt;日期对象&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;RegExp&lt;/td&gt;
+&lt;td&gt;对象正则表达式对象–定义文本匹配与筛选规则&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;字符串对象–定义字符串属性和方法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
