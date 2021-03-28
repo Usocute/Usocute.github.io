@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://miraitowa.cc/tags/index.html</loc>
-    
-    <lastmod>2021-03-28</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://miraitowa.cc/post/fae8.html</loc>
     
     <lastmod>2021-03-28</lastmod>
@@ -163,14 +156,14 @@
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/post/20d94337.html</loc>
+    <loc>https://miraitowa.cc/post/90f8904c.html</loc>
     
     <lastmod>2021-03-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/post/90f8904c.html</loc>
+    <loc>https://miraitowa.cc/post/20d94337.html</loc>
     
     <lastmod>2021-03-28</lastmod>
     
@@ -233,14 +226,14 @@
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/about/index.html</loc>
+    <loc>https://miraitowa.cc/Gallery/index.html</loc>
     
     <lastmod>2021-03-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/Gallery/index.html</loc>
+    <loc>https://miraitowa.cc/about/index.html</loc>
     
     <lastmod>2021-03-28</lastmod>
     
@@ -254,14 +247,14 @@
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/bb/index.html</loc>
+    <loc>https://miraitowa.cc/categories/index.html</loc>
     
     <lastmod>2021-03-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/categories/index.html</loc>
+    <loc>https://miraitowa.cc/bb/index.html</loc>
     
     <lastmod>2021-03-28</lastmod>
     
@@ -297,6 +290,13 @@
   
   <url>
     <loc>https://miraitowa.cc/love/index.html</loc>
+    
+    <lastmod>2021-03-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://miraitowa.cc/tags/index.html</loc>
     
     <lastmod>2021-03-28</lastmod>
     
@@ -550,6 +550,13 @@
   </url>
   
   <url>
+    <loc>https://miraitowa.cc/tags/%E7%BD%91%E5%BA%97%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://miraitowa.cc/tags/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
@@ -558,13 +565,6 @@
   
   <url>
     <loc>https://miraitowa.cc/tags/%E6%98%86%E6%98%8E/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://miraitowa.cc/tags/%E7%BD%91%E5%BA%97%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
