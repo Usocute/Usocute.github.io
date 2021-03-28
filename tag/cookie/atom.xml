@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://miraitowa.cc</id>
+    <title>尺萤之光 • Posts by &#34;cookie&#34; tag</title>
+    <link href="https://miraitowa.cc" />
+    <updated>2021-03-28T10:00:00.000Z</updated>
+    <category term="生活记录" />
+    <category term="成长" />
+    <category term="Git" />
+    <category term="Github" />
+    <category term="记录" />
+    <category term="历史" />
+    <category term="js" />
+    <category term="js基础" />
+    <category term="js高级" />
+    <category term="cookie" />
+    <category term="MySQL" />
+    <category term="存储引擎" />
+    <category term="数据类型" />
+    <category term="数据库" />
+    <category term="存储过程" />
+    <category term="视图" />
+    <category term="查询" />
+    <category term="View" />
+    <category term="index" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
+    <category term="butterfly" />
+    <category term="hexo" />
+    <category term="魔改" />
+    <category term="JavaScript基础" />
+    <category term="增删改查" />
+    <category term="npm" />
+    <category term="yarn" />
+    <category term="前端设计" />
+    <category term="单页设计与推广" />
+    <category term="SEO优化" />
+    <category term="日常" />
+    <category term="昆明" />
+    <category term="网店设计" />
+    <category term="随笔" />
+    <category term="碎碎念" />
+    <category term="MC" />
+    <category term="Minecrift" />
+    <category term="移动端网站设计" />
+    <category term="C" />
+    <category term="算法" />
+    <category term="leetcode" />
+    <category term="javascript" />
+    <category term="整站交互设计" />
+    <entry>
+        <id>https://miraitowa.cc/post/7292aa95.html</id>
+        <title>JavaScript高级⑥-存储(cookie)</title>
+        <link rel="alternate" href="https://miraitowa.cc/post/7292aa95.html"/>
+        <content type="html">&lt;h2 id=&#34;sessionStorage、localStorage和cookie&#34;&gt;sessionStorage、localStorage和cookie&lt;/h2&gt;
+&lt;h3 id=&#34;相同点&#34;&gt;相同点&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;都是保存在浏览器端、且同源的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;区别&#34;&gt;区别&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;cookie数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递，而sessionStorage和localStorage不会自动把数据发送给服务器，仅在本地保存。&lt;code&gt;cookie数据还有路径（path）的概念，可以限制cookie只属于某个路径下&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;存储大小限制也不同，&lt;code&gt;cookie数据不能超过4K（小于4096）&lt;/code&gt;，同时因为每次http请求都会携带cookie、所以&lt;code&gt;cookie只适合保存很小的数据，如会话标识&lt;/code&gt;。&lt;code&gt;sessionStorage和localStorage&lt;/code&gt;虽然也有存储大小的限制，但比cookie大得多，可以达到&lt;code&gt;5M或更大&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;数据有效期不同，&lt;code&gt;sessionStorage&lt;/code&gt;：仅在&lt;code&gt;当前浏览器窗口关闭之前&lt;/code&gt;有效；&lt;code&gt;localStorage&lt;/code&gt;：&lt;code&gt;始终有效&lt;/code&gt;，窗口或浏览器关闭也一直保存，因此用作持久数据；&lt;code&gt;cookie&lt;/code&gt;：只&lt;code&gt;在设置的cookie过期时间之前有效&lt;/code&gt;，即使窗口关闭或浏览器关闭。&lt;/li&gt;
+&lt;li&gt;作用域不同，sessionStorage不在不同的浏览器窗口中共享，即使是同一个页面；localstorage在所有同源窗口中都是共享的；cookie也是在所有同源窗口中都是共享的。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;web Storage&lt;/code&gt;支持事件通知机制，可以将数据更新的通知发送给监听者。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;web Storage&lt;/code&gt;的api接口使用更方便。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sessionStorage&lt;/code&gt;用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此&lt;code&gt;sessionStorage&lt;/code&gt;不是一种持久化的本地存储，仅仅是会话级别的存储。而&lt;code&gt;localStorage&lt;/code&gt;用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;Cookie&#34;&gt;Cookie&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;什么是Cookie：cookie是存储于用户计算机中的变量。每当该计算机通过浏览器请求某个页面时，就会发送这个cookie。我们可以使用JavaScript来创建和获取cookie的值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cookie的存储形式：&lt;code&gt;键值对&lt;/code&gt;，如：&lt;code&gt;name=张三&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用JS创建Cookie的格式：&lt;code&gt;document.cookie = “name=张三”;&lt;/code&gt;&lt;br&gt;
+还可以为cookie添加一个过期时间（UTC或GMT,默认情况下，cookie在浏览器关闭时删除）。如：&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;.cookie = “name=张三;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;expires=Thu, &lt;span class=&#34;number&#34;&gt;18&lt;/span&gt; Dec &lt;span class=&#34;number&#34;&gt;2019&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;12&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;00&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;00&lt;/span&gt; GMT”;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用JS读取Cookie的格式： &lt;code&gt;var X = document.cookie;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改Cookie：JS中修改cookie类似于创建cookie，旧的cookie会被覆盖掉。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除Cookie：只需设置expires参数为以前的时间即可。&lt;br&gt;
+如：&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;.cookie = “name=张三; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;expires=Thu, &lt;span class=&#34;number&#34;&gt;18&lt;/span&gt; Dec &lt;span class=&#34;number&#34;&gt;2019&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;12&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;00&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;00&lt;/span&gt; GMT”;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cookie的缺点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Cookie可能被用户禁用。&lt;/li&gt;
+&lt;li&gt;同一个页面被不同浏览器访问时，浏览器之间保存的Cookie不能相互访问。&lt;/li&gt;
+&lt;li&gt;每个Cookie都保存在客户端硬盘文件上，可能会被删除。&lt;/li&gt;
+&lt;li&gt;Cookie安全性不高，所有Cookie都是以纯文本形式记录于文件中。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;Web存储机制&#34;&gt;Web存储机制&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML5提供了一种新的对象&lt;code&gt;Storage&lt;/code&gt;，类似于&lt;code&gt;String&lt;/code&gt;、&lt;code&gt;Number&lt;/code&gt;、&lt;code&gt;Object&lt;/code&gt;。通过Storage对象提供的方法和属性来对数据进行增删改查。&lt;/li&gt;
+&lt;li&gt;html5中的&lt;code&gt;Web Storage&lt;/code&gt;包括了两种存储方式：&lt;code&gt;localStorage&lt;/code&gt;和&lt;code&gt;sessionStorage&lt;/code&gt;。两者都是用来存储客户端临时信息的对象。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sessionStorage&lt;/code&gt;用于本地存储一个会话（&lt;code&gt;session&lt;/code&gt;）中的数据，这些数据只有在同一个会话中的页面才能访问，并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅是会话级别的存储。只允许同一窗口访问。而localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。同源可以读取并修改localStorage数据。并且他们储存的对象类型均为字符串类型；我们将数据以键值对的形式保存到Storage对象里，通过Storage对象提供的方法进行数据操作。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//1. 增：接受一个键名和值作为参数，将会把键值对添加到存储中，如果键名存在，则更新其对应的值。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Storage.setItem()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//2. 删&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 清空存储中的所有键名&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Storage.clear()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 接受一个键名作为参数，并把该键名从存储中删除。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Storage.removeItem()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 3. 改：接受一个键名和值作为参数，将会把键值对添加到存储中，如果键名存在，则更新其对应的值。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Storage.setItem()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 4. 查&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 接受一个键名作为参数，返回键名对应的值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Storage.getItem()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 接受一个数值 n 作为参数，并返回存储中索引为n 的键名&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Storage.key()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 返回存储的数据量&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Storage.length&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;sessionStorage对象&#34;&gt;sessionStorage对象&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;sessionStorage对象存储某个特定会话的数据，该数据只保持到浏览器关闭（类似于cookie）。&lt;/li&gt;
+&lt;li&gt;存储在sessionStorage对象中的数据可以跨越页面刷新而存在。部分浏览器也支持在浏览器崩溃的情况下重启仍然可用（如：Firefox和WebKit等，但是IE不支持）。&lt;/li&gt;
+&lt;li&gt;sessionStorage对象其实是Storage对象的一个实例，具体方法如下：
+&lt;ol&gt;
+&lt;li&gt;sessionStorage.length:获取存储在Storage对象中的数据的数量，是一个只读属性。&lt;/li&gt;
+&lt;li&gt;sessionStorage.key():接受一个数值 n 作为参数，并返回存储中索引为n 的键名。&lt;/li&gt;
+&lt;li&gt;sessionStorage.getItem():接受一个键名作为参数，返回键名对应的值。&lt;/li&gt;
+&lt;li&gt;sessionStorage.setItem()：接受一个键名和值作为参数，将会把键值对添加到存储中，如果键名存在，则更新其对应的值。&lt;/li&gt;
+&lt;li&gt;sessionStorage.clear()：清空存储中的所有键名。&lt;/li&gt;
+&lt;li&gt;sessionStorage.removeItem()：接受一个键名作为参数，并把该键名从存储中删除。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;globalStorage&#34;&gt;globalStorage&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;globalStorage在浏览器关闭以后，使用globalStorage存储的信息仍能够保留下来，localStorage一样，域中任何一个页面存储的信息都能被所有的页面共享。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;基本语法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 在developer.mozilla.org下面所有的子域都可以通过这个命名空间存储对象来进行读和写&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;globalStorage[&lt;span class=&#34;string&#34;&gt;&amp;#x27;developer.mozilla.org&amp;#x27;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 在mozilla.org域名下面的所有网页都可以通过这个命名空间存储对象来进行读和写&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;globalStorage[&lt;span class=&#34;string&#34;&gt;&amp;#x27;mozilla.org&amp;#x27;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 在.org域名下面的所有网页都可以通过这个命名空间存储对象来进行读和写&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;globalStorage[&lt;span class=&#34;string&#34;&gt;&amp;#x27;org&amp;#x27;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 在任何域名下的任何网页都可以通过这个命名空间存储对象来进行读和写&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;globalStorage[&lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 注意：globalStorage对象已经被localStorage对象取代。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;localStorage对象&#34;&gt;localStorage对象&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;localStorage的优势：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;localStorage拓展了cookie的4k限制。&lt;/li&gt;
+&lt;li&gt;localStorage可用将第一次请求的数据直接存储到本地，相当于5M大小的针对于前端页面的数据库，相比于cookie可用节约带宽，但是只有在高版本浏览器中才支持。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;localStorage的局限：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;只有在IE8以上浏览器才支持localStorage的存储功能。&lt;/li&gt;
+&lt;li&gt;目前所有浏览器都会把localStorage的值类型限定为string，这需要我们转换为JSON对象类型。&lt;/li&gt;
+&lt;li&gt;localStorage在浏览器的隐私模式下不可读取。&lt;/li&gt;
+&lt;li&gt;由于localStorage在本质上是对字符串的读取，所以如果存储的内容较多，会消耗掉内存空间，导致页面卡顿，加载速度减慢。&lt;/li&gt;
+&lt;li&gt;localStorage不能被爬虫抓取到。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;localStorage对象的具体方法与sessionStorage的方法一致。&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="js" />
+        <category term="js高级" />
+        <category term="cookie" />
+        <updated>2021-03-28T10:00:00.000Z</updated>
+    </entry>
+</feed>

@@ -5,49 +5,50 @@
         <link>https://miraitowa.cc</link>
         <description>一个收藏回忆记录成长的地方...</description>
         <language>zh-CN</language>
-        <pubDate>Thu, 04 Mar 2021 12:59:28 +0800</pubDate>
-        <lastBuildDate>Thu, 04 Mar 2021 12:59:28 +0800</lastBuildDate>
-        <category>Git</category>
-        <category>Github</category>
+        <pubDate>Thu, 04 Mar 2021 04:59:28 +0000</pubDate>
+        <lastBuildDate>Thu, 04 Mar 2021 04:59:28 +0000</lastBuildDate>
         <category>生活记录</category>
         <category>成长</category>
+        <category>Git</category>
+        <category>Github</category>
         <category>记录</category>
         <category>历史</category>
         <category>js</category>
         <category>js基础</category>
         <category>js高级</category>
+        <category>cookie</category>
         <category>MySQL</category>
         <category>存储引擎</category>
         <category>数据类型</category>
         <category>数据库</category>
-        <category>查询</category>
         <category>存储过程</category>
         <category>视图</category>
+        <category>查询</category>
         <category>View</category>
         <category>index</category>
+        <category>学习笔记</category>
+        <category>Trigger</category>
         <category>butterfly</category>
         <category>hexo</category>
         <category>魔改</category>
-        <category>学习笔记</category>
-        <category>Trigger</category>
         <category>JavaScript基础</category>
+        <category>增删改查</category>
         <category>npm</category>
         <category>yarn</category>
-        <category>增删改查</category>
         <category>前端设计</category>
-        <category>网店设计</category>
         <category>单页设计与推广</category>
         <category>SEO优化</category>
         <category>日常</category>
         <category>昆明</category>
+        <category>网店设计</category>
         <category>随笔</category>
         <category>碎碎念</category>
         <category>MC</category>
         <category>Minecrift</category>
+        <category>移动端网站设计</category>
         <category>C</category>
         <category>算法</category>
         <category>leetcode</category>
-        <category>移动端网站设计</category>
         <category>javascript</category>
         <category>整站交互设计</category>
         <item>
@@ -56,7 +57,7 @@
             <link>https://miraitowa.cc/post/1158b6cc.html</link>
             <category>前端设计</category>
             <category>移动端网站设计</category>
-            <pubDate>Thu, 04 Mar 2021 12:59:28 +0800</pubDate>
+            <pubDate>Thu, 04 Mar 2021 04:59:28 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;手机网站的概念及趋势&#34;&gt;手机网站的概念及趋势&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;定义：手机网站是指特地用于手机阅读的网站。这种网站经过以文字信息和简单的图片信息为主。随着向手机智能化方向开展，装置了操作系统和阅读器的手机的功用和电脑是很类似的，但假如仅仅运用手机阅读器看PC网站的话，那还是很费劲的。运用这种手机能够经过GPRS上网可阅读几乎一切的www网站。由于手机的屏幕尺寸和CPU处置才能有限，特地为方便手机浏览而进行优化的网站更为便于用户阅读。目前使用手机上网的用户超过台式电脑用户，手机成为我国网民的第一大上网终端。&lt;/li&gt;

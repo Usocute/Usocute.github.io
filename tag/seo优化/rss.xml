@@ -5,49 +5,50 @@
         <link>https://miraitowa.cc</link>
         <description>一个收藏回忆记录成长的地方...</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 03 Mar 2021 12:59:28 +0800</pubDate>
-        <lastBuildDate>Wed, 03 Mar 2021 12:59:28 +0800</lastBuildDate>
-        <category>Git</category>
-        <category>Github</category>
+        <pubDate>Wed, 03 Mar 2021 04:59:28 +0000</pubDate>
+        <lastBuildDate>Wed, 03 Mar 2021 04:59:28 +0000</lastBuildDate>
         <category>生活记录</category>
         <category>成长</category>
+        <category>Git</category>
+        <category>Github</category>
         <category>记录</category>
         <category>历史</category>
         <category>js</category>
         <category>js基础</category>
         <category>js高级</category>
+        <category>cookie</category>
         <category>MySQL</category>
         <category>存储引擎</category>
         <category>数据类型</category>
         <category>数据库</category>
-        <category>查询</category>
         <category>存储过程</category>
         <category>视图</category>
+        <category>查询</category>
         <category>View</category>
         <category>index</category>
+        <category>学习笔记</category>
+        <category>Trigger</category>
         <category>butterfly</category>
         <category>hexo</category>
         <category>魔改</category>
-        <category>学习笔记</category>
-        <category>Trigger</category>
         <category>JavaScript基础</category>
+        <category>增删改查</category>
         <category>npm</category>
         <category>yarn</category>
-        <category>增删改查</category>
         <category>前端设计</category>
-        <category>网店设计</category>
         <category>单页设计与推广</category>
         <category>SEO优化</category>
         <category>日常</category>
         <category>昆明</category>
+        <category>网店设计</category>
         <category>随笔</category>
         <category>碎碎念</category>
         <category>MC</category>
         <category>Minecrift</category>
+        <category>移动端网站设计</category>
         <category>C</category>
         <category>算法</category>
         <category>leetcode</category>
-        <category>移动端网站设计</category>
         <category>javascript</category>
         <category>整站交互设计</category>
         <item>
@@ -57,7 +58,7 @@
             <category>前端设计</category>
             <category>单页设计与推广</category>
             <category>SEO优化</category>
-            <pubDate>Wed, 03 Mar 2021 12:59:28 +0800</pubDate>
+            <pubDate>Wed, 03 Mar 2021 04:59:28 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;竞价单页&#34;&gt;竞价单页&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;概念：竞价单页通常都是由一个或几个HTML页面组成，由于HTML对搜索引擎的友好性，通过用来百度、google、搜狗等竞价排名来推广产品，由于大多数的竞价页面都是由一个页面组成，因此取名“竞价单页”。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;竞价产品以其高额的回报率成为近年来“网赚”的新宠，越来越多的“网客”加入竞价的行业，竞价产品的诞生不仅带动了多种行业的发展，更是营销方式的革新，更加促进了电子商务的发展。&lt;/p&gt;
