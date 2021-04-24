@@ -171,7 +171,6 @@ div.usercm {
 
 /* bb哔哔 */
 /* bb样式 */
-
 .timeline ul li {
   list-style: none;
   position: relative;
@@ -230,8 +229,8 @@ div.usercm {
   color: var(--secondtext);
   font-size: 0.6rem !important;
   margin-left: 8px;
-}
-
+} 
+ 
 #bber>section>ul>div>li>div .datafrom small {
   font-size: 100%;
 }
@@ -249,7 +248,7 @@ div.usercm {
   content: "";
   background-image: url(https://miraitowa.cc/img/avatar.jpg);
   background-size: 2rem;
-}
+} 
 
 /* 加载更多 */
 .load-btn.button-load {
