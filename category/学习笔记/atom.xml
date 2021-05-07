@@ -3,7 +3,7 @@
     <id>https://miraitowa.cc</id>
     <title>尺萤之光 • Posts by &#34;学习笔记&#34; category</title>
     <link href="https://miraitowa.cc" />
-    <updated>2021-04-10T14:48:34.000Z</updated>
+    <updated>2021-05-07T11:04:03.000Z</updated>
     <category term="生活记录" />
     <category term="成长" />
     <category term="Git" />
@@ -28,6 +28,7 @@
     <category term="butterfly" />
     <category term="hexo" />
     <category term="魔改" />
+    <category term="jQuery" />
     <category term="JavaScript基础" />
     <category term="增删改查" />
     <category term="npm" />
@@ -51,6 +52,330 @@
     <category term="leetcode" />
     <category term="javascript" />
     <category term="整站交互设计" />
+    <entry>
+        <id>https://miraitowa.cc/post/970c811f.html</id>
+        <title>jQuery 基础拾遗</title>
+        <link rel="alternate" href="https://miraitowa.cc/post/970c811f.html"/>
+        <content type="html">&lt;h2 id=&#34;核心概念和知识点&#34;&gt;核心概念和知识点&lt;/h2&gt;
+&lt;h3 id=&#34;什么是jQuery&#34;&gt;什么是jQuery&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;jQuery 是对javascript的一种封装–js的函数库。&lt;/li&gt;
+&lt;li&gt;用于客户端的开发，由美国人在2001年1月推出。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;jQuery与javascript的区别&#34;&gt;jQuery与javascript的区别&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;本质上的区别：jQuery是一个函数库，基于js语言编写出来的框架，实质上还是属于js。&lt;/li&gt;
+&lt;li&gt;代码书写不同，jq更简单。&lt;/li&gt;
+&lt;li&gt;使用方法不同：使用jQuery和javascript分别加载DOM,&lt;code&gt;js只执行一次&lt;/code&gt;，&lt;code&gt;jq可以执行多次&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;获取class的方法不同。js没有默认的获取方式，jq可以通过&lt;code&gt;$(&amp;quot;.类名&amp;quot;)&lt;/code&gt;来获取&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;jQuery的优势&#34;&gt;jQuery的优势&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;轻量级&lt;/li&gt;
+&lt;li&gt;对浏览器的兼容性好&lt;/li&gt;
+&lt;li&gt;强大的选择器&lt;/li&gt;
+&lt;li&gt;完善的ajax&lt;/li&gt;
+&lt;li&gt;丰富的API文档和插件等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;熟悉使用jQuery&#34;&gt;熟悉使用jQuery&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;获取相关的js文件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jquery-xxx.js 与 jquery-xxx.min.js区别：
+&lt;ol&gt;
+&lt;li&gt;jquery-xxx.js：开发版本。给程序员看的，有良好的缩进和注释。体积大一些&lt;/li&gt;
+&lt;li&gt;jquery-xxx.min.js：生产版本。没有缩进。体积小一些。程序加载更快&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;引用 在页面上引用js文件&lt;/li&gt;
+&lt;li&gt;基本使用语法:$(“选择器名”).操作&lt;/li&gt;
+&lt;li&gt;jQuery的文档就绪(加载)三种写法：&lt;/li&gt;
+&lt;/ul&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*方法1*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$(&lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;).ready(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  选择对象进行操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*方法2*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$().ready(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;              &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  选择对象进行操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*方法3*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;   &lt;span class=&#34;comment&#34;&gt;// 此方法最简洁&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  选择对象进行操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;); &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;window-onload和-function-区别&#34;&gt;window.onload和$(function)区别&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;window.onload 只能定义一次,如果定义多次，后边的会将前边的覆盖掉。&lt;/li&gt;
+&lt;li&gt;$(function)可以定义多次的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;jQuery对象与DOM对象的异同&#34;&gt;jQuery对象与DOM对象的异同&lt;/h3&gt;
+&lt;h4 id=&#34;什么是jQuery对象&#34;&gt;什么是jQuery对象?&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;通过jQuery包装DOM(文档)对象后产生的对象，凡是在$(“”)中的都属于jQuery对象。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;什么是DOM对象？&#34;&gt;什么是DOM对象？&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;页面中元素的集合就是文档对象。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;note orange no-icon flat&#34;&gt;&lt;p&gt;注意 🐟&lt;br&gt;
+1. jQuery对象与文档对象不能混合使用。&lt;br&gt;
+2. jQuery对象不能使用文档对象的属性及方法，同理文档对象也是。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note orange no-icon flat&#34;&gt;&lt;p&gt;注意 🐱&lt;br&gt;
+DOM(文档)对象与jQuery对象是可以相互转换的&lt;br&gt;
+js转jq：在dom对象的最外层用$()进行包裹即可。&lt;br&gt;
+jq转js：先获取jq对象:var $jq=$(“选择器名”); $jq.get(索引);&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;jQuery库与其他库出现冲突问题-释放-的控制权&#34;&gt;jQuery库与其他库出现冲突问题(释放$的控制权)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;方法一：在代码的第一行加入:&lt;code&gt;jQuery.noConflict()&lt;/code&gt;;释放了jQuery的$含义，如果仍需使用，需把$改为jQuery。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;方法二&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; $jq=jQuery.noConflict();   &lt;span class=&#34;comment&#34;&gt;/*赋值为一个变量*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$jq(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;     &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    正常使用&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;jQuery-选择器&#34;&gt;jQuery 选择器&lt;/h2&gt;
+&lt;h3 id=&#34;jQuery选择器与CSS选择器的区别&#34;&gt;jQuery选择器与CSS选择器的区别&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;jQuery与CSS是两种不同的语言，jQuery是一个js框架，CSS是层叠样式表，所以两者本质上是不同的。&lt;/li&gt;
+&lt;li&gt;两者有一定交集，都是被网页或浏览器解析的语言，而jQuery可以通过修改浏览器的dom对象来实现对CSS的修改或控制。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note orange no-icon flat&#34;&gt;&lt;p&gt;总结，jQuery选择器应用于js中，CSS选择器用于CSS中，只是两者有时使用相同的id标识来选择对象。&lt;br&gt;
+jQuery选择器包含了CSS 1, CSS 2, CSS 3 中的绝大多数选择器。&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;jQuery选择器的优点&#34;&gt;jQuery选择器的优点&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;写法简洁&lt;/li&gt;
+&lt;li&gt;继承了CSS选择器的风格，支持CSS1–CSS3选择器&lt;/li&gt;
+&lt;li&gt;完善的处理机制可以避免浏览器报错，比单纯的CSS功能更强大，还可兼容不同的浏览器。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;jQuery选择器的分类&#34;&gt;jQuery选择器的分类&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;基本选择器&lt;/li&gt;
+&lt;li&gt;层次选择器&lt;/li&gt;
+&lt;li&gt;过滤选择器&lt;/li&gt;
+&lt;li&gt;表单选择器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;基本选择器&#34;&gt;基本选择器&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选择器名&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;id选择器：  #id&lt;/td&gt;
+&lt;td&gt;根据id获取元素&lt;/td&gt;
+&lt;td&gt;$(“#test”)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;类选择器：  .class&lt;/td&gt;
+&lt;td&gt;根据类名获取元素&lt;/td&gt;
+&lt;td&gt;$(“.test”)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;元素选择器:  element&lt;/td&gt;
+&lt;td&gt;根据元素名称获取元素&lt;/td&gt;
+&lt;td&gt;$(“p”)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;所有元素选择器： *&lt;/td&gt;
+&lt;td&gt;获取所有元素&lt;/td&gt;
+&lt;td&gt;$(“*”)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;并集选择器： s1,s2…&lt;/td&gt;
+&lt;td&gt;将选择的所有元素合并&lt;/td&gt;
+&lt;td&gt;$(“div, span”)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jQuery的层次选择器&#34;&gt;jQuery的层次选择器&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选择器&lt;/th&gt;
+&lt;th&gt;语法&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;后代选择器&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;$(&amp;quot;A  B &amp;quot;)&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;选择A元素内部的所有B元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;子选择器&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;$(&amp;quot;A &amp;gt; B&amp;quot;)&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;选择A元素内部的所有B子元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jQuery的属性选择器&#34;&gt;jQuery的属性选择器&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选择器&lt;/th&gt;
+&lt;th&gt;语法&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;属性名称选择器&lt;/td&gt;
+&lt;td&gt;$(“A[属性名]”)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;包含指定属性的选择器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;属性选择器&lt;/td&gt;
+&lt;td&gt;$(“A[属性名=‘值’]”)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;包含指定属性等于指定值的选择器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;复合属性选择器&lt;/td&gt;
+&lt;td&gt;$(“A[属性名=‘值’][]…”)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;包含多个属性条件的选择器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jQuery-过滤选择器&#34;&gt;jQuery 过滤选择器&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选择器&lt;/th&gt;
+&lt;th&gt;语法&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;首元素选择器&lt;/td&gt;
+&lt;td&gt;:first&lt;/td&gt;
+&lt;td&gt;获得选择的元素中的第一个元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;尾元素选择器&lt;/td&gt;
+&lt;td&gt;:last&lt;/td&gt;
+&lt;td&gt;获得选择的元素中的最后一个元素&amp;lt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;非元素选择器&lt;/td&gt;
+&lt;td&gt;:not(selector)&lt;/td&gt;
+&lt;td&gt;不包括指定内容的元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;偶数选择器&lt;/td&gt;
+&lt;td&gt;:even&lt;/td&gt;
+&lt;td&gt;偶数，从 0 开始计数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;奇数选择器&lt;/td&gt;
+&lt;td&gt;:odd&lt;/td&gt;
+&lt;td&gt;奇数，从 0 开始计数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;等于索引选择器&lt;/td&gt;
+&lt;td&gt;:eq(index)&lt;/td&gt;
+&lt;td&gt;指定索引元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;大于索引选择器&lt;/td&gt;
+&lt;td&gt;:gt(index)&lt;/td&gt;
+&lt;td&gt;大于指定索引元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;小于索引选择器&lt;/td&gt;
+&lt;td&gt;:lt(index)&lt;/td&gt;
+&lt;td&gt;小于指定索引元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;标题选择器&lt;/td&gt;
+&lt;td&gt;:header&lt;/td&gt;
+&lt;td&gt;获得标题（h1~h6）元素，固定写法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jquery-表单过滤选择器&#34;&gt;jquery 表单过滤选择器&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选择器&lt;/th&gt;
+&lt;th&gt;语法&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;可用元素选择器&lt;/td&gt;
+&lt;td&gt;:enabled&lt;/td&gt;
+&lt;td&gt;获得可用元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;不可用元素选择器&lt;/td&gt;
+&lt;td&gt;:disabled&lt;/td&gt;
+&lt;td&gt;获得不可用元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;单选/复选框选中选择器&lt;/td&gt;
+&lt;td&gt;:checked&lt;/td&gt;
+&lt;td&gt;获得单选/复选框选中的元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;下拉框选中选择器&lt;/td&gt;
+&lt;td&gt;:selected&lt;/td&gt;
+&lt;td&gt;获得下拉框选中的元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jQuery表单选择器&#34;&gt;jQuery表单选择器&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;语法&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:input”)&lt;/td&gt;
+&lt;td&gt;选取所有的&lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt;,&lt;code&gt;&amp;lt;textarea&amp;gt;&lt;/code&gt;,&lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;,&lt;code&gt;&amp;lt;button&amp;gt;&lt;/code&gt;元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:text”)&lt;/td&gt;
+&lt;td&gt;选取所有的单行文本框&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:password”)&lt;/td&gt;
+&lt;td&gt;选取所有的密码框&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:radio”)&lt;/td&gt;
+&lt;td&gt;选取所有的单选框&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:checkbox”)&lt;/td&gt;
+&lt;td&gt;选取所有的多选框&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:submit”)&lt;/td&gt;
+&lt;td&gt;选取所有的提交按钮&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:button”)&lt;/td&gt;
+&lt;td&gt;选取所有的按钮&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:hidden”)&lt;/td&gt;
+&lt;td&gt;选取所有的不可见元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;未完待续…&#34;&gt;未完待续…&lt;/h2&gt;
+</content>
+        <category term="js" />
+        <category term="jQuery" />
+        <updated>2021-05-07T11:04:03.000Z</updated>
+    </entry>
     <entry>
         <id>https://miraitowa.cc/post/424c46eb.html</id>
         <title>使用原生JS写一个图片轮播</title>
@@ -2162,24 +2487,5 @@ h6：金殿旅游，云南野生动物园旅游&lt;/p&gt;
         <category term="算法" />
         <category term="leetcode" />
         <updated>2020-09-27T11:04:03.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://miraitowa.cc/post/812420b3.html</id>
-        <title>leetcode-两数之和</title>
-        <link rel="alternate" href="https://miraitowa.cc/post/812420b3.html"/>
-        <content type="html">&lt;h2 id=&#34;两数之和&#34;&gt;两数之和&lt;/h2&gt;
-&lt;p&gt;给定一个整数数组&lt;code&gt;nums&lt;/code&gt;和一个目标值&lt;code&gt;target&lt;/code&gt;请你在该数组中找出和为目标值的那两个整数,并返回他们的数组下标。&lt;br&gt;
-你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。&lt;br&gt;
-&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;给定 nums = [2, 7, 11, 15], target = 9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;因为 nums[0] + nums[1] = 2 + 7 = 9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;所以返回 [0, 1]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;解题思路&#34;&gt;解题思路&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;无序数组的两数之和&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;代码&lt;/p&gt;
-&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;* &lt;span class=&#34;title&#34;&gt;twoSum&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;* nums, &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; numsSize, &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; target, &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;* returnSize)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; count[&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;] = &amp;#123;&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i,j;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;i &amp;lt; numsSize - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(j = i + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;j &amp;lt; numsSize;j++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(nums[i] + nums[j] == target)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                count[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;] = i;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                count[&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;] = j;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                * returnSize = &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; count;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    * returnSize = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; count;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-</content>
-        <category term="C" />
-        <category term="算法" />
-        <category term="leetcode" />
-        <updated>2020-09-26T12:58:03.000Z</updated>
     </entry>
 </feed>
