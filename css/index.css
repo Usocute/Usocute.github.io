@@ -329,6 +329,11 @@ div.usercm {
 #bber .timeline ul .list {
   margin-left: -2.5em;
 }
+
+/* 解决图标大小不一致 */
+#nav.hide-menu #toggle-menu .site-page {
+  font-size: 0.9rem !important;
+}
 .limit-one-line,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-name,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-desc,
