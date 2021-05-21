@@ -154,3 +154,13 @@ div.usercm {
 #nav.hide-menu #toggle-menu .site-page {
   font-size: 0.9rem !important;
 }
+
+.article-sort-item-img {
+  border-radius: 15px;
+}
+
+.article-sort-item {
+  padding: 5px;
+  background: var(--miraitowa-post-blockquote-bg);
+  border-radius: 15px;
+}

@@ -335,6 +335,16 @@ div.usercm {
 #nav.hide-menu #toggle-menu .site-page {
   font-size: 0.9rem !important;
 }
+
+.article-sort-item-img {
+  border-radius: 15px;
+}
+
+.article-sort-item {
+  padding: 5px;
+  background: var(--miraitowa-post-blockquote-bg);
+  border-radius: 15px;
+}
 .limit-one-line,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-name,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-desc,
@@ -1521,76 +1531,6 @@ blockquote footer cite:before {
 }
 .layout.hide-aside > div {
   width: 100% !important;
-}
-#info_user_poor {
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  border-radius: 2px;
-}
-.friend_post_info_title {
-  font-weight: 700;
-}
-.friend_post_info_number {
-  float: right;
-}
-.chart {
-  -o-box-align: start;
-  align-items: flex-start;
-  -o-box-flex: 1;
-  box-flex: 1;
-  flex: 1;
-  width: 100px;
-  height: 60px;
-  margin: 20px 0px;
-}
-.chart span {
-  width: 120px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.article-sort-item-time span {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-a.article-sort-item-title {
-  -webkit-line-clamp: 1;
-}
-.load_button {
-  transition-duration: 0.4s;
-  text-align: center;
-  border: 1px solid #ededed;
-  border-radius: 0.3em;
-  display: inline-block;
-  background: transparent;
-  color: #555;
-  padding: 0.5em 1.25em;
-}
-.load_button:hover {
-  color: #3090e4;
-  border-color: #3090e4;
-}
-@media screen and (min-width: 500px) {
-  .friend_post_time {
-    float: right;
-  }
-}
-@media screen and (max-width: 500px) {
-  #info_user_poor {
-    padding: 10px;
-    -o-box-orient: vertical;
-    flex-direction: column;
-    max-height: 200px;
-  }
-  .chart {
-    -o-box-flex: 1;
-    box-flex: 1;
-    flex: 0;
-    width: 100%;
-    height: 160px;
-    margin: 0;
-  }
 }
 #article-container .flink .flink-desc {
   margin: 0.2rem 0 0.5rem;
