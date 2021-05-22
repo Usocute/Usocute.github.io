@@ -2,34 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://miraitowa.cc/link/index.html</loc>
-    
-    <lastmod>2021-05-22</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://miraitowa.cc/love/index.html</loc>
-    
-    <lastmod>2021-05-22</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://miraitowa.cc/site-history/index.html</loc>
-    
-    <lastmod>2021-05-22</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://miraitowa.cc/tags/index.html</loc>
-    
-    <lastmod>2021-05-22</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://miraitowa.cc/post/fae8.html</loc>
     
     <lastmod>2021-05-22</lastmod>
@@ -268,13 +240,6 @@
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/Gallery/index.html</loc>
-    
-    <lastmod>2021-05-22</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://miraitowa.cc/about/index.html</loc>
     
     <lastmod>2021-05-22</lastmod>
@@ -303,7 +268,35 @@
   </url>
   
   <url>
-    <loc>https://miraitowa.cc/Gallery/2021/index.html</loc>
+    <loc>https://miraitowa.cc/link/index.html</loc>
+    
+    <lastmod>2021-05-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://miraitowa.cc/love/index.html</loc>
+    
+    <lastmod>2021-05-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://miraitowa.cc/site-history/index.html</loc>
+    
+    <lastmod>2021-05-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://miraitowa.cc/tags/index.html</loc>
+    
+    <lastmod>2021-05-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://miraitowa.cc/Gallery/index.html</loc>
     
     <lastmod>2021-05-22</lastmod>
     
@@ -311,6 +304,13 @@
   
   <url>
     <loc>https://miraitowa.cc/Gallery/IU/index.html</loc>
+    
+    <lastmod>2021-05-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://miraitowa.cc/Gallery/2021/index.html</loc>
     
     <lastmod>2021-05-22</lastmod>
     
