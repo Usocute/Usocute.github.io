@@ -164,3 +164,7 @@ div.usercm {
   background: var(--miraitowa-post-blockquote-bg);
   border-radius: 15px;
 }
+
+#nav .menus_items .menus_item .menus_item_child {
+  border-radius: 10px;
+}
