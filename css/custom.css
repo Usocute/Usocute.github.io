@@ -320,3 +320,7 @@ footer#footer .copyright {
 #local-search .search-dialog {
   border-radius: 15px;
 }
+
+.aside-list-item a img {
+  border-radius: 8px;
+}
