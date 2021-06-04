@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: 
+Disallow: /essay/
+Disallow: /Gallery/day-by-day/
+Sitemap: https://miraitowa.cc/sitemap.xml

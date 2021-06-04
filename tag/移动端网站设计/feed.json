@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Miraitowa • All posts by \"移动端网站设计\" tag",
+    "description": "永远期待明亮的未来,一个收藏回忆记录成长的地方...",
+    "home_page_url": "https://miraitowa.cc",
+    "items": [
+        {
+            "id": "https://miraitowa.cc/post/1158b6cc.html",
+            "url": "https://miraitowa.cc/post/1158b6cc.html",
+            "title": "移动设备(手机)网站界面设计",
+            "date_published": "2021-03-04T04:59:28.000Z",
+            "content_html": "<h2 id=\"手机网站的概念及趋势\">手机网站的概念及趋势</h2>\n<ul>\n<li>定义：手机网站是指特地用于手机阅读的网站。这种网站经过以文字信息和简单的图片信息为主。随着向手机智能化方向开展，装置了操作系统和阅读器的手机的功用和电脑是很类似的，但假如仅仅运用手机阅读器看PC网站的话，那还是很费劲的。运用这种手机能够经过GPRS上网可阅读几乎一切的www网站。由于手机的屏幕尺寸和CPU处置才能有限，特地为方便手机浏览而进行优化的网站更为便于用户阅读。目前使用手机上网的用户超过台式电脑用户，手机成为我国网民的第一大上网终端。</li>\n</ul>\n<h2 id=\"前端开发中PC端和移动端网站的区别\">前端开发中PC端和移动端网站的区别</h2>\n<ol>\n<li>PC端在开发过程中考虑的是浏览器兼容性，移动端开发中考虑的是手机兼容性问题，做移动端开发，更多考虑的是手机分辨率的自适应和不同手机操作系统的略微差异化；</li>\n<li>在部分事件的处理上，移动端自然是偏向于触屏的，另外包括移动端弹出的手机键盘该如何处理，这样的问题在PC上肯定不会遇到，但在移动端，如果你没有经验，处理起来是相当麻烦的；</li>\n<li>布局上，移动端开发是要做到页面布局自适应的，而PC端页面布局的比例会相对固定；</li>\n<li>在动画效果处理上，PC端要考虑IE的兼容性，通常用JS做动画的通用性会好一些，但相比CSS3却牺牲了较大的性能，而在手机端，如果要做一些动画、特效等，第一选择肯定是CSS3，既简单，效率又高。</li>\n</ol>\n<h2 id=\"设计手机网站的注意事项：\">设计手机网站的注意事项：</h2>\n<ol>\n<li>明确需要展示的主题和内容；</li>\n<li>尽量符合滑动屏幕的方式；</li>\n<li>特别注意与PC端网站导航功能的区别；</li>\n<li>考虑多种手机界面和浏览器的兼容；</li>\n<li>尽量减少用户文字输入操作；</li>\n<li>开始设计时就要为以后的推广和宣传做预估；</li>\n<li>兼顾非触摸屏幕的设计；</li>\n<li>简化页面内容；</li>\n<li>注重网页产品和服务的展示；</li>\n</ol>\n<h2 id=\"手机网站的布局-使用媒体查询-原始方式\">手机网站的布局:(使用媒体查询(原始方式))</h2>\n<ul>\n<li>@media 在设计响应式页面时是非常有用的。可以针对不同的屏幕尺寸设置不同的样式。使用该方式设计的页面，可以根据浏览器的大小实时地进行高度和宽度的渲染。</li>\n<li>基本格式如下：</li>\n</ul>\n<figure class=\"highlight css\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"keyword\">@media</span>  mediatype  <span class=\"keyword\">and</span>|<span class=\"keyword\">not</span>|<span class=\"keyword\">only</span>  (mediad feature)</span><br><span class=\"line\">&#123;</span><br><span class=\"line\">// CSS代码</span><br><span class=\"line\">&#125;</span><br></pre></td></tr></table></figure>\n<p>碎碎念：这个东西好麻烦的感觉~</p>\n",
+            "tags": [
+                "前端设计",
+                "移动端网站设计"
+            ]
+        }
+    ]
+}

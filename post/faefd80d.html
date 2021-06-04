@@ -1,0 +1,426 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JavaScript高级④-AJAX与JSON | Miraitowa</title><meta name="keywords" content="js,js高级"><meta name="author" content="Miraitowa.Yao"><meta name="copyright" content="Miraitowa.Yao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="AJAX介绍和创建XHR对象  AJAX:异步 JavaScript 和 XML。简短地说，在不重载整个网页的情况下，AJAX通过后台加载数据，并在网页上进行显示。  AJAX包括以下几个步骤：  创建AJAX对象； 发出HTTP请求； 接收服务器传回的数据； 更新页面数据；   Ajax的工作原理如图所示：    总结：   AJAX通过原生的XMLHttpRequest对象发出HTTP请求，得">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript高级④-AJAX与JSON">
+<meta property="og:url" content="https://miraitowa.cc/post/faefd80d.html">
+<meta property="og:site_name" content="Miraitowa">
+<meta property="og:description" content="AJAX介绍和创建XHR对象  AJAX:异步 JavaScript 和 XML。简短地说，在不重载整个网页的情况下，AJAX通过后台加载数据，并在网页上进行显示。  AJAX包括以下几个步骤：  创建AJAX对象； 发出HTTP请求； 接收服务器传回的数据； 更新页面数据；   Ajax的工作原理如图所示：    总结：   AJAX通过原生的XMLHttpRequest对象发出HTTP请求，得">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-javascript-bcd4-cover.jpg">
+<meta property="article:published_time" content="2021-03-22T10:00:00.000Z">
+<meta property="article:modified_time" content="2021-05-21T13:35:08.859Z">
+<meta property="article:author" content="Miraitowa.Yao">
+<meta property="article:tag" content="js">
+<meta property="article:tag" content="js高级">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-javascript-bcd4-cover.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://miraitowa.cc/post/faefd80d"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Miraitowa.Yao","link":"链接: ","source":"来源: Miraitowa","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'JavaScript高级④-AJAX与JSON',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-05-21 21:35:08'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiperstyle.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Miraitowa" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">51</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-bookmark"></i><span> 文章</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tree"></i><span> 动态</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/essay/"><i class="fa-fw fas fa-bomb"></i><span> 闲言碎语</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-camera-retro"></i><span> 时过境迁</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-credit-card"></i><span> 网站</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas fa-spinner"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-javascript-bcd4-cover.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Miraitowa</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-bookmark"></i><span> 文章</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tree"></i><span> 动态</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/essay/"><i class="fa-fw fas fa-bomb"></i><span> 闲言碎语</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-camera-retro"></i><span> 时过境迁</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-credit-card"></i><span> 网站</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas fa-spinner"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">JavaScript高级④-AJAX与JSON<a class="post-edit-link" href="https://github.com/usocute/hexo/edit/main/source/_posts/JavaScript高级-AJAX和JSON.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon far fa-calendar-alt"></i><span class="post-meta-label">发表于</span><time datetime="2021-03-22T10:00:00.000Z" title="undefined 2021-03-22 18:00:00">2021-03-22</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/JavaScript%E9%AB%98%E7%BA%A7/">JavaScript高级</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span id="" data-flag-title="JavaScript高级④-AJAX与JSON"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="twikoo_visitors"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="AJAX介绍和创建XHR对象">AJAX介绍和创建XHR对象</h2>
+<blockquote>
+<p>AJAX:异步 JavaScript 和 XML。简短地说，在不重载整个网页的情况下，AJAX通过后台加载数据，并在网页上进行显示。</p>
+</blockquote>
+<p><strong>AJAX包括以下几个步骤：</strong></p>
+<ol>
+<li>创建AJAX对象；</li>
+<li>发出HTTP请求；</li>
+<li>接收服务器传回的数据；</li>
+<li>更新页面数据；</li>
+</ol>
+<ul>
+<li><strong>Ajax的工作原理如图所示：</strong><br>
+<img src= "/img/loading.gif" data-lazy-src="https://gitee.com/usocute/gallery/raw/master/img/miraitowa-javascript-AJAX-JSON-img1.png" alt="AJAX"></li>
+</ul>
+<blockquote>
+<p>总结：</p>
+</blockquote>
+<ul>
+<li>AJAX通过原生的XMLHttpRequest对象发出HTTP请求，得到服务器返回的数据后再进行处理。</li>
+<li><code>AJAX技术的核心就是XMLHttpRequest对象</code>（简称：XHR），这是微软首次引入的一个特性，其他浏览器厂商后来都提供了相同的实现。</li>
+<li>IE5中的XHR对象是通过ActiveX对象实现的，而IE7+及其他标准浏览器都支持原生的XHR对象。</li>
+<li>创建一个XHR对象，也叫做实例化一个XHR对象，因为XMLHttpRequest()是一个构造函数。</li>
+</ul>
+<h2 id="XHR的用法介绍">XHR的用法介绍</h2>
+<ol>
+<li><code>open()</code>方法：设置:  HTTP方法和要获取资源的URL;</li>
+<li><code>send()</code>方法：发送请求：</li>
+<li><code>onload</code>属性：设置:  成功获取数据后将要运行的函数;</li>
+<li><code>onerror</code>属性：设置:  出现错误后将要运行的函数;</li>
+<li><code>responseText</code>属性：设置:  存储异步请求响应的文本;</li>
+</ol>
+<h2 id="HTTP头部信息">HTTP头部信息</h2>
+<blockquote>
+<p>请求头用于说明是谁或什么在发送请求、请求源于何处，或者客户端的喜好及能力。服务器可以根据请求头部给出的客户端信息，试着为客户端提供更好的响应。XHR对象也提供了操作这两种头部信息（请求头和响应头）的方法。</p>
+</blockquote>
+<ol>
+<li><code>Accep</code>t：告诉WEB服务器自己接受什么介质类型，<em>/</em> 表示任何类型，type/* 表示该类型下的所有子类型，type/sub-type。</li>
+<li><code>Accept-Charset</code>：浏览器告诉服务器自己能接收的字符集。</li>
+<li><code>Accept-Encoding</code>：浏览器申明自己接收的编码方法，通常指定压缩方法，是否支持压缩，支持什么压缩方法（gzip，deflate）。</li>
+<li><code>Accept-Language</code>：浏览器申明自己接收的语言。语言跟字符集的区别：中文是语言，中文有多种字符集，比如big5，gb2312，gbk等等。</li>
+<li><code>Cache-Control</code>：指定请求和响应遵循的缓存机制。</li>
+<li><code>Connection</code>：表示是否需要持久连接。如果Servlet看到这里的值为“Keep-Alive”，或者看到请求使用的是HTTP 1.1，它就表示持久连接。</li>
+<li><code>Cookie</code>：当前域名下的Cookie。</li>
+<li><code>Referer</code>： 浏览器向WEB 服务器表明自己是从哪个网页URL获得点击当前请求中的网址/URL。</li>
+<li><code>User-Agent</code>：浏览器表明自己的身份（是哪种浏览器）。例如：User-Agent：Mozilla/5.0</li>
+</ol>
+<h2 id="GET与POST请求">GET与POST请求</h2>
+<ol>
+<li>由于<code>GET方式</code>在发送数据时是将参数拼接在URL上，<code>传输数据会受到URL长度的限制</code>，不同浏览器的长度限制不一样，所以<code>GET方式会受到参数大小的限制</code>，但是<code>POST方式没有参数大小的限制</code>。</li>
+<li>因为GET方式会将请求参数显示在地址栏上，而POST方式不会，所以<code>POST方式相对来讲更安全</code>。</li>
+<li><code>GET方式有缓存，而POST方式没有缓存</code>。</li>
+</ol>
+<h2 id="JavaScript中的跨域请求">JavaScript中的跨域请求</h2>
+<ul>
+<li>受JS同源策略的影响，当在某一域名下请求其他域名，或在同一域名下请求不同端口的URL时，就会变成不被允许的跨域请求。127.0.0.1:8020</li>
+</ul>
+<h2 id="了解XDomainRequest对象">了解XDomainRequest对象</h2>
+<blockquote>
+<p><code>XDomainRequest表示JavaScript和Ajax的跨域请求，在IE8+可以使用</code>。<br>
+XDomainRequest包含以下几个部分：</p>
+</blockquote>
+<ol>
+<li>事件
+<ol>
+<li><code>onload</code>事件：请求成功并返回对象时，被触发。</li>
+<li><code>onerror</code>事件：当跨域请求发生错误时，被触发。</li>
+<li><code>onprogress</code>事件：浏览器开始从服务器端接收数据时，被触发。</li>
+<li><code>ontimeout</code>事件：出现超时情况，被触发。</li>
+</ol>
+</li>
+<li>方法
+<ol>
+<li><code>abort</code>方法：终止等待send</li>
+<li><code>open(XDomainRequest)</code>方法：建立与服务器的链接</li>
+<li><code>send(XDomainRequest)</code>方法：传输一个字符串数据给服务器处理</li>
+</ol>
+</li>
+<li>属性
+<ol>
+<li><code>constructor</code>属性：返回一个对象的构造函数的引用</li>
+<li><code>contentType</code>属性：返回html请求或返回头部的content-type属性</li>
+<li><code>responseText</code>属性：以字符串形式返回请求的body内容</li>
+<li><code>timeout</code>属性：超时后返回的值。</li>
+</ol>
+</li>
+</ol>
+<h2 id="JSON数据">JSON数据</h2>
+<blockquote>
+<p><code>JSON(JavaScript Object Notation</code>, JS 对象简谱) 是一种轻量级的数据交换格式。它基于 <code>ECMAScript</code> (欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。</p>
+</blockquote>
+<p><strong>Json的语法可以表示成三种类型的值：</strong><br>
+1. 简单值：可以在Json中表示字符串、数值、布尔值和null，但是<code>不支持undefined</code>;<br>
+2. 对象：作为一种复杂数据结构，表示一种无序的键值对，每个键值对中的值既可以是简单值，也可以是复杂数据类型的值。<br>
+3. 数组：作为一种复杂数据结构，表示一种有序值的列表，可以通过数组索引访问其中的值。数组中的元素可以是任何类型：简单值、对象、数组均可。<br>
+<strong>如：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;<span class="attr">a</span>: <span class="string">&#x27;Hello&#x27;</span>, <span class="attr">b</span>: <span class="string">&#x27;World&#x27;</span>&#125;; </span><br><span class="line"><span class="comment">//这是一个对象，注意键名也是可以使用引号包裹的</span></span><br><span class="line"><span class="keyword">var</span> json = <span class="string">&#x27;&#123;&quot;a&quot;: &quot;Hello&quot;, &quot;b&quot;: &quot;World&quot;&#125;&#x27;</span>;</span><br><span class="line"> <span class="comment">//这是一个 JSON 字符串，本质是一个字符串</span></span><br></pre></td></tr></table></figure>
+<h2 id="在Ajax中使用JSON数据">在Ajax中使用JSON数据</h2>
+<ol>
+<li><code>JSON.parse()</code>：把Json格式的字符串转换为Json对象。</li>
+<li><code>JSON.stringify()</code>:把Json对象转换为Json格式的字符串。</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>JavaScript高级④-AJAX与JSON</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://miraitowa.cc/post/faefd80d.html">https://miraitowa.cc/post/faefd80d.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>Miraitowa.Yao</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2021-03-22</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2021-05-21</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/js/">js</a><a class="post-meta__tags" href="/tags/js%E9%AB%98%E7%BA%A7/">js高级</a></div><div class="post_share"><div class="social-share" data-image="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-javascript-bcd4-cover.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/post/a1736a1e.html"><img class="prev-cover" src="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-javascript-bcd5-cover.jpg" onerror="onerror=null;src='/img/404.png'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">JavaScript高级⑤-高级函数</div></div></a></div><div class="next-post pull-right"><a href="/post/bd399257.html"><img class="next-cover" src="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-javascript-bcd3-cover.jpg" onerror="onerror=null;src='/img/404.png'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">JavaScript高级③-匿名函数及函数操作</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Waline</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Miraitowa.Yao</div><div class="author-info__description">永远期待明亮的未来,一个收藏回忆记录成长的地方...</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">51</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div></div><a class="button--animated" id="card-info-btn"><i class="fas fa-bookmark"></i><span>加入书签</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/usocute" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:miraitowabot@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://t.me/CuteOvO" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a><a class="social-icon" href="https://miraitowa.cc/atom.xml" target="_blank" title="rss"><i class="fas fa-rss"></i></a></div></div><div class="card-widget" id="card-poem"><div id="poem_sentence"></div><div id="poem_info"><div id="poem_dynasty"></div><div id="poem_author"></div></div></div><script src="https://cdn.jsdelivr.net/gh/zhheo/JS-Heo@main/poem/jinrishici.js" charset="utf-8"></script><script type="text/javascript">jinrishici.load(function(result) {
+var sentence = document.querySelector("#poem_sentence")
+var author = document.querySelector("#poem_author")
+var dynasty = document.querySelector("#poem_dynasty")
+
+var sentenceText = result.data.content
+sentenceText = sentenceText.substr(0, sentenceText.length - 1);
+sentence.innerHTML = sentenceText
+dynasty.innerHTML = result.data.origin.dynasty
+author.innerHTML = result.data.origin.author + '《' + result.data.origin.title + '》'
+});</script><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#AJAX%E4%BB%8B%E7%BB%8D%E5%92%8C%E5%88%9B%E5%BB%BAXHR%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.</span> <span class="toc-text">AJAX介绍和创建XHR对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#XHR%E7%9A%84%E7%94%A8%E6%B3%95%E4%BB%8B%E7%BB%8D"><span class="toc-number">2.</span> <span class="toc-text">XHR的用法介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP%E5%A4%B4%E9%83%A8%E4%BF%A1%E6%81%AF"><span class="toc-number">3.</span> <span class="toc-text">HTTP头部信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GET%E4%B8%8EPOST%E8%AF%B7%E6%B1%82"><span class="toc-number">4.</span> <span class="toc-text">GET与POST请求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript%E4%B8%AD%E7%9A%84%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82"><span class="toc-number">5.</span> <span class="toc-text">JavaScript中的跨域请求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%86%E8%A7%A3XDomainRequest%E5%AF%B9%E8%B1%A1"><span class="toc-number">6.</span> <span class="toc-text">了解XDomainRequest对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JSON%E6%95%B0%E6%8D%AE"><span class="toc-number">7.</span> <span class="toc-text">JSON数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8Ajax%E4%B8%AD%E4%BD%BF%E7%94%A8JSON%E6%95%B0%E6%8D%AE"><span class="toc-number">8.</span> <span class="toc-text">在Ajax中使用JSON数据</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/89ee8a3d.html" title="HTML5、CSS3实现简单响应式瀑布流布局"><img src="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-html-css-waterfall-flow.jpg" onerror="this.onerror=null;this.src='/img/404.png'" alt="HTML5、CSS3实现简单响应式瀑布流布局"/></a><div class="content"><a class="title" href="/post/89ee8a3d.html" title="HTML5、CSS3实现简单响应式瀑布流布局">HTML5、CSS3实现简单响应式瀑布流布局</a><time datetime="2021-05-30T11:57:35.000Z" title="发表于 2021-05-30 19:57:35">2021-05-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/970c811f.html" title="jQuery 基础拾遗"><img src="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-jquery-abc-cover.jpg" onerror="this.onerror=null;this.src='/img/404.png'" alt="jQuery 基础拾遗"/></a><div class="content"><a class="title" href="/post/970c811f.html" title="jQuery 基础拾遗">jQuery 基础拾遗</a><time datetime="2021-05-07T11:04:03.000Z" title="发表于 2021-05-07 19:04:03">2021-05-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/424c46eb.html" title="使用原生JS写一个图片轮播"><img src="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-js-swiper-cover.jpg" onerror="this.onerror=null;this.src='/img/404.png'" alt="使用原生JS写一个图片轮播"/></a><div class="content"><a class="title" href="/post/424c46eb.html" title="使用原生JS写一个图片轮播">使用原生JS写一个图片轮播</a><time datetime="2021-04-10T14:48:34.000Z" title="发表于 2021-04-10 22:48:34">2021-04-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/7292aa95.html" title="JavaScript高级⑥-存储(cookie)"><img src="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-javascript-bcd6-cover.jpg" onerror="this.onerror=null;this.src='/img/404.png'" alt="JavaScript高级⑥-存储(cookie)"/></a><div class="content"><a class="title" href="/post/7292aa95.html" title="JavaScript高级⑥-存储(cookie)">JavaScript高级⑥-存储(cookie)</a><time datetime="2021-03-28T10:00:00.000Z" title="发表于 2021-03-28 18:00:00">2021-03-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/a1736a1e.html" title="JavaScript高级⑤-高级函数"><img src="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-javascript-bcd5-cover.jpg" onerror="this.onerror=null;this.src='/img/404.png'" alt="JavaScript高级⑤-高级函数"/></a><div class="content"><a class="title" href="/post/a1736a1e.html" title="JavaScript高级⑤-高级函数">JavaScript高级⑤-高级函数</a><time datetime="2021-03-25T10:00:00.000Z" title="发表于 2021-03-25 18:00:00">2021-03-25</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2021 By Miraitowa.Yao</div><div class="footer_custom_text"><font style="font-size:16px"><img style="width:24px;height:24px;margin-bottom:-8px" src="https://moe.blog/content/uploadfile/Links/icp.gov.moe.png"><a href="https://icp.gov.moe" target="_blank" data-pjax-state=""><span style="color:#ff0000">萌</span><span style="color:#ca7900">I</span><span style="color:#48ab18">C</span><span style="color:#2720ac">P</span><span style="color:#9b17ae">备</span> </a><a href="https://icp.gov.moe/?keyword=20210925" target="_blank" data-pjax-state=""> <span style="color:#ff0000">20</span><span style="color:#ca7900">21</span><span style="color:#48ab18">09</span><span style="color:#2720ac">25</span><span style="color:#f40428">号</span></a></font><br /></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
+  const $countDom = document.getElementById('twikoo-count')
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'miraitowa-5g63ri3h4ea385d3',
+      region: ''
+    }, null))
+  }
+
+  const getCount = () => {
+    twikoo.getCommentsCount({
+      envId: 'miraitowa-5g63ri3h4ea385d3',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      $countDom.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const loadTwikoo = (bool = false) => {
+    if (typeof twikoo === 'object') {
+      init()
+      bool && $countDom && setTimeout(getCount,0)
+    } else {
+      getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(()=> {
+        init()
+        bool && $countDom && setTimeout(getCount,0)
+      })
+    }
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo(true)
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadWaline () {
+  function initWaline () {
+    const waline = new Waline(Object.assign({
+      el: '#waline-wrap',
+      serverURL: 'https://waline-api-orpin.vercel.app/',
+      avatar: 'monsterid',
+      path: location.pathname,
+      emojiCDN: '',
+      emojiMaps: "",
+      visitor: false,
+      dark: '[data-theme="dark"]'
+    }, null))
+  }
+
+  if (typeof Waline === 'function') initWaline() 
+  else getScript('https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js').then(initWaline)
+}
+
+if ('Twikoo' === 'Waline' || !false) {
+  if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+  else setTimeout(loadWaline, 0)
+} else {
+  function loadOtherComment () {
+    loadWaline()
+  }
+}</script></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/essay/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener toc scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && location.pathname =='/'){
+    
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="/img/index-swiper6.jpg" alt="/img/index-swiper6.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-03-28</span><a class="blog-slider__title" href="post/7292aa95.html">JavaScript高级⑥-存储(cookie)</a><div class="blog-slider__text">Cookie 是为了解决"如何记住用户信息"而发明的。</div><a class="blog-slider__button" href="post/7292aa95.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="/img/index-swiper5.jpg" alt="/img/index-swiper5.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-03-25</span><a class="blog-slider__title" href="post/a1736a1e.html">JavaScript高级⑤-高级函数</a><div class="blog-slider__text">高级函数本质上十分简单和过程化，但也可以是非常复杂的，一些额外的功能可以使用闭包来实现。</div><a class="blog-slider__button" href="post/a1736a1e.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="/img/index-swiper4.jpg" alt="/img/index-swiper4.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-03-22</span><a class="blog-slider__title" href="post/faefd80d.html">JavaScript高级④-AJAX与JSON</a><div class="blog-slider__text">Ajax 技术提供了一种新的前后端数据交互方式，不需要刷新页面，而且不阻塞页面执行流程，异步的去请求去获取、交互数据。</div><a class="blog-slider__button" href="post/faefd80d.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="/img/index-swiper3.jpg" alt="/img/index-swiper3.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-03-20</span><a class="blog-slider__title" href="post/bd399257.html">JavaScript高级③-匿名函数及函数操作</a><div class="blog-slider__text">匿名函数：就是没有函数名的函数。</div><a class="blog-slider__button" href="post/bd399257.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="/img/index-swiper2.jpg" alt="/img/index-swiper2.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-03-19</span><a class="blog-slider__title" href="post/fec01c07.html">JavaScript高级②-面向对象的程序设计</a><div class="blog-slider__text">面向对象程序设计（英语：Object-oriented programming，缩写：OOP）是种具有对象概念的程序编程范型，同时也是一种程序开发的方法。</div><a class="blog-slider__button" href="post/fec01c07.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="/img/index-swiper1.jpg" alt="/img/index-swiper1.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-03-16</span><a class="blog-slider__title" href="post/4f09663b.html">JavaScript高级①-变量、作用域和内存</a><div class="blog-slider__text">JavaScript 中变量、作用域和内存问题的学习笔记。</div><a class="blog-slider__button" href="post/4f09663b.html">详情</a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载swiper')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.js"></script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper@0.18/swiper/swiperindex.js"></script>
+<style></style><!-- hexo injector body_end end --></body></html>

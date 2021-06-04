@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://miraitowa.cc</id>
+    <title>Miraitowa • Posts by &#34;整站交互设计&#34; tag</title>
+    <link href="https://miraitowa.cc" />
+    <updated>2021-03-01T04:59:28.000Z</updated>
+    <category term="生活记录" />
+    <category term="成长" />
+    <category term="Git" />
+    <category term="Github" />
+    <category term="记录" />
+    <category term="历史" />
+    <category term="js" />
+    <category term="js基础" />
+    <category term="HTML" />
+    <category term="CSS" />
+    <category term="瀑布流" />
+    <category term="js高级" />
+    <category term="cookie" />
+    <category term="MySQL" />
+    <category term="数据库" />
+    <category term="存储过程" />
+    <category term="视图" />
+    <category term="存储引擎" />
+    <category term="数据类型" />
+    <category term="View" />
+    <category term="index" />
+    <category term="butterfly" />
+    <category term="hexo" />
+    <category term="魔改" />
+    <category term="查询" />
+    <category term="学习笔记" />
+    <category term="Trigger" />
+    <category term="jQuery" />
+    <category term="npm" />
+    <category term="yarn" />
+    <category term="JavaScript基础" />
+    <category term="增删改查" />
+    <category term="前端设计" />
+    <category term="单页设计与推广" />
+    <category term="SEO优化" />
+    <category term="网店设计" />
+    <category term="日常" />
+    <category term="昆明" />
+    <category term="随笔" />
+    <category term="碎碎念" />
+    <category term="MC" />
+    <category term="Minecrift" />
+    <category term="移动端网站设计" />
+    <category term="C" />
+    <category term="算法" />
+    <category term="leetcode" />
+    <category term="javascript" />
+    <category term="整站交互设计" />
+    <category term="JavaScript" />
+    <category term="JS" />
+    <category term="图片轮播" />
+    <entry>
+        <id>https://miraitowa.cc/post/db7dc918.html</id>
+        <title>网站整站交互设计</title>
+        <link rel="alternate" href="https://miraitowa.cc/post/db7dc918.html"/>
+        <content type="html">&lt;h2 id=&#34;网站设计方法&#34;&gt;网站设计方法&lt;/h2&gt;
+&lt;p&gt;简介: 网站设计要能充分吸引访问者的注意力，让访问者产生视觉上的愉悦感。因此在网页创作的时候就必须将网站的整体设计与网页设计的相关原理紧密结合起来。网站设计是将策划案中的内容、网站的主题模式，以及结合自己的认识通过艺术的手法表现出来；而网页制作通常就是将网页设计师所设计出来的设计稿，按照W3C规范用html（标准通用标记语言下的一个应用）将其制作成网页格式。&lt;/p&gt;
+&lt;h3 id=&#34;设计方法&#34;&gt;设计方法:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;确定网站目标&lt;/li&gt;
+&lt;li&gt;满足用户的设计心理&lt;/li&gt;
+&lt;li&gt;熟悉和识别模式&lt;/li&gt;
+&lt;li&gt;网络上的品牌符号要统一&lt;/li&gt;
+&lt;li&gt;心里激发&lt;/li&gt;
+&lt;li&gt;运用图像强化概念&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;网站的可用性&#34;&gt;网站的可用性&lt;/h2&gt;
+&lt;h3 id=&#34;如何判断网页的可用性？&#34;&gt;如何判断网页的可用性？&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;页面链接的点击率&lt;/code&gt;是判断网站价值的一个指标。因此，可用性测试是否有助于提高网页价值的一个重要判断标准就是：在同等条件下，根据测试结果改进后的网页上的点击率是否也得到相应提升。不可否认，有时网站的商业目的与改善用户体验的测试目的并不完全一致，在项目中我们努力在两者之间寻找平衡点，希望在提升网站用户体验的同时，符合网站给出的判断标准。&lt;/p&gt;
+&lt;h3 id=&#34;如何让提升网站可用性&#34;&gt;如何让提升网站可用性?&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;寻找用户能够理解的方式来表达信息&lt;/li&gt;
+&lt;li&gt;让用户能够按照自己认为正确的方式操作&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;影响网站可用性的关键因素&#34;&gt;影响网站可用性的关键因素:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;是否直观。衡量新用户是否能不费力的了解该网站的主旨、内容、使用流程;&lt;/li&gt;
+&lt;li&gt;是否高效。衡量老用户（明确知道如何使用）使用该网站达成目标的过程是否高效;&lt;/li&gt;
+&lt;li&gt;是否容易记忆。衡量老用户（之前仅使用过一次）是否需要在第二次使用时重复探索、学习网站使用流程;&lt;/li&gt;
+&lt;li&gt;用户误操作的频率和严重性。衡量用户使用过程中是否经常误操作、这些误操作影响是否严重、用户如何自行纠正这些错误;&lt;/li&gt;
+&lt;li&gt;是否满意。用户的主观感受如何，是否对使用该网站达成目标的过程感到满意;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;常见网站的错误设计&#34;&gt;常见网站的错误设计&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;搜索引擎不友好&lt;/li&gt;
+&lt;li&gt;使用PDF文件做为在线阅读&lt;/li&gt;
+&lt;li&gt;未改变已访问链接的颜色&lt;/li&gt;
+&lt;li&gt;文字未排版&lt;/li&gt;
+&lt;li&gt;固定字体大小&lt;/li&gt;
+&lt;li&gt;网页标题搜索引擎不友好&lt;/li&gt;
+&lt;li&gt;所有的东西看起来都像广告&lt;/li&gt;
+&lt;li&gt;违反设计惯例&lt;/li&gt;
+&lt;li&gt;打开新的浏览器窗口&lt;/li&gt;
+&lt;li&gt;不回答用户的提问&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="前端设计" />
+        <category term="整站交互设计" />
+        <updated>2021-03-01T04:59:28.000Z</updated>
+    </entry>
+</feed>

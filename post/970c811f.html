@@ -1,0 +1,927 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>jQuery 基础拾遗 | Miraitowa</title><meta name="keywords" content="js,jQuery"><meta name="author" content="Miraitowa.Yao"><meta name="copyright" content="Miraitowa.Yao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="核心概念和知识点 什么是jQuery  jQuery 是对javascript的一种封装–js的函数库。 用于客户端的开发，由美国人在2001年1月推出。  jQuery与javascript的区别  本质上的区别：jQuery是一个函数库，基于js语言编写出来的框架，实质上还是属于js。 代码书写不同，jq更简单。 使用方法不同：使用jQuery和javascript分别加载DOM,js只执行一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jQuery 基础拾遗">
+<meta property="og:url" content="https://miraitowa.cc/post/970c811f.html">
+<meta property="og:site_name" content="Miraitowa">
+<meta property="og:description" content="核心概念和知识点 什么是jQuery  jQuery 是对javascript的一种封装–js的函数库。 用于客户端的开发，由美国人在2001年1月推出。  jQuery与javascript的区别  本质上的区别：jQuery是一个函数库，基于js语言编写出来的框架，实质上还是属于js。 代码书写不同，jq更简单。 使用方法不同：使用jQuery和javascript分别加载DOM,js只执行一">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-jquery-abc-cover.jpg">
+<meta property="article:published_time" content="2021-05-07T11:04:03.000Z">
+<meta property="article:modified_time" content="2021-05-12T14:18:05.147Z">
+<meta property="article:author" content="Miraitowa.Yao">
+<meta property="article:tag" content="js">
+<meta property="article:tag" content="jQuery">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-jquery-abc-cover.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://miraitowa.cc/post/970c811f"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Miraitowa.Yao","link":"链接: ","source":"来源: Miraitowa","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'jQuery 基础拾遗',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-05-12 22:18:05'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiperstyle.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Miraitowa" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">51</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-bookmark"></i><span> 文章</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tree"></i><span> 动态</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/essay/"><i class="fa-fw fas fa-bomb"></i><span> 闲言碎语</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-camera-retro"></i><span> 时过境迁</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-credit-card"></i><span> 网站</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas fa-spinner"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-jquery-abc-cover.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Miraitowa</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-bookmark"></i><span> 文章</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tree"></i><span> 动态</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/essay/"><i class="fa-fw fas fa-bomb"></i><span> 闲言碎语</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-camera-retro"></i><span> 时过境迁</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-credit-card"></i><span> 网站</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas fa-spinner"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">jQuery 基础拾遗<a class="post-edit-link" href="https://github.com/usocute/hexo/edit/main/source/_posts/jQuery-拾遗.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon far fa-calendar-alt"></i><span class="post-meta-label">发表于</span><time datetime="2021-05-07T11:04:03.000Z" title="undefined 2021-05-07 19:04:03">2021-05-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/jQuery/">jQuery</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>8分钟</span></span><span class="post-meta-separator">|</span><span id="" data-flag-title="jQuery 基础拾遗"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="twikoo_visitors"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="核心概念和知识点">核心概念和知识点</h2>
+<h3 id="什么是jQuery">什么是jQuery</h3>
+<ul>
+<li>jQuery 是对javascript的一种封装–js的函数库。</li>
+<li>用于客户端的开发，由美国人在2001年1月推出。</li>
+</ul>
+<h3 id="jQuery与javascript的区别">jQuery与javascript的区别</h3>
+<ol>
+<li>本质上的区别：jQuery是一个函数库，基于js语言编写出来的框架，实质上还是属于js。</li>
+<li>代码书写不同，jq更简单。</li>
+<li>使用方法不同：使用jQuery和javascript分别加载DOM,<code>js只执行一次</code>，<code>jq可以执行多次</code>。</li>
+<li>获取class的方法不同。js没有默认的获取方式，jq可以通过<code>$(&quot;.类名&quot;)</code>来获取</li>
+</ol>
+<h3 id="jQuery的优势">jQuery的优势</h3>
+<ol>
+<li>轻量级</li>
+<li>对浏览器的兼容性好</li>
+<li>强大的选择器</li>
+<li>完善的ajax</li>
+<li>丰富的API文档和插件等</li>
+</ol>
+<h3 id="熟悉使用jQuery">熟悉使用jQuery</h3>
+<ol>
+<li>
+<p>获取相关的js文件</p>
+<ul>
+<li>jquery-xxx.js 与 jquery-xxx.min.js区别：
+<ol>
+<li>jquery-xxx.js：开发版本。给程序员看的，有良好的缩进和注释。体积大一些</li>
+<li>jquery-xxx.min.js：生产版本。没有缩进。体积小一些。程序加载更快</li>
+</ol>
+</li>
+<li>引用 在页面上引用js文件</li>
+<li>基本使用语法:$(“选择器名”).操作</li>
+<li>jQuery的文档就绪(加载)三种写法：</li>
+</ul>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*方法1*/</span></span><br><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  选择对象进行操作</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*方法2*/</span></span><br><span class="line">$().ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;              </span><br><span class="line">  选择对象进行操作</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*方法3*/</span></span><br><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;   <span class="comment">// 此方法最简洁</span></span><br><span class="line">  选择对象进行操作</span><br><span class="line">&#125;); </span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="window-onload和-function-区别">window.onload和$(function)区别</h3>
+<ul>
+<li>window.onload 只能定义一次,如果定义多次，后边的会将前边的覆盖掉。</li>
+<li>$(function)可以定义多次的。</li>
+</ul>
+<h3 id="jQuery对象与DOM对象的异同">jQuery对象与DOM对象的异同</h3>
+<h4 id="什么是jQuery对象">什么是jQuery对象?</h4>
+<blockquote>
+<p>通过jQuery包装DOM(文档)对象后产生的对象，凡是在$(“”)中的都属于jQuery对象。</p>
+</blockquote>
+<h4 id="什么是DOM对象？">什么是DOM对象？</h4>
+<blockquote>
+<p>页面中元素的集合就是文档对象。</p>
+</blockquote>
+<div class="note orange no-icon flat"><p>注意 🐟<br>
+1. jQuery对象与文档对象不能混合使用。<br>
+2. jQuery对象不能使用文档对象的属性及方法，同理文档对象也是。</p>
+</div>
+<div class="note orange no-icon flat"><p>注意 🐱<br>
+DOM(文档)对象与jQuery对象是可以相互转换的<br>
+js转jq：在dom对象的最外层用$()进行包裹即可。<br>
+jq转js：先获取jq对象:var $jq=$(“选择器名”); $jq.get(索引);</p>
+</div>
+<h3 id="jQuery库与其他库出现冲突问题-释放-的控制权">jQuery库与其他库出现冲突问题(释放$的控制权)</h3>
+<ol>
+<li>
+<p>方法一：在代码的第一行加入:<code>jQuery.noConflict()</code>;释放了jQuery的$含义，如果仍需使用，需把$改为jQuery。</p>
+</li>
+<li>
+<p>方法二</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $jq=jQuery.noConflict();   <span class="comment">/*赋值为一个变量*/</span></span><br><span class="line">$jq(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;     </span><br><span class="line">    正常使用</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="jQuery-选择器">jQuery 选择器</h2>
+<h3 id="jQuery选择器与CSS选择器的区别">jQuery选择器与CSS选择器的区别</h3>
+<ol>
+<li>jQuery与CSS是两种不同的语言，jQuery是一个js框架，CSS是层叠样式表，所以两者本质上是不同的。</li>
+<li>两者有一定交集，都是被网页或浏览器解析的语言，而jQuery可以通过修改浏览器的dom对象来实现对CSS的修改或控制。</li>
+</ol>
+<div class="note orange no-icon flat"><p>总结，jQuery选择器应用于js中，CSS选择器用于CSS中，只是两者有时使用相同的id标识来选择对象。<br>
+jQuery选择器包含了CSS 1, CSS 2, CSS 3 中的绝大多数选择器。</p>
+</div>
+<h3 id="jQuery选择器的优点">jQuery选择器的优点</h3>
+<ol>
+<li>写法简洁</li>
+<li>继承了CSS选择器的风格，支持CSS1–CSS3选择器</li>
+<li>完善的处理机制可以避免浏览器报错，比单纯的CSS功能更强大，还可兼容不同的浏览器。</li>
+</ol>
+<h3 id="jQuery选择器的分类">jQuery选择器的分类</h3>
+<ul>
+<li>基本选择器</li>
+<li>层次选择器</li>
+<li>过滤选择器</li>
+<li>表单选择器</li>
+</ul>
+<h3 id="基本选择器">基本选择器</h3>
+<table>
+<thead>
+<tr>
+<th>选择器名</th>
+<th>描述</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id选择器：  #id</td>
+<td>根据id获取元素</td>
+<td>$(“#test”)</td>
+</tr>
+<tr>
+<td>类选择器：  .class</td>
+<td>根据类名获取元素</td>
+<td>$(“.test”)</td>
+</tr>
+<tr>
+<td>元素选择器:  element</td>
+<td>根据元素名称获取元素</td>
+<td>$(“p”)</td>
+</tr>
+<tr>
+<td>所有元素选择器： *</td>
+<td>获取所有元素</td>
+<td>$(“*”)</td>
+</tr>
+<tr>
+<td>并集选择器： s1,s2…</td>
+<td>将选择的所有元素合并</td>
+<td>$(“div, span”)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jQuery的层次选择器">jQuery的层次选择器</h3>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>语法</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>后代选择器</td>
+<td><code>$(&quot;A  B &quot;)</code></td>
+<td style="text-align:left">选择A元素内部的所有B元素</td>
+</tr>
+<tr>
+<td>子选择器</td>
+<td><code>$(&quot;A &gt; B&quot;)</code></td>
+<td style="text-align:left">选择A元素内部的所有B子元素</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jQuery的属性选择器">jQuery的属性选择器</h3>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>语法</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>属性名称选择器</td>
+<td>$(“A[属性名]”)</td>
+<td style="text-align:left">包含指定属性的选择器</td>
+</tr>
+<tr>
+<td>属性选择器</td>
+<td>$(“A[属性名=‘值’]”)</td>
+<td style="text-align:left">包含指定属性等于指定值的选择器</td>
+</tr>
+<tr>
+<td>复合属性选择器</td>
+<td>$(“A[属性名=‘值’][]…”)</td>
+<td style="text-align:left">包含多个属性条件的选择器</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jQuery-过滤选择器">jQuery 过滤选择器</h3>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>语法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>首元素选择器</td>
+<td>:first</td>
+<td>获得选择的元素中的第一个元素</td>
+</tr>
+<tr>
+<td>尾元素选择器</td>
+<td>:last</td>
+<td>获得选择的元素中的最后一个元素&lt;</td>
+</tr>
+<tr>
+<td>非元素选择器</td>
+<td>:not(selector)</td>
+<td>不包括指定内容的元素</td>
+</tr>
+<tr>
+<td>偶数选择器</td>
+<td>:even</td>
+<td>偶数，从 0 开始计数</td>
+</tr>
+<tr>
+<td>奇数选择器</td>
+<td>:odd</td>
+<td>奇数，从 0 开始计数</td>
+</tr>
+<tr>
+<td>等于索引选择器</td>
+<td>:eq(index)</td>
+<td>指定索引元素</td>
+</tr>
+<tr>
+<td>大于索引选择器</td>
+<td>:gt(index)</td>
+<td>大于指定索引元素</td>
+</tr>
+<tr>
+<td>小于索引选择器</td>
+<td>:lt(index)</td>
+<td>小于指定索引元素</td>
+</tr>
+<tr>
+<td>标题选择器</td>
+<td>:header</td>
+<td>获得标题（h1~h6）元素，固定写法</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jquery-表单过滤选择器">jquery 表单过滤选择器</h3>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>语法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可用元素选择器</td>
+<td>:enabled</td>
+<td>获得可用元素</td>
+</tr>
+<tr>
+<td>不可用元素选择器</td>
+<td>:disabled</td>
+<td>获得不可用元素</td>
+</tr>
+<tr>
+<td>单选/复选框选中选择器</td>
+<td>:checked</td>
+<td>获得单选/复选框选中的元素</td>
+</tr>
+<tr>
+<td>下拉框选中选择器</td>
+<td>:selected</td>
+<td>获得下拉框选中的元素</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jQuery表单选择器">jQuery表单选择器</h3>
+<table>
+<thead>
+<tr>
+<th>语法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(“:input”)</td>
+<td>选取所有的<code>&lt;input&gt;</code>,<code>&lt;textarea&gt;</code>,<code>&lt;select&gt;</code>,<code>&lt;button&gt;</code>元素</td>
+</tr>
+<tr>
+<td>$(“:text”)</td>
+<td>选取所有的单行文本框</td>
+</tr>
+<tr>
+<td>$(“:password”)</td>
+<td>选取所有的密码框</td>
+</tr>
+<tr>
+<td>$(“:radio”)</td>
+<td>选取所有的单选框</td>
+</tr>
+<tr>
+<td>$(“:checkbox”)</td>
+<td>选取所有的多选框</td>
+</tr>
+<tr>
+<td>$(“:submit”)</td>
+<td>选取所有的提交按钮</td>
+</tr>
+<tr>
+<td>$(“:button”)</td>
+<td>选取所有的按钮</td>
+</tr>
+<tr>
+<td>$(“:hidden”)</td>
+<td>选取所有的不可见元素</td>
+</tr>
+</tbody>
+</table>
+<h2 id="jQuery-DOM操作">jQuery DOM操作</h2>
+<h3 id="jQuery节点添加与删除">jQuery节点添加与删除</h3>
+<table>
+<thead>
+<tr>
+<th>语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>append()</td>
+<td>对象1.append(对象2)</td>
+<td>将对象2添加到对象1元素内部，并且在末尾</td>
+</tr>
+<tr>
+<td>appendTo()</td>
+<td>对象1.appendTo(对象2):</td>
+<td>将对象1添加到对象2内部，并且在末尾</td>
+</tr>
+<tr>
+<td>prepend()</td>
+<td>对象1.prepend(对象2):</td>
+<td>将对象2添加到对象1元素内部，并且在开头</td>
+</tr>
+<tr>
+<td>prependTo()</td>
+<td>对象1.prependTo(对象2):</td>
+<td>将对象1添加到对象2内部，并且在开头</td>
+</tr>
+<tr>
+<td>empty()</td>
+<td>对象.empty():</td>
+<td>将对象的后代元素全部清空，但是保留当前对象以及其属性节点</td>
+</tr>
+<tr>
+<td>after()</td>
+<td>对象1.after(对象2)</td>
+<td>将对象2添加到对象1后边。对象1和对象2是兄弟关系</td>
+</tr>
+<tr>
+<td>before()</td>
+<td>对象1.before(对象2)</td>
+<td>将对象2添加到对象1前边。对象1和对象2是兄弟关系</td>
+</tr>
+<tr>
+<td>insertAfter()</td>
+<td>对象1.insertAfter(对象2)</td>
+<td>将对象1添加到对象2后边。对象1和对象2是兄弟关系</td>
+</tr>
+<tr>
+<td>insertBefore()</td>
+<td>对象1.insertBefore(对象2)</td>
+<td>将对象1添加到对象2前边。对象1和对象2是兄弟关系</td>
+</tr>
+<tr>
+<td>remove()</td>
+<td>对象.remove()</td>
+<td>将对象删除掉</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jQuery节点的复制、替换、包裹">jQuery节点的复制、替换、包裹</h3>
+<table>
+<thead>
+<tr>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>对象A.clone()</td>
+<td>复制A对象</td>
+</tr>
+<tr>
+<td>对象A.replaceWith(对象B)</td>
+<td>把&quot;A对象&quot;替换为&quot;B对象&quot;</td>
+</tr>
+<tr>
+<td>对象A.replaceAll(对象B)</td>
+<td>使用&quot;A对象&quot;替换&quot;B对象&quot;</td>
+</tr>
+<tr>
+<td>标签A.wrap(标签B)</td>
+<td>B标签分别包裹住每一个A标签</td>
+</tr>
+<tr>
+<td>标签A.wrapAll(标签B)</td>
+<td>B标签包裹住所有A标签</td>
+</tr>
+<tr>
+<td>标签A.wrapInner(标签B)</td>
+<td>B标签分别包裹住A标签内的所有文本内容</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jQuery-节点属性操作">jQuery 节点属性操作</h3>
+<table>
+<thead>
+<tr>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>attr(“属性名”)</td>
+<td>获取属性值</td>
+</tr>
+<tr>
+<td>attr(“属性名”,“属性值”)</td>
+<td>设置属性值</td>
+</tr>
+<tr>
+<td>removeAttr(“属性名”)</td>
+<td>移除属性</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jQuery-节点样式操作">jQuery 节点样式操作</h3>
+<table>
+<thead>
+<tr>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>addClass(样式名)</td>
+<td>添加样式</td>
+</tr>
+<tr>
+<td>removeClass(样式名)</td>
+<td>删除样式</td>
+</tr>
+<tr>
+<td>toggleClass(样式名)</td>
+<td>切换样式</td>
+</tr>
+<tr>
+<td>css(“样式名”,“属性”)</td>
+<td>添加单个样式</td>
+</tr>
+<tr>
+<td>css({“样式名1”:“属性1” , “样式名2”:“属性2”…})</td>
+<td>添加多个样式</td>
+</tr>
+<tr>
+<td>hasClass(样式名)</td>
+<td>判断样式是否存在</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jQuery-html-text-val-方法">jQuery html(),  text(),  val()方法</h3>
+<table>
+<thead>
+<tr>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>html()方法</td>
+<td>用于设置或获取某个元素中的html内容</td>
+</tr>
+<tr>
+<td>text()方法</td>
+<td>用于设置或获取某个元素中的文本内容</td>
+</tr>
+<tr>
+<td>val()方法</td>
+<td>用于设置或获取某个元素的值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="遍历节点">遍历节点</h3>
+<table>
+<thead>
+<tr>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>children()</td>
+<td>获取当前的元素的子元素集合(父亲找儿子)</td>
+</tr>
+<tr>
+<td>find()</td>
+<td>获取当前的元素的所有后代元素集合(祖宗找后代)</td>
+</tr>
+<tr>
+<td>parent()</td>
+<td>获取当前元素的父元素集合(儿子找父亲)</td>
+</tr>
+<tr>
+<td>parents()</td>
+<td>获取当前元素的所有前辈元素集合(后辈找前辈)</td>
+</tr>
+<tr>
+<td>siblings()</td>
+<td>获取当前元素的所有同级元素集合(同辈找同辈)</td>
+</tr>
+<tr>
+<td>next()</td>
+<td>获取当前元素的下一个同级元素</td>
+</tr>
+<tr>
+<td>prev()</td>
+<td>获取当前元素的上一个同级元素</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jQuery-CSS的DOM操作">jQuery CSS的DOM操作</h3>
+<table>
+<thead>
+<tr>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>css()方法</td>
+<td>设置或获取元素的样式属性</td>
+</tr>
+<tr>
+<td>height(),width()</td>
+<td>设置或获取高度、宽度属性</td>
+</tr>
+</tbody>
+</table>
+<h2 id="jQuery中的事件与动画">jQuery中的事件与动画</h2>
+<h3 id="jQuery中的遍历补充">jQuery中的遍历补充</h3>
+<ol>
+<li>
+<p>jQuery对象.each(callback)<br>
+语法：<code>jQuery对象.each(function(index,element)&#123;&#125;)</code>;</p>
+<ul>
+<li>index:就是元素在集合中的索引</li>
+<li>element：就是集合中的每一个元素对象</li>
+<li>this：获取到的当前元素对象</li>
+<li>callback：回调函数</li>
+</ul>
+</li>
+<li>
+<p><code>$.each(object, [callback])</code></p>
+</li>
+<li>
+<p>for…of:<code>for(元素对象 of 容器对象)</code></p>
+</li>
+</ol>
+<h3 id="jQuery中的事件绑定">jQuery中的事件绑定</h3>
+<ol>
+<li>jQuery的标准绑定方式
+<ul>
+<li>jQuery对象.事件方法(回调函数)；</li>
+<li>注意：如果调用事件方法，不传递回调函数，则会触发浏览器默认行为。</li>
+<li>补充： 表单对象.submit();//让表单提交</li>
+</ul>
+</li>
+<li>on()或者bind()绑定事件和off()或者unbind()解除绑定
+<ul>
+<li>jQuery对象.on(“事件名称”,回调函数)</li>
+<li>jQuery对象.off(“事件名称”)</li>
+<li>如果off方法不传递任何参数，则将组件上的所有事件全部解绑</li>
+</ul>
+</li>
+<li>事件切换1：toggle(fn1,fn2,…)方法：模拟鼠标连续点击事件，对里面的函数进行切换。
+<ul>
+<li>jQuery对象.toggle(fn1,fn2…)</li>
+<li>当单击jQuery对象对应的组件后，会执行fn1.第二次点击会执行fn2…</li>
+<li>注意：1.9版本之后 .toggle() 方法删除,jQuery Migrate（迁移）插件可以恢复此功能。</li>
+</ul>
+</li>
+<li>事件切换2：hover(enter,leave)方法：模拟鼠标悬停事件，鼠标移到元素上触发第一个enter()函数，鼠标移除触发leave()函数</li>
+</ol>
+<h3 id="jQuery中的动画">jQuery中的动画</h3>
+<ol>
+<li>显示/隐藏：show() / hide()组合方法：toggle()</li>
+<li>淡入/淡出：fadeIn() / fadeOut()组合方法：fadeToggle()</li>
+<li>滑入/滑出：slideUp() / slideDown()组合方法：slideToggle()</li>
+<li>自定义动画：animate()</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>jQuery 基础拾遗</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://miraitowa.cc/post/970c811f.html">https://miraitowa.cc/post/970c811f.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>Miraitowa.Yao</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2021-05-07</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2021-05-12</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/js/">js</a><a class="post-meta__tags" href="/tags/jQuery/">jQuery</a></div><div class="post_share"><div class="social-share" data-image="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-jquery-abc-cover.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/post/89ee8a3d.html"><img class="prev-cover" src="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-html-css-waterfall-flow.jpg" onerror="onerror=null;src='/img/404.png'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">HTML5、CSS3实现简单响应式瀑布流布局</div></div></a></div><div class="next-post pull-right"><a href="/post/424c46eb.html"><img class="next-cover" src="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-js-swiper-cover.jpg" onerror="onerror=null;src='/img/404.png'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">使用原生JS写一个图片轮播</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Waline</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Miraitowa.Yao</div><div class="author-info__description">永远期待明亮的未来,一个收藏回忆记录成长的地方...</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">51</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div></div><a class="button--animated" id="card-info-btn"><i class="fas fa-bookmark"></i><span>加入书签</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/usocute" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:miraitowabot@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://t.me/CuteOvO" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a><a class="social-icon" href="https://miraitowa.cc/atom.xml" target="_blank" title="rss"><i class="fas fa-rss"></i></a></div></div><div class="card-widget" id="card-poem"><div id="poem_sentence"></div><div id="poem_info"><div id="poem_dynasty"></div><div id="poem_author"></div></div></div><script src="https://cdn.jsdelivr.net/gh/zhheo/JS-Heo@main/poem/jinrishici.js" charset="utf-8"></script><script type="text/javascript">jinrishici.load(function(result) {
+var sentence = document.querySelector("#poem_sentence")
+var author = document.querySelector("#poem_author")
+var dynasty = document.querySelector("#poem_dynasty")
+
+var sentenceText = result.data.content
+sentenceText = sentenceText.substr(0, sentenceText.length - 1);
+sentence.innerHTML = sentenceText
+dynasty.innerHTML = result.data.origin.dynasty
+author.innerHTML = result.data.origin.author + '《' + result.data.origin.title + '》'
+});</script><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E5%92%8C%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-number">1.</span> <span class="toc-text">核心概念和知识点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFjQuery"><span class="toc-number">1.1.</span> <span class="toc-text">什么是jQuery</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E4%B8%8Ejavascript%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.2.</span> <span class="toc-text">jQuery与javascript的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E7%9A%84%E4%BC%98%E5%8A%BF"><span class="toc-number">1.3.</span> <span class="toc-text">jQuery的优势</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%86%9F%E6%82%89%E4%BD%BF%E7%94%A8jQuery"><span class="toc-number">1.4.</span> <span class="toc-text">熟悉使用jQuery</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#window-onload%E5%92%8C-function-%E5%8C%BA%E5%88%AB"><span class="toc-number">1.5.</span> <span class="toc-text">window.onload和$(function)区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E5%AF%B9%E8%B1%A1%E4%B8%8EDOM%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%BC%82%E5%90%8C"><span class="toc-number">1.6.</span> <span class="toc-text">jQuery对象与DOM对象的异同</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFjQuery%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.6.1.</span> <span class="toc-text">什么是jQuery对象?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFDOM%E5%AF%B9%E8%B1%A1%EF%BC%9F"><span class="toc-number">1.6.2.</span> <span class="toc-text">什么是DOM对象？</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E5%BA%93%E4%B8%8E%E5%85%B6%E4%BB%96%E5%BA%93%E5%87%BA%E7%8E%B0%E5%86%B2%E7%AA%81%E9%97%AE%E9%A2%98-%E9%87%8A%E6%94%BE-%E7%9A%84%E6%8E%A7%E5%88%B6%E6%9D%83"><span class="toc-number">1.7.</span> <span class="toc-text">jQuery库与其他库出现冲突问题(释放$的控制权)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">2.</span> <span class="toc-text">jQuery 选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E9%80%89%E6%8B%A9%E5%99%A8%E4%B8%8ECSS%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">2.1.</span> <span class="toc-text">jQuery选择器与CSS选择器的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-number">2.2.</span> <span class="toc-text">jQuery选择器的优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">2.3.</span> <span class="toc-text">jQuery选择器的分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">2.4.</span> <span class="toc-text">基本选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E7%9A%84%E5%B1%82%E6%AC%A1%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">2.5.</span> <span class="toc-text">jQuery的层次选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E7%9A%84%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">2.6.</span> <span class="toc-text">jQuery的属性选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-%E8%BF%87%E6%BB%A4%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">2.7.</span> <span class="toc-text">jQuery 过滤选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jquery-%E8%A1%A8%E5%8D%95%E8%BF%87%E6%BB%A4%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">2.8.</span> <span class="toc-text">jquery 表单过滤选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E8%A1%A8%E5%8D%95%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">2.9.</span> <span class="toc-text">jQuery表单选择器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-DOM%E6%93%8D%E4%BD%9C"><span class="toc-number">3.</span> <span class="toc-text">jQuery DOM操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E8%8A%82%E7%82%B9%E6%B7%BB%E5%8A%A0%E4%B8%8E%E5%88%A0%E9%99%A4"><span class="toc-number">3.1.</span> <span class="toc-text">jQuery节点添加与删除</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E8%8A%82%E7%82%B9%E7%9A%84%E5%A4%8D%E5%88%B6%E3%80%81%E6%9B%BF%E6%8D%A2%E3%80%81%E5%8C%85%E8%A3%B9"><span class="toc-number">3.2.</span> <span class="toc-text">jQuery节点的复制、替换、包裹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-%E8%8A%82%E7%82%B9%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C"><span class="toc-number">3.3.</span> <span class="toc-text">jQuery 节点属性操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-%E8%8A%82%E7%82%B9%E6%A0%B7%E5%BC%8F%E6%93%8D%E4%BD%9C"><span class="toc-number">3.4.</span> <span class="toc-text">jQuery 节点样式操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-html-text-val-%E6%96%B9%E6%B3%95"><span class="toc-number">3.5.</span> <span class="toc-text">jQuery html(),  text(),  val()方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%81%8D%E5%8E%86%E8%8A%82%E7%82%B9"><span class="toc-number">3.6.</span> <span class="toc-text">遍历节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-CSS%E7%9A%84DOM%E6%93%8D%E4%BD%9C"><span class="toc-number">3.7.</span> <span class="toc-text">jQuery CSS的DOM操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E4%B8%8E%E5%8A%A8%E7%94%BB"><span class="toc-number">4.</span> <span class="toc-text">jQuery中的事件与动画</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E4%B8%AD%E7%9A%84%E9%81%8D%E5%8E%86%E8%A1%A5%E5%85%85"><span class="toc-number">4.1.</span> <span class="toc-text">jQuery中的遍历补充</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A"><span class="toc-number">4.2.</span> <span class="toc-text">jQuery中的事件绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E4%B8%AD%E7%9A%84%E5%8A%A8%E7%94%BB"><span class="toc-number">4.3.</span> <span class="toc-text">jQuery中的动画</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/89ee8a3d.html" title="HTML5、CSS3实现简单响应式瀑布流布局"><img src="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-html-css-waterfall-flow.jpg" onerror="this.onerror=null;this.src='/img/404.png'" alt="HTML5、CSS3实现简单响应式瀑布流布局"/></a><div class="content"><a class="title" href="/post/89ee8a3d.html" title="HTML5、CSS3实现简单响应式瀑布流布局">HTML5、CSS3实现简单响应式瀑布流布局</a><time datetime="2021-05-30T11:57:35.000Z" title="发表于 2021-05-30 19:57:35">2021-05-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/970c811f.html" title="jQuery 基础拾遗"><img src="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-jquery-abc-cover.jpg" onerror="this.onerror=null;this.src='/img/404.png'" alt="jQuery 基础拾遗"/></a><div class="content"><a class="title" href="/post/970c811f.html" title="jQuery 基础拾遗">jQuery 基础拾遗</a><time datetime="2021-05-07T11:04:03.000Z" title="发表于 2021-05-07 19:04:03">2021-05-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/424c46eb.html" title="使用原生JS写一个图片轮播"><img src="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-js-swiper-cover.jpg" onerror="this.onerror=null;this.src='/img/404.png'" alt="使用原生JS写一个图片轮播"/></a><div class="content"><a class="title" href="/post/424c46eb.html" title="使用原生JS写一个图片轮播">使用原生JS写一个图片轮播</a><time datetime="2021-04-10T14:48:34.000Z" title="发表于 2021-04-10 22:48:34">2021-04-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/7292aa95.html" title="JavaScript高级⑥-存储(cookie)"><img src="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-javascript-bcd6-cover.jpg" onerror="this.onerror=null;this.src='/img/404.png'" alt="JavaScript高级⑥-存储(cookie)"/></a><div class="content"><a class="title" href="/post/7292aa95.html" title="JavaScript高级⑥-存储(cookie)">JavaScript高级⑥-存储(cookie)</a><time datetime="2021-03-28T10:00:00.000Z" title="发表于 2021-03-28 18:00:00">2021-03-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/a1736a1e.html" title="JavaScript高级⑤-高级函数"><img src="https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-javascript-bcd5-cover.jpg" onerror="this.onerror=null;this.src='/img/404.png'" alt="JavaScript高级⑤-高级函数"/></a><div class="content"><a class="title" href="/post/a1736a1e.html" title="JavaScript高级⑤-高级函数">JavaScript高级⑤-高级函数</a><time datetime="2021-03-25T10:00:00.000Z" title="发表于 2021-03-25 18:00:00">2021-03-25</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2021 By Miraitowa.Yao</div><div class="footer_custom_text"><font style="font-size:16px"><img style="width:24px;height:24px;margin-bottom:-8px" src="https://moe.blog/content/uploadfile/Links/icp.gov.moe.png"><a href="https://icp.gov.moe" target="_blank" data-pjax-state=""><span style="color:#ff0000">萌</span><span style="color:#ca7900">I</span><span style="color:#48ab18">C</span><span style="color:#2720ac">P</span><span style="color:#9b17ae">备</span> </a><a href="https://icp.gov.moe/?keyword=20210925" target="_blank" data-pjax-state=""> <span style="color:#ff0000">20</span><span style="color:#ca7900">21</span><span style="color:#48ab18">09</span><span style="color:#2720ac">25</span><span style="color:#f40428">号</span></a></font><br /></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
+  const $countDom = document.getElementById('twikoo-count')
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'miraitowa-5g63ri3h4ea385d3',
+      region: ''
+    }, null))
+  }
+
+  const getCount = () => {
+    twikoo.getCommentsCount({
+      envId: 'miraitowa-5g63ri3h4ea385d3',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      $countDom.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const loadTwikoo = (bool = false) => {
+    if (typeof twikoo === 'object') {
+      init()
+      bool && $countDom && setTimeout(getCount,0)
+    } else {
+      getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(()=> {
+        init()
+        bool && $countDom && setTimeout(getCount,0)
+      })
+    }
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo(true)
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadWaline () {
+  function initWaline () {
+    const waline = new Waline(Object.assign({
+      el: '#waline-wrap',
+      serverURL: 'https://waline-api-orpin.vercel.app/',
+      avatar: 'monsterid',
+      path: location.pathname,
+      emojiCDN: '',
+      emojiMaps: "",
+      visitor: false,
+      dark: '[data-theme="dark"]'
+    }, null))
+  }
+
+  if (typeof Waline === 'function') initWaline() 
+  else getScript('https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js').then(initWaline)
+}
+
+if ('Twikoo' === 'Waline' || !false) {
+  if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+  else setTimeout(loadWaline, 0)
+} else {
+  function loadOtherComment () {
+    loadWaline()
+  }
+}</script></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/essay/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener toc scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && location.pathname =='/'){
+    
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="/img/index-swiper6.jpg" alt="/img/index-swiper6.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-03-28</span><a class="blog-slider__title" href="post/7292aa95.html">JavaScript高级⑥-存储(cookie)</a><div class="blog-slider__text">Cookie 是为了解决"如何记住用户信息"而发明的。</div><a class="blog-slider__button" href="post/7292aa95.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="/img/index-swiper5.jpg" alt="/img/index-swiper5.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-03-25</span><a class="blog-slider__title" href="post/a1736a1e.html">JavaScript高级⑤-高级函数</a><div class="blog-slider__text">高级函数本质上十分简单和过程化，但也可以是非常复杂的，一些额外的功能可以使用闭包来实现。</div><a class="blog-slider__button" href="post/a1736a1e.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="/img/index-swiper4.jpg" alt="/img/index-swiper4.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-03-22</span><a class="blog-slider__title" href="post/faefd80d.html">JavaScript高级④-AJAX与JSON</a><div class="blog-slider__text">Ajax 技术提供了一种新的前后端数据交互方式，不需要刷新页面，而且不阻塞页面执行流程，异步的去请求去获取、交互数据。</div><a class="blog-slider__button" href="post/faefd80d.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="/img/index-swiper3.jpg" alt="/img/index-swiper3.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-03-20</span><a class="blog-slider__title" href="post/bd399257.html">JavaScript高级③-匿名函数及函数操作</a><div class="blog-slider__text">匿名函数：就是没有函数名的函数。</div><a class="blog-slider__button" href="post/bd399257.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="/img/index-swiper2.jpg" alt="/img/index-swiper2.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-03-19</span><a class="blog-slider__title" href="post/fec01c07.html">JavaScript高级②-面向对象的程序设计</a><div class="blog-slider__text">面向对象程序设计（英语：Object-oriented programming，缩写：OOP）是种具有对象概念的程序编程范型，同时也是一种程序开发的方法。</div><a class="blog-slider__button" href="post/fec01c07.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="/img/index-swiper1.jpg" alt="/img/index-swiper1.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-03-16</span><a class="blog-slider__title" href="post/4f09663b.html">JavaScript高级①-变量、作用域和内存</a><div class="blog-slider__text">JavaScript 中变量、作用域和内存问题的学习笔记。</div><a class="blog-slider__button" href="post/4f09663b.html">详情</a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载swiper')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.js"></script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper@0.18/swiper/swiperindex.js"></script>
+<style></style><!-- hexo injector body_end end --></body></html>

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Miraitowa • Posts by &#34;网店设计&#34; tag</title>
+        <link>https://miraitowa.cc</link>
+        <description>永远期待明亮的未来,一个收藏回忆记录成长的地方...</description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 02 Mar 2021 12:59:28 +0800</pubDate>
+        <lastBuildDate>Tue, 02 Mar 2021 12:59:28 +0800</lastBuildDate>
+        <category>生活记录</category>
+        <category>成长</category>
+        <category>Git</category>
+        <category>Github</category>
+        <category>记录</category>
+        <category>历史</category>
+        <category>js</category>
+        <category>js基础</category>
+        <category>HTML</category>
+        <category>CSS</category>
+        <category>瀑布流</category>
+        <category>js高级</category>
+        <category>cookie</category>
+        <category>MySQL</category>
+        <category>数据库</category>
+        <category>存储过程</category>
+        <category>视图</category>
+        <category>存储引擎</category>
+        <category>数据类型</category>
+        <category>View</category>
+        <category>index</category>
+        <category>butterfly</category>
+        <category>hexo</category>
+        <category>魔改</category>
+        <category>查询</category>
+        <category>学习笔记</category>
+        <category>Trigger</category>
+        <category>jQuery</category>
+        <category>npm</category>
+        <category>yarn</category>
+        <category>JavaScript基础</category>
+        <category>增删改查</category>
+        <category>前端设计</category>
+        <category>单页设计与推广</category>
+        <category>SEO优化</category>
+        <category>网店设计</category>
+        <category>日常</category>
+        <category>昆明</category>
+        <category>随笔</category>
+        <category>碎碎念</category>
+        <category>MC</category>
+        <category>Minecrift</category>
+        <category>移动端网站设计</category>
+        <category>C</category>
+        <category>算法</category>
+        <category>leetcode</category>
+        <category>javascript</category>
+        <category>整站交互设计</category>
+        <category>JavaScript</category>
+        <category>JS</category>
+        <category>图片轮播</category>
+        <item>
+            <guid isPermalink="true">https://miraitowa.cc/post/90f8904c.html</guid>
+            <title>互联网网店设计</title>
+            <link>https://miraitowa.cc/post/90f8904c.html</link>
+            <category>前端设计</category>
+            <category>网店设计</category>
+            <pubDate>Tue, 02 Mar 2021 12:59:28 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;店铺装修基础知识&#34;&gt;店铺装修基础知识&lt;/h2&gt;
+&lt;h3 id=&#34;了解店铺装修的重要性&#34;&gt;了解店铺装修的重要性:&lt;/h3&gt;
+&lt;p&gt;网店装修一直是个非常热门的话题，开网店，也要把门面装修得漂亮点才能吸引客人。店铺的第一印象对于人的认知会产生相当的影响，对于网络店铺来说，装修更是店铺兴旺的制胜法宝，任何物品的任何信息我们都只能通过眼球来获得，所以更要在美观上下一些功夫。&lt;/p&gt;
+&lt;h3 id=&#34;做好店铺装修前的准备&#34;&gt;做好店铺装修前的准备:&lt;/h3&gt;
+&lt;p&gt;所谓网店装修，就是将原本平淡无奇的页面通过各种图片、动画、文字等元素进行美化，从而使网店变得更生动、形象。在对店铺进行装修前，首先应该做足准备，这样才可以达到事半功倍的效果。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;主营商品的性质&lt;/li&gt;
+&lt;li&gt;合适的装修风格&lt;/li&gt;
+&lt;li&gt;收集装修素材&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;商品图片的处理与美化&#34;&gt;商品图片的处理与美化&lt;/h2&gt;
+&lt;p&gt;一张好图胜千言，在网络上，买家不能看到商品实物，都是通过图片才能了解商品，因此，如果商品图片制作精良、漂亮，必然会引起买家兴趣。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;调整商品图片的大小&lt;/li&gt;
+&lt;li&gt;商品图片的裁剪&lt;/li&gt;
+&lt;li&gt;图片的亮度、对比度与颜色调整&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;店铺公告模板设计&#34;&gt;店铺公告模板设计&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;网店公告显示在普通店铺右上角，店主可以在此发布一些促销、公告信息。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;店铺公告的设计原则与要求&#34;&gt;店铺公告的设计原则与要求&lt;/h3&gt;
+&lt;p&gt;店铺公告信息是用来显示店铺的动态信息、商品促销、服务信息等内容的，普通店铺公告的位置一般显示在店面的右上角；普通店铺公告的位置、尺寸和播放方式都是固定设置的，只能在有限区域内发挥作用。&lt;/p&gt;
+&lt;h3 id=&#34;定义公告中的文字样式&#34;&gt;定义公告中的文字样式&lt;/h3&gt;
+&lt;p&gt;默认情况下，淘宝店铺公告中的文字是黑色的宋体字，可以通过编辑器的方式来对公告文字的字体、字号、颜色等进行设置。&lt;/p&gt;
+&lt;h3 id=&#34;美观的图片形式公告栏的设计&#34;&gt;美观的图片形式公告栏的设计&lt;/h3&gt;
+&lt;p&gt;除了简单的文字公告形式外，淘宝店铺还支持使用图片形式的公告，就是将公告制作成一张图片。&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

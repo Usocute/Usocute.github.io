@@ -1,0 +1,674 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Miraitowa • Posts by &#34;jquery&#34; tag</title>
+        <link>https://miraitowa.cc</link>
+        <description>永远期待明亮的未来,一个收藏回忆记录成长的地方...</description>
+        <language>zh-CN</language>
+        <pubDate>Fri, 07 May 2021 19:04:03 +0800</pubDate>
+        <lastBuildDate>Fri, 07 May 2021 19:04:03 +0800</lastBuildDate>
+        <category>生活记录</category>
+        <category>成长</category>
+        <category>Git</category>
+        <category>Github</category>
+        <category>记录</category>
+        <category>历史</category>
+        <category>js</category>
+        <category>js基础</category>
+        <category>HTML</category>
+        <category>CSS</category>
+        <category>瀑布流</category>
+        <category>js高级</category>
+        <category>cookie</category>
+        <category>MySQL</category>
+        <category>数据库</category>
+        <category>存储过程</category>
+        <category>视图</category>
+        <category>存储引擎</category>
+        <category>数据类型</category>
+        <category>View</category>
+        <category>index</category>
+        <category>butterfly</category>
+        <category>hexo</category>
+        <category>魔改</category>
+        <category>查询</category>
+        <category>学习笔记</category>
+        <category>Trigger</category>
+        <category>jQuery</category>
+        <category>npm</category>
+        <category>yarn</category>
+        <category>JavaScript基础</category>
+        <category>增删改查</category>
+        <category>前端设计</category>
+        <category>单页设计与推广</category>
+        <category>SEO优化</category>
+        <category>网店设计</category>
+        <category>日常</category>
+        <category>昆明</category>
+        <category>随笔</category>
+        <category>碎碎念</category>
+        <category>MC</category>
+        <category>Minecrift</category>
+        <category>移动端网站设计</category>
+        <category>C</category>
+        <category>算法</category>
+        <category>leetcode</category>
+        <category>javascript</category>
+        <category>整站交互设计</category>
+        <category>JavaScript</category>
+        <category>JS</category>
+        <category>图片轮播</category>
+        <item>
+            <guid isPermalink="true">https://miraitowa.cc/post/970c811f.html</guid>
+            <title>jQuery 基础拾遗</title>
+            <link>https://miraitowa.cc/post/970c811f.html</link>
+            <category>js</category>
+            <category>jQuery</category>
+            <pubDate>Fri, 07 May 2021 19:04:03 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;核心概念和知识点&#34;&gt;核心概念和知识点&lt;/h2&gt;
+&lt;h3 id=&#34;什么是jQuery&#34;&gt;什么是jQuery&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;jQuery 是对javascript的一种封装–js的函数库。&lt;/li&gt;
+&lt;li&gt;用于客户端的开发，由美国人在2001年1月推出。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;jQuery与javascript的区别&#34;&gt;jQuery与javascript的区别&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;本质上的区别：jQuery是一个函数库，基于js语言编写出来的框架，实质上还是属于js。&lt;/li&gt;
+&lt;li&gt;代码书写不同，jq更简单。&lt;/li&gt;
+&lt;li&gt;使用方法不同：使用jQuery和javascript分别加载DOM,&lt;code&gt;js只执行一次&lt;/code&gt;，&lt;code&gt;jq可以执行多次&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;获取class的方法不同。js没有默认的获取方式，jq可以通过&lt;code&gt;$(&amp;quot;.类名&amp;quot;)&lt;/code&gt;来获取&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;jQuery的优势&#34;&gt;jQuery的优势&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;轻量级&lt;/li&gt;
+&lt;li&gt;对浏览器的兼容性好&lt;/li&gt;
+&lt;li&gt;强大的选择器&lt;/li&gt;
+&lt;li&gt;完善的ajax&lt;/li&gt;
+&lt;li&gt;丰富的API文档和插件等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;熟悉使用jQuery&#34;&gt;熟悉使用jQuery&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;获取相关的js文件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jquery-xxx.js 与 jquery-xxx.min.js区别：
+&lt;ol&gt;
+&lt;li&gt;jquery-xxx.js：开发版本。给程序员看的，有良好的缩进和注释。体积大一些&lt;/li&gt;
+&lt;li&gt;jquery-xxx.min.js：生产版本。没有缩进。体积小一些。程序加载更快&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;引用 在页面上引用js文件&lt;/li&gt;
+&lt;li&gt;基本使用语法:$(“选择器名”).操作&lt;/li&gt;
+&lt;li&gt;jQuery的文档就绪(加载)三种写法：&lt;/li&gt;
+&lt;/ul&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*方法1*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$(&lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;).ready(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  选择对象进行操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*方法2*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$().ready(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;              &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  选择对象进行操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*方法3*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;   &lt;span class=&#34;comment&#34;&gt;// 此方法最简洁&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  选择对象进行操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;); &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;window-onload和-function-区别&#34;&gt;window.onload和$(function)区别&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;window.onload 只能定义一次,如果定义多次，后边的会将前边的覆盖掉。&lt;/li&gt;
+&lt;li&gt;$(function)可以定义多次的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;jQuery对象与DOM对象的异同&#34;&gt;jQuery对象与DOM对象的异同&lt;/h3&gt;
+&lt;h4 id=&#34;什么是jQuery对象&#34;&gt;什么是jQuery对象?&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;通过jQuery包装DOM(文档)对象后产生的对象，凡是在$(“”)中的都属于jQuery对象。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;什么是DOM对象？&#34;&gt;什么是DOM对象？&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;页面中元素的集合就是文档对象。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;note orange no-icon flat&#34;&gt;&lt;p&gt;注意 🐟&lt;br&gt;
+1. jQuery对象与文档对象不能混合使用。&lt;br&gt;
+2. jQuery对象不能使用文档对象的属性及方法，同理文档对象也是。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note orange no-icon flat&#34;&gt;&lt;p&gt;注意 🐱&lt;br&gt;
+DOM(文档)对象与jQuery对象是可以相互转换的&lt;br&gt;
+js转jq：在dom对象的最外层用$()进行包裹即可。&lt;br&gt;
+jq转js：先获取jq对象:var $jq=$(“选择器名”); $jq.get(索引);&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;jQuery库与其他库出现冲突问题-释放-的控制权&#34;&gt;jQuery库与其他库出现冲突问题(释放$的控制权)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;方法一：在代码的第一行加入:&lt;code&gt;jQuery.noConflict()&lt;/code&gt;;释放了jQuery的$含义，如果仍需使用，需把$改为jQuery。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;方法二&lt;/p&gt;
+ &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; $jq=jQuery.noConflict();   &lt;span class=&#34;comment&#34;&gt;/*赋值为一个变量*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$jq(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;     &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    正常使用&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;jQuery-选择器&#34;&gt;jQuery 选择器&lt;/h2&gt;
+&lt;h3 id=&#34;jQuery选择器与CSS选择器的区别&#34;&gt;jQuery选择器与CSS选择器的区别&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;jQuery与CSS是两种不同的语言，jQuery是一个js框架，CSS是层叠样式表，所以两者本质上是不同的。&lt;/li&gt;
+&lt;li&gt;两者有一定交集，都是被网页或浏览器解析的语言，而jQuery可以通过修改浏览器的dom对象来实现对CSS的修改或控制。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note orange no-icon flat&#34;&gt;&lt;p&gt;总结，jQuery选择器应用于js中，CSS选择器用于CSS中，只是两者有时使用相同的id标识来选择对象。&lt;br&gt;
+jQuery选择器包含了CSS 1, CSS 2, CSS 3 中的绝大多数选择器。&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;jQuery选择器的优点&#34;&gt;jQuery选择器的优点&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;写法简洁&lt;/li&gt;
+&lt;li&gt;继承了CSS选择器的风格，支持CSS1–CSS3选择器&lt;/li&gt;
+&lt;li&gt;完善的处理机制可以避免浏览器报错，比单纯的CSS功能更强大，还可兼容不同的浏览器。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;jQuery选择器的分类&#34;&gt;jQuery选择器的分类&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;基本选择器&lt;/li&gt;
+&lt;li&gt;层次选择器&lt;/li&gt;
+&lt;li&gt;过滤选择器&lt;/li&gt;
+&lt;li&gt;表单选择器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;基本选择器&#34;&gt;基本选择器&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选择器名&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;id选择器：  #id&lt;/td&gt;
+&lt;td&gt;根据id获取元素&lt;/td&gt;
+&lt;td&gt;$(“#test”)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;类选择器：  .class&lt;/td&gt;
+&lt;td&gt;根据类名获取元素&lt;/td&gt;
+&lt;td&gt;$(“.test”)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;元素选择器:  element&lt;/td&gt;
+&lt;td&gt;根据元素名称获取元素&lt;/td&gt;
+&lt;td&gt;$(“p”)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;所有元素选择器： *&lt;/td&gt;
+&lt;td&gt;获取所有元素&lt;/td&gt;
+&lt;td&gt;$(“*”)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;并集选择器： s1,s2…&lt;/td&gt;
+&lt;td&gt;将选择的所有元素合并&lt;/td&gt;
+&lt;td&gt;$(“div, span”)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jQuery的层次选择器&#34;&gt;jQuery的层次选择器&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选择器&lt;/th&gt;
+&lt;th&gt;语法&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;后代选择器&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;$(&amp;quot;A  B &amp;quot;)&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;选择A元素内部的所有B元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;子选择器&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;$(&amp;quot;A &amp;gt; B&amp;quot;)&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;选择A元素内部的所有B子元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jQuery的属性选择器&#34;&gt;jQuery的属性选择器&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选择器&lt;/th&gt;
+&lt;th&gt;语法&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;属性名称选择器&lt;/td&gt;
+&lt;td&gt;$(“A[属性名]”)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;包含指定属性的选择器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;属性选择器&lt;/td&gt;
+&lt;td&gt;$(“A[属性名=‘值’]”)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;包含指定属性等于指定值的选择器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;复合属性选择器&lt;/td&gt;
+&lt;td&gt;$(“A[属性名=‘值’][]…”)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;包含多个属性条件的选择器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jQuery-过滤选择器&#34;&gt;jQuery 过滤选择器&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选择器&lt;/th&gt;
+&lt;th&gt;语法&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;首元素选择器&lt;/td&gt;
+&lt;td&gt;:first&lt;/td&gt;
+&lt;td&gt;获得选择的元素中的第一个元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;尾元素选择器&lt;/td&gt;
+&lt;td&gt;:last&lt;/td&gt;
+&lt;td&gt;获得选择的元素中的最后一个元素&amp;lt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;非元素选择器&lt;/td&gt;
+&lt;td&gt;:not(selector)&lt;/td&gt;
+&lt;td&gt;不包括指定内容的元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;偶数选择器&lt;/td&gt;
+&lt;td&gt;:even&lt;/td&gt;
+&lt;td&gt;偶数，从 0 开始计数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;奇数选择器&lt;/td&gt;
+&lt;td&gt;:odd&lt;/td&gt;
+&lt;td&gt;奇数，从 0 开始计数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;等于索引选择器&lt;/td&gt;
+&lt;td&gt;:eq(index)&lt;/td&gt;
+&lt;td&gt;指定索引元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;大于索引选择器&lt;/td&gt;
+&lt;td&gt;:gt(index)&lt;/td&gt;
+&lt;td&gt;大于指定索引元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;小于索引选择器&lt;/td&gt;
+&lt;td&gt;:lt(index)&lt;/td&gt;
+&lt;td&gt;小于指定索引元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;标题选择器&lt;/td&gt;
+&lt;td&gt;:header&lt;/td&gt;
+&lt;td&gt;获得标题（h1~h6）元素，固定写法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jquery-表单过滤选择器&#34;&gt;jquery 表单过滤选择器&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选择器&lt;/th&gt;
+&lt;th&gt;语法&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;可用元素选择器&lt;/td&gt;
+&lt;td&gt;:enabled&lt;/td&gt;
+&lt;td&gt;获得可用元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;不可用元素选择器&lt;/td&gt;
+&lt;td&gt;:disabled&lt;/td&gt;
+&lt;td&gt;获得不可用元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;单选/复选框选中选择器&lt;/td&gt;
+&lt;td&gt;:checked&lt;/td&gt;
+&lt;td&gt;获得单选/复选框选中的元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;下拉框选中选择器&lt;/td&gt;
+&lt;td&gt;:selected&lt;/td&gt;
+&lt;td&gt;获得下拉框选中的元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jQuery表单选择器&#34;&gt;jQuery表单选择器&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;语法&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:input”)&lt;/td&gt;
+&lt;td&gt;选取所有的&lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt;,&lt;code&gt;&amp;lt;textarea&amp;gt;&lt;/code&gt;,&lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;,&lt;code&gt;&amp;lt;button&amp;gt;&lt;/code&gt;元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:text”)&lt;/td&gt;
+&lt;td&gt;选取所有的单行文本框&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:password”)&lt;/td&gt;
+&lt;td&gt;选取所有的密码框&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:radio”)&lt;/td&gt;
+&lt;td&gt;选取所有的单选框&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:checkbox”)&lt;/td&gt;
+&lt;td&gt;选取所有的多选框&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:submit”)&lt;/td&gt;
+&lt;td&gt;选取所有的提交按钮&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:button”)&lt;/td&gt;
+&lt;td&gt;选取所有的按钮&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$(“:hidden”)&lt;/td&gt;
+&lt;td&gt;选取所有的不可见元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;jQuery-DOM操作&#34;&gt;jQuery DOM操作&lt;/h2&gt;
+&lt;h3 id=&#34;jQuery节点添加与删除&#34;&gt;jQuery节点添加与删除&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;语法&lt;/th&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;append()&lt;/td&gt;
+&lt;td&gt;对象1.append(对象2)&lt;/td&gt;
+&lt;td&gt;将对象2添加到对象1元素内部，并且在末尾&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;appendTo()&lt;/td&gt;
+&lt;td&gt;对象1.appendTo(对象2):&lt;/td&gt;
+&lt;td&gt;将对象1添加到对象2内部，并且在末尾&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;prepend()&lt;/td&gt;
+&lt;td&gt;对象1.prepend(对象2):&lt;/td&gt;
+&lt;td&gt;将对象2添加到对象1元素内部，并且在开头&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;prependTo()&lt;/td&gt;
+&lt;td&gt;对象1.prependTo(对象2):&lt;/td&gt;
+&lt;td&gt;将对象1添加到对象2内部，并且在开头&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;empty()&lt;/td&gt;
+&lt;td&gt;对象.empty():&lt;/td&gt;
+&lt;td&gt;将对象的后代元素全部清空，但是保留当前对象以及其属性节点&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;after()&lt;/td&gt;
+&lt;td&gt;对象1.after(对象2)&lt;/td&gt;
+&lt;td&gt;将对象2添加到对象1后边。对象1和对象2是兄弟关系&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;before()&lt;/td&gt;
+&lt;td&gt;对象1.before(对象2)&lt;/td&gt;
+&lt;td&gt;将对象2添加到对象1前边。对象1和对象2是兄弟关系&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;insertAfter()&lt;/td&gt;
+&lt;td&gt;对象1.insertAfter(对象2)&lt;/td&gt;
+&lt;td&gt;将对象1添加到对象2后边。对象1和对象2是兄弟关系&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;insertBefore()&lt;/td&gt;
+&lt;td&gt;对象1.insertBefore(对象2)&lt;/td&gt;
+&lt;td&gt;将对象1添加到对象2前边。对象1和对象2是兄弟关系&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;remove()&lt;/td&gt;
+&lt;td&gt;对象.remove()&lt;/td&gt;
+&lt;td&gt;将对象删除掉&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jQuery节点的复制、替换、包裹&#34;&gt;jQuery节点的复制、替换、包裹&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;对象A.clone()&lt;/td&gt;
+&lt;td&gt;复制A对象&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;对象A.replaceWith(对象B)&lt;/td&gt;
+&lt;td&gt;把&amp;quot;A对象&amp;quot;替换为&amp;quot;B对象&amp;quot;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;对象A.replaceAll(对象B)&lt;/td&gt;
+&lt;td&gt;使用&amp;quot;A对象&amp;quot;替换&amp;quot;B对象&amp;quot;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;标签A.wrap(标签B)&lt;/td&gt;
+&lt;td&gt;B标签分别包裹住每一个A标签&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;标签A.wrapAll(标签B)&lt;/td&gt;
+&lt;td&gt;B标签包裹住所有A标签&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;标签A.wrapInner(标签B)&lt;/td&gt;
+&lt;td&gt;B标签分别包裹住A标签内的所有文本内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jQuery-节点属性操作&#34;&gt;jQuery 节点属性操作&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;attr(“属性名”)&lt;/td&gt;
+&lt;td&gt;获取属性值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;attr(“属性名”,“属性值”)&lt;/td&gt;
+&lt;td&gt;设置属性值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;removeAttr(“属性名”)&lt;/td&gt;
+&lt;td&gt;移除属性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jQuery-节点样式操作&#34;&gt;jQuery 节点样式操作&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;addClass(样式名)&lt;/td&gt;
+&lt;td&gt;添加样式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;removeClass(样式名)&lt;/td&gt;
+&lt;td&gt;删除样式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;toggleClass(样式名)&lt;/td&gt;
+&lt;td&gt;切换样式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;css(“样式名”,“属性”)&lt;/td&gt;
+&lt;td&gt;添加单个样式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;css({“样式名1”:“属性1” , “样式名2”:“属性2”…})&lt;/td&gt;
+&lt;td&gt;添加多个样式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;hasClass(样式名)&lt;/td&gt;
+&lt;td&gt;判断样式是否存在&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jQuery-html-text-val-方法&#34;&gt;jQuery html(),  text(),  val()方法&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;html()方法&lt;/td&gt;
+&lt;td&gt;用于设置或获取某个元素中的html内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;text()方法&lt;/td&gt;
+&lt;td&gt;用于设置或获取某个元素中的文本内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;val()方法&lt;/td&gt;
+&lt;td&gt;用于设置或获取某个元素的值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;遍历节点&#34;&gt;遍历节点&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;children()&lt;/td&gt;
+&lt;td&gt;获取当前的元素的子元素集合(父亲找儿子)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;find()&lt;/td&gt;
+&lt;td&gt;获取当前的元素的所有后代元素集合(祖宗找后代)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;parent()&lt;/td&gt;
+&lt;td&gt;获取当前元素的父元素集合(儿子找父亲)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;parents()&lt;/td&gt;
+&lt;td&gt;获取当前元素的所有前辈元素集合(后辈找前辈)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;siblings()&lt;/td&gt;
+&lt;td&gt;获取当前元素的所有同级元素集合(同辈找同辈)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;next()&lt;/td&gt;
+&lt;td&gt;获取当前元素的下一个同级元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;prev()&lt;/td&gt;
+&lt;td&gt;获取当前元素的上一个同级元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;jQuery-CSS的DOM操作&#34;&gt;jQuery CSS的DOM操作&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;css()方法&lt;/td&gt;
+&lt;td&gt;设置或获取元素的样式属性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;height(),width()&lt;/td&gt;
+&lt;td&gt;设置或获取高度、宽度属性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;jQuery中的事件与动画&#34;&gt;jQuery中的事件与动画&lt;/h2&gt;
+&lt;h3 id=&#34;jQuery中的遍历补充&#34;&gt;jQuery中的遍历补充&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;jQuery对象.each(callback)&lt;br&gt;
+语法：&lt;code&gt;jQuery对象.each(function(index,element)&amp;#123;&amp;#125;)&lt;/code&gt;;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;index:就是元素在集合中的索引&lt;/li&gt;
+&lt;li&gt;element：就是集合中的每一个元素对象&lt;/li&gt;
+&lt;li&gt;this：获取到的当前元素对象&lt;/li&gt;
+&lt;li&gt;callback：回调函数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;$.each(object, [callback])&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;for…of:&lt;code&gt;for(元素对象 of 容器对象)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;jQuery中的事件绑定&#34;&gt;jQuery中的事件绑定&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;jQuery的标准绑定方式
+&lt;ul&gt;
+&lt;li&gt;jQuery对象.事件方法(回调函数)；&lt;/li&gt;
+&lt;li&gt;注意：如果调用事件方法，不传递回调函数，则会触发浏览器默认行为。&lt;/li&gt;
+&lt;li&gt;补充： 表单对象.submit();//让表单提交&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;on()或者bind()绑定事件和off()或者unbind()解除绑定
+&lt;ul&gt;
+&lt;li&gt;jQuery对象.on(“事件名称”,回调函数)&lt;/li&gt;
+&lt;li&gt;jQuery对象.off(“事件名称”)&lt;/li&gt;
+&lt;li&gt;如果off方法不传递任何参数，则将组件上的所有事件全部解绑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;事件切换1：toggle(fn1,fn2,…)方法：模拟鼠标连续点击事件，对里面的函数进行切换。
+&lt;ul&gt;
+&lt;li&gt;jQuery对象.toggle(fn1,fn2…)&lt;/li&gt;
+&lt;li&gt;当单击jQuery对象对应的组件后，会执行fn1.第二次点击会执行fn2…&lt;/li&gt;
+&lt;li&gt;注意：1.9版本之后 .toggle() 方法删除,jQuery Migrate（迁移）插件可以恢复此功能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;事件切换2：hover(enter,leave)方法：模拟鼠标悬停事件，鼠标移到元素上触发第一个enter()函数，鼠标移除触发leave()函数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;jQuery中的动画&#34;&gt;jQuery中的动画&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;显示/隐藏：show() / hide()组合方法：toggle()&lt;/li&gt;
+&lt;li&gt;淡入/淡出：fadeIn() / fadeOut()组合方法：fadeToggle()&lt;/li&gt;
+&lt;li&gt;滑入/滑出：slideUp() / slideDown()组合方法：slideToggle()&lt;/li&gt;
+&lt;li&gt;自定义动画：animate()&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
