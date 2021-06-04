@@ -505,6 +505,96 @@ footer#footer .copyright {
 .aside-list-item a img {
   border-radius: 8px;
 }
+
+/* 字体滚动 */
+.page-title {
+  display: none;
+}
+
+:root {
+  --offset: 0px;
+}
+
+.aboutsiteTips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.aboutsiteTips h2 {
+  width: 980px;
+  font-size: 100px;
+  font-family: Helvetica;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  color: var(--font-color);
+}
+
+.aboutsiteTips .mask {
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.aboutsiteTips .mask span {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100px;
+  padding-bottom: var(--offset);
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.aboutsiteTips .mask span[data-show] {
+  transform: translateY(-100%);
+  transition: .5s transform ease-in-out;
+}
+
+.aboutsiteTips .mask span[data-up] {
+  transform: translateY(-200%);
+  transition: .5s transform ease-in-out;
+}
+
+.aboutsiteTips .mask span:nth-child(1) {
+  background-image: linear-gradient(45deg, #0ecffe 50%, #07a6f1);
+}
+
+.aboutsiteTips .mask span:nth-child(2) {
+  background-image: linear-gradient(45deg, #18e198 50%, #0ec15d);
+}
+
+.aboutsiteTips .mask span:nth-child(3) {
+  background-image: linear-gradient(45deg, #8a7cfb 50%, #633e9c);
+}
+
+.aboutsiteTips .mask span:nth-child(4) {
+  background-image: linear-gradient(45deg, #fa7671 50%, #f45f7f);
+}
+
+@media screen and (max-width: 769px) {
+  .aboutsiteTips h2 {
+      font-size: 50px;
+  }
+
+  .aboutsiteTips{
+      min-height: 40vh;
+  }
+
+  .aboutsiteTips .mask{
+      height: 50px;
+  }
+}
+
+/* 友人帐微调 */
+.flink-list .flink-list-item {
+  background: #f0f0f0;
+}
 .limit-one-line,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-name,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-desc,
@@ -537,12 +627,12 @@ figure.gallery-group .gallery-group-name {
 }
 .fontawesomeIcon,
 hr:before,
-#article-container h1:before,
-#article-container h2:before,
-#article-container h3:before,
-#article-container h4:before,
-#article-container h5:before,
-#article-container h6:before,
+#article-container.post-content h1:before,
+#article-container.post-content h2:before,
+#article-container.post-content h3:before,
+#article-container.post-content h4:before,
+#article-container.post-content h5:before,
+#article-container.post-content h6:before,
 #post .post-outdate-notice:before,
 .note:not(.no-icon)::before {
   display: inline-block;
@@ -3029,125 +3119,9 @@ _:future,
 #article-container iframe {
   margin: 0 0 1rem;
 }
-#article-container h1,
-#article-container h2,
-#article-container h3,
-#article-container h4,
-#article-container h5,
-#article-container h6 {
-  transition: all 0.2s ease-out;
-}
-#article-container h1:before,
-#article-container h2:before,
-#article-container h3:before,
-#article-container h4:before,
-#article-container h5:before,
-#article-container h6:before {
-  position: absolute;
-  top: calc(50% - 0.35rem);
-  color: #ffb821;
-  content: '\f0e7';
-  line-height: 1;
-  transition: all 0.2s ease-out;
-}
-#article-container h1:hover:before,
-#article-container h2:hover:before,
-#article-container h3:hover:before,
-#article-container h4:hover:before,
-#article-container h5:hover:before,
-#article-container h6:hover:before {
-  color: #49b1f5;
-}
-#article-container h1 {
-  padding-left: 1.4rem;
-}
-#article-container h1 code {
-  font-size: 1rem;
-}
-#article-container h1:before {
-  margin-left: -1.2rem;
-  font-size: 1rem;
-}
-#article-container h1:hover {
-  padding-left: 1.6rem;
-}
-#article-container h2 {
-  padding-left: 1.3rem;
-}
-#article-container h2 code {
-  font-size: 0.9rem;
-}
-#article-container h2:before {
-  margin-left: -1.1rem;
-  font-size: 0.9rem;
-}
-#article-container h2:hover {
-  padding-left: 1.5rem;
-}
-#article-container h3 {
-  padding-left: 1.2rem;
-}
-#article-container h3 code {
-  font-size: 0.8rem;
-}
-#article-container h3:before {
-  margin-left: -1rem;
-  font-size: 0.8rem;
-}
-#article-container h3:hover {
-  padding-left: 1.4rem;
-}
-#article-container h4 {
-  padding-left: 1.1rem;
-}
-#article-container h4 code {
-  font-size: 0.7rem;
-}
-#article-container h4:before {
-  margin-left: -0.9rem;
-  font-size: 0.7rem;
-}
-#article-container h4:hover {
-  padding-left: 1.3rem;
-}
-#article-container h5 {
-  padding-left: 1rem;
-}
-#article-container h5 code {
-  font-size: 0.6rem;
-}
-#article-container h5:before {
-  margin-left: -0.8rem;
-  font-size: 0.6rem;
-}
-#article-container h5:hover {
-  padding-left: 1.2rem;
-}
-#article-container h6 {
-  padding-left: 1rem;
-}
-#article-container h6 code {
-  font-size: 0.6rem;
-}
-#article-container h6:before {
-  margin-left: -0.8rem;
-  font-size: 0.6rem;
-}
-#article-container h6:hover {
-  padding-left: 1.2rem;
-}
 #article-container ol,
 #article-container ul {
   margin-top: 0.4rem;
-  padding: 0 0 0 0.8rem;
-  list-style: none;
-  counter-reset: li;
-}
-@media screen and (max-width: 768px) {
-  #article-container ol,
-  #article-container ul {
-    padding: 0 0 0 0.4rem;
-  }
 }
 #article-container ol p,
 #article-container ul p {
@@ -3157,27 +3131,163 @@ _:future,
 #article-container ul ol,
 #article-container ol ul,
 #article-container ul ul {
+  padding-left: 0.5rem;
+}
+#article-container ol li,
+#article-container ul li {
+  position: relative;
+  margin: 0.3rem 0;
+  padding-left: 0.3rem;
+}
+#article-container.post-content h1,
+#article-container.post-content h2,
+#article-container.post-content h3,
+#article-container.post-content h4,
+#article-container.post-content h5,
+#article-container.post-content h6 {
+  transition: all 0.2s ease-out;
+}
+#article-container.post-content h1:before,
+#article-container.post-content h2:before,
+#article-container.post-content h3:before,
+#article-container.post-content h4:before,
+#article-container.post-content h5:before,
+#article-container.post-content h6:before {
+  position: absolute;
+  top: calc(50% - 0.35rem);
+  color: #ffb821;
+  content: '\f0e7';
+  line-height: 1;
+  transition: all 0.2s ease-out;
+}
+#article-container.post-content h1:hover:before,
+#article-container.post-content h2:hover:before,
+#article-container.post-content h3:hover:before,
+#article-container.post-content h4:hover:before,
+#article-container.post-content h5:hover:before,
+#article-container.post-content h6:hover:before {
+  color: #49b1f5;
+}
+#article-container.post-content h1 {
+  padding-left: 1.4rem;
+}
+#article-container.post-content h1 code {
+  font-size: 1rem;
+}
+#article-container.post-content h1:before {
+  margin-left: -1.2rem;
+  font-size: 1rem;
+}
+#article-container.post-content h1:hover {
+  padding-left: 1.6rem;
+}
+#article-container.post-content h2 {
+  padding-left: 1.3rem;
+}
+#article-container.post-content h2 code {
+  font-size: 0.9rem;
+}
+#article-container.post-content h2:before {
+  margin-left: -1.1rem;
+  font-size: 0.9rem;
+}
+#article-container.post-content h2:hover {
+  padding-left: 1.5rem;
+}
+#article-container.post-content h3 {
+  padding-left: 1.2rem;
+}
+#article-container.post-content h3 code {
+  font-size: 0.8rem;
+}
+#article-container.post-content h3:before {
+  margin-left: -1rem;
+  font-size: 0.8rem;
+}
+#article-container.post-content h3:hover {
+  padding-left: 1.4rem;
+}
+#article-container.post-content h4 {
+  padding-left: 1.1rem;
+}
+#article-container.post-content h4 code {
+  font-size: 0.7rem;
+}
+#article-container.post-content h4:before {
+  margin-left: -0.9rem;
+  font-size: 0.7rem;
+}
+#article-container.post-content h4:hover {
+  padding-left: 1.3rem;
+}
+#article-container.post-content h5 {
+  padding-left: 1rem;
+}
+#article-container.post-content h5 code {
+  font-size: 0.6rem;
+}
+#article-container.post-content h5:before {
+  margin-left: -0.8rem;
+  font-size: 0.6rem;
+}
+#article-container.post-content h5:hover {
+  padding-left: 1.2rem;
+}
+#article-container.post-content h6 {
+  padding-left: 1rem;
+}
+#article-container.post-content h6 code {
+  font-size: 0.6rem;
+}
+#article-container.post-content h6:before {
+  margin-left: -0.8rem;
+  font-size: 0.6rem;
+}
+#article-container.post-content h6:hover {
+  padding-left: 1.2rem;
+}
+#article-container.post-content ol,
+#article-container.post-content ul {
+  margin-top: 0.4rem;
+  padding: 0 0 0 0.8rem;
+  list-style: none;
+  counter-reset: li;
+}
+@media screen and (max-width: 768px) {
+  #article-container.post-content ol,
+  #article-container.post-content ul {
+    padding: 0 0 0 0.4rem;
+  }
+}
+#article-container.post-content ol p,
+#article-container.post-content ul p {
+  margin: 0 0 0.5rem;
+}
+#article-container.post-content ol ol,
+#article-container.post-content ul ol,
+#article-container.post-content ol ul,
+#article-container.post-content ul ul {
   padding-left: 0.6rem;
 }
 @media screen and (max-width: 768px) {
-  #article-container ol ol,
-  #article-container ul ol,
-  #article-container ol ul,
-  #article-container ul ul {
+  #article-container.post-content ol ol,
+  #article-container.post-content ul ol,
+  #article-container.post-content ol ul,
+  #article-container.post-content ul ul {
     padding-left: 0.2rem;
   }
 }
-#article-container ol li:not(.tab),
-#article-container ul li:not(.tab) {
+#article-container.post-content ol li:not(.tab),
+#article-container.post-content ul li:not(.tab) {
   position: relative;
   margin: 0.2rem 0;
 }
-#article-container ol li:hover:before,
-#article-container ul li:hover:before {
+#article-container.post-content ol li:hover:before,
+#article-container.post-content ul li:hover:before {
   transform: rotate(360deg);
 }
-#article-container ol li:before,
-#article-container ul li:before {
+#article-container.post-content ol li:before,
+#article-container.post-content ul li:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -3186,10 +3296,10 @@ _:future,
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
-#article-container ol > li:not(.tab) {
+#article-container.post-content ol > li:not(.tab) {
   padding: 0.2em 0.2em 0.2em 1.8em;
 }
-#article-container ol > li:before {
+#article-container.post-content ol > li:before {
   margin-top: 0.65em;
   width: 1.45em;
   height: 1.45em;
@@ -3200,13 +3310,13 @@ _:future,
   font-size: 0.85em;
   line-height: 1.45em;
 }
-#article-container ul > li:not(.tab) {
+#article-container.post-content ul > li:not(.tab) {
   padding: 0.2em 0.2em 0.2em 1.4em;
 }
-#article-container ul > li:not(.tab):hover:before {
+#article-container.post-content ul > li:not(.tab):hover:before {
   border-color: #ff7242;
 }
-#article-container ul > li:not(.tab):before {
+#article-container.post-content ul > li:not(.tab):before {
   top: 0.78em;
   width: 0.42em;
   height: 0.42em;
