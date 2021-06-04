@@ -7,10 +7,10 @@
         <language>zh-CN</language>
         <pubDate>Mon, 18 Jan 2021 05:06:41 +0000</pubDate>
         <lastBuildDate>Mon, 18 Jan 2021 05:06:41 +0000</lastBuildDate>
-        <category>生活记录</category>
-        <category>成长</category>
         <category>Git</category>
         <category>Github</category>
+        <category>生活记录</category>
+        <category>成长</category>
         <category>HTML</category>
         <category>CSS</category>
         <category>瀑布流</category>
@@ -29,11 +29,11 @@
         <category>查询</category>
         <category>View</category>
         <category>index</category>
-        <category>学习笔记</category>
-        <category>Trigger</category>
         <category>butterfly</category>
         <category>hexo</category>
         <category>魔改</category>
+        <category>学习笔记</category>
+        <category>Trigger</category>
         <category>jQuery</category>
         <category>JavaScript基础</category>
         <category>增删改查</category>
