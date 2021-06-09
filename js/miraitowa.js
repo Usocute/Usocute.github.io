@@ -18,3 +18,19 @@ function isScrollEnd() {
     document.styleSheets[0].addRule('*::-webkit-scrollbar-thumb','display:none;');
   }
 }
+
+// About字体滚动
+setInterval(function () {
+  const show = document.querySelector('span[data-show]')
+  const next = show.nextElementSibling || document.querySelector('.first-tips')
+  const up = document.querySelector('span[data-up]')
+
+  if (up) {
+    up.removeAttribute('data-up')
+  }
+
+  show.removeAttribute('data-show')
+  show.setAttribute('data-up', '')
+
+  next.setAttribute('data-show', '')
+}, 2000)
