@@ -5,59 +5,195 @@
         <link>https://miraitowa.cc</link>
         <description>永远期待明亮的未来,一个收藏回忆记录成长的地方...</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 30 May 2021 19:57:35 +0800</pubDate>
-        <lastBuildDate>Sun, 30 May 2021 19:57:35 +0800</lastBuildDate>
+        <pubDate>Sat, 03 Jul 2021 19:34:13 +0800</pubDate>
+        <lastBuildDate>Sat, 03 Jul 2021 19:34:13 +0800</lastBuildDate>
         <category>生活记录</category>
         <category>成长</category>
-        <category>Git</category>
-        <category>Github</category>
         <category>记录</category>
         <category>历史</category>
-        <category>js</category>
-        <category>js基础</category>
+        <category>Git</category>
+        <category>Github</category>
         <category>HTML</category>
         <category>CSS</category>
         <category>瀑布流</category>
+        <category>js</category>
+        <category>js基础</category>
         <category>js高级</category>
         <category>cookie</category>
         <category>MySQL</category>
-        <category>数据库</category>
-        <category>存储过程</category>
-        <category>视图</category>
         <category>存储引擎</category>
         <category>数据类型</category>
+        <category>数据库</category>
         <category>View</category>
         <category>index</category>
+        <category>查询</category>
+        <category>存储过程</category>
+        <category>视图</category>
         <category>butterfly</category>
         <category>hexo</category>
         <category>魔改</category>
-        <category>查询</category>
         <category>学习笔记</category>
         <category>Trigger</category>
         <category>jQuery</category>
+        <category>增删改查</category>
         <category>npm</category>
         <category>yarn</category>
         <category>JavaScript基础</category>
-        <category>增删改查</category>
+        <category>视差滚动</category>
+        <category>JavaScript</category>
         <category>前端设计</category>
         <category>单页设计与推广</category>
         <category>SEO优化</category>
         <category>网店设计</category>
+        <category>JS</category>
+        <category>图片轮播</category>
         <category>日常</category>
         <category>昆明</category>
-        <category>随笔</category>
-        <category>碎碎念</category>
         <category>MC</category>
         <category>Minecrift</category>
-        <category>移动端网站设计</category>
         <category>C</category>
         <category>算法</category>
         <category>leetcode</category>
+        <category>随笔</category>
+        <category>碎碎念</category>
+        <category>移动端网站设计</category>
         <category>javascript</category>
         <category>整站交互设计</category>
-        <category>JavaScript</category>
-        <category>JS</category>
-        <category>图片轮播</category>
+        <category>面试</category>
+        <item>
+            <guid isPermalink="true">https://miraitowa.cc/post/b3758780.html</guid>
+            <title>记年轻人的第一次面试</title>
+            <link>https://miraitowa.cc/post/b3758780.html</link>
+            <category>面试</category>
+            <pubDate>Sat, 03 Jul 2021 19:34:13 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 style=&#34;text-align: center;&#34;&gt;记年轻人的第一次面试&lt;/h2&gt;
+&lt;p style=&#34;text-align: center;&#34;&gt;惨不忍睹的一次面试&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;记录一下面试时问到的一些(不完全)问题(解答来源网络)&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;自我介绍&#34;&gt;自我介绍&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;此处省略很多字&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;如何让一个div垂直水平居中-至少说出三种&#34;&gt;如何让一个div垂直水平居中?(至少说出三种)&lt;/h3&gt;
+&lt;h4 id=&#34;代码实例&#34;&gt;代码实例&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;垂直水平居中一&lt;/p&gt;
+  &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*确定容器的宽高宽500高300的层设置层的外边距*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;div&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: absolute;&lt;span class=&#34;comment&#34;&gt;/*绝对定位*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;500px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;300px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;top&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;left&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;margin&lt;/span&gt;: -&lt;span class=&#34;number&#34;&gt;150px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; -&lt;span class=&#34;number&#34;&gt;250px&lt;/span&gt;;&lt;span class=&#34;comment&#34;&gt;/*外边距为自身宽高的一半*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;:pink;&lt;span class=&#34;comment&#34;&gt;/*方便看效果*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;水平垂直居中二&lt;/p&gt;
+  &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*未知容器的宽高，利用`transform`属性*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;div&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: absolute; &lt;span class=&#34;comment&#34;&gt;/*相对定位或绝对定位均可*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;500px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;300px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;top&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;left&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;transform&lt;/span&gt;: &lt;span class=&#34;built_in&#34;&gt;translate&lt;/span&gt;(-&lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;, -&lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: pink; &lt;span class=&#34;comment&#34;&gt;/*方便看效果*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;水平垂直居中三&lt;/p&gt;
+  &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*利用flex布局实际使用时应考虑兼容性*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.container&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;align-items&lt;/span&gt;: center; &lt;span class=&#34;comment&#34;&gt;/*垂直居中*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;justify-content&lt;/span&gt;: center; &lt;span class=&#34;comment&#34;&gt;/*水平居中*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.containerdiv&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: pink; &lt;span class=&#34;comment&#34;&gt;/*方便看效果*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;水平垂直居中四&lt;/p&gt;
+  &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*利用text-align:center和vertical-align:middle属性*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.container&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: fixed;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;top&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;right&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;bottom&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;left&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;background&lt;/span&gt;: &lt;span class=&#34;built_in&#34;&gt;rgba&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;0.5&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;text-align&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;font-size&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;white-space&lt;/span&gt;: nowrap;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;overflow&lt;/span&gt;: auto;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.container&lt;/span&gt;&lt;span class=&#34;selector-pseudo&#34;&gt;::after&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;content&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline-block;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;vertical-align&lt;/span&gt;: middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline-block;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;500px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;400px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: pink;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;white-space&lt;/span&gt;: normal;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;vertical-align&lt;/span&gt;: middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;回答示例&#34;&gt;回答示例&lt;/h4&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;一般常见的几种的方法有：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    对于宽高固定的元素：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;number&#34;&gt;1.&lt;/span&gt; 利用绝对定位，设置四个方向的值都为&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;，并将margin设置为auto，由于宽高固定，因此对应方向实现平分，可以实现水&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        平和垂直方向上的居中。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;number&#34;&gt;2.&lt;/span&gt; 利用绝对定位，先将元素的左上角通过top:&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;%和left:&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;%定位到页面的中心，然后再通过margin负值来调整元素&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        的中心点到页面的中心。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    对于宽高不定的元素，下面的后面两种方法，可以实现元素的垂直和水平的居中。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;number&#34;&gt;3.&lt;/span&gt; 利用绝对定位，先将元素的左上角通过top:&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;%和left:&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;%定位到页面的中心，然后再通过translate来调整元素&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        的中心点到页面的中心。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;number&#34;&gt;4.&lt;/span&gt; 使用flex布局，通过align-items:center和justify-content:center设置容器的垂直和水平方向上为居中对&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        齐，然后它的子元素也可以实现垂直和水平的居中。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;为什么需要清除浮动？浮动会引起什么问题，清除浮动的几种方式&#34;&gt;为什么需要清除浮动？浮动会引起什么问题，清除浮动的几种方式&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;为什么要清除浮动？&lt;br&gt;
+答：因为当父盒子高度为0时，子盒子不占位置，子盒子不会撑开父盒子，所以下面的标准流盒子，会跑到父盒子中的子盒子下面。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;浮动会引起什么问题&lt;br&gt;
+高度塌陷：父元素在文档流中高度默认是被子元素撑开的，当子元素脱离文档流以后，将无法撑起父元素的高度，也就会导致父元素的高度塌陷。父元素的高度一旦塌陷, 所有标准流中元素的位置将会上移，导致整个页面的布局混乱&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;清除浮动的几种方式&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;浮动元素后添加：添加清除浮动样式，使用这种方式会在页面中添加多余的结构。&lt;/p&gt;
+  &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.clear&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;clear&lt;/span&gt;:both&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用after伪类，向父元素后添加一个块元素，并对其清除浮动。该种方式的原理和方法一原理一样，但是不用向页面中添加多余的结构。&lt;/p&gt;
+  &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-id&#34;&gt;#div&lt;/span&gt;&lt;span class=&#34;selector-pseudo&#34;&gt;::after&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;content&lt;/span&gt;: “”;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: block;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;clear&lt;/span&gt;: both&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;开启父元素的BFC，为父元素添加样式&lt;/p&gt;
+  &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;overflow&lt;/span&gt;: &lt;span class=&#34;selector-tag&#34;&gt;hidden&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;手动为父元素添加高度&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;有没有用过媒体查询，响应式布局的实现原理&#34;&gt;有没有用过媒体查询，响应式布局的实现原理&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;什么是响应式布局&lt;br&gt;
+&lt;strong&gt;响应式布局指的是同一页面在不同屏幕尺寸下有不同的布局。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如何实现响应式布局&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;媒体查询&lt;/li&gt;
+&lt;li&gt;百分比布局&lt;/li&gt;
+&lt;li&gt;rem布局&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;行内元素有哪些？块级元素有哪些？CSS的盒模型？&#34;&gt;行内元素有哪些？块级元素有哪些？CSS的盒模型？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;块级元素：&lt;code&gt;div&lt;/code&gt; &lt;code&gt;p&lt;/code&gt; &lt;code&gt;h1&lt;/code&gt; &lt;code&gt;h2&lt;/code&gt; &lt;code&gt;h3&lt;/code&gt; &lt;code&gt;h4&lt;/code&gt; &lt;code&gt;form&lt;/code&gt; &lt;code&gt;ul&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;行内元素: &lt;code&gt;a&lt;/code&gt; &lt;code&gt;b&lt;/code&gt; &lt;code&gt;br&lt;/code&gt; &lt;code&gt;i&lt;/code&gt; &lt;code&gt;span&lt;/code&gt; &lt;code&gt;input&lt;/code&gt; &lt;code&gt;select&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Css盒模型: &lt;code&gt;content&lt;/code&gt; &lt;code&gt;border&lt;/code&gt; &lt;code&gt;margin&lt;/code&gt; &lt;code&gt;padding&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;如何用原生js给一个按钮绑定两个onclick事件？&#34;&gt;如何用原生js给一个按钮绑定两个onclick事件？&lt;/h3&gt;
+  &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Var btn=&lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&#34;string&#34;&gt;&amp;#x27;btn&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//事件监听 绑定多个事件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; btn4 = &lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&#34;string&#34;&gt;&amp;quot;btn4&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;btn4.addEventListener(&lt;span class=&#34;string&#34;&gt;&amp;quot;click&amp;quot;&lt;/span&gt;,hello1);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;btn4.addEventListener(&lt;span class=&#34;string&#34;&gt;&amp;quot;click&amp;quot;&lt;/span&gt;,hello2);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;hello1&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(&lt;span class=&#34;string&#34;&gt;&amp;quot;hello 1&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;hello2&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(&lt;span class=&#34;string&#34;&gt;&amp;quot;hello 2&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;和-的区别&#34;&gt;==和===的区别&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;== 代表相同，===代表严格相同。当进行双等号比较时候：先检查两个操作数数据类型，如果相同，则进行==比较，如果不同，则进行一次类型转换，转换成相同类型后再进行比较，而===比较时，如果类型不同，直接就是false.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;什么是vue的生命周期？vue生命周期的作用是什么？&#34;&gt;什么是vue的生命周期？vue生命周期的作用是什么？&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;什么是vue生命周期？&lt;br&gt;
+&lt;strong&gt;Vue 实例从创建到销毁的过程，就是生命周期。从开始创建、初始化数据、编译模板、挂载Dom→渲染、更新→渲染、销毁等一系列过程，称之为 Vue 的生命周期。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;vue生命周期的作用是什么？&lt;br&gt;
+&lt;strong&gt;它的生命周期中有多个事件钩子，让我们在控制整个Vue实例的过程时更容易形成好的逻辑&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;v-show与v-if的区别&#34;&gt;v-show与v-if的区别&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;相同点：&lt;code&gt;v-if&lt;/code&gt;与&lt;code&gt;v-show&lt;/code&gt;都可以动态控制dom元素显示隐藏。&lt;/li&gt;
+&lt;li&gt;不同点：&lt;code&gt;v-if&lt;/code&gt;显示隐藏是将dom元素整个添加或删除，而&lt;code&gt;v-show&lt;/code&gt;隐藏则是为该元素添加css–display:none，dom元素还在。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;总结&#34;&gt;总结&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;我已经不记得我说了什么,面试官问了什么,第一次面试好紧张,语言好混乱…&lt;/strong&gt;&lt;br&gt;
+&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-emmm-emm.jpg&#34; alt=&#34;emmm&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://miraitowa.cc/post/b3e853da.html</guid>
+            <title>一行JS实现视差滚动效果</title>
+            <link>https://miraitowa.cc/post/b3e853da.html</link>
+            <category>视差滚动</category>
+            <category>JavaScript</category>
+            <pubDate>Wed, 09 Jun 2021 18:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;何为滚动视差&#34;&gt;何为滚动视差&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;视差滚动（Parallax Scrolling）是指让多层背景以不同的速度移动，形成立体的运动效果，带来非常出色的视觉体验。 作为网页设计的热点趋势，越来越多的网站应用了这项技术。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我们一般把网页解剖为：背景层、内容层和悬浮层(贴图层)。&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;当滚动鼠标滚轮的时候，各图层以不同速度移动，形成视差的效果。这就是时差滚动的大致原理。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;如何实现视差滚动&#34;&gt;如何实现视差滚动&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;通过&lt;code&gt;translateY&lt;/code&gt;控制y轴偏移的距离，和原本&lt;code&gt;scroll&lt;/code&gt;滚动的距离形成一个差，带来的视觉上的相对运动，就有了视差效果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;代码实现&#34;&gt;代码实现&lt;/h2&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;banner&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;img.png&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;alt&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;bg&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      视差滚动效果&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;* &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;margin&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;padding&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.text&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;color&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;#000&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;font-weight&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;700&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;font-size&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;5em&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.banner&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;200vh&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;align-items&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;justify-content&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: relative;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.bg&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: absolute;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;left&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;top&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;z-index&lt;/span&gt;: -&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;window&lt;/span&gt;.addEventListener(&lt;span class=&#34;string&#34;&gt;&amp;#x27;scroll&amp;#x27;&lt;/span&gt;,&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; scrollPosition = &lt;span class=&#34;built_in&#34;&gt;window&lt;/span&gt;.pageYOffset;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(scrollPosition);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; bg = &lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;.querySelector(&lt;span class=&#34;string&#34;&gt;&amp;#x27;.bg&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  bg.style.transform = &lt;span class=&#34;string&#34;&gt;`translateY(&lt;span class=&#34;subst&#34;&gt;$&amp;#123;scrollPosition * &lt;span class=&#34;number&#34;&gt;0.5&lt;/span&gt;&amp;#125;&lt;/span&gt;px)`&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;参考文章&#34;&gt;参考文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://baike.baidu.com/item/%E8%A7%86%E5%B7%AE%E6%BB%9A%E5%8A%A8/2290867?fr=aladdin&#34;&gt;什么是视差滚动&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.zhihu.com/question/20990029/answer/21436067&#34;&gt;如何实现视差滚动效果的网页？&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://miraitowa.cc/post/89ee8a3d.html</guid>
             <title>HTML5、CSS3实现简单响应式瀑布流布局</title>
@@ -2670,113 +2806,6 @@ h6：金殿旅游，云南野生动物园旅游&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://miraitowa.cc/post/643e8ed0.html</guid>
-            <title>常用的Git操作</title>
-            <link>https://miraitowa.cc/post/643e8ed0.html</link>
-            <category>Git</category>
-            <category>Github</category>
-            <pubDate>Thu, 21 Jan 2021 13:06:41 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;Git-Push&#34;&gt;Git Push&lt;/h2&gt;
-&lt;div class=&#34;tabs&#34; id=&#34;test1&#34;&gt;&lt;ul class=&#34;nav-tabs&#34;&gt;&lt;li class=&#34;tab active&#34;&gt;&lt;button type=&#34;button&#34; data-href=&#34;#test1-1&#34;&gt;方法一&lt;/button&gt;&lt;/li&gt;&lt;li class=&#34;tab&#34;&gt;&lt;button type=&#34;button&#34; data-href=&#34;#test1-2&#34;&gt;方法二&lt;/button&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div class=&#34;tab-contents&#34;&gt;&lt;div class=&#34;tab-item-content active&#34; id=&#34;test1-1&#34;&gt;&lt;p&gt;&lt;strong&gt;此方法适用于已经在Github创建好仓库&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;把Github上面的仓库克隆到本地&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git clone https://github.com/Github用户名/仓库名.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;进入项目文件夹&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; 项目名&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;把文件夹下面的文件都添加进来&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git add .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;提交信息&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git commit &lt;span class=&#34;literal&#34;&gt;-m&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;xxxxxx&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;把本地仓库push到github上面，此步骤需要输入帐号和密码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git push &lt;span class=&#34;literal&#34;&gt;-u&lt;/span&gt; origin master(&lt;span class=&#34;number&#34;&gt;2020&lt;/span&gt; 年 &lt;span class=&#34;number&#34;&gt;10&lt;/span&gt; 月 &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; 日起，在 Github 平台上创建的所有新的源代码仓库将默认命名为 &lt;span class=&#34;string&#34;&gt;&amp;quot;main&amp;quot;&lt;/span&gt; ，不再是原先的 &lt;span class=&#34;string&#34;&gt;&amp;quot;master&amp;quot;&lt;/span&gt; )&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;button type=&#34;button&#34; class=&#34;tab-to-top&#34; aria-label=&#34;scroll to top&#34;&gt;&lt;i class=&#34;fas fa-arrow-up&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;test1-2&#34;&gt;&lt;p&gt;&lt;strong&gt;本方法需要先创建一个本地的版本库&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;通过命令行在桌面新建一个test文件夹&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mkdar test&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;通过init把这个文件夹变成Git可管理的仓库&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;把你的项目粘贴到这个本地Git仓库里面&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;粘贴后你可以通过&lt;code&gt;git status&lt;/code&gt;来查看你当前的状态&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;把刚才复制过来的项目全部添加到仓库&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git add .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;提交到本地缓冲(注释？)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git commit &lt;span class=&#34;literal&#34;&gt;-m&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;xxxxxx&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;在Github上创建好Git仓库&lt;/li&gt;
-&lt;li&gt;将本地仓库的代码提交远程github的仓库&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git remote add origin https://github.com/Github用户名/仓库名.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;将远程仓库的代码 push到master分支上&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;- 由于新建的远程仓库是空的  所以要加上&lt;span class=&#34;literal&#34;&gt;-u&lt;/span&gt;这个参数&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push &lt;span class=&#34;literal&#34;&gt;-u&lt;/span&gt; origin master&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- 等远程仓库里面有了内容之后，下次再从本地库上传内容的时候不需要了&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push origin master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;button type=&#34;button&#34; class=&#34;tab-to-top&#34; aria-label=&#34;scroll to top&#34;&gt;&lt;i class=&#34;fas fa-arrow-up&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&#34;Git-版本发布&#34;&gt;Git-版本发布&lt;/h2&gt;
-&lt;div class=&#34;tabs&#34; id=&#34;&#34;&gt;&lt;ul class=&#34;nav-tabs&#34;&gt;&lt;li class=&#34;tab active&#34;&gt;&lt;button type=&#34;button&#34; data-href=&#34;#-1&#34;&gt;Git-版本发布&lt;/button&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div class=&#34;tab-contents&#34;&gt;&lt;div class=&#34;tab-item-content active&#34; id=&#34;-1&#34;&gt;&lt;ul&gt;
-&lt;li&gt;创建Github一个版本发布&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git tag&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git tag &lt;span class=&#34;literal&#34;&gt;-a&lt;/span&gt; v1.&lt;span class=&#34;number&#34;&gt;0.0&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;-m&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;xxxxxx&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;查看某标签的信息&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git show v1.&lt;span class=&#34;number&#34;&gt;0.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;推送到远程库&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git push origin v1.&lt;span class=&#34;number&#34;&gt;0.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;删除标签&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git tag &lt;span class=&#34;literal&#34;&gt;-d&lt;/span&gt; v1.&lt;span class=&#34;number&#34;&gt;0.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;button type=&#34;button&#34; class=&#34;tab-to-top&#34; aria-label=&#34;scroll to top&#34;&gt;&lt;i class=&#34;fas fa-arrow-up&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://miraitowa.cc/post/20d94337.html</guid>
-            <title>在昆明，没有一个矮子能笑着走出地铁</title>
-            <link>https://miraitowa.cc/post/20d94337.html</link>
-            <category>日常</category>
-            <category>昆明</category>
-            <pubDate>Wed, 20 Jan 2021 12:04:03 +0800</pubDate>
-            <description><![CDATA[ &lt;div class=&#34;note warning flat&#34;&gt;&lt;p&gt;长图预警 长图预警 长图预警&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img1.jpg&#34; alt=&#34;img1&#34;&gt;&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img2.jpg&#34; alt=&#34;img2&#34;&gt;&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img3.jpg&#34; alt=&#34;img3&#34;&gt;&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img4.jpg&#34; alt=&#34;img4&#34;&gt;&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img5.jpg&#34; alt=&#34;img5&#34;&gt;&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img6.jpg&#34; alt=&#34;img6&#34;&gt;&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img7.jpg&#34; alt=&#34;img7&#34;&gt;&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img8.jpg&#34; alt=&#34;img8&#34;&gt;&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img9.jpg&#34; alt=&#34;img9&#34;&gt;&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img10.jpg&#34; alt=&#34;img10&#34;&gt;&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img11.jpg&#34; alt=&#34;img11&#34;&gt;&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img12.jpg&#34; alt=&#34;img12&#34;&gt;&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img13.jpg&#34; alt=&#34;img13&#34;&gt;&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img14.jpg&#34; alt=&#34;img14&#34;&gt;&lt;br&gt;
-&lt;img src= &#34;/img/loading.gif&#34; data-lazy-src=&#34;https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-kunming-subway-img15.jpg&#34; alt=&#34;img15&#34;&gt;&lt;/p&gt;
-&lt;div class=&#34;note danger flat&#34;&gt;&lt;p&gt;图源网络&lt;/p&gt;
-&lt;/div&gt; ]]></description>
         </item>
     </channel>
 </rss>

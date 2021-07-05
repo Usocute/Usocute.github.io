@@ -18,3 +18,5 @@ function isScrollEnd() {
     document.styleSheets[0].addRule('*::-webkit-scrollbar-thumb','display:none;');
   }
 }
+
+console.log(" %c %c", "padding: 40px 120px;margin-left: 100px;background: url('https://miraitowa.oss-cn-chengdu.aliyuncs.com/img/miraitowa-console-logo.png') no-repeat;background-size: 100%;", "color: pink;font-size: 20px");
